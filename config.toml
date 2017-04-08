@@ -1,0 +1,49 @@
+baseurl = "https://kalinchernev.github.io/"
+copyright = "All rights reserved - 2017"
+disqusshortname = "kalinchernev"
+languagecode = "en"
+paginate = 5
+pluralizelisttitles = false
+theme = "casper"
+title = "Kalin Chernev"
+
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/"
+  weight = 0
+[[menu.main]]
+  name = "About"
+  url = "/about"
+  weight = 1
+[[menu.main]]
+  name = "Contact"
+  url = "/contact"
+  weight = 2  
+[[menu.main]]
+  name = "Twitter timeline"
+  url = "https://twitter.com/kalinchernev/"
+  weight = 101  
+[[menu.main]]
+  name = "Github repos"
+  url = "https://github.com/kalinchernev"
+  weight = 100  
+
+[params]
+  author = "Kalin Chernev"
+  authorlocation = "Brussels, Belgium"
+  authorwebsite = "https://kalinchernev.github.io/"
+  bio = "T-shaped web developer"
+  cover = "images/cover_polenord.jpg"
+  description = "Whatever the mind of man can conceive and believe, it can achieve."
+  githubName = "kalinchernev"
+  googleAnalyticsUserID = "UA-97001925-1"
+  hideHUGOSupport = false
+  logo = "images/logo.png"
+  twitterName = "kalinchernev"
+  [permalinks]
+  post = "/:slug/"
+  [sitemap]
+  ChangeFreq = ""
+  Filename = "sitemap.xml"
+  Priority = "-1"
