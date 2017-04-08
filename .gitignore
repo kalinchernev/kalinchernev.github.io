@@ -1,2 +1,4 @@
-node_modules/
-dist/
+backup
+public/*
+themes/casper/tmp
+.DS_Store
