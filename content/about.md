@@ -1,7 +1,6 @@
 +++
 date = "2017-04-08T15:33:06+02:00"
 title = "About"
-
 +++
 
 Hi, my name is Kalin Chernev, and this website is probably my 5th place to blog, I stopped counting.
