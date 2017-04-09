@@ -9,7 +9,6 @@ date = "2016-10-02T12:10:11+02:00"
 title = "Building a node.js client for the EU Open Data Portal"
 slug = "eu-data-portal-nodejs-client"
 comments = true
-
 +++
 
 Planning to make an open data GraphQL server, it was natural to first build a small abstraction wrapper which can be re-used in other projects. Basically, the [odp library][1] I'm going to talk about is just a simplified client for fetching data from the EU Open Data Portal.
@@ -17,25 +16,21 @@ Planning to make an open data GraphQL server, it was natural to first build a sm
 ### Getting the library
 
 When you have [node.js][2], the module can be installed by npm:
-    
-    
-    npm install odp
+
+```bash
+$ npm install odp
+```
 
 ### Library API
 
 The API of the module is pretty simple:
-    
-    
-    _// Get a range of the whole list of datasets:_
-    
-    
-    odp.getDatasets({query**:** {limit**:** 100, offset**:** 1}}).then((data) =&gt; {
-    
-    
-      console.log(data);
-    
-    
-    });
+
+```js
+// Get a range of the whole list of datasets:
+odp.getDatasets({query: {limit: 100, offset: 1}}).then((data) => {
+  console.log(data);
+});
+```
 
 Currently, there are 4 methods which match the brief information from the [developers' corner][3]. Methods are: `getDatasets`, `getTags`, `getDataset` and `datasetSearch`. It could be that there are more options than that in the API, but these are all I know so far as user of the website.
 
