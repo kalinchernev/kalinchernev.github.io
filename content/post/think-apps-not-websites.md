@@ -9,10 +9,68 @@ date = "2017-12-13T00:00:00+02:00"
 share = true
 comments = true
 image = ""
-
 +++
 
-### **Create a manifest&nbsp;file**
+Admiring the progress of [Web APIs](https://developer.mozilla.org/en/docs/Web/API), I decided to shortly summarize some feelings. They are mostly about a borderline (common-sense) why it is worth knowing what is a web app and why we have to shift our paradigm thinking from building websites to building web apps. For this reason, I include few steps as a tutorial to encourage hands-on experimentation.
+
+### State of internet
+
+Unsurprisingly, [more than 40% of the world has access to the Internet](http://www.internetlivestats.com/internet-users/#chart_trend), and this number is yet to grow having in mind the vast popularity of campaigns which ensure that each one in the world is connected. It seems that we are in rush to make the [Global village reality](https://en.wikipedia.org/wiki/Global_village_%28term%29). Yes, I still remember when making a dynamic website with mobile-friendly design was innovation, however, it’s simply [not anything special any more](https://techcrunch.com/2014/08/21/majority-of-digital-media-consumption-now-takes-place-in-mobile-apps/). In fact, the digital world is much more accessible than before with smart-watches, smart-TVs, VRs, etc.
+
+> The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past. —[Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee)
+
+### Reality check
+
+All the new software or hardware technologies do not make any sense if not used properly and effectively. For example, managing our user data and documents synchronization in [the cloud](https://en.wikipedia.org/wiki/Cloud_computing) is a vital skill you have to master. This way, you can take advantage of the technological opportunities of keeping your information safe and available anywhere you have a browser and an internet connection.
+
+[Google docs](https://en.wikipedia.org/wiki/Google_Docs,_Sheets_and_Slides) got available to us a decade ago, and Microsoft followed with their [OneDrive](https://en.wikipedia.org/wiki/OneDrive) few years later. So, regardless of the device (tablet, laptop, PC, etc.) we can work with our documents through our browser, AND have a safe backup of our work. Not taking advantage of cloud technologies to have synchronized backup of our important documents is a missed opportunity.
+
+**Making a website that shows only information is a missed opportunity.**
+
+Why is that? Well, simple — the problems we are solving today are different than the problems we were solving 10 years ago. Even if the criticism of the accelerated change were true, why would we encounter so many examples of transformation we did not anticipate with this speed?
+
+Another example higher user expectation: being able to work with mobile applications offline. A decade ago, a website was a good solution to having an online presence, i.e. having a business card, etc. Probably printing pages was ok. However, today, [Netflix offline capabilities](http://www.pcworld.com/article/3145946/streaming-services/you-can-finally-watch-netflix-offline-now.html) or editing documents in Google Drive offline mode are making customers happy, because users are mobile.
+
+In similar conditions, building a website to just share information is not something special any more, because users expect a whole different, more engaging digital experience — think about SMS notifications. They were standard some years ago, but not anymore. Today, push notifications are everywhere. And there is no way that trend goes down, as the future connected world will involve even higher amount of notifications.
+
+### Web apps
+“Web apps” is probably something you already know. Web apps are consisted of HTML, CSS and JavaScript. Difference between them and regular websites, is that the same technologies are used with “spices”: new methods to achieve better results. Meet the Progressive Web Apps, aka [PWA](https://developers.google.com/web/).
+
+The term has been around for awhile, so starter tutorials are accessible:
+
+- [Your first PWA](https://developers.google.com/web/fundamentals/getting-started/codelabs/your-first-pwapp/)
+- [Progressive Web AMPs](https://www.smashingmagazine.com/2016/12/progressive-web-amps/)
+- [A beginners guide to PWA](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/)
+- [The Building Blocks Of Progressive Web Apps](https://www.smashingmagazine.com/2016/09/the-building-blocks-of-progressive-web-apps/)
+
+In summary, there are many benefits of adding an some extra efforts into your existing (or new) web pages to make them available in bad network conditions (when offline), and provide functionalities that are normally expected by users in mobile, but in the browser. And browsers are something you have almost everywhere.
+
+If you’re a decision maker or a company owner with a business around [Chrome Apps or extensions](https://blog.chromium.org/2016/08/from-chrome-apps-to-web.html), you have an even bigger motivation to follow this trend, in order to maintain your business in near future.
+
+Thus, get into the habit to use your browser effectively as a tool in your skill-set of the future :) Even if you are not a developer, you have to imagine that at some point of time, [the browser will be the app you are running everywhere](https://medium.com/swlh/browsers-not-apps-are-the-future-of-mobile-c552752ff75#.ackczpqrj) regardless of your operating system.
+
+And a bonus for seasoned developers reaching this point of the article: this [summary of chrome dev summit](https://auth0.com/blog/chromedevsummit-summary/) would be worth a look.
+
+### Making a web app
+
+I’ve marked some initial milestones that worked for me, the order shouldn’t be important, but that’s more or less how I see the process — hopefully easy to understand and follow with a bit of hands-on practice.
+
+I’ll be going through the most popular and basic features of PWA which could complement existing websites and make them more app-like. I believe that gradual improvements in existing websites is a good strategy for making the best of the modern web, while avoiding regressions in working solutions. This way, everybody win — business owners invest smartly into new enhancements, developers upgrade their solutions taking small doable steps, also, the end-user (the king) receives improved experience.
+
+So, what we want to achieve is:
+
+- User can save our application to his phone for quick access
+- User can open the application without access to the Internet, and still see meaningful contents that help him continue working with the application
+
+### DevTools
+
+Before kicking off the tutorial part, please, use Google Chrome while working out the rest of the items — ensuring you have really great experience and least amount of hurdles on browser support during your journey. Firefox, Edge and Opera could be alternatives, however, Chrome has the best support for modern JavaScript at the moment.
+
+This video is an entertaining summary of the documentation about [debugging progressive web apps with Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps). Most certainly, general familiarity with the [DevTools](https://developers.google.com/web/tools/chrome-devtools/) would help you understand it, although the panel for debugging PWA is much simpler than the rest.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IWgNn1kqrsA?rel=0" frameborder="0" allowfullscreen></iframe>
+
+### **Create a manifest file**
 
 The manifest file should comply to a [specification][1] which serves a similar purpose as of the [Chrome Platform API manifest file][2] — it's a set of definitions. [The installation of a web app][3] is more engaging than the one of a native app, i.e. one doesn't need to go to a "store", but take it right away. Note that a service worker file should be loaded (and activated, etc.) to achieve this interaction.
 
@@ -73,9 +131,9 @@ It's not something super-new for people who are used to thinking about apps alre
 
 In order to implement this strategy for saving resources, one must know how to use the [Cache API][24] through a service worker. The API can also be accessed through the global `window` object as well, but working through a SW, we can "hook" into the events in the worker's life-cycle, i.e. we can validate cache when network connection toggles.
 
-### Creating a service&nbsp;worker
+### Creating a servic worker
 
-&gt; Rich offline experiences, periodic background syncs, push notifications — functionality that would normally require a native application — are coming to the web. Service workers provide the technical foundation that all these features rely on. — taken from "[Service Workers: an Introduction][25]"
+> Rich offline experiences, periodic background syncs, push notifications — functionality that would normally require a native application — are coming to the web. Service workers provide the technical foundation that all these features rely on. — taken from "[Service Workers: an Introduction][25]"
 
 In basic terms, the service worker is a proxy layer between your stack (HTML+CSS+JS) and the network. The API of service workers boost the functionality of your otherwise normal web pages.
 
