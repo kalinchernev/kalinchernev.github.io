@@ -1,6 +1,6 @@
 baseurl = "https://kalinchernev.github.io/"
 copyright = "All rights reserved - 2017"
-disqusshortname = "kalinchernev"
+disqusshortname = "kalinchernev-github-io"
 languagecode = "en"
 paginate = 5
 pluralizelisttitles = false

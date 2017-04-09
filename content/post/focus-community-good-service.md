@@ -52,7 +52,7 @@ Even more motivation was the end of the year, my team at the European Commission
 
 It's pretty rewarding to be the best&nbsp;:D
 
-#### What about&nbsp;2016
+#### What about 2016
 
 For me, 2016 will most probably be the year of community and good service.
 
