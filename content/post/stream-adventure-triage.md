@@ -9,8 +9,28 @@ menu = ""
 share = true
 tags = ["JavaScript", "Open Source"]
 slug = "stream-adventure-triage"
-
 +++
+
+[stream-adventure](https://github.com/workshopper/stream-adventure) is one of the first [workshopper](https://nodeschool.io/about.html) node modules which teaches [Streams](https://nodejs.org/api/stream.html) in node.js. Working on the challenges myself, I got frustrated when simple things did not work for me, so I ended up on the [github repository](https://github.com/workshopper/stream-adventure) doing a bit of triage during my free time.
+
+### The project: why & how
+
+**The Why**: stream-adventure is a popular project among developers who want to learn [node.js](https://nodejs.org/) and its Streams API which is fundamental. The “workshopper” provides simple and doable steps for learning the subject matter in a practical way . Also, the project is pointed as a historic milestone of [nodeschool](https://nodeschool.io/about.html). Accodring to me, it’s good value: _learning node.js while contributing back to a big-impact project_.
+
+**How**: installing the project is the same as any other [node module](https://www.npmjs.com/package/stream-adventure#install). You can do that either locally (when having node+npm) or by using a cloud service like [Cloud 9 IDE](/cloud9-editor). I use C9 as it’s convenient to work on the challenges any time and anywhere, in the browser, and the environment has nvm, which makes it easy for me to switch between node versions in case I need to test something special.
+That’s how it looks — not so bad ;)
+
+![workshopper on cloud9 editor](https://cdn-images-1.medium.com/max/1400/1*ha_bEZaLR_t9Kc13Tac-Qw.png)
+
+By the way, I recently got feedback similar to [this one](http://forum.freecodecamp.com/t/cloud9-requiring-credit-card/23482) about a requirement of a credit card during registration in C9. Remember that the choice of tools is always up to a personal preferences, i.e. feel free to choose whatever works best for you.
+
+To possible program commands, run `stream-adventure help`. Most of the time, you’ll need only `stream-adventure`, stream-adventure print and `stream-adventure verify program.js` where the program.js is the file containing your solution of the given challenge.
+
+### Reporting issues
+
+Reporting issues is really good! Only one suggestion: search the [issue queue](https://github.com/workshopper/stream-adventure/issues) and or the [list of pull requests](https://github.com/workshopper/stream-adventure/pulls) to check if the issue you’re experiencing is not already reported or worked upon.
+
+Naturally, if the issue is already reported or worked upon, try to support the people working on it in order to speed up the process of solving the issue.
 
 ### Working on the issue&nbsp;queue
 

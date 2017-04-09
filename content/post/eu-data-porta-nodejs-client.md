@@ -32,7 +32,7 @@ odp.getDatasets({query: {limit: 100, offset: 1}}).then((data) => {
 });
 ```
 
-Currently, there are 4 methods which match the brief information from the [developers' corner][3]. Methods are: `getDatasets`, `getTags`, `getDataset` and `datasetSearch`. It could be that there are more options than that in the API, but these are all I know so far as user of the website.
+Currently, there are 4 methods which match the brief information from the [developers' corner][3]. Methods are: `getDatasets()`, `getTags()`, `getDataset()` and `datasetSearch()`. It could be that there are more options than that in the API, but these are all I know so far as user of the website.
 
 An [Examples section][4] is included in the README file for further details.
 
