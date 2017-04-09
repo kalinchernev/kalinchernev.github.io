@@ -2,12 +2,12 @@
 date = "2016-08-29T00:00:00+02:00"
 image = ""
 slug = "cloud9-editor"
-title = "Cloud9 IDE – Digital Beer – Medium"
+title = "Cloud9 IDE"
 author = "Kalin Chernev"
 menu = ""
 share = true
 comments = true
-tags = ["Cloud","Drupal", "Cloud9", "Tools"]
+tags = ["Cloud", "Drupal", "Cloud9", "Tools"]
 draft = false
 
 +++
