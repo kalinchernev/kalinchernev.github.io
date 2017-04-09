@@ -17,10 +17,6 @@ title = "Kalin Chernev"
   url = "/about"
   weight = 1
 [[menu.main]]
-  name = "Contact"
-  url = "/contact"
-  weight = 2  
-[[menu.main]]
   name = "Twitter timeline"
   url = "https://twitter.com/kalinchernev/"
   weight = 101  
