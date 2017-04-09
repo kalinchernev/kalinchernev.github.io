@@ -26,9 +26,9 @@ An year later, many details started to light up in the big picture, and I was no
 
 Focusing on the details of the big picture, I managed to see opportunities and good practices that I can conclude to be reusable for anyone. Reusable in such a way that even I will benefit of a given paradigm if I read it after few years.
 
-#### Technology and&nbsp;code
+#### Technology and code
 
-It's always been and will be a lot about technology for me. Until 2015, I was very heavy enthusiast about [Drupal][1]. There have been many big projects I'm proud of in the past. Working on big projects has always been a good way to battle-test good software as Drupal.
+It's always been and will be a lot about technology for me. Until 2015, I was very heavy enthusiast about [Drupal](https://www.drupal.org/). There have been many big projects I'm proud of in the past. Working on big projects has always been a good way to battle-test good software as Drupal.
 
 Starting my new job in Belgium, I quickly realized how much I don't know. Even bigger project, infrastructure complexity, i.e. higher demands for my developer skills. Something was going on in my brain, I started being less enthusiastic about the specific software package or tool, but I got more enthusiastic about the factors that make a project successful.
 
@@ -61,6 +61,3 @@ Community, because it's the hidden jam of happy coding and rapid self-developmen
 Good service, because it's why we developers write code. It's easy to lose focus from that because we have too many paradigms, frameworks and libraries to understand to be productive. Yet, we write code to make good products and provide good service.
 
 First come the good product and service, then the good results give the means of winning the time to try and use the latest cutting edge technologies.
-
-[1]: https://www.drupal.org/
-
