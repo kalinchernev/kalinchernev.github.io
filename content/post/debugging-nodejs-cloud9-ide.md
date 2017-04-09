@@ -1,5 +1,5 @@
 +++
-tags = ["nodejs","JavaScript", "Debugging"]
+tags = ["nodejs", "JavaScript", "Debugging"]
 author = ""
 share = true
 date = "2016-09-04T00:00:00+02:00"
@@ -9,7 +9,6 @@ draft = false
 menu = ""
 comments = true
 image = ""
-
 +++
 
 In this article I'll be sharing some of my level-up experience learning how to debug node.js apps. It was not easy at first, but once I got it, I felt empowered that now I can work with any code base.
