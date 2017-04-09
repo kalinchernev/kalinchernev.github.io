@@ -9,7 +9,6 @@ tags = ["Programming", "Community"]
 draft = false
 author = ""
 date = "2016-01-11T00:00:00+00:00"
-
 +++
 
 ## Recap
