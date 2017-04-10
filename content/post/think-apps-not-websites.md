@@ -5,7 +5,7 @@ tags = ["web development", "mobile", "JavaScript", "Progressive Web Apps"]
 draft = false
 author = ""
 slug = "think-about-apps-not-websites"
-date = "2017-12-13T00:00:00+02:00"
+date = "2016-12-13T00:00:00+02:00"
 share = true
 comments = true
 image = ""
@@ -158,6 +158,12 @@ For a start, you can start with [Adding Push Notifications to a Web App][34]. It
 ### The future
 
 Apart from being bright, it will be filled with advancements and further variety in the developers' toolbox. Having in mind that browsers have always been an inconsistent environment, it will be vital to keep the following resources at hand and get fresh information every now and then.
+
+- [MDN App Center](https://developer.mozilla.org/en-US/Apps/Progressive)
+- [Google Web Updates](https://developers.google.com/web/updates/)
+- [Chrome](https://developer.chrome.com/home), [Microsoft Edge](https://blogs.windows.com/msedgedev/#aJK7cy6m0YfVUByl.97), etc. of interest
+- [HTML5Rocks](https://www.html5rocks.com/en/)
+- [The standards](https://www.w3.org/TR/)
 
 It's important to underline, that [Progressive Web Apps isn't a Google-only thing][38] although many of the references in this article are going to resources authored by community contributions to Google documentation. This is mainly because the dedication and organization of knowledge seems to the best at the moment. [Microsoft are also supporters of PWA][39]. In fact, [manifoldjs][40] is an interesting project you will probably meet should you decide to make PWA that works as a nice app in Windows.
 
