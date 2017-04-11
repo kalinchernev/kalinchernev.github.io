@@ -19,11 +19,11 @@ title = "Kalin Chernev"
 [[menu.main]]
   name = "Twitter timeline"
   url = "https://twitter.com/kalinchernev/"
-  weight = 101  
+  weight = 101
 [[menu.main]]
   name = "Github repos"
   url = "https://github.com/kalinchernev"
-  weight = 100  
+  weight = 100
 
 [params]
   author = "Kalin Chernev"
