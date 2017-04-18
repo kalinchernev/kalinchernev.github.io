@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kalinchernev/kalinchernev.github.io/issues"
   },
-  "homepage": "https://github.com/kalinchernev/kalinchernev.github.io#readme"
+  "homepage": "https://github.com/kalinchernev/kalinchernev.github.io#readme",
+  "devDependencies": {
+    "sw-precache": "^5.1.0"
+  }
 }
