@@ -4,12 +4,13 @@
   "description": "Simply a blog",
   "main": "index.js",
   "scripts": {
-    "build": "hugo",
+    "build": "HUGO_ENV=prod hugo",
     "cache": "sw-precache --config sw-precache-config.js ./static/js/sw.js --verbose",
     "clean": "rm -rf public",
     "deploy": "gh-pages -d public -b master",
     "dist": "run-s clean build cache",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "write": "hugo server"
   },
   "repository": {
     "type": "git",
