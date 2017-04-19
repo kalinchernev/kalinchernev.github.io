@@ -1,6 +1,6 @@
 {
   "name": "kalinchernev.github.io",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simply a blog",
   "main": "index.js",
   "scripts": {
