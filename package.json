@@ -4,6 +4,11 @@
   "description": "Simply a blog",
   "main": "index.js",
   "scripts": {
+    "build": "hugo",
+    "cache": "sw-precache --config sw-precache-config.js ./static/js/sw.js --verbose",
+    "clean": "rm -rf public",
+    "deploy": "gh-pages -d public -b master",
+    "dist": "run-s clean build cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +22,8 @@
   },
   "homepage": "https://github.com/kalinchernev/kalinchernev.github.io#readme",
   "devDependencies": {
+    "gh-pages": "^0.12.0",
+    "npm-run-all": "^4.0.2",
     "sw-precache": "^5.1.0"
   }
 }
