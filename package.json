@@ -9,6 +9,7 @@
     "clean": "rm -rf public",
     "deploy": "gh-pages -d public -b master",
     "dist": "run-s clean build cache",
+    "release": "run-s dist deploy",
     "test": "echo \"Error: no test specified\" && exit 1",
     "write": "hugo server"
   },
