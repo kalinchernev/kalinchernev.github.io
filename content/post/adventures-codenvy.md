@@ -3,6 +3,7 @@ share = true
 date = "2017-04-21T23:12:42+02:00"
 tags = ["Cloud", "Codenvy", "IDE"]
 comments = true
+draft = true
 title = "Adventures with Codenvy"
 image = "http://www.chromebookhq.com/wp-content/uploads/chromebook-online-ide-codenvy.jpg"
 slug = "adventures-codenvy"
@@ -10,7 +11,7 @@ slug = "adventures-codenvy"
 
 Recently, I came across the website of Eclipse Che, naturally spinning an instance
 on [Codenvy](https://codenvy.com) few minutes later. Codenvy seems to be highly
-impressive solution alternative to a similar IDE I use sometimes - Cloud 9.
+impressive solution alternative to a similar IDE I sometimes use - Cloud 9.
 
 In this article, I'll demonstrate some of my favorite features of the platform,
 read further if:
