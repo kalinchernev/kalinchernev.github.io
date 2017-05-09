@@ -71,7 +71,7 @@ Amazon has been doing [quite well since the release](http://uk.businessinsider.c
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2KpLHdAURGo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Believe it or not, I realized just recently that Google announced [Google Assistant](https://assistant.google.com/) and Google Home together for a reason. For me, the assistant was this dummy chat bot with little sense of humour on Duo, but I never took him seriously, because the time it takes to open the app and start a conversation was taking more than actually doing the thing I wanted to do directly in the apps. Also, there are so many other chat apps on the market that I never even made a try to invite a friend to try Duo with some assistant spice.
+Believe it or not, I realized just recently that Google announced [Google Assistant](https://assistant.google.com/) and Google Home together for a reason. For me, the assistant was this dummy chat bot with little sense of humour on Allo, but I never took him seriously, because the time it takes to open the app and start a conversation was taking more than actually doing the thing I wanted to do directly in the apps. Also, there are so many other chat apps on the market that I never even made a try to invite a friend to try Allo with some assistant spice.
 
 In Europe, it's still not straight-forward to buy Google Home device in the same way it would be in the USA, so I was recently browsing for ways to emulate the device, and still have the Google Assistant in the box - it's integrated with [api.ai](https://developers.google.com/actions/) that I already tried for making the chat bot on Facebook!
 
