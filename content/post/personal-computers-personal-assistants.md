@@ -37,6 +37,8 @@ You can bet:
 - [LUIS](https://www.luis.ai/home/index) by Microsoft
 - [rasa.ai](https://rasa.ai/) by [LASTMILE](https://golastmile.com/)
 
+Can't help but putting [Darvin.ai](https://darvin.ai/) close to this list as well, as it's made in Bulgaria :)
+
 All these share similar goals and ideas:
 
 - Create a bot that takes input of human speech.
