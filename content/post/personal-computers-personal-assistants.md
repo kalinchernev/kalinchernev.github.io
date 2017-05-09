@@ -46,6 +46,10 @@ All these share similar goals and ideas:
 
 Depending on your language needs, level of interests in the subjects and needs for privacy, you can go either way. Basically, the "brain" of the `.ai` is a cloud service communicating with clients via REST APIs, so that the intelligence can be reused in many ways.
 
+Here's an example of using [Microsoft stack](https://www.slideshare.net/PaulPrae/azure-as-a-chatbot-service-from-purpose-to-production-with-a-cloud-bot-architecture)
+
+![Chat bot cloud architecture](/images/cloud-bot-architecture.jpg)
+
 > “Over the past decades computers have broadly automated tasks that programmers could describe with clear rules and algorithms. Modern machine learning techniques now allow us to do the same for tasks where describing the precise rules is much harder.” - [Jeff Bezos](https://futurism.com/amazon-ceo-perfectly-explains-ai-just-two-sentences/)
 
 ### Chat bots => Personal Assistants
@@ -64,6 +68,8 @@ Although the [Moore's law is dead](https://www.technologyreview.com/s/601441/moo
 ### Personal assistants => ?
 
 Amazon has been doing [quite well since the release](http://uk.businessinsider.com/amazon-echo-sales-figures-stats-chart-2016-12?r=US&IR=T) of the Amazon Echo, which already has several versions. Almost an year ago, Google made a [fast reply with Google Home](https://www.cnet.com/news/google-home-vs-amazon-echo/).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2KpLHdAURGo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Believe it or not, I realized just recently that Google announced [Google Assistant](https://assistant.google.com/) and Google Home together for a reason. For me, the assistant was this dummy chat bot with little sense of humour on Duo, but I never took him seriously, because the time it takes to open the app and start a conversation was taking more than actually doing the thing I wanted to do directly in the apps. Also, there are so many other chat apps on the market that I never even made a try to invite a friend to try Duo with some assistant spice.
 
