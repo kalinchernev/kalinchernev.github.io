@@ -6,7 +6,7 @@ draft = true
 image = ""
 menu = ""
 share = true
-slug = "post-title"
+slug = "serverless-github-bot-aws-lambda-api-gateway-nodejs"
 tags = []
 title = "Serverless github bot with AWS Lambda and API Gateway "
 
