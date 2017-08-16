@@ -7,7 +7,7 @@ image = ""
 menu = ""
 share = true
 slug = "admin-ui-gatsby-static-site-generator"
-tags = ["JAM stack"]
+tags = ["JAM stack", "JavaScript", "Gatsby.js"]
 title = "Admin UI for Gatsby static site generator"
 
 +++
@@ -46,6 +46,7 @@ This side might seem a bit more complex compared to copy-paste and rework to a R
 * move all markdown files into 1 folder, you need a flat structure, otherwise NetlifyCMS won't be able to list the existing content in the dashboard
 
 * configure the `SiteConfig.js`<span style="font-size: 1rem;">​to point to this folder containing the files</span>
+
 * <span style="font-size: 1rem;">configure also, by the way, the&nbsp;</span>`config.yml`<span style="font-size: 1rem;">​ of Netlify to be the same target</span>
 
 Check if all works, and if yes, just make another deployment to the your repository. I personally removed all the unnecessary content manually and had to flush the cache of the last deploy in the console.
@@ -53,6 +54,8 @@ Check if all works, and if yes, just make another deployment to the your reposit
 ### The result
 
 You have a modern toolchain of React, GraphQL, webpack and similar called Getsby, and you have a working Admin UI to manage your content when you're lazy to open your editor ;)
+
+Here's a [video to demonstrate the process](https://github.com/kalinchernev/kalinchernev.github.io/blob/blog/static/videos/netlify-cms-gatsby.mp4) from making a draft which is a pull request, opening a preview and then publishing the change which gets automatically deployed on the site.
 
 ![](/uploads/2017/08/16/Aug%2017%202017%2012-41%20AM.mp4)
 
