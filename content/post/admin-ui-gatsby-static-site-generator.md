@@ -2,7 +2,6 @@
 author = "Kalin Chernev"
 comments = true
 date = "2017-08-16T23:33:31+00:00"
-draft = true
 image = ""
 menu = ""
 share = true
