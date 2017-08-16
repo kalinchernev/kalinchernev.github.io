@@ -42,7 +42,7 @@ This side might seem a bit more complex compared to copy-paste and rework to a s
 
 * move all markdown files into 1 folder, you need a flat structure, otherwise NetlifyCMS won't be able to list the existing content in the dashboard
 
-* configure the `SiteConfig.js`<span style="font-size: 1rem;">​to point to this folder containing the files</span>
+* configure the `SiteConfig.js` ​to point to this folder containing the files
 
 * configure also, by the way, configure also the `config.yml` of Netlify to be the same target
 
