@@ -33,9 +33,9 @@ To use this admin UI application easily, you can [integrate it with the Netlify 
 
 In order to make Gatsby work with this tutorial, you will need to:
 
-- make a [page component](https://www.gatsbyjs.org/docs/building-with-components/#page-components) for the admin page, this should include the scripts loading the NetlifyCMS app
+* make a [page component](https://www.gatsbyjs.org/docs/building-with-components/#page-components) for the admin page, this should include the scripts loading the NetlifyCMS app
 
-- include the `config.yml`<span style="font-size: 1rem;">​ file in&nbsp;</span>`static`<span style="font-size: 1rem;">​ folder of Gatsby, as it does not need to be optimized by webpack</span>
+* include the `config.yml`<span style="font-size: 1rem;">​ file in&nbsp;</span>`static`<span style="font-size: 1rem;">​ folder of Gatsby, as it does not need to be optimized by webpack</span>
 
 If you have configured Netlify service to take your master branch and execute `npm run build` on new deployments, a new push will already give you access to the admin UI app.
 
@@ -43,15 +43,16 @@ If you have configured Netlify service to take your master branch and execute `n
 
 This side might seem a bit more complex compared to copy-paste and rework to a React component of few lines of code, but it's actually a simple process.
 
-- move all markdown files into 1 folder, you need a flat structure, otherwise NetlifyCMS won't be able to list the existing content in the dashboard
+* move all markdown files into 1 folder, you need a flat structure, otherwise NetlifyCMS won't be able to list the existing content in the dashboard
 
-- configure the `SiteConfig.js`<span style="font-size: 1rem;">​to point to this folder containing the files</span>
-
-<span style="font-size: 1rem;">- configure also, by the way, the&nbsp;</span>`config.yml`<span style="font-size: 1rem;">​ of Netlify to be the same target</span>
+* configure the `SiteConfig.js`<span style="font-size: 1rem;">​to point to this folder containing the files</span>
+* <span style="font-size: 1rem;">configure also, by the way, the&nbsp;</span>`config.yml`<span style="font-size: 1rem;">​ of Netlify to be the same target</span>
 
 Check if all works, and if yes, just make another deployment to the your repository. I personally removed all the unnecessary content manually and had to flush the cache of the last deploy in the console.
 
 ### The result
 
 You have a modern toolchain of React, GraphQL, webpack and similar called Getsby, and you have a working Admin UI to manage your content when you're lazy to open your editor ;)
+
+![](/uploads/2017/08/16/Aug%2017%202017%2012-41%20AM.mp4)
 
