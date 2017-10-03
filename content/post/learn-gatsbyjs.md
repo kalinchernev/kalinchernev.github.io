@@ -135,29 +135,34 @@ What separates Gatsby.js from the others, however, is the way it handles data. I
 
 #### The benefits of leaning Gatsby.js
 
-- Learn modern front-end technologies gradually
-- Learn React in an easy way (no setup)
-- Learn GraphQL query part, the interesting and sweet part :)
-- JavaScript everywhere - transferable skill
+Here's a short list of benefits I personally see to why to spend the time learning Gatsby.js:
 
-- Easy to develop: work with React/GraphQL/Webpack, etc. without configurations - similar concept as in create react app and meteor I have tried before.
+- Learn modern front-end technologies gradually
+- Learn React in an easy way - no Webpack configurations necessary for starters
+- Learn how to query GraphQL API servers
 - Easy to extend: I really like the plugin architecture, it's close to what site builders know from Drupal, Wordpress, etc.
 - Data: I love the idea of multiple but still unified data source
 - Prototyping: I like the simplicity of making something nice quickly with typography.js
 - Easy deployment: The end result is a static site -> cheap, still SPA + performance
 - Can have literally any Admin UI for a back end if any
-- PWA on the fingertips
+- PWA on the fingertips (plugins)
+- JavaScript everywhere - transferable skill
 
-It's like what Drupal was for the LAMP stack in 2009 - new concepts which make a difference in the way we build modern web applications without too much of a hustle on setup, development and deployment.
+#### Why data and GraphQL is such a big deal?
 
-### Benefits for businesses
+Because a lot of the [heavy-weight lifting](https://github.com/gatsbyjs/gatsby/issues/420) of [building resolvers](https://www.youtube.com/watch?v=lAJWHHUz8_8) is done for you!
 
-- Fast prototyping (I liked that in Meteor in the past)
-- No hosting or cheap hosting (no databases)
-- Any Admin UI, or Netlify CMS as a start
-- Easy to find JavaScript developers on the market
-- Landing pages which can withstand high-peak traffic (no databases)
-- Tricky functions can be delegated to APIs (Lambda functions)
+The the process of building pages and components using data in Gatsby.js can be summarized in the following few steps:
+
+- Define data source
+- Prepare/tranform the data
+- Querying the data with GraphQL
+- Place the result of the query within a React component
+- Display the information
+
+This [official tutorial about data sources in Gatsby.js](https://www.gatsbyjs.org/tutorial/part-four/) is a very useful resource if you want to preliminary read about the main concepts shown in the tutorial part.
+
+### Making a website for Belgian beers
 
 ### Staying focused
 
