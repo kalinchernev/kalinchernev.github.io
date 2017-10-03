@@ -98,7 +98,18 @@ I believe that the JAM stack is not really a completely new concept or practice,
 
 Together with the growth of the JAM stack, naturally the API part of the stack also grows with it. And that's where the [GraphQL](https://kalinchernev.github.io/graphql-guide-wish-found-before/) comes into play. With this tool we optimize the ways we make queries for information we need, in the same way the other part of the stack optimize the way we bundle and deliver assets for the client side for better performance.
 
-### What is Gatsby
+With GraphQL:
+- you query for information
+- you get exactly the information in the way you requested it
+- you make 1 request and you get 1 response which optimizes the request <-> response
+- you get a self-documenting API
+- you get awesome tools around it
+
+Long story short, it [fits very well in the JAM stack](https://thenewstack.io/emerging-graphql-serverless-stack-building-static-web-sites/) for a reason.
+
+### Gatsby
+
+It was a long way to reach to this point in the article (or not? :) but I wanted to show the reasoning why Gatsby is the tool worth trying.
 
 - Easy to develop: work with React/GraphQL/Webpack, etc. without configurations - similar concept as in create react app and meteor I have tried before.
 - Easy to extend: I really like the plugin architecture, it's close to what site builders know from Drupal, Wordpress, etc.
