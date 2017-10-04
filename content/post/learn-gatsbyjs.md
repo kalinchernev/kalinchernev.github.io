@@ -9,13 +9,17 @@ title = "Learn Gatsby.js"
 
 +++
 
+> “There are those that look at things the way they are, and ask why? I dream of things that never were, and ask why not?”
+
+_Dedicated to all visionaries who move the Web forward_
+
 ## Introduction
 
-I decided to include story-telling part in this blog post. I let myself reflect on how and why the MEAN stack got popular, about the JAM stack, Gatsby.js and there are also sprinkled thoughts about JavaScript and React.js.
+In this article, I let myself write about various topics before I reach the essence. The story line goes from how and why the MEAN stack got popular, to the JAM stack, Gatsby.js and there are also sprinkled thoughts about JavaScript and React.js.
 
-I believe it's important to speak about the **why** and the facts how technologies evolve in time before I speak about the tools. Explaining the historic events and reasoning behind them answer questions like "will technology X kill technology Y" before they are asked.
+I believe it's important to speak about the **why** and the facts how technologies evolve in time before I speak about the tools themselves. Explaining the historic events and reasoning answer questions like "will technology X kill technology Y" before they are brought up.
 
-At any time, you can [jump directly to the practical part](#gatsby-js).
+At any time, you can [jump directly to the practical part](#gatsby-js-https-www-gatsbyjs-org).
 
 ### Fast-forward story about the Web in the last decade
 
@@ -25,9 +29,9 @@ Web, and web development have evolved unimaginatively in the last decade. And mu
 
 Damn, that was only 10 years ago! Probably one of the first occasions when people like Steve Jobs and Eric Schmidt sell the idea about data, web services and cloud technologies to consumers!
 
-In fact, recent history of mobile phones resemble to the web tech stacks. Nokia - imagine the LAMP stack - was slowly getting replaced or less favored by users for iPhone and smart phones - imagine MEAN stack.
+In fact, recent history of mobile phones resemble the history of web stacks. Nokia - imagine the LAMP stack - was slowly getting replaced or less favored by users for iPhone and smart phones - imagine MEAN stack. Still both stacks are good for certain people and certain scenarios.
 
-The [MEAN stack](https://en.wikipedia.org/wiki/MEAN_(software_bundle)) being coined in 2013, is a result of new emerging tools such as Node.js, Express.js, Angular.js and MongoDB. People started building more RESTful APIs and using JavaScript everywhere.
+The [MEAN stack](https://en.wikipedia.org/wiki/MEAN_(software_bundle)) term was coined in 2013. It's a result of new emerging tools such as Node.js, Express.js, Angular.js and MongoDB. People started building more RESTful APIs and use JavaScript everywhere.
 
 The MEAN stack became the new best practice because of the better user experience, like building better and more responsive UI, but also with a new promise - having 1 language in the front-end and the back-end.
 
@@ -36,25 +40,29 @@ Though, the MEAN stack still shares a lot of concepts and practices with the LAM
 
 ### The rise of React.js
 
+![The logo of React.js](/images/reactjs.png)
+
 > How can you know what is coming up if you never looked back?
 
 Let's focus on the historic years of the view layer in 2013-2015. Remember, the "A" in the MEAN stack was a rock-star project of Google called Angular. Nowadays, even when a project's back-end is API-driven, and only the view layer is more reactive with React.js, Vue, etc - the stack is still frequently called a MEAN stack!
 
-What happened, however, is that Angular team shot themselves in the foot by announcing that Angular 2.0 will be a totally different project than Angular 1.0. On top of that, they were not able to say anything specific about the release planning of version of 2.0! Not to speak they virtually obliged developers to learn a new type JavaScript language to work with the framework.
+What happened, however, is that Angular team shot themselves in the foot by announcing that Angular 2.0 will be a totally different project than Angular 1.0. On top of that, they were not able to say anything specific about the release planning of version of 2.0! Not to mention that they virtually obliged developers to learn and use a new Type of JavaScript.
 
 ![Crazy World of JavaScript](/images/js-crazy.jpg)
 
-React.js was in the right moment and in the right place. People already knew that the DOM is slow and jQuery is not a good fit for building a nice non-blocking interfaces. Angular had already made the Single Page Applications (SPA) concepts popular.
+React.js was in the right place in the right time. People already knew that the DOM is slow and jQuery is not a great fit for building a nice non-blocking interfaces. Angular had already made the Single Page Applications (SPA) concepts popular.
 
-React.js is very focused on solving a very specific problem - components. But make no mistake, the fact that it's used by millions of developers does not mean that it's replacing jQuery. They solve different problems in different ways. It's crazy when big projects try to evaluate these tools with similar procedures. Some projects such as Drupal and WordPress who use jQuery and Backbone because of a long-term analysis and long discussions will speculate on using React.js "in core" to take attention. And the experienced users will be solving different problems at the some time - like deciding upon a state management package, offline storage, build tools, and many other questions in addition to the view layer.
+React.js is very focused on solving a very specific problem - components. But make no mistake, the fact that it's used by millions of developers does not mean that it's replacing jQuery. They solve different problems in different ways. It's crazy when big projects try to evaluate these tools with similar procedures. Some projects like Drupal use jQuery and Backbone because of a long-term goals. Nowadays, communities will need speculate on using React.js "in core" to take attention.
+
+Probably the experienced users of React.js will be solving different problems at the some time - like deciding upon a state management package, offline capabilities, build tools, and many other questions in addition to the view layer.
 
 **React is a way of thinking.**
 
-The JavaScript ecosystem does not work in the same way like Drupal and WordPress. The fact that you have a mass of developers and users today does not mean you will be able to keep your momentum for tomorrow. However, as long as Facebook do not make a stupid mistake like Google in the past and keep actually using React.js for solving their real projects, the tool will surely stay for years to come.
+The JavaScript ecosystem does not work in the same way like Drupal. The fact that you have a mass followers today does not mean you will be able to keep your momentum for tomorrow. However, as long as Facebook team does not make a stupid mistake like Google in the past, and keep actually using React.js for solving their real projects, the tool will surely stay for years to come.
 
 When the fear or the craziness for selecting a tool pass, developers will hopefully understand that the real questions with JavaScript is not for how long, but how effectively. For using JavaScript most effectively (or to stay on top of the wave) one must be able to think and organize the whole stack differently.
 
-### The JAM stack
+### The rise of the JAM stack
 
 "JAM" stands for JavaScript, APIs and Markup. We speak about static sites consisted of HTML, CSS and JavaScript without a server-side rendering.
 
@@ -71,13 +79,15 @@ As [mentioned before](https://kalinchernev.github.io/tags/jam-stack/) this stack
 
 A simple example would be making a contact form which normally needs a server to accept the request and process it with a mailing server. In a static site, this could be delegated to a [cloud function](http://docs.aws.amazon.com/ses/latest/DeveloperGuide/receiving-email-action-lambda.html) using [services](https://codehabitude.com/2016/04/05/forms-to-emails-using-aws-lambda-api-gateway/) behind an [API](https://github.com/eleven41/aws-lambda-send-ses-email) endpoint.
 
-The topic of static sites is closely related to static site generators. Speaking of which - the most popular are [Jekyll](https://jekyllrb.com/) and [Hugo](https://gohugo.io/). There are [plenty of options on the market](https://www.staticgen.com/). [Gatsby.js](https://www.gatsbyjs.org/) is the one which I currently study to be my number 1 :)
+If you're coming from a LAMP stack background, you would have certainly already heard about the ["headless" CMS](https://headlesscms.org/) trend. In fact, this trend has been growing steadily in communities such as [Drupal](https://dri.es/drupal-looking-to-adopt-react) and [WordPress](https://snipcart.com/blog/reactjs-wordpress-rest-api-example).
 
-A related topic and trend in web development in the last few years is the so called ["headless" CMS](https://headlesscms.org/). In fact, this trend has been growing steadily in communities such as [Drupal](https://dri.es/drupal-looking-to-adopt-react) and [WordPress](https://snipcart.com/blog/reactjs-wordpress-rest-api-example). These are examples for the "A", APIs in the JAM stack.
+**Mature content management systems contribute to the rise of the JAM stack.**
 
-Another great example for an API managing content in a JAM stack is the [NetlifyCMS](https://www.netlifycms.org/) which work has the architecture to work with github's API, but can virtually be plugged in to different providers of content.
+Another great example for an API-driven CMS which is highly focused on the principles of the JAM stack is the [NetlifyCMS](https://www.netlifycms.org/). It currently works almost solely with the Github's API, but can also be plugged in to different providers of content.
 
-One of my favorite pull requests were adding [documentation about the integration between Gatsby.js and NetlifyCMS](https://github.com/netlify/netlify-cms/pull/527). With this integration, you can easily provide a nice-looking [admin UI for your static site](https://kalinchernev.github.io/admin-ui-gatsby-static-site-generator/).
+Also, static site generators contribute to the JAM stack. The most popular static site generators are [Jekyll](https://jekyllrb.com/) and [Hugo](https://gohugo.io/). There are [plenty of options on the market](https://www.staticgen.com/). [Gatsby.js](https://www.gatsbyjs.org/) is the one which I currently study to be my number 1 :)
+
+One of my favorite pull requests recently was the one adding [documentation about the integration between Gatsby.js and NetlifyCMS](https://github.com/netlify/netlify-cms/pull/527). With this integration, you can easily provide a nice-looking [admin UI for your static site](https://kalinchernev.github.io/admin-ui-gatsby-static-site-generator/).
 
 Some recommended videos:
 
@@ -89,11 +99,14 @@ And a more general one about the JAM stack:
 
 ### The rise of GraphQL
 
-Together with the growth of the JAM stack, naturally the API part of the stack also grows with it. And that's where the [GraphQL](https://kalinchernev.github.io/graphql-guide-wish-found-before/) comes into play. GraphQL optimizes queries. It's a layer between the request/response layer where we can ask for and get information we need.
+![The logo of GraphQL](/images/graphql_logo.png)
+
+Together with the growth of the JAM stack, naturally the API part of the stack also grows with it. And that's where the [GraphQL](https://kalinchernev.github.io/graphql-guide-wish-found-before/) comes into play. GraphQL optimizes queries.
 
 In static sites the optimization comes from bundling and delivering static assets without rendering. GraphQL can further optimize the communication part when it's still needed.
 
 With GraphQL:
+
 - you query for information
 - you get exactly the information in the way you requested it
 - you make 1 request and you get 1 response which optimizes the request <-> response
@@ -104,7 +117,9 @@ Long story short, it [fits very well in the JAM stack](https://thenewstack.io/em
 
 ### The rise of cloud functions
 
-And with the continuous optimizations on the API/server parts, the "Serverless" concept and practices came into being. Many call the same concept cloud functions which fits well into new ways we build SPA or virtually any type of apps calling external services.
+![The logo of AWS Lambda](/images/aws_lambda.png)
+
+And with the continuous optimizations on the API, the "Serverless" concept and practices came into being. Many call the same concept cloud functions which fits well into new ways we build SPA or virtually any type of apps calling external services.
 
 I think the [AWS Lambda](http://docs.aws.amazon.com/lambda/latest/dg/welcome.html) in combination with [Amazon API Gateway](http://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) was the first mainstream toolset of building APIs in new ways:
 
@@ -139,15 +154,11 @@ Understanding these trends deeply is not a matter of following a movement of coo
 
 ### [Gatsby.js](https://www.gatsbyjs.org/)
 
-Ok, it was a looong way reaching here to point of the article, wasn't it? Or you skipped all the details because you know and feel there's something with Gatsby.js that you are hungry to learn about? At any case, welcome to the essential part of the post where you are going to learn how to benefit from all the good parts mentioned in the previous sections. They were meant to build up momentum for the great value Gatsby.js gives you.
-
 ![Gatsby.js](/images/gatsby.jpg)
-
-#### What's inside?
 
 Gatsby.js consists of React.js, GraphQL, Webpack and other modern technologies. It follows the "no build configurations" principle, This means that if you are a PHP developer who wants to learn React.js or GraphQL you can go for it and do it without losing your time and motivation into learning build tools. You can install the project and continue building prototypes and products. To an extend, Gatsby.js is similar to [create-react-app](https://github.com/facebookincubator/create-react-app) and  [Meteor.js](https://www.meteor.com/).
 
-What separates Gatsby.js from the others, however, is the way it handles data. In Gatsby.js data could come from several types of files in the project - markdown, CSV, JSON, or it could come from external services or CMS like Drupal and Wordpress.
+What separates Gatsby.js from the others is the way it handles data. In Gatsby.js data could come from several types of files in the project - markdown, CSV, JSON, or it could come from external services like NetlifyCMS, Medium, or even CMS like Drupal and Wordpress.
 
 ![Visualization of the concept of multiple data sources in Gatsby.js](/images/gatsby-netlify-cover.png)
 
