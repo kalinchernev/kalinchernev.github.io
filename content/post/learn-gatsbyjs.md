@@ -6,7 +6,7 @@ share = true
 slug = "learn-gatsbyjs"
 tags = ["JAM stack", "JavaScript", "Gatsby.js"]
 title = "Learn Gatsby.js"
-
+image = "images/gatsby_cover.png"
 +++
 
 > “There are those that look at things the way they are, and ask why? I dream of things that never were, and ask why not?”
@@ -166,16 +166,16 @@ What separates Gatsby.js from the others is the way it handles data. In Gatsby.j
 
 Here's a short list of benefits I personally see to why to spend the time learning Gatsby.js:
 
-- Learn modern front-end technologies gradually
-- Learn React in an easy way - no Webpack configurations necessary for starters
-- Learn how to query GraphQL API servers
-- Easy to extend: I really like the plugin architecture, it's close to what site builders know from Drupal, Wordpress, etc.
-- Data: I love the idea of multiple unified data sources
-- Prototyping: works well with typography.js
-- Easy deployment: The end result is a static site -> cheap, still SPA + performance
-- Can have literally any Admin UI for a back end if any
-- PWA on the fingertips (plugins)
-- JavaScript everywhere - transferable skill
+- Learn modern front-end technologies gradually.
+- Learn React in an easy way - no Webpack configurations necessary for starters.
+- Learn how to query GraphQL API servers.
+- Easy to extend.
+- Data: I love the idea of multiple unified data sources.
+- Prototyping: works well with typography.js.
+- Good DX.
+- Can have literally any Admin UI.
+- PWA on the fingertips. (plugins)
+- JavaScript everywhere - transferable skill.
 
 #### Why data and GraphQL is such a big deal?
 
@@ -189,18 +189,20 @@ The the process of building pages and components using data in Gatsby.js can be 
 - Place the result of the query within a React component
 - Display the information
 
-### Making a website for Belgian beers
+### Practice time: building a website about Belgian beers
 
 After going through the [official tutorial](https://www.gatsbyjs.org/tutorial/) I managed to make this project about [Belgian beers](https://kalinchernev.github.io/belgian-beers/). As you might see from its Github [repository](https://github.com/kalinchernev/belgian-beers) the code is very little.
 
-If you feel like following more visual tutorial before reading forward, I found some [video tutorials about Gatsby.js](https://www.youtube.com/playlist?list=PLLnpHn493BHHfoINKLELxDch3uJlSapxg) for you. At the moment of writing this article there aren't many other Alternatives. The official documentation is good and the [examples](https://github.com/gatsbyjs/gatsby/tree/master/examples) can take you long way.
+If you feel like following more visual tutorial before reading forward, I found some [video tutorials about Gatsby.js](https://www.youtube.com/playlist?list=PLLnpHn493BHHfoINKLELxDch3uJlSapxg) for you. At the moment of writing this article there aren't any other alternatives for video lessons.
 
-What I'm building:
+The official documentation is good and the [examples](https://github.com/gatsbyjs/gatsby/tree/master/examples) can take you long way.
 
-- I take information about Belgian Beers from [open data](http://data.visitflanders.org/datatank/dataset/435/download)
-- I use some plugins to read files and transform CSV file in to a GraphQL API
-- I take information from the build-time GraphQL endpoint and build some pages
-- Build and deploy as a static site working as a SPA with prefetched resources
+The approach for building the website:
+
+- I take information about Belgian Beers from [open data](http://data.visitflanders.org/datatank/dataset/435/download).
+- I use some plugins to read files and transform CSV and Markdown files in to a GraphQL API.
+- I take information from the build-time GraphQL endpoint and make some pages.
+- Build and deploy the result as a static site working as a SPA.
 
 **1) Initiate your project**
 
@@ -208,7 +210,7 @@ This includes:
 
 - setup dependencies
 - select and configure linters
-- make some small examples of a working page
+- make at least 1 working page
 
 Here, for example, I [start off with 3 data sources](https://github.com/kalinchernev/belgian-beers/commit/800934df6b1bb8fdffa7758793dc6a26d2d88a5e).
 
@@ -242,7 +244,7 @@ If you have a markdown source, you will get information in the form of HTML, whi
 
 **5) Create content with templates**
 
-Although we speak React here, the concept of templates is still there and it's possible to [create content automatically](https://www.gatsbyjs.org/tutorial/part-four/#programatically-creating-pages-from-data) using templates before the project build starts listening for changes. Some of the methods here are still a bit unclear to me, but a good exercise with the beers would be to create inner an inner page for each beer.
+Although we speak React here, the concept of templates is still there and it's possible to [create content automatically](https://www.gatsbyjs.org/tutorial/part-four/#programatically-creating-pages-from-data) using templates before the project build starts listening for changes. Some of the methods here are still a bit unclear to me, but a good exercise with the beers would be to create an inner page for each beer.
 
 ### Staying focused
 
@@ -262,7 +264,7 @@ If you optimize time, performance, budget or processes using a tool while learni
 
 ### Last words
 
-As my closing thoughts in the article I will be honest with you. There are already alternatives with a similar setup as Gatsby.js - such as [this](https://github.com/clintonwoo/hackernews-react-graphql/tree/master/src). Also, you can't be wrong if you follow the [Apollo Team](http://dev.apollodata.com/) and the tooling they build. As I've mentioned before - the JavaScript community changes/adapts fast.
+As my closing thoughts in the article I will be honest with you. There are similar stack setups as Gatsby.js - such as [this](https://github.com/clintonwoo/hackernews-react-graphql/tree/master/src). They are, however, harder to start with and they require more knowledge about the separate elements of the stack.
 
 I hope that you've managed to find some interesting ideas to experiment with in your next project. I believe that Gatsby.js serves very well for building landing pages, blogs and sites which can be static.
 
