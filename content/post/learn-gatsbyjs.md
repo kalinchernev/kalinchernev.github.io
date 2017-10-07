@@ -4,7 +4,7 @@ comments = true
 date = "2017-10-03T23:33:31+00:00"
 share = true
 slug = "learn-gatsbyjs"
-tags = ["JAM stack", "JavaScript", "Gatsby.js"]
+tags = ["JAM stack", "JavaScript", "GatsbyJS"]
 title = "Learn Gatsby.js"
 image = "images/gatsby_cover.png"
 +++

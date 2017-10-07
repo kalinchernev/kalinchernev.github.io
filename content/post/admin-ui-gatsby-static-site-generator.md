@@ -6,7 +6,7 @@ image = "images/gatsby-netlify-cover.png"
 menu = ""
 share = true
 slug = "admin-ui-gatsby-static-site-generator"
-tags = ["JAM stack", "JavaScript", "Gatsby.js"]
+tags = ["JAM stack", "JavaScript", "GatsbyJS"]
 title = "Admin UI for Gatsby static site generator"
 
 +++
