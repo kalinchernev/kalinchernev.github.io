@@ -3,9 +3,15 @@
 
 {{if .Params.image}}
   {{if or (eq (substr .Params.image 0 7) "http://") (eq (substr .Params.image 0 8) "https://")}}
-  <header class="main-header post-head" style="background-image: url({{.Params.image}})">
+  <header class="main-header post-head" style="background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url({{.Params.image}})">
   {{ else }}
-  <header class="main-header post-head" style="background-image: url({{ $baseurl }}{{.Params.image}})">
+  <header class="main-header post-head" style="background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url({{ $baseurl }}{{.Params.image}})">
   {{ end }}
   <nav class="main-nav overlay clearfix">
 {{else}}

@@ -6,7 +6,7 @@ image = ""
 menu = ""
 share = true
 slug = "serverless-github-bot-aws-lambda-api-gateway-nodejs"
-tags = ["Bots", "nodejs", "JavaScript", "serverless", "AWS"]
+tags = ["Bots", "nodejs", "JavaScript", "Serverless", "AWS"]
 title = "Serverless github bot with AWS Lambda and API Gateway "
 
 +++

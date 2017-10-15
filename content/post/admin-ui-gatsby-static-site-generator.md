@@ -8,8 +8,8 @@ share = true
 slug = "admin-ui-gatsby-static-site-generator"
 tags = ["JAM stack", "JavaScript", "GatsbyJS"]
 title = "Admin UI for Gatsby static site generator"
-
 +++
+
 ## Introduction
 
 Recently, I was looking into [Gatsby.js](https://www.gatsbyjs.org/) as a generator for a blog site. As many others, I one of the first steps into using the system as other popular CMS solutions, I started to look around for an online back-end UI for the content creation part. I found this list of [headless CMS options](https://headlesscms.org/) and since [forestry](forestry.io) (the service I use for my blog) does not support Gatsby, I decided to try [NetlifyCMS](https://www.netlifycms.org/). This tutorial will be about it :)

@@ -2,9 +2,15 @@
 
 {{if .Site.Params.cover}}
 {{if or (eq (substr .Site.Params.cover 0 7) "http://") (eq (substr .Site.Params.cover 0 8) "https://")}}
-  <header class="main-header" style="background-image: url({{.Site.Params.cover}})">
+  <header class="main-header" style="background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url({{.Site.Params.cover}})">
   {{ else }}
-  <header class="main-header" style="background-image: url({{.Site.BaseURL}}{{.Site.Params.cover}})">
+  <header class="main-header" style="background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url({{.Site.BaseURL}}{{.Site.Params.cover}})">
   {{ end }}
 {{else}}
 <header class="main-header no-cover">
@@ -43,7 +49,7 @@
                 <span class="icon-flickr" style="color:white;font-size:2em"></span>
                 </a>
             &nbsp;
-            {{end}}            
+            {{end}}
             {{ if .Site.Params.twitterName }}
                 <a class="bloglogo" href="https://twitter.com/{{ .Site.Params.twitterName }}" target="_blank">
                     <span class="icon-twitter"></span>
