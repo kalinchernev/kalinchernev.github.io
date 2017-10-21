@@ -1,0 +1,24 @@
+---
+  root: true
+  parser: babel-eslint
+  settings:
+    # Packages provided by Gatsby
+    import/core-modules: [ react ]
+  extends:
+    - prettier
+    - prettier/react
+    - eslint:recommended
+    - plugin:react/recommended
+  plugins:
+    - react
+    - prettier
+    - jsx-a11y
+  rules:
+    prettier/prettier:
+      - error
+      -
+        trailingComma: es5
+        singleQuote: true
+  env:
+    browser: true
+    node: true

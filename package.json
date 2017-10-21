@@ -1,18 +1,23 @@
 {
   "name": "kalinchernev.github.io",
-  "version": "1.0.0",
-  "description": "Simply a blog",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Blog on gatsby.js",
+  "private": true,
+  "main": "n/a",
   "scripts": {
-    "build": "HUGO_ENV=prod hugo",
-    "cache": "sw-precache --config sw-precache-config.js ./static/js/sw.js --verbose",
+    "build": "gatsby build",
     "clean": "rm -rf public",
     "deploy": "gh-pages -d public -b master",
-    "dist": "run-s clean build cache",
-    "release": "run-s dist deploy",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "write": "hugo server"
+    "develop": "gatsby develop",
+    "lint": "eslint .",
+    "release": "run-s clean build deploy",
+    "start": "yarn develop",
+    "test:lint": "npm run lint",
+    "test": "npm-run-all -p test:* -cn"
   },
+  "keywords": [
+    "gatsby"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kalinchernev/kalinchernev.github.io.git"
@@ -24,8 +29,24 @@
   },
   "homepage": "https://github.com/kalinchernev/kalinchernev.github.io#readme",
   "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.9.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.4.0",
+    "gatsby-cli": "^1.1.11",
     "gh-pages": "^1.0.0",
     "npm-run-all": "^4.0.2",
-    "sw-precache": "^5.1.0"
+    "prettier": "^1.7.4"
+  },
+  "dependencies": {
+    "gatsby": "^1.9.76",
+    "gatsby-link": "^1.6.23",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-typography": "^1.7.10",
+    "gatsby-source-filesystem": "^1.5.5",
+    "gatsby-transformer-remark": "^1.7.17",
+    "typography-theme-github": "^0.15.10"
   }
 }
