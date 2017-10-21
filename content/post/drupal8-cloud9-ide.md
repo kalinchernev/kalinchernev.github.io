@@ -1,15 +1,18 @@
-+++
-comments = true
-image = ""
-draft = false
-date = "2016-09-15T00:00:00+02:00"
-title = "Drupal 8 on Cloud9 IDE"
-menu = ""
-share = true
-tags = ["php", "web development", "Drupal"]
-slug = "drupal8-cloud9-ide"
-author = ""
-+++
+---
+author: ""
+comments: true
+date: 2016-09-15T00:00:00+02:00
+draft: false
+image: ""
+menu: ""
+share: true
+slug: drupal8-cloud9-ide
+tags:
+- php
+- web development
+- Drupal
+title: Drupal 8 on Cloud9 IDE
+---
 
 > "You see things; and you say, 'Why?' But I dream things that never were; and I say, 'Why not?" — George Bernard Shaw
 

@@ -1,15 +1,17 @@
-+++
-title = "Triage stream-adventure issue queue"
-comments = true
-image = ""
-draft = false
-author = ""
-date = "2016-11-06T00:00:00+02:00"
-menu = ""
-share = true
-tags = ["JavaScript", "Open Source"]
-slug = "stream-adventure-triage"
-+++
+---
+author: ""
+comments: true
+date: 2016-11-06T00:00:00+02:00
+draft: false
+image: ""
+menu: ""
+share: true
+slug: stream-adventure-triage
+tags:
+- JavaScript
+- Open Source
+title: Triage stream-adventure issue queue
+---
 
 [stream-adventure](https://github.com/workshopper/stream-adventure) is one of the first [workshopper](https://nodeschool.io/about.html) node modules which teaches [Streams](https://nodejs.org/api/stream.html) in node.js. Working on the challenges myself, I got frustrated when simple things did not work for me, so I ended up on the [github repository](https://github.com/workshopper/stream-adventure) doing a bit of triage during my free time.
 

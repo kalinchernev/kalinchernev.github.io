@@ -1,15 +1,18 @@
-+++
-date = "2017-02-04T00:00:00+02:00"
-slug = "reflecting-nodejs-design-patterns"
-author = ""
-menu = ""
-share = true
-comments = true
-title = "Reflecting on node.js design patterns"
-tags = ["JavaScript", "nodejs", "Design Patterns"]
-draft = false
-image = "images/nodejs-design-patterns.jpeg"
-+++
+---
+author: ""
+comments: true
+date: 2017-02-04T00:00:00+02:00
+draft: false
+image: images/nodejs-design-patterns.jpeg
+menu: ""
+share: true
+slug: reflecting-nodejs-design-patterns
+tags:
+- JavaScript
+- nodejs
+- Design Patterns
+title: Reflecting on node.js design patterns
+---
 
 Once upon on a time, there was a designer …
 

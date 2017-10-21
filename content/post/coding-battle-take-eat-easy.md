@@ -1,15 +1,19 @@
-+++
-image = ""
-tags = ["JavaScript", "Programming", "hack events", "coding competitions"]
-draft = false
-author = ""
-share = true
-comments = true
-date = "2016-06-09T00:00:00+02:00"
-title = "Coding battle at Take Eat Easy"
-slug = "coding-battle-take-eat-easy"
-menu = ""
-+++
+---
+author: ""
+comments: true
+date: 2016-06-09T00:00:00+02:00
+draft: false
+image: ""
+menu: ""
+share: true
+slug: coding-battle-take-eat-easy
+tags:
+- JavaScript
+- Programming
+- hack events
+- coding competitions
+title: Coding battle at Take Eat Easy
+---
 
 Short retrospective on my second coding competition with JavaScript. Lessons learned and thoughts on how to improve for the future.
 

@@ -1,15 +1,20 @@
-+++
-author = ""
-share = true
-image = "/images/prototyping-apis.png"
-date = "2017-03-10T00:00:00+02:00"
-draft = false
-comments = true
-tags = ["JavaScript", "APIs", "Open APIs", "nodejs", "Prototyping"]
-slug = "prototyping-apis-open-api-specification"
-title = "Prototyping APIs with Open API Specification and Node.js"
-menu = ""
-+++
+---
+author: ""
+comments: true
+date: 2017-03-10T00:00:00+02:00
+draft: false
+image: /images/prototyping-apis.png
+menu: ""
+share: true
+slug: prototyping-apis-open-api-specification
+tags:
+- JavaScript
+- APIs
+- Open APIs
+- nodejs
+- Prototyping
+title: Prototyping APIs with Open API Specification and Node.js
+---
 
 A story about using Node.js community-built tools effectively in order to speed up the prototyping phase of your API project. In the whole article, [Open API specification](https://github.com/OAI/OpenAPI-Specification) (which recently reached a RC on version 3) refers to version 2, also known as [Swagger specification](http://swagger.io/).
 

@@ -1,15 +1,18 @@
-+++
-tags = ["JavaScript", "nodejs", "Cloud"]
-date = "2017-02-01T00:00:00+02:00"
-draft = false
-share = true
-image = ""
-slug = "january-digest-2017"
-title = "January Digest 2017"
-author = ""
-menu = ""
-comments = true
-+++
+---
+author: ""
+comments: true
+date: 2017-02-01T00:00:00+02:00
+draft: false
+image: ""
+menu: ""
+share: true
+slug: january-digest-2017
+tags:
+- JavaScript
+- nodejs
+- Cloud
+title: January Digest 2017
+---
 
 I’ve prepared a warm-up digest for those of you who made a resolution to improve their JavaScript skills in 2017, so let’s get it started!
 

@@ -1,15 +1,17 @@
-+++
-slug = "problem-first-problem-solving"
-draft = false
-author = ""
-menu = ""
-share = true
-title = "Problem-first problem-solving"
-comments = true
-tags = ["Problem solving", "Meta articles"]
-date = "2017-01-11T00:00:00+02:00"
-image = ""
-+++
+---
+author: ""
+comments: true
+date: 2017-01-11T00:00:00+02:00
+draft: false
+image: ""
+menu: ""
+share: true
+slug: problem-first-problem-solving
+tags:
+- Problem solving
+- Meta articles
+title: Problem-first problem-solving
+---
 
 [Source](https://medium.com/digital-beer/problem-first-problem-solving-87369b84551f?source=user_profile---------13----------- "Permalink to Problem-first problem-solving – Digital Beer – Medium")
 

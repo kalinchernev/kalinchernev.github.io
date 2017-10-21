@@ -1,15 +1,19 @@
-+++
-image = ""
-draft = false
-author = ""
-comments = true
-share = true
-tags = ["Drupal", "GraphQL", "Progressive Web Apps", "JavaScript"]
-slug = "drupalaton-2016"
-date = "2016-08-22T00:00:00+02:00"
-title = "Drupalaton 2016"
-menu = ""
-+++
+---
+author: ""
+comments: true
+date: 2016-08-22T00:00:00+02:00
+draft: false
+image: ""
+menu: ""
+share: true
+slug: drupalaton-2016
+tags:
+- Drupal
+- GraphQL
+- Progressive Web Apps
+- JavaScript
+title: Drupalaton 2016
+---
 
 ### Introduction
 

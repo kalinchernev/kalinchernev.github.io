@@ -1,15 +1,19 @@
-+++
-draft = false
-author = ""
-slug = "march-digest-2017"
-menu = ""
-share = true
-comments = true
-image = ""
-tags = ["Web Development", "JavaScript", "JAM stack", "Medium"]
-date = "2017-03-31T00:00:00+02:00"
-title = "March digest 2017"
-+++
+---
+author: ""
+comments: true
+date: 2017-03-31T00:00:00+02:00
+draft: false
+image: ""
+menu: ""
+share: true
+slug: march-digest-2017
+tags:
+- Web Development
+- JavaScript
+- JAM stack
+- Medium
+title: March digest 2017
+---
 
 This one will be on various personal thoughts on Medium, the JAM stack, the OpenAPI specification, and coding katas.
 

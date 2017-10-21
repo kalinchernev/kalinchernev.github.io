@@ -1,15 +1,16 @@
-+++
-author = "Kalin Chernev"
-comments = true
-date = "2017-09-29T23:33:31+00:00"
-image = "images/developers-myth.jpg"
-menu = ""
-share = true
-slug = "fixing-mobile-phone"
-tags = ["Misc"]
-title = "Fixing my mobile phone"
+---
+author: Kalin Chernev
+comments: true
+date: 2017-09-29T23:33:31+00:00
+image: images/developers-myth.jpg
+menu: ""
+share: true
+slug: fixing-mobile-phone
+tags:
+- Misc
+title: Fixing my mobile phone
+---
 
-+++
 ## Introduction
 
 One of the most popular requests I get around Christmas when I meet family

@@ -1,15 +1,17 @@
-+++
-date = "2017-01-07T00:00:00+02:00"
-title = "Holidays digest 2016"
-comments = true
-image = ""
-slug = "holiday-digest-2016"
-draft = false
-author = ""
-menu = ""
-share = true
-tags = ["JavaScript", "web development"]
-+++
+---
+author: ""
+comments: true
+date: 2017-01-07T00:00:00+02:00
+draft: false
+image: ""
+menu: ""
+share: true
+slug: holiday-digest-2016
+tags:
+- JavaScript
+- web development
+title: Holidays digest 2016
+---
 
 [Source](https://medium.com/digital-beer/holidays-digest-68ecc2b115a8 "Permalink to Holidays digest – Digital Beer – Medium")
 

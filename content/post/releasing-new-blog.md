@@ -1,12 +1,14 @@
-+++
-tags = ["blogging", "JAM stack"]
-date = "2017-04-19T11:04:38+02:00"
-image = "images/vitosha.jpg"
-title = "Releasing new blog"
-share = true
-comments = true
-slug = "releasing-new-blog"
-+++
+---
+comments: true
+date: 2017-04-19T11:04:38+02:00
+image: images/vitosha.jpg
+share: true
+slug: releasing-new-blog
+tags:
+- blogging
+- JAM stack
+title: Releasing new blog
+---
 
 It's a fact - I moved my blog from [Medium](https://medium.com/@kalin.chernev)
 to [github.com](https://kalinchernev.github.io/)!

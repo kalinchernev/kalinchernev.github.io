@@ -1,13 +1,15 @@
-+++
-title = "From personal computers to personal assistants"
-share = true
-comments = true
-image = "/images/bot-assistant.jpg"
-tags = ["Bots", "Assistants", "Apps"]
-slug = "personal-computers-personal-assistants"
-date = "2017-05-09T00:00:00+02:00"
-
-+++
+---
+comments: true
+date: 2017-05-09T00:00:00+02:00
+image: /images/bot-assistant.jpg
+share: true
+slug: personal-computers-personal-assistants
+tags:
+- Bots
+- Assistants
+- Apps
+title: From personal computers to personal assistants
+---
 
 The [F8 event](https://www.fbf8.com/) took place recently and I managed to watch a video about
 [the messenger platform](https://developers.facebook.com/docs/messenger-platform). Since it was during the Easter holidays, I also had few hours to make a simple chat bot for Facebook. Since then, I touched upon few of the topics around

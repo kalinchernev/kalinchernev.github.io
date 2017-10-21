@@ -1,13 +1,16 @@
-+++
-share = true
-date = "2017-04-21T23:12:42+02:00"
-tags = ["Cloud", "Codenvy", "IDE"]
-comments = true
-draft = true
-title = "Adventures with Codenvy"
-image = "http://www.chromebookhq.com/wp-content/uploads/chromebook-online-ide-codenvy.jpg"
-slug = "adventures-codenvy"
-+++
+---
+comments: true
+date: 2017-04-21T23:12:42+02:00
+draft: true
+image: http://www.chromebookhq.com/wp-content/uploads/chromebook-online-ide-codenvy.jpg
+share: true
+slug: adventures-codenvy
+tags:
+- Cloud
+- Codenvy
+- IDE
+title: Adventures with Codenvy
+---
 
 Recently, I came across the website of Eclipse Che, naturally spinning an instance
 on [Codenvy](https://codenvy.com) few minutes later. Codenvy seems to be highly

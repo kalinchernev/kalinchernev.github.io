@@ -1,15 +1,17 @@
-+++
-menu = ""
-comments = true
-image = ""
-slug = "focus-community-good-services"
-title = "Focus on community and good services"
-share = true
-tags = ["Programming", "Community"]
-draft = false
-author = ""
-date = "2016-01-11T00:00:00+00:00"
-+++
+---
+author: ""
+comments: true
+date: 2016-01-11T00:00:00+00:00
+draft: false
+image: ""
+menu: ""
+share: true
+slug: focus-community-good-services
+tags:
+- Programming
+- Community
+title: Focus on community and good services
+---
 
 ## Recap
 

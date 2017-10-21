@@ -1,15 +1,18 @@
-+++
-tags = ["nodejs", "JavaScript", "Debugging"]
-author = ""
-share = true
-date = "2016-09-04T00:00:00+02:00"
-title = "Debugging node.js in Cloud9 IDE"
-slug = "debugging-nodejs-in-cloud9-ide"
-draft = false
-menu = ""
-comments = true
-image = ""
-+++
+---
+author: ""
+comments: true
+date: 2016-09-04T00:00:00+02:00
+draft: false
+image: ""
+menu: ""
+share: true
+slug: debugging-nodejs-in-cloud9-ide
+tags:
+- nodejs
+- JavaScript
+- Debugging
+title: Debugging node.js in Cloud9 IDE
+---
 
 In this article I'll be sharing some of my level-up experience learning how to debug node.js apps. It was not easy at first, but once I got it, I felt empowered that now I can work with any code base.
 
