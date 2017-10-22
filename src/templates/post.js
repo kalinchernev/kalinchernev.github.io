@@ -1,10 +1,15 @@
 import React from 'react';
 
 const Post = ({ data }) => {
-  const p = data.markdownRemark.frontmatter;
+  const p = data.markdownRemark;
   return (
     <div>
-      <h1>{p.title}</h1>
+      <h1>{p.frontmatter.title}</h1>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: p.html,
+        }}
+      />
     </div>
   );
 };
@@ -18,6 +23,7 @@ export const query = graphql`
         date
         image
       }
+      html
     }
   }
 `;

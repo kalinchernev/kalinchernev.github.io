@@ -2,9 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
+const Post = ({ node }) => (
+  <li>
+    <Link to={node.node.frontmatter.slug}>{node.node.frontmatter.title}</Link>
+  </li>
+);
+
 const Index = ({ data }) => {
-  console.log(data);
-  return <div>list</div>;
+  const edges = data.allMarkdownRemark.edges;
+  return <ul>{edges.map((node, key) => <Post key={key} node={node} />)}</ul>;
 };
 
 Index.propTypes = {
@@ -21,8 +27,8 @@ export const query = graphql`
         node {
           frontmatter {
             title
+            slug
           }
-          html
         }
       }
     }
