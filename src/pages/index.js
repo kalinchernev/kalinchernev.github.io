@@ -1,10 +1,30 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
 
-const IndexPage = () => (
-  <div>
-    <h1>Index page</h1>
-    <p>First step.</p>
-  </div>
-);
+const Index = ({ data }) => {
+  console.log(data);
+  return <div>list</div>;
+};
 
-export default IndexPage;
+Index.propTypes = {
+  data: PropTypes.object,
+};
+
+export default Index;
+
+/*eslint no-undef: "off"*/
+export const query = graphql`
+  query IndexQuery {
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            title
+          }
+          html
+        }
+      }
+    }
+  }
+`;
