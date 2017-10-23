@@ -22,7 +22,7 @@ export default Index;
 /*eslint no-undef: "off"*/
 export const query = graphql`
   query IndexQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           frontmatter {
