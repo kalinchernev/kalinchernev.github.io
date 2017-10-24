@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+require('prismjs/themes/prism-solarizedlight.css');
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
