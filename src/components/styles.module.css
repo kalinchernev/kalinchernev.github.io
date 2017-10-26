@@ -1,0 +1,14 @@
+.center {
+  width: 280px;
+  margin: auto;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  margin: 3rem 0;
+}
+
+.list li {
+  margin-right: 1rem;
+}
