@@ -1,18 +1,13 @@
 ---
-author: ""
-comments: true
-date: 2016-04-14T00:00:00+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: The first coding battle in Belgium
 slug: first-coding-battle-belgium
+date: 2016-04-14T00:00:00+02:00
+image: ""
 tags:
 - JavaScript
 - web development
 - Coding
 - hack events
-title: The first coding battle in Belgium
 ---
 
 ## Coding? Battle? What?

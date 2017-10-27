@@ -1,17 +1,12 @@
 ---
-author: ""
-comments: true
-date: 2017-02-04T00:00:00+02:00
-draft: false
-image: images/nodejs-design-patterns.jpeg
-menu: ""
-share: true
+title: Reflecting on node.js design patterns
 slug: reflecting-nodejs-design-patterns
+date: 2017-02-04T00:00:00+02:00
+image: images/nodejs-design-patterns.jpeg
 tags:
 - JavaScript
 - nodejs
 - Design Patterns
-title: Reflecting on node.js design patterns
 ---
 
 Once upon on a time, there was a designer …

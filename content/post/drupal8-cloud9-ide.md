@@ -1,17 +1,12 @@
 ---
-author: ""
-comments: true
-date: 2016-09-15T00:00:00+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: Drupal 8 on Cloud9 IDE
 slug: drupal8-cloud9-ide
+date: 2016-09-15T00:00:00+02:00
+image: ""
 tags:
 - php
 - web development
 - Drupal
-title: Drupal 8 on Cloud9 IDE
 ---
 
 > "You see things; and you say, 'Why?' But I dream things that never were; and I say, 'Why not?" — George Bernard Shaw
@@ -89,7 +84,7 @@ This will hint you to run an initial setup for the tool, just do it and then you
 For more ideas around this installation step, check [this tutorial][28] which also includes steps to download the project if it was not done by Composer.
 
 Shooting some ideas of a quick-start yml file for the [`chain][29]`.
-    
+
 ```yaml    
 commands:
 # Install Drupal
@@ -138,7 +133,7 @@ Note that the runner properties can be edited:
 ![][34]
 
 Runners are editable.
-    
+
 ```   
 // This file overrides the built-in Apache httpd (PHP, HTML) runner
 // For more information see http://docs.c9.io:8080/#!/api/run-method-run

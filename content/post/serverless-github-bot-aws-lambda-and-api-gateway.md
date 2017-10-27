@@ -1,18 +1,14 @@
 ---
-author: ""
-comments: true
+title: 'Serverless github bot with AWS Lambda and API Gateway '
+slug: serverless-github-bot-aws-lambda-api-gateway-nodejs
 date: 2017-07-11T22:40:00+00:00
 image: ""
-menu: ""
-share: true
-slug: serverless-github-bot-aws-lambda-api-gateway-nodejs
 tags:
 - Bots
 - nodejs
 - JavaScript
 - Serverless
 - AWS
-title: 'Serverless github bot with AWS Lambda and API Gateway '
 ---
 
 This tutorial will show you how to build a small github bot app which is "listening" for pull requests' events on "open" and "reopen" by [greenkeeper.io](https://greenkeeper.io/). When the author is the greenkeeper bot, our bot will in turn, correct the title and the tags of the pull request to match conventions.

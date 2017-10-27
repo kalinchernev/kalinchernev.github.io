@@ -1,19 +1,14 @@
 ---
-author: ""
-comments: true
-date: 2017-01-22T00:00:00+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: Agile documentation for your API-driven project
 slug: agile-documentation-api-driven-project
+date: 2017-01-22T00:00:00+02:00
+image: ""
 tags:
 - API
 - web development
 - Open APIs
 - Swagger
 - nodejs
-title: Agile documentation for your API-driven project
 ---
 
 *Based on [Open API standards](https://www.openapis.org/)*

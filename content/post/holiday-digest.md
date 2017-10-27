@@ -1,16 +1,11 @@
 ---
-author: ""
-comments: true
-date: 2017-01-07T00:00:00+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: Holidays digest 2016
 slug: holiday-digest-2016
+date: 2017-01-07T00:00:00+02:00
+image: ""
 tags:
 - JavaScript
 - web development
-title: Holidays digest 2016
 ---
 
 [Source](https://medium.com/digital-beer/holidays-digest-68ecc2b115a8 "Permalink to Holidays digest – Digital Beer – Medium")

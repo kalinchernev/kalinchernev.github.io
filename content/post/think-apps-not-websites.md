@@ -1,18 +1,13 @@
 ---
-author: ""
-comments: true
-date: 2016-12-13T00:00:00+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: Think about apps, not websites
 slug: think-about-apps-not-websites
+date: 2016-12-13T00:00:00+02:00
+image: ""
 tags:
 - web development
 - mobile
 - JavaScript
 - Progressive Web Apps
-title: Think about apps, not websites
 ---
 
 Admiring the progress of [Web APIs](https://developer.mozilla.org/en/docs/Web/API), I decided to shortly summarize some feelings. They are mostly about a borderline (common-sense) why it is worth knowing what is a web app and why we have to shift our paradigm thinking from building websites to building web apps. For this reason, I include few steps as a tutorial to encourage hands-on experimentation.

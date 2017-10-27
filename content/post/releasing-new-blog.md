@@ -1,13 +1,11 @@
 ---
-comments: true
+title: Releasing new blog
+slug: releasing-new-blog
 date: 2017-04-19T11:04:38+02:00
 image: images/vitosha.jpg
-share: true
-slug: releasing-new-blog
 tags:
 - blogging
 - JAM stack
-title: Releasing new blog
 ---
 
 It's a fact - I moved my blog from [Medium](https://medium.com/@kalin.chernev)

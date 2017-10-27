@@ -1,15 +1,12 @@
 ---
-author: Kalin Chernev
-comments: true
+title: Learn Gatsby.js
+slug: learn-gatsbyjs
 date: 2017-10-03T23:33:31+00:00
 image: images/gatsby_cover.png
-share: true
-slug: learn-gatsbyjs
 tags:
 - JAM stack
 - JavaScript
 - GatsbyJS
-title: Learn Gatsby.js
 ---
 
 > “There are those that look at things the way they are, and ask why? I dream of things that never were, and ask why not?”

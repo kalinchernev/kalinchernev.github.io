@@ -1,14 +1,12 @@
 ---
-comments: true
+title: From personal computers to personal assistants
+slug: personal-computers-personal-assistants
 date: 2017-05-09T00:00:00+02:00
 image: /images/bot-assistant.jpg
-share: true
-slug: personal-computers-personal-assistants
 tags:
 - Bots
 - Assistants
 - Apps
-title: From personal computers to personal assistants
 ---
 
 The [F8 event](https://www.fbf8.com/) took place recently and I managed to watch a video about

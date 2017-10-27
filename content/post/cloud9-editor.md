@@ -1,18 +1,13 @@
 ---
-author: Kalin Chernev
-comments: true
-date: 2016-08-29T00:00:00+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: Cloud9 IDE
 slug: cloud9-editor
+date: 2016-08-29T00:00:00+02:00
+image: ""
 tags:
 - Cloud
 - Drupal
 - Cloud9
 - Tools
-title: Cloud9 IDE
 ---
 
 ![][1]
@@ -110,5 +105,3 @@ Yet, do the following the sake of having your WOW moment yourself:
 [27]: https://help.ubuntu.com/community/EnvironmentVariables
 [28]: https://getcomposer.org/
 [29]: https://cdn-images-1.medium.com/max/800/1*12EXDc2rgRcy11wQk4SVjA.png
-
-  

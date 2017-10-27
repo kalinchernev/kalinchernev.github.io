@@ -1,17 +1,12 @@
 ---
-author: ""
-comments: true
-date: 2016-07-09T00:00:00+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: Coding battle with Skygate @MolenGeek
 slug: coding-battle-molengeek
+date: 2016-07-09T00:00:00+02:00
+image: ""
 tags:
 - web development
 - JavaScript
 - hack events
-title: Coding battle with Skygate @MolenGeek
 ---
 
 The last event from the series of coding battles organized by [Philos][1], this time in cooperation with Skygate on a life-saving topic using tools like Google Maps and Firebase.

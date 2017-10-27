@@ -1,16 +1,11 @@
 ---
-author: ""
-comments: true
-date: 2017-02-16T00:00:00+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: The guide to learn GraphQL I wish I found few months go
 slug: graphql-guide-wish-found-before
+date: 2017-02-16T00:00:00+02:00
+image: ""
 tags:
 - GraphQL
 - JavaScript
-title: The guide to learn GraphQL I wish I found few months go
 ---
 
 Although I consider myself an intermediate JavaScript developer, I struggled for weeks to understand fundamental concepts which are obvious for those living in the React.js ecosystem. So, this is a list of things I now see which I consider to be not documented or explained well enough for people like myself — those who like the ideas behind GraphQL and want to use it, but not necessarily having any experience with the React.js toolchain.

@@ -1,17 +1,12 @@
 ---
-author: ""
-comments: true
-date: 2016-06-23T00:00:00+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: Coding battle at Microsoft Innovation Center Brussels (The Rise of the Bots)
 slug: coding-battle-microsoft-innovation-center
+date: 2016-06-23T00:00:00+02:00
+image: ""
 tags:
 - JavaScript
 - Bots
 - hack events
-title: Coding battle at Microsoft Innovation Center Brussels (The Rise of the Bots)
 ---
 
 # Coding battle at Microsoft Innovation Center Brussels (The Rise of the Bots)

@@ -1,17 +1,12 @@
 ---
-author: ""
-comments: true
-date: 2017-02-01T00:00:00+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: January Digest 2017
 slug: january-digest-2017
+date: 2017-02-01T00:00:00+02:00
+image: ""
 tags:
 - JavaScript
 - nodejs
 - Cloud
-title: January Digest 2017
 ---
 
 I’ve prepared a warm-up digest for those of you who made a resolution to improve their JavaScript skills in 2017, so let’s get it started!

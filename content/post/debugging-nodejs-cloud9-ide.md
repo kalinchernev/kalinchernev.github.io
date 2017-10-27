@@ -1,17 +1,12 @@
 ---
-author: ""
-comments: true
-date: 2016-09-04T00:00:00+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: Debugging node.js in Cloud9 IDE
 slug: debugging-nodejs-in-cloud9-ide
+date: 2016-09-04T00:00:00+02:00
+image: ""
 tags:
 - nodejs
 - JavaScript
 - Debugging
-title: Debugging node.js in Cloud9 IDE
 ---
 
 In this article I'll be sharing some of my level-up experience learning how to debug node.js apps. It was not easy at first, but once I got it, I felt empowered that now I can work with any code base.
@@ -83,5 +78,3 @@ Use the comments below to share your techniques and opinions.
 [9]: http://mortalkombat.wikia.com/wiki/Animality
 [10]: https://cdn-images-1.medium.com/max/800/1*OHINaf_jcvN75EN1M0ozlQ.gif
 [11]: https://cdn-images-1.medium.com/max/800/1*V9xHSnqzwCasqzHiHyBD5Q.gif
-
-  

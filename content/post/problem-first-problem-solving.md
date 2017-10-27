@@ -1,19 +1,12 @@
 ---
-author: ""
-comments: true
-date: 2017-01-11T00:00:00+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: Problem-first problem-solving
 slug: problem-first-problem-solving
+date: 2017-01-11T00:00:00+02:00
+image: ""
 tags:
 - Problem solving
 - Meta articles
-title: Problem-first problem-solving
 ---
-
-[Source](https://medium.com/digital-beer/problem-first-problem-solving-87369b84551f?source=user_profile---------13----------- "Permalink to Problem-first problem-solving – Digital Beer – Medium")
 
 This is not going to be the next-generation framework for solving technical problems because it contains the word "problem" twice. Apart from its negative charge, the core idea is as simple as focusing on the most important questions to answer before working on problems.
 

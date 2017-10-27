@@ -1,18 +1,13 @@
 ---
-author: ""
-comments: true
-date: 2017-03-31T00:00:00+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: March digest 2017
 slug: march-digest-2017
+date: 2017-03-31T00:00:00+02:00
+image: ""
 tags:
 - Web Development
 - JavaScript
 - JAM stack
 - Medium
-title: March digest 2017
 ---
 
 This one will be on various personal thoughts on Medium, the JAM stack, the OpenAPI specification, and coding katas.

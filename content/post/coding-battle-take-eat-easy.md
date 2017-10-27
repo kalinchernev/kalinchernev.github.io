@@ -1,18 +1,13 @@
 ---
-author: ""
-comments: true
-date: 2016-06-09T00:00:00+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: Coding battle at Take Eat Easy
 slug: coding-battle-take-eat-easy
+date: 2016-06-09T00:00:00+02:00
+image: ""
 tags:
 - JavaScript
 - Programming
 - hack events
 - coding competitions
-title: Coding battle at Take Eat Easy
 ---
 
 Short retrospective on my second coding competition with JavaScript. Lessons learned and thoughts on how to improve for the future.
@@ -68,7 +63,7 @@ Now I believe it's important to run the server (mock) locally during development
 In my first competition I made the mistake to try to understand the logic of the core engine (server) running the game, but this time was better focusing on the sample code. Yet, I think we missed useful points and functions that we could have utilized in our favor without thinking too much.
 
 More specifically, the head of the function that was invoked in every turn of the game contained the following:
-    
+
 ```js    
 // Fetch my courier and possible order from the state  
 var state = data.state;  
@@ -80,7 +75,7 @@ var myOrder;
 And guess what? That was prepared for us before-hand so that we could use these variables "as-is". I have to say, I was mixing the `data` and `state` variables pretty much, but that's another topic.
 
 Another part of the code contained this line:
-    
+
 ```js
 // Sample response.
 respond(getDirection(data.possibleActions,myCourier.position,{x:1,y:2}));

@@ -1,16 +1,11 @@
 ---
-author: ""
-comments: true
-date: 2016-01-11T00:00:00+00:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: Focus on community and good services
 slug: focus-community-good-services
+date: 2016-01-11T00:00:00+00:00
+image: ""
 tags:
 - Programming
 - Community
-title: Focus on community and good services
 ---
 
 ## Recap

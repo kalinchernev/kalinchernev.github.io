@@ -1,18 +1,13 @@
 ---
-author: ""
-comments: true
-date: 2016-08-22T00:00:00+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: Drupalaton 2016
 slug: drupalaton-2016
+date: 2016-08-22T00:00:00+02:00
+image: ""
 tags:
 - Drupal
 - GraphQL
 - Progressive Web Apps
 - JavaScript
-title: Drupalaton 2016
 ---
 
 ### Introduction

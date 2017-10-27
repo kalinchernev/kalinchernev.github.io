@@ -1,17 +1,12 @@
 ---
-author: ""
-comments: true
-date: 2016-10-02T12:10:11+02:00
-draft: false
-image: ""
-menu: ""
-share: true
+title: Building a node.js client for the EU Open Data Portal
 slug: eu-data-portal-nodejs-client
+date: 2016-10-02T12:10:11+02:00
+image: ""
 tags:
 - JavaScript
 - nodejs
 - open data
-title: Building a node.js client for the EU Open Data Portal
 ---
 
 Planning to make an open data GraphQL server, it was natural to first build a small abstraction wrapper which can be re-used in other projects. Basically, the [odp library][1] I'm going to talk about is just a simplified client for fetching data from the EU Open Data Portal.
