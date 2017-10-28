@@ -9,10 +9,6 @@ tags:
 - hack events
 ---
 
-# Coding battle at Microsoft Innovation Center Brussels (The Rise of the Bots)
-
-[Originally published on Medium](https://medium.com/@kalin.chernev/coding-battle-at-microsoft-innovation-center-brussels-the-rise-of-the-bots-f0887c15e257)
-
 Continuing on the exciting journey of coding battles and events, this time I'm so trilled on what happened that I can't wait to put my hands back to code. So the story will be short and simple, hopefully inspiring for you to try building some cool chat bots and join me in the next coding event.
 
 #### [Chat Bots][1]
