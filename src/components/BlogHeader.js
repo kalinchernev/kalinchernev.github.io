@@ -6,6 +6,7 @@ const BlogHeader = () => (
     <Link to="/blog" style={{ textShadow: `none`, backgroundImage: `none` }}>
       <h3>
         <i className="fa fa-home" aria-hidden="true" />
+        <span style={{ paddingLeft: `5px` }}>root</span>
       </h3>
     </Link>
   </header>
