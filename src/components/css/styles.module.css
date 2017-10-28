@@ -12,3 +12,27 @@
 .list li {
   margin-right: 1rem;
 }
+
+.list-reset {
+  list-style: none;
+  margin-left: 0;
+}
+
+.highlight {
+  text-align: right;
+}
+
+.highlight h1 {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.handle {
+  color: #cecece;
+  font-size: 0.8rem;
+}
+
+.intro {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}

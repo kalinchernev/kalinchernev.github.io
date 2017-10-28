@@ -23,7 +23,6 @@ export const query = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       frontmatter {
         title
-        author
         date
         image
       }

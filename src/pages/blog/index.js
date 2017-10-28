@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+import styles from '../../components/css/styles.module.css';
 import BlogHeader from '../../components/BlogHeader';
 import BlogFooter from '../../components/BlogFooter';
 
@@ -15,7 +16,9 @@ const BlogIndex = ({ data }) => {
   return (
     <div>
       <BlogHeader />
-      <ul>{edges.map((node, key) => <Post key={key} node={node} />)}</ul>
+      <ul className={styles['list-reset']}>
+        {edges.map((node, key) => <Post key={key} node={node} />)}
+      </ul>
       <BlogFooter />
     </div>
   );
