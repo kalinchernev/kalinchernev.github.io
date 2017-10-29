@@ -15,8 +15,7 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{slug}}"
     fields: # The fields each document in this collection have
       - {label: Title, name: "title", widget: "string", tagname: "h1"}
+      - {label: "Date", name: "date", widget: "datetime"}
       - {label: Slug, name: "slug", widget: "string"}
       - {label: Tags, name: tags, widget: list, default: ['APIs', 'JavaScript']}
       - {label: "Body", name: "body", widget: "markdown"}
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Publish Date", name: "date", widget: "datetime"}
