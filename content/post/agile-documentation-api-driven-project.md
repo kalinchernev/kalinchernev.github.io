@@ -4,7 +4,7 @@ slug: agile-documentation-api-driven-project
 date: 2017-01-22T00:00:00+02:00
 image: ""
 tags:
-- API
+- APIs
 - web development
 - Open APIs
 - Swagger

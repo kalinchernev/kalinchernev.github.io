@@ -29,13 +29,11 @@ const TagsPageIndex = ({ pathContext }) => {
   const { posts, post, tag } = pathContext;
 
   if (tag) {
+    // Single page for a tag.
     return (
       <div>
         <BlogHeader />
-        <h1>
-          {post.length} post{post.length === 1 ? '' : 's'} tagged with{' '}
-          <span>{tag}</span>
-        </h1>
+        <h1>{tag}</h1>
         <ul className={styles['list-reset']}>
           {post.map((tagItem, key) => <Post key={key} node={tagItem} />)}
         </ul>
