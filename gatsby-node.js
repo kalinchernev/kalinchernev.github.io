@@ -1,13 +1,15 @@
-const path = require('path');
+const path = require(`path`);
+const slugify = require(`./src/utils/slugify`);
 
 const createPostPages = (createPage, nodes) => {
+  const template = path.resolve(`./src/templates/post.js`);
+
   nodes.map(({ node }) => {
     if (node.frontmatter.slug) {
       createPage({
         path: node.frontmatter.slug,
-        component: path.resolve(`./src/templates/post.js`),
+        component: template,
         context: {
-          // Data passed to context is available in page queries as GraphQL variables.
           slug: node.frontmatter.slug,
         },
       });
@@ -16,7 +18,7 @@ const createPostPages = (createPage, nodes) => {
 };
 
 const createPaginationPages = (createPage, edges) => {
-  const paginationTemplate = path.resolve(`src/templates/postList.js`);
+  const template = path.resolve(`src/templates/postList.js`);
   const paginateSize = 10;
 
   // Split posts into arrays of length equal to number posts on each page/paginateSize
@@ -32,19 +34,56 @@ const createPaginationPages = (createPage, edges) => {
   groupedPages.forEach((group, index, groups) => {
     const pageIndex = index === 0 ? `` : index + 1;
     const paginationRoute = `/blog/${pageIndex}`;
-    // Avoid showing 'Previous' link on first page - passed to context
+    // Avoid showing `Previous` link on first page - passed to context
     const first = index === 0 ? true : false;
-    // Avoid showing 'Next' link if this is the last page - passed to context
+    // Avoid showing `Next` link if this is the last page - passed to context
     const last = index === groups.length - 1 ? true : false;
 
     return createPage({
       path: paginationRoute,
-      component: paginationTemplate,
+      component: template,
       context: {
         group,
         first,
         last,
         index: index + 1,
+      },
+    });
+  });
+};
+
+const createTagPages = (createPage, edges) => {
+  const template = path.resolve(`src/templates/tags.js`);
+  const posts = {};
+
+  edges.forEach(({ node }) => {
+    if (node.frontmatter.tags) {
+      node.frontmatter.tags.forEach(tag => {
+        if (!posts[tag]) {
+          posts[tag] = [];
+        }
+        posts[tag].push(node);
+      });
+    }
+  });
+
+  createPage({
+    path: `/tags`,
+    component: template,
+    context: {
+      posts,
+    },
+  });
+
+  Object.keys(posts).forEach(tagName => {
+    const post = posts[tagName];
+    createPage({
+      path: `/tags/` + slugify(tagName),
+      component: template,
+      context: {
+        posts,
+        post,
+        tag: tagName,
       },
     });
   });
@@ -60,6 +99,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             frontmatter {
               title
               slug
+              tags
             }
           }
         }
@@ -69,5 +109,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     const posts = result.data.allMarkdownRemark.edges;
     createPostPages(createPage, posts);
     createPaginationPages(createPage, posts);
+    createTagPages(createPage, posts);
   });
 };
