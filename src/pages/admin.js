@@ -17,10 +17,6 @@ const AdminPage = () => (
         async
         src="https://unpkg.com/netlify-cms@^0.5.0/dist/cms.js"
       />
-      <script
-        async
-        src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-      />
     </Helmet>
   </div>
 );
