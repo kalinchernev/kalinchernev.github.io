@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: kalinchernev/kalinchernev.github.io # Path to your Github repository
   branch: master # Branch to update (master by default)
 
