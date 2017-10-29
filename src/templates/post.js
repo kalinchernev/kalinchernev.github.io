@@ -1,16 +1,18 @@
 import React from 'react';
 import BlogHeader from '../components/BlogHeader';
 import BlogFooter from '../components/BlogFooter';
+import PostMeta from '../components/PostMeta';
 
 const Post = ({ data }) => {
-  const p = data.markdownRemark;
+  const post = data.markdownRemark;
   return (
     <div>
       <BlogHeader />
-      <h1>{p.frontmatter.title}</h1>
+      <PostMeta post={post} />
+      <h1>{post.frontmatter.title}</h1>
       <div
         dangerouslySetInnerHTML={{
-          __html: p.html,
+          __html: post.html,
         }}
       />
       <BlogFooter />
@@ -25,6 +27,7 @@ export const query = graphql`
         title
         date
         image
+        tags
       }
       html
     }
