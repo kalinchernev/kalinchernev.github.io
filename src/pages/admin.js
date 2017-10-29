@@ -9,7 +9,7 @@ const AdminPage = () => (
       <title>Content Manager</title>
       <link
         rel="stylesheet"
-        href="https://unpkg.com/netlify-cms@~0.5/dist/cms.css"
+        href="https://unpkg.com/netlify-cms@^0.5.0/dist/cms.css"
       />
       <script
         type="text/javascript"
