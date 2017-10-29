@@ -14,6 +14,7 @@ const AdminPage = () => (
       <script
         type="text/javascript"
         charSet="utf-8"
+        async
         src="https://unpkg.com/netlify-cms@^0.5.0/dist/cms.js"
       />
     </Helmet>
