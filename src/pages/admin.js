@@ -11,7 +11,12 @@ const AdminPage = () => (
         rel="stylesheet"
         href="https://unpkg.com/netlify-cms@~0.5/dist/cms.css"
       />
-      <script src="https://unpkg.com/netlify-cms@~0.5/dist/cms.js" />
+      <script
+        type="text/javascript"
+        charSet="utf-8"
+        async
+        src="https://unpkg.com/netlify-cms@^0.5.0/dist/cms.js"
+      />
     </Helmet>
   </div>
 );
