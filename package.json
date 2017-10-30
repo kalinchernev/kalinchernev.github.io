@@ -45,6 +45,7 @@
     "gatsby": "^1.9.76",
     "gatsby-link": "^1.6.23",
     "gatsby-plugin-catch-links": "^1.0.9",
+    "gatsby-plugin-manifest": "^1.0.8",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-remark-prismjs": "^1.2.8",

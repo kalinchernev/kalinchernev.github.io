@@ -3479,6 +3479,13 @@ gatsby-plugin-catch-links@^1.0.9:
   dependencies:
     babel-runtime "^6.26.0"
 
+gatsby-plugin-manifest@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-1.0.8.tgz#8c155cd2aed54759554c25bf9efb4a2c48de6429"
+  dependencies:
+    babel-runtime "^6.26.0"
+    bluebird "^3.5.0"
+
 gatsby-plugin-react-helmet@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-1.0.8.tgz#1adf87229cd54f11c95bb16b25e3cc5f20fee871"
