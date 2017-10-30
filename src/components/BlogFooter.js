@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './css/styles.module.css';
 
 const BlogFooter = () => (
-  <footer className={styles.center}>
+  <footer style={{ fontSize: `1.5rem` }}>
     <ul className={styles.list}>
       <li>
         <a href="https://www.linkedin.com/in/kalinchernev/">

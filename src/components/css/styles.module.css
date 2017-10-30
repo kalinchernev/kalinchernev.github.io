@@ -1,7 +1,6 @@
-/* Utilities */
-.center {
-  width: 115px;
-  margin: auto;
+.arrow {
+  padding: 5px 20px;
+  border: 1px solid #419eda;
 }
 
 /* Lists */
@@ -69,6 +68,5 @@
 }
 
 .intro {
-  font-size: 0.8rem;
   margin-top: 1rem;
 }
