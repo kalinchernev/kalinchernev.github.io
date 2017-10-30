@@ -41,6 +41,7 @@
     "prettier": "^1.7.4"
   },
   "dependencies": {
+    "dateformat": "^3.0.2",
     "gatsby": "^1.9.76",
     "gatsby-link": "^1.6.23",
     "gatsby-plugin-catch-links": "^1.0.9",

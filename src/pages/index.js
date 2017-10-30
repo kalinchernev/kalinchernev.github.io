@@ -14,7 +14,7 @@ const Index = () => (
     </div>
     <p className={styles.intro}>
       Design systems and style guides for modular and re-usable CSS<br />
-      JavaScript tinkerer building cloud and `serverless` apps and APIs<br />
+      JavaScript tinkerer for cloud, `serverless`, apps and APIs<br />
       Experienced with PHP, Drupal and CMS <br />
       Implementing accessibility best practices<br />
       Embracing the <a href="https://jamstack.org/">JAM stack</a>
