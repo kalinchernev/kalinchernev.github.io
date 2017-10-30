@@ -11,6 +11,10 @@
   margin: 3rem 0;
 }
 
+.list-wrap {
+  flex-wrap: wrap;
+}
+
 .list li {
   margin-right: 1rem;
 }

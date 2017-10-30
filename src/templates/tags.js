@@ -13,7 +13,7 @@ const Post = ({ node }) => (
 
 const TagList = ({ list }) => {
   return (
-    <ul className={styles[`list-reset`]}>
+    <ul className={styles[`list`] + ` ` + styles['list-wrap']}>
       {list.map((tag, key) => {
         return (
           <li key={key}>
@@ -27,6 +27,7 @@ const TagList = ({ list }) => {
 
 const TagsPageIndex = ({ pathContext }) => {
   const { posts, post, tag } = pathContext;
+  console.log(posts);
 
   if (tag) {
     // Single page for a tag.
