@@ -6,23 +6,22 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "clean": "rm -rf public",
+    "clean": "rm -rf public .cache",
     "deploy": "gh-pages -d public -b master",
     "develop": "gatsby develop",
     "lint": "eslint .",
     "release": "run-s clean build deploy",
     "start": "yarn develop",
     "test:lint": "npm run lint",
-    "test": "npm-run-all -p test:* -cn"
+    "test": "run-p test:* -cn"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kalinchernev/kalinchernev.github.io.git"
   },
-  "author": "Kalin Chernev <kalin.chernev@gmail.com> (https://kalinchernev.github.io)",
+  "author":
+    "Kalin Chernev <kalin.chernev@gmail.com> (https://kalinchernev.github.io)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kalinchernev/kalinchernev.github.io/issues"
@@ -46,6 +45,7 @@
     "gatsby-link": "^1.6.23",
     "gatsby-plugin-catch-links": "^1.0.9",
     "gatsby-plugin-manifest": "^1.0.8",
+    "gatsby-plugin-offline": "^1.0.10",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-remark-prismjs": "^1.2.8",

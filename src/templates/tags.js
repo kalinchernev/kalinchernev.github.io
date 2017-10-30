@@ -27,7 +27,6 @@ const TagList = ({ list }) => {
 
 const TagsPageIndex = ({ pathContext }) => {
   const { posts, post, tag } = pathContext;
-  console.log(posts);
 
   if (tag) {
     // Single page for a tag.
