@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import slugify from '../utils/slugify';
 import styles from '../components/css/styles.module.css';
@@ -32,6 +33,14 @@ const TagsPageIndex = ({ pathContext }) => {
     // Single page for a tag.
     return (
       <div>
+        <Helmet htmlAttributes={{ lang: `en` }}>
+          <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+          />
+          <title>{tag} | Kalin Chernev</title>
+        </Helmet>
         <BlogHeader />
         <h1>{tag}</h1>
         <ul className={styles['list-reset']}>
@@ -45,6 +54,14 @@ const TagsPageIndex = ({ pathContext }) => {
   // Overview page for tags.
   return (
     <div>
+      <Helmet htmlAttributes={{ lang: `en` }}>
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+        />
+        <title>Blog tags | Kalin Chernev</title>
+      </Helmet>
       <BlogHeader />
       <h1>Tags</h1>
       <TagList list={Object.keys(posts) || []} />

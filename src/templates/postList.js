@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import styles from '../components/css/styles.module.css';
 import BlogHeader from '../components/BlogHeader';
@@ -14,6 +15,14 @@ const BlogPagedIndex = ({ pathContext }) => {
   const { group, index, first, last } = pathContext;
   return (
     <div>
+      <Helmet htmlAttributes={{ lang: `en` }}>
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+        />
+        <title>Kalin Chernev | Blog</title>
+      </Helmet>
       <BlogHeader />
       <ul className={styles['list-reset']}>
         {group.map((node, key) => <Post key={key} node={node} />)}

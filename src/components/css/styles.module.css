@@ -63,8 +63,9 @@
 }
 
 .handle {
-  color: #cecece;
+  color: #545454;
   font-size: 0.8rem;
+  font-style: italic;
 }
 
 .intro {

@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import BlogHeader from '../components/BlogHeader';
 import BlogFooter from '../components/BlogFooter';
 import PostMeta from '../components/PostMeta';
@@ -7,6 +8,14 @@ const Post = ({ data }) => {
   const post = data.markdownRemark;
   return (
     <div>
+      <Helmet htmlAttributes={{ lang: `en` }}>
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+        />
+        <title>{post.frontmatter.title} | Kalin Chernev</title>
+      </Helmet>
       <BlogHeader />
       <PostMeta post={post} />
       <h1>{post.frontmatter.title}</h1>
