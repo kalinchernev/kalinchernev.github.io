@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import slugify from '../utils/slugify';
+import tagsSorter from '../utils/tagsSorter';
 import styles from '../components/css/styles.module.css';
 import BlogHeader from '../components/BlogHeader';
 import BlogFooter from '../components/BlogFooter';
@@ -13,12 +14,15 @@ const Post = ({ node }) => (
 );
 
 const TagList = ({ list }) => {
+  const sorted = tagsSorter(list);
   return (
     <ul className={styles[`list`] + ` ` + styles['list-wrap']}>
-      {list.map((tag, key) => {
+      {sorted.map((tag, key) => {
         return (
           <li key={key}>
-            <Link to={`/tags/` + slugify(tag)}>{tag}</Link>
+            <Link to={`/tags/` + slugify(tag[0])}>
+              {tag[0] + ` (${tag[1]})`}
+            </Link>
           </li>
         );
       })}
@@ -64,7 +68,7 @@ const TagsPageIndex = ({ pathContext }) => {
       </Helmet>
       <BlogHeader />
       <h1>Tags</h1>
-      <TagList list={Object.keys(posts) || []} />
+      <TagList list={posts || []} />
       <BlogFooter />
     </div>
   );
