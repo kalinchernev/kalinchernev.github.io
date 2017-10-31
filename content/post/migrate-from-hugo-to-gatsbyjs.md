@@ -40,7 +40,7 @@ Last word about this step is that my previous frontmatter already contained `tit
 
 ### Programatic content creation
 
-[Documentation](#todo) is very helpful on this, plus there is a [tutorial](#todo) which gives examples. Basically, I had to create a `gatsby-node.js` file which exports `createPages` method using the `createPage` action from [`boundActionCreators`](#todo).
+This is the official [documentation](https://www.gatsbyjs.org/docs/creating-and-modifying-pages/), plus there is a [tutorial](https://www.gatsbyjs.org/tutorial/part-four/#data-in-gatsby) which gives examples. Basically, I had to create a `gatsby-node.js` file which exports `createPages` method using the `createPage` action from [`boundActionCreators`](https://www.gatsbyjs.org/docs/bound-action-creators/).
 
 This might sound way more complicated than what it is:
 
@@ -94,13 +94,13 @@ I re-use the `slug` field of the frontmatter of my existing structure. I don't h
 
 This is an example of "unfair" easy - I don't have to do literally anything to keep my previous URLs of existing content the same in the new system.
 
-The display of the data is handled by a React component acting as a template. My case is nothing different than the [official documentation](#todo-react-component-template), nothing exotic.
+The display of the data is handled by a React component acting as a template. My case is nothing different than the [official documentation](https://www.gatsbyjs.org/docs/building-with-components/#page-template-components), nothing exotic.
 
 ### Pagination and tags pages
 
 Now that I got a decent grasp of how to create content in my new site, I proceeded with creating pagition. I have about 30 blog posts, so I went for a split by 10 to give an impression I have a lot of content :)
 
-As usual, a good starting point was searching for example implementations available in [`examples`](#todo-gatsby-examples-folder) and the issue queue. There, in the issue queue, is a gem [epic about plugins wishlist](#todo) where I found the discussion leading to [gatsby-paginate](#todo-gatsby-paginate).
+As usual, a good starting point was searching for example implementations available in [`examples`](https://github.com/gatsbyjs/gatsby/tree/master/examples/) and the issue queue. There, in the issue queue, is a gem [epic about plugins wishlist](https://github.com/gatsbyjs/gatsby/issues/1199) where I found the discussion leading to [gatsby-paginate](https://github.com/pixelstew/gatsby-paginate).
 
 As I wanted to have different contexts than the plugin, so I took inspiration for both tags and pagination scenarios. I kept them as separate action creators and I just called them in the main creator function like this:
 
