@@ -1,7 +1,6 @@
-/* Utilities */
-.center {
-  width: 115px;
-  margin: auto;
+.arrow {
+  padding: 5px 20px;
+  border: 1px solid #419eda;
 }
 
 /* Lists */
@@ -9,6 +8,10 @@
   display: flex;
   list-style: none;
   margin: 3rem 0;
+}
+
+.list-wrap {
+  flex-wrap: wrap;
 }
 
 .list li {
@@ -60,11 +63,11 @@
 }
 
 .handle {
-  color: #cecece;
+  color: #545454;
   font-size: 0.8rem;
+  font-style: italic;
 }
 
 .intro {
-  font-size: 0.8rem;
   margin-top: 1rem;
 }

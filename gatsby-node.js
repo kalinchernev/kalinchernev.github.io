@@ -1,93 +1,6 @@
-const path = require(`path`);
-const slugify = require(`./src/utils/slugify`);
-
-const createPostPages = (createPage, nodes) => {
-  const template = path.resolve(`./src/templates/post.js`);
-
-  nodes.map(({ node }) => {
-    if (node.frontmatter.slug) {
-      createPage({
-        path: node.frontmatter.slug,
-        component: template,
-        context: {
-          slug: node.frontmatter.slug,
-        },
-      });
-    }
-  });
-};
-
-const createPaginationPages = (createPage, edges) => {
-  const template = path.resolve(`src/templates/postList.js`);
-  const paginateSize = 10;
-
-  // Split posts into arrays of length equal to number posts on each page/paginateSize
-  const groupedPages = edges
-    .map((edge, index) => {
-      return index % paginateSize === 0
-        ? edges.slice(index, index + paginateSize)
-        : null;
-    })
-    .filter(item => item);
-
-  // Create new indexed route for each array
-  groupedPages.forEach((group, index, groups) => {
-    const pageIndex = index === 0 ? `` : index + 1;
-    const paginationRoute = `/blog/${pageIndex}`;
-    // Avoid showing `Previous` link on first page - passed to context
-    const first = index === 0 ? true : false;
-    // Avoid showing `Next` link if this is the last page - passed to context
-    const last = index === groups.length - 1 ? true : false;
-
-    return createPage({
-      path: paginationRoute,
-      component: template,
-      context: {
-        group,
-        first,
-        last,
-        index: index + 1,
-      },
-    });
-  });
-};
-
-const createTagPages = (createPage, edges) => {
-  const template = path.resolve(`src/templates/tags.js`);
-  const posts = {};
-
-  edges.forEach(({ node }) => {
-    if (node.frontmatter.tags) {
-      node.frontmatter.tags.forEach(tag => {
-        if (!posts[tag]) {
-          posts[tag] = [];
-        }
-        posts[tag].push(node);
-      });
-    }
-  });
-
-  createPage({
-    path: `/tags`,
-    component: template,
-    context: {
-      posts,
-    },
-  });
-
-  Object.keys(posts).forEach(tagName => {
-    const post = posts[tagName];
-    createPage({
-      path: `/tags/` + slugify(tagName),
-      component: template,
-      context: {
-        posts,
-        post,
-        tag: tagName,
-      },
-    });
-  });
-};
+const createPostPages = require(`./gatsby-actions/createPostPages`);
+const createPaginatedPostsPages = require(`./gatsby-actions/createPaginatedPostsPages`);
+const createTagPages = require(`./gatsby-actions/createTagPages`);
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
@@ -108,7 +21,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   `).then(result => {
     const posts = result.data.allMarkdownRemark.edges;
     createPostPages(createPage, posts);
-    createPaginationPages(createPage, posts);
+    createPaginatedPostsPages(createPage, posts);
     createTagPages(createPage, posts);
   });
 };
