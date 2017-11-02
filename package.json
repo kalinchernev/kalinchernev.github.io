@@ -45,6 +45,7 @@
     "gatsby": "^1.9.76",
     "gatsby-link": "^1.6.23",
     "gatsby-plugin-catch-links": "^1.0.9",
+    "gatsby-plugin-google-analytics": "^1.0.11",
     "gatsby-plugin-manifest": "^1.0.8",
     "gatsby-plugin-nprogress": "^1.0.7",
     "gatsby-plugin-offline": "^1.0.10",

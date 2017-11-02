@@ -3927,6 +3927,12 @@ gatsby-plugin-catch-links@^1.0.9:
   dependencies:
     babel-runtime "^6.26.0"
 
+gatsby-plugin-google-analytics@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-1.0.11.tgz#ec814e28b7d9bd20703ab2e2388f062c19220fd9"
+  dependencies:
+    babel-runtime "^6.26.0"
+
 gatsby-plugin-manifest@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-1.0.8.tgz#8c155cd2aed54759554c25bf9efb4a2c48de6429"
