@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../../static/fonts/fa/css/font-awesome.css';
-import 'prismjs/themes/prism-solarizedlight.css';
+import 'prismjs/themes/prism.css';
 
 const IndexLayout = ({ children }) => (
   <div style={{ margin: `0 auto`, maxWidth: 650, padding: `1.25rem 1rem` }}>

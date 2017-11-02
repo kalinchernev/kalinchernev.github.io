@@ -15,13 +15,14 @@
     "test:lint": "npm run lint",
     "test": "run-p test:* -cn"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kalinchernev/kalinchernev.github.io.git"
   },
-  "author":
-    "Kalin Chernev <kalin.chernev@gmail.com> (https://kalinchernev.github.io)",
+  "author": "Kalin Chernev <kalin.chernev@gmail.com> (https://kalinchernev.github.io)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kalinchernev/kalinchernev.github.io/issues"
@@ -45,10 +46,15 @@
     "gatsby-link": "^1.6.23",
     "gatsby-plugin-catch-links": "^1.0.9",
     "gatsby-plugin-manifest": "^1.0.8",
+    "gatsby-plugin-nprogress": "^1.0.7",
     "gatsby-plugin-offline": "^1.0.10",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-typography": "^1.7.10",
+    "gatsby-remark-autolink-headers": "^1.4.7",
+    "gatsby-remark-copy-linked-files": "^1.5.15",
+    "gatsby-remark-images": "^1.5.24",
     "gatsby-remark-prismjs": "^1.2.8",
+    "gatsby-remark-responsive-iframe": "^1.4.13",
     "gatsby-source-filesystem": "^1.5.5",
     "gatsby-transformer-remark": "^1.7.17",
     "typography-theme-moraga": "^0.15.10"

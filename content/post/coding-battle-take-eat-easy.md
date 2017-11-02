@@ -40,7 +40,58 @@ An example [node client bot][12] was given. I find it to be a good boilerplate f
 
 Another positive prerequisite was **the sample state object**, which contained enough structure to understand the data that will be received by the client on every turn of the game. Note some important concepts are pretty obvious, I think: **orders, possible actions and score**.
 
-<script src="https://gist.github.com/kalinchernev/d2d3e5e9ade9bca4f8ae94bc58dd5e88.js"></script>
+```json
+{
+  "state": {
+    "couriers": [
+      {
+        "id": 1,
+        "position": {
+          "x": 1,
+          "y": 3
+        },
+        "name": "name",
+        "score": 0,
+        "fighter": false,
+        "electric": false
+      }
+      ...
+    ],
+    "orders": [
+      {
+        "from": {
+          "x": 22,
+          "y": 11
+        },
+        "to": {
+          "x": 28,
+          "y": 1
+        },
+        "id": 27,
+        "status": 0,
+        "idCourier": 0,
+        "value": 18
+      },
+     ...
+    ],
+    "turn": 223
+  },
+  "possibleActions": [
+    {
+      "action": "MOVE_DOWN",
+      "idCourier": 1,
+      "turn": 223
+    },
+    {
+      "action": "MOVE_UP",
+      "idCourier": 1,
+      "turn": 223
+    }
+  ],
+  "idCourier": 1,
+  "score": 0
+}
+```
 
 **All possible actions** that the bots were able to play with: moving up/down/left/right, pick order, drop order. There were 2 advanced actions: upgrade fighter (be able to kick other players) and upgrade electric (move doubled).
 
