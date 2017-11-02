@@ -1,6 +1,6 @@
 ---
 title: Migrate from Hugo to GatsbyJS
-date: 2017-10-29T22:01:41.113Z
+date: 2017-11-02T12:00:00.113Z
 slug: migrate-hugo-gatsby
 tags:
   - JavaScript
