@@ -242,7 +242,7 @@ As you can see, the `beforeAll` life cycle setups the AWS S3 mock for the `getSi
 Maybe you've noticed this line already `expect(result).resolves.toMatchSnapshot();`.
 This is how you use the Jest snapshot feature:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HAuXJVI_bUs?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe title="Video about Jest testing framework" width="560" height="315" src="https://www.youtube.com/embed/HAuXJVI_bUs?rel=0" frameborder="0" allowfullscreen></iframe>
 
 This feature helps you test structures in a simple way.
 

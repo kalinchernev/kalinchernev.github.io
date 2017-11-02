@@ -20,11 +20,11 @@ As a most fundamental start of everything, you have to have an idea what GraphQL
 
 Get motivated:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UBGzsb2UkeY?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe title="Introductory video about GraphQL" width="560" height="315" src="https://www.youtube.com/embed/UBGzsb2UkeY?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Get the basic concepts:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WQLzZf34FJ8?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe title="Exploring GraphQL video" width="560" height="315" src="https://www.youtube.com/embed/WQLzZf34FJ8?rel=0" frameborder="0" allowfullscreen></iframe>
 
 For me, there are few reasons to invest time in learning GraphQL, even if I’m not a React developer, but an API enthusiast:
 

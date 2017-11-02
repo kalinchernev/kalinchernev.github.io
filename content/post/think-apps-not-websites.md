@@ -67,7 +67,7 @@ Before kicking off the tutorial part, please, use Google Chrome while working ou
 
 This video is an entertaining summary of the documentation about [debugging progressive web apps with Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps). Most certainly, general familiarity with the [DevTools](https://developers.google.com/web/tools/chrome-devtools/) would help you understand it, although the panel for debugging PWA is much simpler than the rest.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IWgNn1kqrsA?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe title="Video to inspire you for progressive web apps" width="560" height="315" src="https://www.youtube.com/embed/IWgNn1kqrsA?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ### **Create a manifest file**
 

@@ -114,15 +114,92 @@ The EventEmitter provides a popular `on()` method which “hooks” functions on
 
 Let’s expand our previous function `readFiles()` to `filterFiles()` in order to provide a way to message all subscriber consumers on the event of finding a file during a search.
 
-<script src="https://gist.github.com/kalinchernev/15cbee0731612dc6388c2f0e1cafa6b7.js"></script>
+```js
+// Give a list of files all of them which match an extension
+function findFiles (files, extension) {
+  const emitter = new EventEmitter()
+
+  if (files.length === 0) {
+    // yield an error
+    emitter.emit('error', 'no files supplied')
+  }
+
+  // Check for matches
+  function checkFiles () {
+    files.forEach(file => {
+      if (path.extname(file) === extension) {
+        // yield a result
+        emitter.emit('match', file)
+      }
+    })
+  }
+
+  // Ask the event loop to loop through our loop ...
+  process.nextTick(checkFiles)
+
+  // For chainability on on()
+  return emitter
+}
+```
 
 Then, in order to use this function, we’ll have an implementation like:
 
-<script src="https://gist.github.com/kalinchernev/4fb5f5129a202bd14bb9518bcef74244.js"></script>
+```js
+findFiles(process.argv.slice(2), '.js')
+  .on('match', file => console.log(file + ' is a match'))
+  .on('error', err => console.log('Error emitted: ' + err.message))
+```
 
 We can also use some sugar to make the same functionality sweeter:
 
-<script src="https://gist.github.com/kalinchernev/223e3170b53307b5ca0e3d02afcd93ea.js"></script>
+```js
+'use strict'
+
+// Dependencies
+const EventEmitter = require('events').EventEmitter
+const path = require('path')
+
+// Definition
+class FindFiles extends EventEmitter {
+
+  constructor (extension) {
+    super()
+    this.extension = extension
+    this.files = []
+  }
+
+  addFile (file) {
+    this.files.push(file)
+    return this
+  }
+
+  // Check for matches
+  findFiles () {
+    process.nextTick(() => {
+      this.files.forEach(file => {
+        if (path.extname(file) === this.extension) {
+          this.emit('match', file)
+        }
+      })
+    })
+    return this
+  }
+}
+
+// Instantiation of observable object
+const FindFilesSearcher = new FindFiles('.js')
+
+// Implementation
+FindFilesSearcher
+  .addFile('file1.js')
+  .addFile('file2.md')
+  .addFile('file3.js')
+  .findFiles()
+  .on('match', console.log)
+  .on('error', err => {
+    return console.error(err)
+  })
+```
 
 If you’ve visited the chapter about the observer patterns in the [famous design patterns book](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented-ebook/dp/B000SEIBB8) you must already see a big difference in the way how you can implement the pattern. I like “the node-way” better — it’s simpler and you can express same ideas with less code. And honestly, if I were to teach this pattern to web developers, I am sure that I’d have a better chance of success relating on familiarity of jQuery’s popular `.on()` method, without too much talking about abstractions and interfaces.
 
@@ -138,7 +215,59 @@ But what if we want to make it even more flexible, like letting the user choose 
 
 Well, let’s make our event emitter function CPS-friendly!
 
-<script src="https://gist.github.com/kalinchernev/985b975fe6591675ce2272b53846b2c8.js"></script>
+```js
+'use strict'
+
+// Dependencies
+const EventEmitter = require('events').EventEmitter
+const path = require('path')
+
+// Definition
+function findFiles (files, extension, cb = null) {
+  const emitter = new EventEmitter()
+  const errorMessage = 'no files supplied';
+
+  if (files.length === 0) {
+    if (cb) {
+      cb(errorMessage)
+    }
+    emitter.emit('error', errorMessage)
+  }
+
+  if (cb) {
+    // cps
+    let result = []
+    for (let i = 0; i < files.length; ++i) {
+      if (path.extname(files[i]) === extension) {
+        result.push(files[i])
+      }
+    }
+    cb(null, result)
+  } else {
+    // event emitter style
+    process.nextTick(() => {
+      files.forEach(file => {
+        if (path.extname(file) === extension) {
+          emitter.emit('match', file)
+        }
+      })
+    })
+
+    return emitter
+  }
+}
+
+// Implementation with a callback
+findFiles(process.argv.slice(2), '.js', (err, result) => {
+  if (err) return console.error(err)
+  console.log(`All in one: ${result}`)
+})
+
+// Implementation with an event emitter
+findFiles(process.argv.slice(2), '.js')
+  .on('match', file => console.log(file + ' is a match'))
+  .on('error', err => console.log('Error emitted: ' + err.message))
+```
 
 This is only a demo implementation which you should not copy-paste into your code without including better checks on the various edge cases of the input, etc. However, the example gives a basic idea on how to make the callback argument optional and use it depending on the scenario.
 

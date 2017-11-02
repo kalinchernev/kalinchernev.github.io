@@ -71,7 +71,7 @@ Although the [Moore's law is dead](https://www.technologyreview.com/s/601441/moo
 
 Amazon has been doing [quite well since the release](http://uk.businessinsider.com/amazon-echo-sales-figures-stats-chart-2016-12?r=US&IR=T) of the Amazon Echo, which already has several versions. Almost an year ago, Google made a [fast reply with Google Home](https://www.cnet.com/news/google-home-vs-amazon-echo/).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2KpLHdAURGo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<iframe title="Video about Google Home" width="560" height="315" src="https://www.youtube.com/embed/2KpLHdAURGo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Believe it or not, I realized just recently that Google announced [Google Assistant](https://assistant.google.com/) and Google Home together for a reason. For me, the assistant was this dummy chat bot with little sense of humour on Allo, but I never took him seriously, because the time it takes to open the app and start a conversation was taking more than actually doing the thing I wanted to do directly in the apps. Also, there are so many other chat apps on the market that I never even made a try to invite a friend to try Allo with some assistant spice.
 

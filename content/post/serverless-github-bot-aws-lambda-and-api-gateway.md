@@ -162,8 +162,7 @@ Few notes:
 
 **10. Trigger the webhook either by github or by closing and re-opening an existing pull request which has been opened by greenkeeper bot.**
 
-That's an example script you can use:
-<script src="https://gist.github.com/kalinchernev/d1e79a7f883a4d37f50519d9b05df0c5.js"></script>
+That's an [example script](https://gist.github.com/kalinchernev/d1e79a7f883a4d37f50519d9b05df0c5.js) you can use.
 
 ## Extras
 

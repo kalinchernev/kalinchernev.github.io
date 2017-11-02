@@ -12,6 +12,19 @@ theme.overrideThemeStyles = () => {
       left: `50%`,
       transform: `translateX(-50%)`,
     },
+    // code: {
+    //   padding: `1px 3px`,
+    //   fontFamily: `Inconsolata, monospace, sans-serif`,
+    //   fontSize: `0.85em`,
+    //   whiteSpace: `pre-wrap`,
+    //   border: `#E3EDF3 1px solid`,
+    //   background: `#F7FAFB`,
+    //   borderRadius: `2px`,
+    // },
+    // '.gatsby-highlight code': {
+    //   background: `inherit`,
+    //   border: `none`,
+    // },
   };
 };
 

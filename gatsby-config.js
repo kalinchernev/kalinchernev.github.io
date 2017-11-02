@@ -4,6 +4,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        color: `#185D8B`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `post`,
@@ -18,9 +24,22 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [`gatsby-remark-prismjs`],
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 650,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-responsive-iframe',
+          },
+          'gatsby-remark-prismjs',
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-autolink-headers',
+        ],
       },
     },
     {

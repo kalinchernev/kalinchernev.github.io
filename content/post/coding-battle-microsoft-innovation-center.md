@@ -47,7 +47,7 @@ Managing API keys was another common setback for many. All I can say here is tha
 
 But don't worry, you are not alone with these issues! Here's a short motivational video that will make you laugh and encourage you to go forward&nbsp;:)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zFO1cRr5-qY?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe title="Video about Pair Programming a Facebook Messenger Bot" width="560" height="315" src="https://www.youtube.com/embed/zFO1cRr5-qY?rel=0" frameborder="0" allowfullscreen></iframe>
 
 For building the bots, we used the [Microsoft Bot Framework][10]. I can't explain you how amazing the APIs are! Just head directly into the [documentation][11] and skim through some of the example code. I'm sure you'll see the easy way to start building functionalities, for which the code looks familiar to other [node.js frameworks][12]. Apart from the core bot framework for managing the communication, we used [LUIS][13] to understand the user natural language, and process the important information from it. As a developer, I give my respect to the people who have built the framework and its documentation. It took us just few hours to figure out the APIs and make a working product!
 

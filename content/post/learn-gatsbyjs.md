@@ -25,7 +25,7 @@ At any time, you can [jump directly to the practical part](#gatsby-js-https-www-
 
 Web, and web development have evolved unimaginatively in the last decade. And much of it came from a closely related market of mobile phones and how its market changed as well. For example, watch this presentation for the first iPhone:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e7EfxMOElBE?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe title="Steve Jobs presenting the first iPhone" width="560" height="315" src="https://www.youtube.com/embed/e7EfxMOElBE?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Damn, that was only 10 years ago! Probably one of the first occasions when people like Steve Jobs and Eric Schmidt sell the idea about data, web services and cloud technologies to consumers!
 
@@ -66,7 +66,7 @@ When the fear or the craziness for selecting a tool pass, developers will hopefu
 
 "JAM" stands for JavaScript, APIs and Markup. We speak about static sites consisted of HTML, CSS and JavaScript without a server-side rendering.
 
-<iframe height="400" width="100%" src="https://jamstack.org/#what"></iframe>
+<iframe title="Embedded website for the JAM stack" height="400" width="100%" src="https://jamstack.org/#what"></iframe>
 
 This makes JAM stack applications:
 
@@ -91,11 +91,11 @@ One of my favorite pull requests recently was the one adding [documentation abou
 
 Some recommended videos:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/p8PHe8Hv8uw?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe title="Video about how Smashing Magazine adopts the JAM stack" width="560" height="315" src="https://www.youtube.com/embed/p8PHe8Hv8uw?rel=0" frameborder="0" allowfullscreen></iframe>
 
 And a more general one about the JAM stack:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uWTMEDEPw8c?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe title="Introdctory video about the JAM stack" width="560" height="315" src="https://www.youtube.com/embed/uWTMEDEPw8c?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ### The rise of GraphQL
 
