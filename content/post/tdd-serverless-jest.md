@@ -1,14 +1,15 @@
-+++
-author = "Kalin Chernev"
-comments = true
-date = "2017-10-15T00:00:00+00:00"
-image = "images/serverless_cover.png"
-menu = ""
-share = true
-slug = "tdd-serverless-jest"
-tags = ["TDD", "Serverless", "JavaScript", "nodejs", "AWS"]
-title = "Test-Driven Development for AWS Lambda functions with the Serverless framework and Jest"
-+++
+---
+title: TDD for AWS Lambda with Serverless framework and Jest
+slug: tdd-serverless-jest
+date: 2017-10-15T00:00:00+00:00
+image: images/serverless_cover.png
+tags:
+- TDD
+- Serverless
+- JavaScript
+- nodejs
+- AWS
+---
 
 ## Introduction
 
@@ -241,7 +242,7 @@ As you can see, the `beforeAll` life cycle setups the AWS S3 mock for the `getSi
 Maybe you've noticed this line already `expect(result).resolves.toMatchSnapshot();`.
 This is how you use the Jest snapshot feature:
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/HAuXJVI_bUs?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe title="Video about Jest testing framework" width="560" height="315" src="https://www.youtube.com/embed/HAuXJVI_bUs?rel=0" frameborder="0" allowfullscreen></iframe>
 
 This feature helps you test structures in a simple way.
 

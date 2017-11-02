@@ -1,15 +1,13 @@
-+++
-title = "Coding battle with Skygate @MolenGeek"
-image = ""
-draft = false
-author = ""
-date = "2016-07-09T00:00:00+02:00"
-menu = ""
-share = true
-comments = true
-tags = ["web development", "JavaScript", "hack events"]
-slug = "coding-battle-molengeek"
-+++
+---
+title: Coding battle with Skygate @MolenGeek
+slug: coding-battle-molengeek
+date: 2016-07-09T00:00:00+02:00
+image: ""
+tags:
+- web development
+- JavaScript
+- hack events
+---
 
 The last event from the series of coding battles organized by [Philos][1], this time in cooperation with Skygate on a life-saving topic using tools like Google Maps and Firebase.
 

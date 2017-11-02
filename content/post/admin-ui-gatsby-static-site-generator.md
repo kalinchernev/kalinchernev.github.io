@@ -1,14 +1,13 @@
-+++
-author = "Kalin Chernev"
-comments = true
-date = "2017-08-16T23:33:31+00:00"
-image = "images/gatsby-netlify-cover.png"
-menu = ""
-share = true
-slug = "admin-ui-gatsby-static-site-generator"
-tags = ["JAM stack", "JavaScript", "GatsbyJS"]
-title = "Admin UI for Gatsby static site generator"
-+++
+---
+title: Admin UI for Gatsby static site generator
+slug: admin-ui-gatsby-static-site-generator
+date: 2017-08-16T23:33:31+00:00
+image: images/gatsby-netlify-cover.png
+tags:
+- JAM stack
+- JavaScript
+- GatsbyJS
+---
 
 ## Introduction
 

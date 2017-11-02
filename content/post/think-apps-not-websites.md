@@ -1,15 +1,14 @@
-+++
-menu = ""
-title = "Think about apps, not websites"
-tags = ["web development", "mobile", "JavaScript", "Progressive Web Apps"]
-draft = false
-author = ""
-slug = "think-about-apps-not-websites"
-date = "2016-12-13T00:00:00+02:00"
-share = true
-comments = true
-image = ""
-+++
+---
+title: Think about apps, not websites
+slug: think-about-apps-not-websites
+date: 2016-12-13T00:00:00+02:00
+image: ""
+tags:
+- web development
+- mobile
+- JavaScript
+- Progressive Web Apps
+---
 
 Admiring the progress of [Web APIs](https://developer.mozilla.org/en/docs/Web/API), I decided to shortly summarize some feelings. They are mostly about a borderline (common-sense) why it is worth knowing what is a web app and why we have to shift our paradigm thinking from building websites to building web apps. For this reason, I include few steps as a tutorial to encourage hands-on experimentation.
 
@@ -68,7 +67,7 @@ Before kicking off the tutorial part, please, use Google Chrome while working ou
 
 This video is an entertaining summary of the documentation about [debugging progressive web apps with Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps). Most certainly, general familiarity with the [DevTools](https://developers.google.com/web/tools/chrome-devtools/) would help you understand it, although the panel for debugging PWA is much simpler than the rest.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IWgNn1kqrsA?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe title="Video to inspire you for progressive web apps" width="560" height="315" src="https://www.youtube.com/embed/IWgNn1kqrsA?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ### **Create a manifest file**
 

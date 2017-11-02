@@ -1,15 +1,14 @@
-+++
-date = "2016-08-29T00:00:00+02:00"
-image = ""
-slug = "cloud9-editor"
-title = "Cloud9 IDE"
-author = "Kalin Chernev"
-menu = ""
-share = true
-comments = true
-tags = ["Cloud", "Drupal", "Cloud9", "Tools"]
-draft = false
-+++
+---
+title: Cloud9 IDE
+slug: cloud9-editor
+date: 2016-08-29T00:00:00+02:00
+image: ""
+tags:
+- Cloud
+- Drupal
+- Cloud9
+- Tools
+---
 
 ![][1]
 
@@ -106,5 +105,3 @@ Yet, do the following the sake of having your WOW moment yourself:
 [27]: https://help.ubuntu.com/community/EnvironmentVariables
 [28]: https://getcomposer.org/
 [29]: https://cdn-images-1.medium.com/max/800/1*12EXDc2rgRcy11wQk4SVjA.png
-
-  

@@ -1,15 +1,14 @@
-+++
-date = "2017-03-01T00:00:00+02:00"
-menu = ""
-share = true
-slug = "february-digest-2017"
-draft = false
-author = ""
-comments = true
-title = "February digest 2017"
-image = ""
-tags = ["GraphQL", "JavaScript", "Productivity", "Vim"]
-+++
+---
+title: February digest 2017
+slug: february-digest-2017
+date: 2017-03-01T00:00:00+02:00
+image: ""
+tags:
+- GraphQL
+- JavaScript
+- Productivity
+- Vim
+---
 
 After my [January digest](/january-digest-2017), I got feedback from a precious reader that these stories must be toilet-friendly, so I’ll keep it short, directly to the essence :)
 

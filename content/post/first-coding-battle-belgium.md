@@ -1,15 +1,14 @@
-+++
-title = "The first coding battle in Belgium"
-share = true
-tags = ["JavaScript", "web development", "Coding", "hack events"]
-date = "2016-04-14T00:00:00+02:00"
-draft = false
-author = ""
-menu = ""
-comments = true
-image = ""
-slug = "first-coding-battle-belgium"
-+++
+---
+title: The first coding battle in Belgium
+slug: first-coding-battle-belgium
+date: 2016-04-14T00:00:00+02:00
+image: ""
+tags:
+- JavaScript
+- web development
+- Coding
+- hack events
+---
 
 ## Coding? Battle? What?
 

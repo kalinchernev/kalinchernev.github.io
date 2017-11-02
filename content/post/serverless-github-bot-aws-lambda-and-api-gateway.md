@@ -1,15 +1,16 @@
-+++
-author = ""
-comments = true
-date = "2017-07-11T22:40:00+00:00"
-image = ""
-menu = ""
-share = true
-slug = "serverless-github-bot-aws-lambda-api-gateway-nodejs"
-tags = ["Bots", "nodejs", "JavaScript", "Serverless", "AWS"]
-title = "Serverless github bot with AWS Lambda and API Gateway "
+---
+title: 'Serverless github bot with AWS Lambda and API Gateway '
+slug: serverless-github-bot-aws-lambda-api-gateway-nodejs
+date: 2017-07-11T22:40:00+00:00
+image: ""
+tags:
+- Bots
+- nodejs
+- JavaScript
+- Serverless
+- AWS
+---
 
-+++
 This tutorial will show you how to build a small github bot app which is "listening" for pull requests' events on "open" and "reopen" by [greenkeeper.io](https://greenkeeper.io/). When the author is the greenkeeper bot, our bot will in turn, correct the title and the tags of the pull request to match conventions.
 
 ![Github bot correcting the greenkeeper bot](/uploads/2017/07/12/github_bot_correcting_greenkeeper-1.png)
@@ -161,8 +162,7 @@ Few notes:
 
 **10. Trigger the webhook either by github or by closing and re-opening an existing pull request which has been opened by greenkeeper bot.**
 
-That's an example script you can use:
-<script src="https://gist.github.com/kalinchernev/d1e79a7f883a4d37f50519d9b05df0c5.js"></script>
+That's an [example script](https://gist.github.com/kalinchernev/d1e79a7f883a4d37f50519d9b05df0c5.js) you can use.
 
 ## Extras
 

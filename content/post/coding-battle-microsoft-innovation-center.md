@@ -1,19 +1,13 @@
-+++
-draft = false
-share = true
-comments = true
-date = "2016-06-23T00:00:00+02:00"
-title = "Coding battle at Microsoft Innovation Center Brussels (The Rise of the Bots)"
-image = ""
-tags = ["JavaScript", "Bots", "hack events"]
-slug = "coding-battle-microsoft-innovation-center"
-author = ""
-menu = ""
-+++
-
-# Coding battle at Microsoft Innovation Center Brussels (The Rise of the Bots)
-
-[Originally published on Medium](https://medium.com/@kalin.chernev/coding-battle-at-microsoft-innovation-center-brussels-the-rise-of-the-bots-f0887c15e257)
+---
+title: Coding battle at Microsoft Innovation Center Brussels
+slug: coding-battle-microsoft-innovation-center
+date: 2016-06-23T00:00:00+02:00
+image: ""
+tags:
+- JavaScript
+- Bots
+- hack events
+---
 
 Continuing on the exciting journey of coding battles and events, this time I'm so trilled on what happened that I can't wait to put my hands back to code. So the story will be short and simple, hopefully inspiring for you to try building some cool chat bots and join me in the next coding event.
 
@@ -53,7 +47,7 @@ Managing API keys was another common setback for many. All I can say here is tha
 
 But don't worry, you are not alone with these issues! Here's a short motivational video that will make you laugh and encourage you to go forward&nbsp;:)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zFO1cRr5-qY?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe title="Video about Pair Programming a Facebook Messenger Bot" width="560" height="315" src="https://www.youtube.com/embed/zFO1cRr5-qY?rel=0" frameborder="0" allowfullscreen></iframe>
 
 For building the bots, we used the [Microsoft Bot Framework][10]. I can't explain you how amazing the APIs are! Just head directly into the [documentation][11] and skim through some of the example code. I'm sure you'll see the easy way to start building functionalities, for which the code looks familiar to other [node.js frameworks][12]. Apart from the core bot framework for managing the communication, we used [LUIS][13] to understand the user natural language, and process the important information from it. As a developer, I give my respect to the people who have built the framework and its documentation. It took us just few hours to figure out the APIs and make a working product!
 

@@ -1,15 +1,13 @@
-+++
-tags = ["JavaScript", "nodejs", "Cloud"]
-date = "2017-02-01T00:00:00+02:00"
-draft = false
-share = true
-image = ""
-slug = "january-digest-2017"
-title = "January Digest 2017"
-author = ""
-menu = ""
-comments = true
-+++
+---
+title: January Digest 2017
+slug: january-digest-2017
+date: 2017-02-01T00:00:00+02:00
+image: ""
+tags:
+- JavaScript
+- nodejs
+- Cloud
+---
 
 I’ve prepared a warm-up digest for those of you who made a resolution to improve their JavaScript skills in 2017, so let’s get it started!
 
@@ -87,6 +85,34 @@ $ node ~/scripts/freeEbook.js
 
 There’s the gist for it (it’s super-lazy)
 
-<script src="https://gist.github.com/kalinchernev/5f67405d46914897ee8ff95b46b55898.js"></script>
+```js
+#!/usr/bin/env node
+
+'use strict';
+
+var https = require('https');
+var cheerio = require('cheerio');
+
+var base = 'https://www.packtpub.com/'
+var freeEbookURL = base + 'packt/offers/free-learning';
+
+console.time('checking free ebook');
+
+https.get(freeEbookURL, (res) => {
+  res.on('data', (d) => {
+    var $ = cheerio.load(d);
+    var title = $('.dotd-title').text().trim();
+    var CAB = $('.twelve-days-claim').attr('href');
+
+    if (title && CAB) {
+        console.log(`Today's free ebook from Packtpub is ${title}.`);
+        console.log(`To claim it, click here ${base + CAB}.`);
+        console.timeEnd('checking free ebook');
+    }
+  });
+}).on('error', (e) => {
+  console.error(e);
+});
+```
 
 This script is just the basic concept that can be integrated with internal cron tasks or cloud services to automate the check. For example, I imagine that with some investigation it will be possible to work out an [integration with IFTTT](https://auth0.com/blog/if-this-then-node-dot-js-extending-ifttt-with-webtask-dot-io/) or a similar service.
