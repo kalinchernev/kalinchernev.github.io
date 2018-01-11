@@ -1,15 +1,13 @@
 ---
 title: Escaping in Macbook Pro with touchbar
+date: 2018-01-11T23:00:00+01:00
 slug: escaping-macbook-pro-touchbar
-date: 2018-01-02T00:00:00+02:00
-image: ""
 tags:
-- Macbook
-- MacOS
-- Productivity
-- Keyboard
+  - Macbook
+  - MacOS
+  - Productivity
+  - Keyboard
 ---
-
 The fact that you have opened this article means that you already know one of the biggest problems of Macbook Pro 2016+ models - the [touchbar](https://developer.apple.com/macos/touch-bar/). The touchbar is something Apple have decided to force users learn how to use touch surfaces in their keyboards. It's not a problem per-se for most users and certainly the bar can serve as a good tool if used properly. The bar becomes a problem for developers, system administrators and all other power users who need physical keys for important operations.
 
 The `Esc` (escape) key is an important key which is sort-of forced to be part of the touchbar.
@@ -43,12 +41,12 @@ Basically, my scenario was a bit more tricky than standard keyboards because on 
 
 Select to the right layout of keyboard:
 
-![Set right keyboard](/images/macos-escape-set-keyboard.png)
+![Setting up the right keyboard](/static/images/macos-escape-set-keyboard.png)
 
 In my case, I had to select `ANSI` instead of `ISO`, even though the actual hardware keyboard is `ISO`. If you are honest here, as soon as you map the `Esc` on the `non_us_backslack`, your new paragraph key will go on the tilde ... Not cool. Just as in the issue on github.
 
 Then, just do the mapping as you would do if you didn't know about any of the possible edge cases described above ;)
 
-![Set mapping](/images/macos-escape-set-mapping.png)
+![Setting the mapping](/static/images/macos-escape-set-mapping.png)
 
 And that's it! Now that physical key next to the fancy touchbar will be your `Esc` as normal :)
