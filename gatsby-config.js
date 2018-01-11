@@ -38,14 +38,14 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 650,
+              maxWidth: 740,
             },
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
           },
-          'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
+          'gatsby-remark-prismjs',
           'gatsby-remark-autolink-headers',
         ],
       },
@@ -57,6 +57,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-plugin-manifest`,
