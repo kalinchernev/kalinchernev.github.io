@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import BlogHeader from '../components/BlogHeader';
 import BlogFooter from '../components/BlogFooter';
 import PostMeta from '../components/PostMeta';
+import './css/styles.css';
 
 const Post = ({ data }) => {
   const post = data.markdownRemark;
