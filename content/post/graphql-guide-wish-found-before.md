@@ -12,8 +12,6 @@ Although I consider myself an intermediate JavaScript developer, I struggled for
 
 The list will follow the style of [Dave Ceddia](https://medium.com/@dceddia) who made [a timeline to learn React](https://daveceddia.com/timeline-for-learning-react/). It was really handy when I was experimenting with React few months ago, because it’s splitting the topics clearly and logically, smoothing the learning curve for newcomers. (At least it smoothed mine)
 
-<hr>
-
 ### 0. Introduction
 
 As a most fundamental start of everything, you have to have an idea what GraphQL is, and what it’s not.
@@ -36,8 +34,6 @@ For me, there are few reasons to invest time in learning GraphQL, even if I’m 
 
 GraphQL is a specification, it’s language independent, yet the most popular one is the JavaScript one. So, it’s useful to be comfortable with JavaScript for understanding the official documentation. (More or this later)
 
-<hr>
-
 ### 1. Languages
 
 First, you have to be comfortable with at least one programming language and the concepts behind the GraphQL query language. Regardless of the language of choice, you have to be OK with 2 languages.
@@ -59,8 +55,6 @@ So, after a while, you will most probably end up on a higher-level scenario of u
 The first eye-opening moment of syntax difference could be that you can [build types in several ways](http://graphql.org/graphql-js/constructing-types/). The second one could be that [context, fields and resolvers](http://graphql.org/learn/execution/#root-fields-resolvers) start to speak to you. It’s one thing to follow the tutorials and achieving results mimicking the example code, but it’s a totally different thing when you can read the documentation and see that you can work with promises, globals, and how to work with fields in circular dependencies.
 
 At the moment of writing this article there is no single mentioning of Flow in the official documentation on the website.
-
-<hr>
 
 ### 3. Resolve()
 

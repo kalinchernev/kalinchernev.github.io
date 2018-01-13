@@ -11,8 +11,6 @@ tags:
 
 I’ve prepared a warm-up digest for those of you who made a resolution to improve their JavaScript skills in 2017, so let’s get it started!
 
-<hr>
-
 ### Stories
 
 I published 2 articles this month and I enjoyed writing both of them.
@@ -22,8 +20,6 @@ I published 2 articles this month and I enjoyed writing both of them.
 [Agile documentation for your API-driven project](https://restful.io/agile-documentation-for-your-api-driven-project-based-on-open-api-standards-11e54d4326bb#.jaw6kcohk) — this got a tweet from the community few minutes after being published. So, the spread started before I make a tweet about the new publication myself. Nothing makes me happier than that as a writer.
 
 I got enthusiastic to write this article after release 1.9.0 of [swagger-jsdoc](https://github.com/Surnet/swagger-jsdoc) which introduced 2 new features. Both of them being focused on developers’ experience and productivity.
-
-<hr>
 
 ### JavaScript
 
@@ -35,8 +31,6 @@ It’s just the beginning of 2017, so let’s warm up right for it!
 *   [Node.js Async Best Practices & Avoiding Callback Hell — Node.js at Scale](https://blog.risingstack.com/node-js-async-best-practices-avoiding-callback-hell-node-js-at-scale/) — this article is full of advertisements just as a typical American TV show. It’s also as good as such because it shows you problems and solutions that you might actually have in your real life.
 
 And one more which is not only about JavaScript but the broader spectrum of front-end development: [Front-End Developer Handbook 2017](https://www.gitbook.com/book/frontendmasters/front-end-handbook-2017/details).
-
-<hr>
 
 ### Cloud
 
@@ -54,13 +48,9 @@ When I visualize a transition towards customer-oriented API architectures and se
 
 At some point, AWS (? will ?) be the de-facto platform for building cloud applications where the user starts off easily — just clicking here and there and making configurations which integrate what-ever is necessary, where-ever necessary. And when super-specific tweak is necessary, code editor with all [debugging capabilities](https://medium.com/@kalin.chernev/debugging-node-js-in-cloud9-ide-59712c043fb2) will be at hand. Thus, covering scenarios from small startup projects that don’t want to focus on infrastructure, to enterprise which is there because of the fine control over the server side.
 
-<hr>
-
 ### Trends
 
 On a similar note about trends, [Apiary got acquired by Oracle](https://www.oracle.com/corporate/acquisitions/apiary/index.html). Though I’m not a pro at understanding mergers, it’s obvious that API economy companies are on success reaping wave. Only few months ago [Apigee was in the news in a similar way](http://www.forbes.com/sites/greatspeculations/2016/09/13/heres-why-google-is-acquiring-apigee/#52eceafc693f), and there is a compelling reason for these trending acquisitions.
-
-<hr>
 
 ### Time-saving tricks
 

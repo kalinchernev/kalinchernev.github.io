@@ -25,8 +25,6 @@ And although it’s important to learn and follow best practices in implementati
 
 In this story I’ll be reflecting on few patterns which answer the latter.
 
-<hr>
-
 ### Continuation-passing style pattern
 
 This is an easy concept to understand, but really fundamental for working with asynchronous code
@@ -96,8 +94,6 @@ readFiles(process.argv.slice(2), (err, data) => {
 I highly encourage you to test this if you’re not sure how it works. If you are lazy to open a terminal session, just fire a [RunKit](https://runkit.com/home) and copy-paste these in the browser ;)
 
 Notice the `return` is used in the case of an error to exit the function. This pattern is very popular and comes handy for almost any case where the consumer of your module needs to do one single thing and get a result.
-
-<hr>
 
 ### Observer pattern with EventEmitter
 
@@ -203,8 +199,6 @@ FindFilesSearcher
 
 If you’ve visited the chapter about the observer patterns in the [famous design patterns book](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented-ebook/dp/B000SEIBB8) you must already see a big difference in the way how you can implement the pattern. I like “the node-way” better — it’s simpler and you can express same ideas with less code. And honestly, if I were to teach this pattern to web developers, I am sure that I’d have a better chance of success relating on familiarity of jQuery’s popular `.on()` method, without too much talking about abstractions and interfaces.
 
-<hr>
-
 ### Combining CPS and Observer patterns
 
 Our new function `findFiles()` is definitely more flexible than `readFiles()`.
@@ -270,8 +264,6 @@ findFiles(process.argv.slice(2), '.js')
 ```
 
 This is only a demo implementation which you should not copy-paste into your code without including better checks on the various edge cases of the input, etc. However, the example gives a basic idea on how to make the callback argument optional and use it depending on the scenario.
-
-<hr>
 
 ### Conclusions
 
