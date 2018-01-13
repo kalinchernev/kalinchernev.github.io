@@ -4,17 +4,10 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-nprogress',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        color: `#185D8B`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-97001925-1',
-        // Setting this parameter is optional
-        anonymize: true,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     {
@@ -24,13 +17,9 @@ module.exports = {
         path: `${__dirname}/content/post`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
-      },
-    },
+    // Mpre on images https://medium.com/@kyle.robert.gill/ridiculously-easy-image-optimization-with-gatsby-js-59d48e15db6e
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -57,7 +46,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -83,5 +71,19 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        color: `#185D8B`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-97001925-1',
+        // Setting this parameter is optional
+        anonymize: true,
+      },
+    },
   ],
 };
