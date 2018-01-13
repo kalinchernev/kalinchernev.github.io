@@ -2,7 +2,6 @@
 title: Learn Gatsby.js
 slug: learn-gatsbyjs
 date: 2017-10-03T23:33:31+00:00
-image: images/gatsby_cover.png
 tags:
 - JAM stack
 - JavaScript
@@ -40,7 +39,7 @@ Though, the MEAN stack still shares a lot of concepts and practices with the LAM
 
 ### The rise of React.js
 
-![The logo of React.js](/images/reactjs.png)
+![The logo of React.js](./images/reactjs.png)
 
 > How can you know what is coming up if you never looked back?
 
@@ -48,7 +47,7 @@ Let's focus on the historic years of the view layer in 2013-2015. Remember, the 
 
 What happened, however, is that Angular team shot themselves in the foot by announcing that Angular 2.0 will be a totally different project than Angular 1.0. On top of that, they were not able to say anything specific about the release planning of version of 2.0! Not to mention that they virtually obliged developers to learn and use a new Type of JavaScript.
 
-![Crazy World of JavaScript](/images/js-crazy.jpg)
+![Crazy World of JavaScript](./images/js-crazy.jpg)
 
 React.js was in the right place in the right time. People already knew that the DOM is slow and jQuery is not a great fit for building a nice non-blocking interfaces. Angular had already made the Single Page Applications (SPA) concepts popular.
 
@@ -99,7 +98,7 @@ And a more general one about the JAM stack:
 
 ### The rise of GraphQL
 
-![The logo of GraphQL](/images/graphql_logo.png)
+![The logo of GraphQL](./images/graphql_logo.png)
 
 Together with the growth of the JAM stack, naturally the API part of the stack also grows with it. And that's where the [GraphQL](https://kalinchernev.github.io/graphql-guide-wish-found-before/) comes into play. GraphQL optimizes queries.
 
@@ -117,7 +116,7 @@ Long story short, it [fits very well in the JAM stack](https://thenewstack.io/em
 
 ### The rise of cloud functions
 
-![The logo of AWS Lambda](/images/aws_lambda.png)
+![The logo of AWS Lambda](./images/aws_lambda.png)
 
 And with the continuous optimizations on the API, the "Serverless" concept and practices came into being. Many call the same concept cloud functions which fits well into new ways we build SPA or virtually any type of apps calling external services.
 
@@ -154,13 +153,13 @@ Understanding these trends deeply is not a matter of following a movement of coo
 
 ### [Gatsby.js](https://www.gatsbyjs.org/)
 
-![Gatsby.js](/images/gatsby.jpg)
+![Gatsby.js](./images/gatsby.jpg)
 
 Gatsby.js consists of React.js, GraphQL, Webpack and other modern technologies. It follows the "no build configurations" principle, This means that if you are a PHP developer who wants to learn React.js or GraphQL you can go for it and do it without losing your time and motivation into learning build tools. You can install the project and continue building prototypes and products. To an extend, Gatsby.js is similar to [create-react-app](https://github.com/facebookincubator/create-react-app) and  [Meteor.js](https://www.meteor.com/).
 
 What separates Gatsby.js from the others is the way it handles data. In Gatsby.js data could come from several types of files in the project - markdown, CSV, JSON, or it could come from external services like NetlifyCMS, Medium, or even CMS like Drupal and Wordpress.
 
-![Visualization of the concept of multiple data sources in Gatsby.js](/images/gatsby-netlify-cover.png)
+![Visualization of the concept of multiple data sources in Gatsby.js](./images/gatsby-netlify-cover.png)
 
 #### The benefits of leaning Gatsby.js
 
@@ -216,7 +215,7 @@ Here, for example, I [start off with 3 data sources](https://github.com/kalinche
 
 By the end of this step you must have a working environment and a GraphQL endpoint:
 
-![Starting Gatsby.js](/images/starting_gatsbyjs.png)
+![Starting Gatsby.js](./images/starting_gatsbyjs.png)
 
 **2) Make a simple deployment**
 
@@ -230,7 +229,7 @@ By the end of this step, you will have the confidence that your work will get ea
 
 Open the GraphQL endpoint and learn how to query information - it's fun!
 
-![Making a GraphQL query to get information about Belgian Beers](/images/graphql-beers-query.gif)
+![Making a GraphQL query to get information about Belgian Beers](./images/graphql-beers-query.gif)
 
 The information you see in the interface is coming from this [CSV file](https://github.com/kalinchernev/belgian-beers/tree/master/src/pages/beers) being transformed by [`gatsby-transformer-csv`](https://www.npmjs.com/package/gatsby-transformer-csv) working after [`gatsby-source-filesystem`](https://www.npmjs.com/package/gatsby-source-filesystem).
 

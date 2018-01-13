@@ -2,7 +2,6 @@
 title: February digest 2017
 slug: february-digest-2017
 date: 2017-03-01T00:00:00+02:00
-image: ""
 tags:
 - GraphQL
 - JavaScript

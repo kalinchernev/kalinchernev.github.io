@@ -2,7 +2,6 @@
 title: Debugging node.js in Cloud9 IDE
 slug: debugging-nodejs-in-cloud9-ide
 date: 2016-09-04T00:00:00+02:00
-image: ""
 tags:
 - nodejs
 - JavaScript
@@ -63,7 +62,7 @@ In fact it's almost identical to debugging a simple script, the only detail you 
 
 ![][11]
 
-### Feedback is&nbsp;welcome
+### Feedback is welcome
 
 Use the comments below to share your techniques and opinions.
 

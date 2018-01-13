@@ -2,7 +2,6 @@
 title: Drupalaton 2016
 slug: drupalaton-2016
 date: 2016-08-22T00:00:00+02:00
-image: ""
 tags:
 - Drupal
 - GraphQL
@@ -12,7 +11,7 @@ tags:
 
 ### Introduction
 
-Recently, I joined an event on [Drupal][1] in Hungary — the [Drupalaton][2]. It is one of the most exciting yearly Drupal events in Europe, organized by the local community. It gathers hundreds of contributors who collaborate on Drupal issues, share knowledge and have fun together&nbsp;:)
+Recently, I joined an event on [Drupal][1] in Hungary — the [Drupalaton][2]. It is one of the most exciting yearly Drupal events in Europe, organized by the local community. It gathers hundreds of contributors who collaborate on Drupal issues, share knowledge and have fun together :)
 
 I really enjoyed this year's event since it covered a lot of my favorite topics. (discussed shortly after) Good sessions, pleasant talks with the community, and also — a lot of new things to learn. The event took place at the shore of the biggest warm-water lake in Europe, at Lake Balaton.
 
@@ -46,7 +45,7 @@ After presenting the basics, the next step was to use Drupal as a client, fetchi
 
 [Creating a block with Drupal Console][13] was super-easy. That was a really neat way to demonstrate injecting the [http_client service][14] via the cli from the [container][15].
 
-There was also a demo of using the [core REST API module][16], which transforms Drupal into an API server. [REST UI module][17] was demonstrated as a site builders' tool to manage the configurations which are otherwise [managed through&nbsp;.yml files][18]. Here, it's important to note, that the endpoints of the REST API are controllers. Developers have the freedom to choose which format of data to return and via which components. For example, one can use the [Symfony's HttpFoundation][19] and its JsonResponse instance.
+There was also a demo of using the [core REST API module][16], which transforms Drupal into an API server. [REST UI module][17] was demonstrated as a site builders' tool to manage the configurations which are otherwise [managed through .yml files][18]. Here, it's important to note, that the endpoints of the REST API are controllers. Developers have the freedom to choose which format of data to return and via which components. For example, one can use the [Symfony's HttpFoundation][19] and its JsonResponse instance.
 
 In short, there was a lot of good advice, both about REST APIs in general, and Drupal-specific implementations, in combination with third-party tools and components.
 
@@ -92,7 +91,7 @@ There are a lot of new technologies and tools to learn and play with. I hope the
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">End of the first day at <a href="https://twitter.com/drupalaton">@drupalaton</a> we have a great dinner. <a href="https://t.co/CN795wXixz">pic.twitter.com/CN795wXixz</a></p>&mdash; 5NET Interactive (@5NEThu) <a href="https://twitter.com/5NEThu/status/763818240954998789">August 11, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Many thanks to the local Drupal community in Hungary!&nbsp;:)
+Many thanks to the local Drupal community in Hungary! :)
 
 [1]: http://drupal.org
 [2]: http://drupalaton.hu

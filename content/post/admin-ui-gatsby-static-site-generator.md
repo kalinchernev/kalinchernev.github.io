@@ -2,7 +2,6 @@
 title: Admin UI for Gatsby static site generator
 slug: admin-ui-gatsby-static-site-generator
 date: 2017-08-16T23:33:31+00:00
-image: images/gatsby-netlify-cover.png
 tags:
 - JAM stack
 - JavaScript

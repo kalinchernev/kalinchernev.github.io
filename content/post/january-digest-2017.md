@@ -2,7 +2,6 @@
 title: January Digest 2017
 slug: january-digest-2017
 date: 2017-02-01T00:00:00+02:00
-image: ""
 tags:
 - JavaScript
 - nodejs

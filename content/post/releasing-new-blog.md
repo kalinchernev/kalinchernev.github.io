@@ -2,7 +2,6 @@
 title: Releasing new blog
 slug: releasing-new-blog
 date: 2017-04-19T11:04:38+02:00
-image: images/vitosha.jpg
 tags:
 - blogging
 - JAM stack

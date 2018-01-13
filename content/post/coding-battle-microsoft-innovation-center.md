@@ -1,8 +1,7 @@
----
+ ---
 title: Coding battle at Microsoft Innovation Center Brussels
 slug: coding-battle-microsoft-innovation-center
 date: 2016-06-23T00:00:00+02:00
-image: ""
 tags:
 - JavaScript
 - Bots
@@ -15,43 +14,43 @@ Continuing on the exciting journey of coding battles and events, this time I'm s
 
 Recently, there's been quite some noise around the topic and many companies have already jumped into it — using and developing chat bots. The benefits, as I personally feel them: _for users, chat bots are a promise for better user experience, while for developers chat bots are a promise for cool task automation and beautifully integrated event-driven apps_. Of course, the biggest value is when a machine understands natural human communication and responds in a smart and useful way.
 
-#### The Organizers
+#### The Organisers
 
 I have to say this was the best coding event I've ever been so far. The flow was really smooth, the whole atmosphere was really good, and there were winners with a result in the end, which is a real-life app with purpose.
 
 The organizing team comprised of [CarASAP][2], [Microsoft Innovation Center][3] and [Philos][4]. Probably because of their good collaboration, the challenge was well prepared — clear problem definition, steps to solve, examples, ongoing support during the event, and last but not least — clear end goal in mind. In short, CarASAP presented their need to automate the process of car ordering for their customers, so that they can receive service via chat. Representatives from Microsoft were going around the room answering questions, showing small steps and debugging together with us — it was really friendly environment.
 
-![][5]
+![Happy coding](./images/happy-coding.jpeg)
 
 #### The Challenge
 
-Participants were provided with a JSON file representing the time schedule of a list of drivers. Thus, the schedule was the base information for our chat bots assisting CarASAP customers to find and order a driver. They were able to input natural sentences which the bot should understand by learning: time, date and address. (Read further to see which is the service used for understanding the natural speech&nbsp;;)
+Participants were provided with a JSON file representing the time schedule of a list of drivers. Thus, the schedule was the base information for our chat bots assisting CarASAP customers to find and order a driver. They were able to input natural sentences which the bot should understand by learning: time, date and address. Read further to see which is the service used for understanding the natural speech.
 
 **I think this event was a very good example how a business need can be solved elegantly in very short time with focused effort by a community**. I believe that this challenge set a good example for other companies to consider working with Philos too. Facilitating community contributions which solve real-life problems is a big thing. The way I see it, this is a Win-Win where developers learn, contribute and have fun, while business benefit resolutions and results.
 
 In the end of the event, there was a demonstration of the working solution:
 
-![][7]
+![Demoing the app](./images/demoing-the-app.jpeg)
 
-Credits: [Philos&nbsp;Lab][6]
+Credits: [Philos Lab][6]
 
-#### Tools &amp; Best Practices
+#### Tools Best Practices
 
 There was a lot of sharing during the event!
 
 From the developers around me I learned about [ngrok][8], which was a handy tool to just start and run a local node.js server which is easy to integrate with other systems. It's a time-saver when there's no time to deploy an app to a cloud server. Deployment can be a painful part of the development.
 
-From the winning team, I got inspired to research [cloud9][9] as a tool for collaborating during the next hack event, since it's another way to save from setup and deployment procedures which can lead to errors and frustration. Also, it looks awesome to be able to pair-program in real-time with other developers directly in the editor. Research homework for me&nbsp;:)
+From the winning team, I got inspired to research [cloud9][9] as a tool for collaborating during the next hack event, since it's another way to save from setup and deployment procedures which can lead to errors and frustration. Also, it looks awesome to be able to pair-program in real-time with other developers directly in the editor. Research homework for me :)
 
 Managing API keys was another common setback for many. All I can say here is that it's just something that has to be handled with care, because if it isn't, it leads to mystical error codes without clear path to resolve. And a lot of time is wasted poking around debugging systems that should just work.
 
-But don't worry, you are not alone with these issues! Here's a short motivational video that will make you laugh and encourage you to go forward&nbsp;:)
+But don't worry, you are not alone with these issues! Here's a short motivational video that will make you laugh and encourage you to go forward :)
 
 <iframe title="Video about Pair Programming a Facebook Messenger Bot" width="560" height="315" src="https://www.youtube.com/embed/zFO1cRr5-qY?rel=0" frameborder="0" allowfullscreen></iframe>
 
 For building the bots, we used the [Microsoft Bot Framework][10]. I can't explain you how amazing the APIs are! Just head directly into the [documentation][11] and skim through some of the example code. I'm sure you'll see the easy way to start building functionalities, for which the code looks familiar to other [node.js frameworks][12]. Apart from the core bot framework for managing the communication, we used [LUIS][13] to understand the user natural language, and process the important information from it. As a developer, I give my respect to the people who have built the framework and its documentation. It took us just few hours to figure out the APIs and make a working product!
 
-#### APIs are really&nbsp;cool!
+#### APIs are really cool!
 
 I'm generally a big fan of [REST APIs][14] and everything related to building and consuming them. For me, it's a good architectural approach for decoupling logic and functionality to focus on solving specific problems in a re-usable way. (Yes, the [GraphQL][15] we hear about a lot recently solves some drawbacks of the design, still I think the first wave of common usage will be based on fetching data from existing REST APIs and mainly combining them.)
 

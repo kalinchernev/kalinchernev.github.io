@@ -2,7 +2,6 @@
 title: Drupal 8 on Cloud9 IDE
 slug: drupal8-cloud9-ide
 date: 2016-09-15T00:00:00+02:00
-image: ""
 tags:
 - php
 - web development
@@ -35,7 +34,7 @@ At the end of this process, I have an [Ubuntu][13]-based [docker][14] container.
 
 As the terminal is already open for you, run `git remote -v` to ensure this origin linking if you like.
 
-### Selecting Drupal&nbsp;8
+### Selecting Drupal 8
 
 Now that the workspace is ready, you have to select a branch for the Drupal version you are going to work with. I'm going to do `git checkout 8.x` in the ternimal to use the 8.x version of the the repository files in the container machine. When you do that, you'll see the files in the tree.
 
@@ -67,9 +66,9 @@ If you resist your perfectionist nature and expectations on domain names, now yo
 
 ![][23]
 
-Yep, the wizard is&nbsp;ready!
+Yep, the wizard is ready!
 
-### Installing the&nbsp;project
+### Installing the project
 
 I deliberately left this out from the previous one. You can, of course, continue with the installation in the most user-friendly way with the wizard above. Classical and easy and you don't worry even for file permissions. If you are a databases guy, probably you'll be interested to check the tutorial for [setting up mysql][24] and/or [setting up a database][25].
 
@@ -114,19 +113,19 @@ A small helper subject after the setup — since xdebug is available in the 
 
 ![][31]
 
-The green debugger button is the important detail to&nbsp;notice.
+The green debugger button is the important detail to notice.
 
 * Set a break-point and open the application to trigger a request:
 
 ![][32]
 
-The app can be run either in preview in the IDE or in another&nbsp;tab.
+The app can be run either in preview in the IDE or in another tab.
 
-* Inspect the state of the system and profit from deeper understanding&nbsp;:)
+* Inspect the state of the system and profit from deeper understanding :)
 
 ![][33]
 
-Use the inspector for observing both global and local&nbsp;scopes.
+Use the inspector for observing both global and local scopes.
 
 Note that the runner properties can be edited:
 

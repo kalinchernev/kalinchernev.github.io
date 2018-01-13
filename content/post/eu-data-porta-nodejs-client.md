@@ -2,7 +2,6 @@
 title: Building a node.js client for the EU Open Data Portal
 slug: eu-data-portal-nodejs-client
 date: 2016-10-02T12:10:11+02:00
-image: ""
 tags:
 - JavaScript
 - nodejs

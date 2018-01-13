@@ -2,7 +2,6 @@
 title: Focus on community and good services
 slug: focus-community-good-services
 date: 2016-01-11T00:00:00+00:00
-image: ""
 tags:
 - Programming
 - Community
@@ -42,11 +41,11 @@ I started joining code sprint, hack jams, issue queues in drupal.org, etc. I had
 
 I still have so much to learn about the good ways of interaction with other smart developers, but I've already hooked on my strong belief that healthy **collaboration is the best way advance in any technology and project**. It's not just about the software.
 
-Even more motivation was the end of the year, my team at the European Commission was awarded to be the best project team&nbsp;:)
+Even more motivation was the end of the year, my team at the European Commission was awarded to be the best project team :)
 
-![Best team](/images/best-team.jpeg)
+![Best team](./images/best-team.jpeg)
 
-It's pretty rewarding to be the best&nbsp;:D
+It's pretty rewarding to be the best :D
 
 #### What about 2016
 

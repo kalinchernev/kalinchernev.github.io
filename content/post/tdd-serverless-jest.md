@@ -2,7 +2,6 @@
 title: TDD for AWS Lambda with Serverless framework and Jest
 slug: tdd-serverless-jest
 date: 2017-10-15T00:00:00+00:00
-image: images/serverless_cover.png
 tags:
 - TDD
 - Serverless

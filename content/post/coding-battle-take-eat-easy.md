@@ -2,7 +2,6 @@
 title: Coding battle at Take Eat Easy
 slug: coding-battle-take-eat-easy
 date: 2016-06-09T00:00:00+02:00
-image: ""
 tags:
 - JavaScript
 - Programming
@@ -16,7 +15,7 @@ Short retrospective on my second coding competition with JavaScript. Lessons lea
 
 [Take Eat Easy][1] and [Philos][2] organized this coding competition.
 
-Similarly to [the first coding battle][3], good news from [Max][4] came right from the beginning: the event was part of a hack league. For developers, this means that we can hope for continuity of the coding battles: more play, plus more opportunities to interact and share with others from the [JavaScript community in Belgium][5]. Few other cities have benefited from similar coding competitions: [Paris][6] and [London][7] recently, I am looking forward to see how the wave will grow even further&nbsp;:)
+Similarly to [the first coding battle][3], good news from [Max][4] came right from the beginning: the event was part of a hack league. For developers, this means that we can hope for continuity of the coding battles: more play, plus more opportunities to interact and share with others from the [JavaScript community in Belgium][5]. Few other cities have benefited from similar coding competitions: [Paris][6] and [London][7] recently, I am looking forward to see how the wave will grow even further :)
 
 After this intro, [Jean-Christophe Libbrecht][8] presented what Take Eat Easy is in simple words: delivery on time. [The technical challenge][9] was presented with focus on the same company values: optimal delivery management. I gotta say that I had a flashback to my university discipline of [operations research][10] for a minute, when thinking about routes and shortest distance. Luckily, the challenge was easier to understand than the academic subject!
 
@@ -95,7 +94,7 @@ Another positive prerequisite was **the sample state object**, which contained e
 
 **All possible actions** that the bots were able to play with: moving up/down/left/right, pick order, drop order. There were 2 advanced actions: upgrade fighter (be able to kick other players) and upgrade electric (move doubled).
 
-I will repeat this again, I was content with the organizers. Help was kindly provided, with hints and advice all the way during the game. That made it fun to play. (No matter the fact that my team didn't manage to get points&nbsp;:)
+I will repeat this again, I was content with the organizers. Help was kindly provided, with hints and advice all the way during the game. That made it fun to play. (No matter the fact that my team didn't manage to get points :)
 
 ![][13]
 
@@ -142,7 +141,7 @@ The `respond()` took us away, because we decided to focus on the actions, and so
 
 Probably the most complex part of all.
 
-Even though we didn't have clear strategy while developing the bot, it surely would have helped. For example, we started implementing functions for the bonus skills like having an electric bike and kicking other players before deciding how to move and take orders&nbsp;:D
+Even though we didn't have clear strategy while developing the bot, it surely would have helped. For example, we started implementing functions for the bonus skills like having an electric bike and kicking other players before deciding how to move and take orders :D
 
 But seriously, possible strategy for this challenge could probably be to separate the approach in 2: functions for working with distance, and such for working with actions. Though we didn't manage to have a complete combination of actions based on distance and value, we spoke about the fact that we were not clear about the order of combined actions we need to take. We took a delivery and then we were just standing at a place, since the next step was not foreseen. However, we prepared to be able to kick other players just standing there with our delivery in our hands! (we never got the points for the advanced action of kicking)
 
@@ -156,7 +155,7 @@ The [next coding battle will be at Microsoft][17] and the event is open for regi
 
 Lastly, consider inviting your colleagues to join you too. As you can imagine, the short hacking time will naturally give you ideas on how to communicate effectively with your colleagues when you work together in different environment. Also, you will see new ways to break down tasks and problem solve by observing and sharing with other developers you meet at the event.
 
-#### What do you&nbsp;think?
+#### What do you think?
 
 I'm really interested to hear feedback on my thoughts and ideas about the code and the highlights. Maybe you have a different point of view? Share it in the comments!
 

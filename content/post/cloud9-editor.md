@@ -2,7 +2,6 @@
 title: Cloud9 IDE
 slug: cloud9-editor
 date: 2016-08-29T00:00:00+02:00
-image: ""
 tags:
 - Cloud
 - Drupal
@@ -10,11 +9,11 @@ tags:
 - Tools
 ---
 
-![][1]
+![Cloud9 editor logo](./images/cloud9-logo.png)
 
-Few months ago I attended a [coding competition][2]. In the end of the event the winners demonstrated one of their tools: the [Cloud9 editor][3]. Then it hit me — I had to experiment with it! Later I used it working on various projects in my free time. Here I'm going to share my experience so far — I'm a happy user&nbsp;:)
+Few months ago I attended a [coding competition][2]. In the end of the event the winners demonstrated one of their tools: the [Cloud9 editor][3]. Then it hit me — I had to experiment with it! Later I used it working on various projects in my free time. Here I'm going to share my experience so far — I'm a happy user :)
 
-### Cloud9 is&nbsp;great
+### Cloud9 is great
 
 So far, I've found several key points/facts why I consider the editor to be truly astounding tool:
 
@@ -28,9 +27,9 @@ The tool is currently [free][5] and [open source][6]. Even if you're not a techn
 
 On the other hand, if you are a technical person and you take a closer look, you'll see that it's a charming service of [ace][10] which directly accesses [docker][11] instances. The first time I showed a working [workspace][12] to a friend developer telling him to use the environment just as Ubuntu — the response was something like
 
-![][13]
+![It's mind blowing!](./images/mind-blowing.gif)
 
-Later, he setup all his bash aliases and specific configurations and started to work with the terminal just as he's working with his own Linux machine&nbsp;:)
+Later, he setup all his bash aliases and specific configurations and started to work with the terminal just as he's working with his own Linux machine :)
 
 ### Pair programming and education
 
@@ -40,7 +39,7 @@ As soon as the environment was ready (understand having all the aliases and cust
 
 From these pair program opportunities come also very interesting education opportunities. For example, [CS50][15] and [freeCodeCamp][16]. These are good case studies of the cloud editor to encourage people of all walks of life to give programming a try and learn their [preferred programming language][17] without any special computer hardware requirements, i.e. they can code real applications in the browser.
 
-### Collaboration and open&nbsp;source
+### Collaboration and open source
 
 Because the service is free and very fun to use, it's naturally an optional tool when working on various projects requiring tight collaboration such as open source projects.
 
@@ -64,7 +63,7 @@ These are some of the items I'm using quite often and sometimes get a WOW effect
 
 I think normally people don't expect a full IDE experience in the browser, as I didn't too, and that's the reason I mentioned Docked previously for an eye-opener. Just by the way, PHP developers might be even more surprised with things like [xdebugger][23] being available in their development environments.
 
-### Setting up Drupal&nbsp;8
+### Setting up Drupal 8
 
 This might come even more shocking for people having an idea what [Drupal][24] is. It's an association of heavy CMS with high resource demand.
 
@@ -74,7 +73,7 @@ Yet, do the following the sake of having your WOW moment yourself:
 2. Follow the instructions to run an installation from the cli or the web (you might need to read [this MySQL][26] article if you don't have the idea to see your [environment variables][27] from the command line.
 3. Profit from having a running Drupal 8 which uses [Composer][28] scripts for managing modules and dependencies to external libraries.
 
-![][29]
+![Demo of Cloud9 with PHP](./images/cloud9-editor-php-demo)
 
 [1]: https://cdn-images-1.medium.com/max/800/1*uc-REJYHbk02nuzVQmDHHQ.png
 [2]: https://medium.com/@kalin.chernev/coding-battle-at-microsoft-innovation-center-brussels-the-rise-of-the-bots-f0887c15e257

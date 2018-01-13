@@ -2,7 +2,6 @@
 title: Triage stream-adventure issue queue
 slug: stream-adventure-triage
 date: 2016-11-06T00:00:00+02:00
-image: ""
 tags:
 - JavaScript
 - Open Source
@@ -29,7 +28,7 @@ Reporting issues is really good! Only one suggestion: search the [issue queue](h
 
 Naturally, if the issue is already reported or worked upon, try to support the people working on it in order to speed up the process of solving the issue.
 
-### Working on the issue&nbsp;queue
+### Working on the issue queue
 
 As I wanted to work on the queue for my own benefit of figuring out what is what, etc. initially, I started working in one way and changed my approach on the way. The goal was simple: organize issues and pull request in an effective way for a maintainer to quickly and easily take yes/no decision on solving a given problem.
 
@@ -43,7 +42,7 @@ I think that strategy could be effective if the project has a roadmap or a well-
 
 **Strategy 2: Work-out "low-hanging fruits"**
 
-This strategy seemed a natural reflex for quick gratification after the first strategy didn't work quite well&nbsp;:) The idea is simple: go through issues and find such that are either already solved, duplicates, general questions that are already answered successfully, old issues that are not valid any more, etc. These are quick-wins that give a good feeling similar to the one that you experience when you cross an item from the todo list.
+This strategy seemed a natural reflex for quick gratification after the first strategy didn't work quite well :) The idea is simple: go through issues and find such that are either already solved, duplicates, general questions that are already answered successfully, old issues that are not valid any more, etc. These are quick-wins that give a good feeling similar to the one that you experience when you cross an item from the todo list.
 
 I think that this strategy could be the starting point, rather than a bounce-back reflex as I did. The process of sorting easy or already done issues is a low-barrier entrance into the issue queue. And it naturally leads to the need of reading/searching other related issues which is something that has to be done at any case.
 
@@ -61,9 +60,9 @@ That's an approach of working out issues in open source projects in software or 
 
 In a similar way of strategy 3, which involved prioritizing issues by topic, I could say that it's pretty important to work on issues that are genuinely interesting for oneself. This means that, even if the project was bigger and harder to maintain, the passion which someone has about a topic would always win over a non-interested trivial going through the issue queue solving issues that are not really motivation enough to learn from.
 
-### Your feedback is&nbsp;valuable
+### Your feedback is valuable
 
-To summarize this meta-article, your feedback on both the [repository of the project][1] and my thoughts are very welcome&nbsp;:)
+To summarize this meta-article, your feedback on both the [repository of the project][1] and my thoughts are very welcome :)
 
 **Sharing is caring!**
 

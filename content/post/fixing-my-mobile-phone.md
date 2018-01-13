@@ -2,7 +2,6 @@
 title: Fixing my mobile phone
 slug: fixing-mobile-phone
 date: 2017-09-29T23:33:31+00:00
-image: images/developers-myth.jpg
 tags:
 - Misc
 ---

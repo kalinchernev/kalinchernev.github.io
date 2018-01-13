@@ -2,7 +2,6 @@
 title: From personal computers to personal assistants
 slug: personal-computers-personal-assistants
 date: 2017-05-09T00:00:00+02:00
-image: /images/bot-assistant.jpg
 tags:
 - Bots
 - Assistants
@@ -50,7 +49,7 @@ Depending on your language needs, level of interests in the subjects and needs f
 
 Here's an example of using [Microsoft stack](https://www.slideshare.net/PaulPrae/azure-as-a-chatbot-service-from-purpose-to-production-with-a-cloud-bot-architecture)
 
-![Chat bot cloud architecture](/images/cloud-bot-architecture.jpg)
+![Chat bot cloud architecture](./images/cloud-bot-architecture.jpg)
 
 > “Over the past decades computers have broadly automated tasks that programmers could describe with clear rules and algorithms. Modern machine learning techniques now allow us to do the same for tasks where describing the precise rules is much harder.” - [Jeff Bezos](https://futurism.com/amazon-ceo-perfectly-explains-ai-just-two-sentences/)
 

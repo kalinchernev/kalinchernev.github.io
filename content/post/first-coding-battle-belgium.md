@@ -2,7 +2,6 @@
 title: The first coding battle in Belgium
 slug: first-coding-battle-belgium
 date: 2016-04-14T00:00:00+02:00
-image: ""
 tags:
 - JavaScript
 - web development
@@ -46,7 +45,7 @@ Personally, I enjoyed the challenge. It didn't require any previous knowledge of
 
 I believe these characteristics of the challenge were truly important. In the end, it was not really about whether or not developers know JavaScript or frameworks deeply, but rather: can developers understand requirements, code and logic quickly (2 hours and 30 minutes :), and provide solutions based on mathematics.
 
-#### What did I&nbsp;learn
+#### What did I learn
 
 **1. Re-consider understanding the core algorithms**
 
@@ -64,27 +63,27 @@ Even though I don't take myself as an expert in algorithms, making mathematical 
 
 **4. Team-work is important**
 
-No need to go too deep into this. I was lucky with this one during the particular event. I worked together with a colleague I work with every day&nbsp;:)
+No need to go too deep into this. I was lucky with this one during the particular event. I worked together with a colleague I work with every day :)
 
 Splitting down the small details was a breeze: which functions should do what, why, how, etc. The action was so hot that at some point using the "[for of][6]" syntax fit perfectly for the general foreach() equivalent for the major chunk for the decider logic. Believe me, there is no time to re-factor, questions like sugar in JS: Class vs Function, public method of a module vs private method of an instance are too tiny of topics in dynamic circumstances.
 
-![Team work during coding event](/images/coding-battle-code.jpeg)
+![Team work during coding event](./images/coding-battle-code.jpeg)
 
 #### Community
 
 In overall, the big winning was absolutely going into the community.
 
-![Community](/images/coding-battle-community.jpeg)
+![Community](./images/coding-battle-community.jpeg)
 
-Good-bye picture at the spacious Woorank&nbsp;office
+Good-bye picture at the spacious Woorank office
 
 #### Bragging time
 
-In this competition, my team reached the finals, team-6&nbsp;;)
+In this competition, my team reached the finals, team-6 ;)
 
-![Blackjack table](/images/coding-battle-table.jpeg)
+![Blackjack table](./images/coding-battle-table.jpeg)
 
-This is the "table" server where bots (teams) play against a dealer&nbsp;(bot)
+This is the "table" server where bots (teams) play against a dealer (bot)
 
 [1]: https://codefights.com/
 [2]: https://www.philos.io/

@@ -2,7 +2,6 @@
 title: March digest 2017
 slug: march-digest-2017
 date: 2017-03-31T00:00:00+02:00
-image: ""
 tags:
 - Web Development
 - JavaScript

@@ -2,7 +2,6 @@
 title: Problem-first problem-solving
 slug: problem-first-problem-solving
 date: 2017-01-11T00:00:00+02:00
-image: ""
 tags:
 - Problem solving
 - Meta articles
@@ -24,11 +23,11 @@ My personal observation comes to that many people working in the technical secto
 
 Asking/answering questions is the most natural way to manage attention and feelings. Questions are the leaders in both scenarios from above.
 
-I think that seniors in any knowledge worker profession are those who have accumulated experience of asking good questions for the problems they are supposed to solve. (And browsing well through the ocean of information after this&nbsp;:)
+I think that seniors in any knowledge worker profession are those who have accumulated experience of asking good questions for the problems they are supposed to solve. (And browsing well through the ocean of information after this :)
 
 The ultimate question one can ask recursively: "What am I really trying to solve here?" I believe that answering this question first, during meetings for example, could bring many positive outcomes without too many discussions and roundabouts which take attention and energy to focus.
 
-### Tools are not solving problems, people&nbsp;are.
+### Tools are not solving problems, people are.
 
 This is a personal feeling and saying out loud: let's please first find the problem we're solving and then let's look at the tools we're using. Not to go into too many specifics of a profession, but I see so much energy being spent on things like: choosing programming languages, frameworks, etc. It's so amazing sometimes to see projects like [lebab][2]. I am sure that it's solving real problems, however it's not so obvious.
 

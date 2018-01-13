@@ -2,7 +2,6 @@
 title: Think about apps, not websites
 slug: think-about-apps-not-websites
 date: 2016-12-13T00:00:00+02:00
-image: ""
 tags:
 - web development
 - mobile
@@ -75,7 +74,7 @@ The manifest file should comply to a [specification][1] which serves a similar p
 
 ![][4]
 
-Image taken from&nbsp;[here][3].
+Image taken from [here][3].
 
 At the time of writing this article, these are the criteria:
 
@@ -94,7 +93,7 @@ If you are like me, testing the behavior of "Add to homescreen" in both the desk
 
 ![][13]
 
-add to homescreen behavior on your desktop&nbsp;browser
+add to homescreen behavior on your desktop browser
 
 Depending on the [`display mode][14]` the app can run in a separate standalone window that looks like a desktop app (and in mobile it looks like mobile), by hiding the address bar. This is how [Chrome Apps][15] should be build in the future too, not only websites.
 
@@ -106,7 +105,7 @@ The same code (HTML+CSS+manifest file and an empty JavaScript file loaded as a s
 
 ![][17]
 
-Add to home screen is same as installing the app on the&nbsp;device
+Add to home screen is same as installing the app on the device
 
 Then, the icon is added to the desktop as expected:
 
@@ -116,9 +115,9 @@ and when the icon is clicked, the user gets a nice welcoming screen, colors defi
 
 ![][19]
 
-Lastly, in standalone display mode, no URL address bar is visible. Use a [good front-end framework][20] to make the look and feel of your web page as a native app — the user will be delighted!&nbsp;:)
+Lastly, in standalone display mode, no URL address bar is visible. Use a [good front-end framework][20] to make the look and feel of your web page as a native app — the user will be delighted! :)
 
-### The app&nbsp;shell
+### The app shell
 
 It's mostly conceptual yet important task to think about: in order to deliver good user experience, it's useful to have access to fundamental assets offline in order to react well in case of a network going offline. So, when you build and develop your web site, consider it's a real shell that stays the same and only the contents is changing. This article gives good [concept overview][21].
 
@@ -136,7 +135,7 @@ In order to implement this strategy for saving resources, one must know how to u
 
 In basic terms, the service worker is a proxy layer between your stack (HTML+CSS+JS) and the network. The API of service workers boost the functionality of your otherwise normal web pages.
 
-A good starting point could be the sample for [Service Worker Sample: Custom Offline Page Sample][26]. If the amount of code seems too much, have a look at the [tools section][27] where some libraries are already published to make these functionalities more accessible. For example, if your project uses a task runner, you can implement [`sw-precache][28]` ([tutorial][29] is also available&nbsp;;)
+A good starting point could be the sample for [Service Worker Sample: Custom Offline Page Sample][26]. If the amount of code seems too much, have a look at the [tools section][27] where some libraries are already published to make these functionalities more accessible. For example, if your project uses a task runner, you can implement [`sw-precache][28]` ([tutorial][29] is also available ;)
 
 For me, personally, it was fun to play a bit with the service worker file, not having access to the DOM directly, but yet having a Web API that should communicate with it was an interesting thing. In the end, I used the example code provided in the [demo][30] of `sw-precache` because I'm really lazy.
 
@@ -166,7 +165,7 @@ Apart from being bright, it will be filled with advancements and further variety
 
 It's important to underline, that [Progressive Web Apps isn't a Google-only thing][38] although many of the references in this article are going to resources authored by community contributions to Google documentation. This is mainly because the dedication and organization of knowledge seems to the best at the moment. [Microsoft are also supporters of PWA][39]. In fact, [manifoldjs][40] is an interesting project you will probably meet should you decide to make PWA that works as a nice app in Windows.
 
-In general, Web APIs will surely continue to evolve. You can bookmark the good ol' [caniuse.com][41] to verify whether an API you want to use is supported natively or you'll have to search for a shim/polyfill and similar. Of course, there are many existing libraries and frameworks which are already taking developers attention (causing fatigue&nbsp;:)
+In general, Web APIs will surely continue to evolve. You can bookmark the good ol' [caniuse.com][41] to verify whether an API you want to use is supported natively or you'll have to search for a shim/polyfill and similar. Of course, there are many existing libraries and frameworks which are already taking developers attention (causing fatigue :)
 
 Here I speak about experimental features that will change, but I firmly believe that browser vendors are on a good way of collaborating to support native APIs more consistently rapidly in very near future, so these features will be standard before you realize it. Knowing the standards helps you produce more maintainable code and gives you a good idea about the direction of Web, regardless of the popularity and influence of vendor frameworks and libraries.
 
@@ -182,7 +181,7 @@ So, during the upcoming holidays, have a look at the following Web APIs, and hop
 
 Hopefully, using native Web APIs will be fun during this experimentation, as [Chrome supports a lot of ES6 features][42] and there is no need for you to transpile your code to see immediate results of your work.
 
-Enjoy and good luck!&nbsp;:)
+Enjoy and good luck! :)
 
 [1]: https://w3c.github.io/manifest/
 [2]: https://developer.chrome.com/extensions/manifest
