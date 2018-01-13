@@ -31,7 +31,9 @@ To make Gatsby work with this tutorial, you will need to:
 
 * make a [page component](https://www.gatsbyjs.org/docs/building-with-components/#page-components) for the admin page, this should include the scripts loading the NetlifyCMS app
 
-* include the `config.yml` file in `static` folder of Gatsby, as it does not need optimization by webpack</span>
+* include the `config.yml` file in `static` folder of Gatsby, as it does not need optimization by webpack
+
+![Deployment settings in Netlify](./images/deployment-settings-netlify.png)
 
 If you have configured Netlify service to take your master branch and execute `npm run build` on new deployments, a new push will already give you access to the admin UI app.
 
@@ -45,6 +47,8 @@ This side might seem a bit more complex compared to copy-paste and rework to a s
 
 * configure also, by the way, configure also the `config.yml` of Netlify to be the same target
 
+![Netlify deployments](./images/netlify-deployments.png)
+
 Check if all works, and if yes, make another deployment to the your repository. I personally removed all the unnecessary content manually and had to flush the cache of the last deploy in the console.
 
 ### The result
@@ -52,5 +56,3 @@ Check if all works, and if yes, make another deployment to the your repository. 
 You have a modern tool-chain of React, GraphQL, webpack, and similar, called Gatsby, and you have a working administration UI to manage your content when you're lazy to open your editor ;)
 
 Here's a [video of the process](https://github.com/kalinchernev/kalinchernev.github.io/blob/blog/static/videos/netlify-cms-gatsby.mp4) from making a draft which is a pull request, opening a preview and then publishing the change which gets automatically deployed on the site.
-
-![](/uploads/2017/08/16/Aug%2017%202017%2012-41%20AM.mp4)
