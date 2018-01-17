@@ -62,9 +62,9 @@ In fact it's almost identical to debugging a simple script, the only detail you 
 
 ![][11]
 
-### Feedback is welcome
 
-Use the comments below to share your techniques and opinions.
+
+
 
 [1]: https://nodejs.org/api/debugger.html
 [2]: https://github.com/Surnet/swagger-jsdoc/blob/master/example/app.js
