@@ -20,7 +20,7 @@ Drupal Composer's drupal-project seems like a really interesting repository whic
 
 Here's what I can do to start a [Cloud9 workspace][10] linked my own fork repository of the drupal-project.
 
-* Forked the original repo to my own [drupal-project repo][11].
+* Forked the original repo to my profile.
 * Create a new workspace pointing to the my fork repo.
 * Selecting template "The popular stack in shiny cloud wrappings: Apache, PHP5 and MySQL pre-configured" seems ok for the moment.
 
@@ -171,7 +171,6 @@ Now it's up to you to use these tools to your best interest: teaching Drupal 8 i
 [7]: https://medium.com/@kalin.chernev/debugging-node-js-in-cloud9-ide-59712c043fb2#.tknem3kcp
 [8]: https://dreditor.org/
 [10]: https://docs.c9.io/docs/getting-started
-[11]: https://github.com/kalinchernev/drupal-project
 [12]: https://cdn-images-1.medium.com/max/800/1*nbj-D9ufx-wlGZ-MdBj6Jw.png
 [13]: http://www.ubuntu.com/
 [14]: https://www.docker.com/
