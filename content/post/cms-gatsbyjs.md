@@ -42,11 +42,37 @@ Because, obviously, it's not good if the credentials are done for you, ain't it?
 
 ![Reset your credentials](./images/password-reset-netlifycms.gif)
 
-5) Use your credentials to log in
+5) Set credentials (there might be a catch)
 
+You should get a short email with instructions and a link **which should lead to the `/admin` path of the NetlifyCMS!**. If they don't, you'll have to add `/admin/` to the path manually!
 
+For example, the path from the email message I got was `http://{site-name}.netlify.com/#invite_token={somehash}` whereas it should be `http://{site-name}.netlify.com/admin/#invite_token={somehash}`. If the landing does not lead you to `/admin`, then you'll have to add this part manually, at least for the time being.
+
+Another useful hint here is that you can use the Netlify identity console to manage users if the initial invite didn't go through or you want to change your email, invite others, etc.
+
+![Netlify identity management console](./images/netlify-identity-management.png)
+
+**Bref**: make sure you always land at `/admin` or your correctly set path to NetlifyCMS and not the root of your site!
+
+6) Log in
+
+Now that you have your credentials, authenticate to the panel and enjoy! :)
+
+![NetlifyCMS administration pages](./images/netlifycms-admin-pages.png)
 
 ### The administration panel
+
+One would expect that going to the [official docs](https://www.netlifycms.org/docs/), there would be a short overview or a tutorial about the features of the product. However, this is not the case, most probably because it's so simple :)
+
+#### Creating new content
+
+![Create a post](./images/netlifycms-create-blog-post.gif)
+
+Clicking on "Publish" will put the content in the main branch of the repository and will trigger the build.
+
+![Netlify build settings](./images/netlify-build-settings.png)
+
+If you rather have an additional moderation step before content lands into production, you use the [`publish_mode`](https://www.netlifycms.org/docs/configuration-options/#publish-mode). For this, you'll need to change the code of the repository (the starter) created under your github username.
 
 ### Github
 
