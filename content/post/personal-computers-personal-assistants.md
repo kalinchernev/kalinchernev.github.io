@@ -14,7 +14,7 @@ the growing popularity of the so called [home assistants](http://www.crn.com/sli
 
 ### Making a chat bot, this time on Facebook
 
-For me the story began with [a coding event](/coding-battle-microsoft-innovation-center)
+For me the story began with [a coding event](https://medium.com/@kalin.chernev/coding-battle-at-microsoft-innovation-center-brussels-the-rise-of-the-bots-f0887c15e257)
 at Microsoft almost an year ago when I "met" LUIS for the first time. Later, there was [the selfie chat bot](https://chatbotslife.com/building-a-chat-bot-who-understands-emotions-though-your-selfies-e9fa7cc4b627), which was fun and also easy to make. So, trying the messenger platform was easy and smooth experience. Here's a very short story of this journey:
 
 - There's quite some tokens to be generated.
@@ -76,7 +76,7 @@ Believe it or not, I realized just recently that Google announced [Google Assist
 
 In Europe, it's still not straight-forward to buy Google Home device in the same way it would be in the USA, so I was recently browsing for ways to emulate the device, and still have the Google Assistant in the box - it's integrated with [api.ai](https://developers.google.com/actions/) that I already tried for making the chat bot on Facebook!
 
-Few days ago, the [#57 issue of MagPi](https://www.raspberrypi.org/magpi/find-the-magpi-57/) got published with an interesting toy - a [Google AIY](https://aiyprojects.withgoogle.com/) - a do-it-yourself AI similar to Google Home :D
+Few days ago, the [#57 issue of MagPi](https://www.raspberrypi.org/magpi/how-to-get-aiy-projects/) got published with an interesting toy - a [Google AIY](https://aiyprojects.withgoogle.com/) - a do-it-yourself AI similar to Google Home :D
 Google say that the assistant will be soon be published as an app for wide range of Android phones, but if you want to play with the actions sooner, and test if the this new wave would work for you or not - the AIY might be a really nice weekend / hack project.
 
 __PS1__: Google I/O is coming really soon, and it's quite possible to see another product improving upon Google Home. The idea of trying the Assistant with some custom code/actions/webhooks from api.ai will still be a viable project regardless.
