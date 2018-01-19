@@ -36,7 +36,9 @@ When you start the creation of a new project, the new identity service of Netlif
 
 ![Accept Netlify invite](./images/accept-netlify-invite.png)
 
-4) Reset your password
+If email does not add `/admin` in confirmation URL, add it manually. Otherwise, you'll need to use step 4, which could confuse you.
+
+4) Reset your password (might be unnecessary)
 
 Because, obviously, it's not good if the credentials are done for you, ain't it?
 
@@ -64,7 +66,7 @@ Now that you have your credentials, authenticate to the panel and enjoy! :)
 
 One would expect that going to the [official docs](https://www.netlifycms.org/docs/), there would be a short overview or a tutorial about the features of the product. However, this is not the case, most probably because it's so simple :)
 
-#### Creating new content
+#### Content management
 
 ![Create a post](./images/netlifycms-create-blog-post.gif)
 
@@ -74,10 +76,50 @@ Clicking on "Publish" will put the content in the main branch of the repository 
 
 If you rather have an additional moderation step before content lands into production, you use the [`publish_mode`](https://www.netlifycms.org/docs/configuration-options/#publish-mode). For this, you'll need to change the code of the repository (the starter) created under your github username.
 
+At the moment, the query for a blog post is the following:
+
+```js
+export const pageQuery = graphql`
+  query BlogPostByPath($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
+      html
+      frontmatter {
+        path
+        date(formatString: "MMMM DD, YYYY")
+        title
+        description
+      }
+    }
+  }
+`;
+```
+
+It's quired that you provide a `path` starting with a slash, as otherwise the query will fail and the build will not pass through.
+
+#### Other settings
+
+Content management features being quite straight-forward, by default the starter provides defaults which are common sense. For more advanced features and configurations options in the administration pages, you'll need to [use the `config.yml`](https://www.netlifycms.org/docs/configuration-options/) file in the repository as described in the docs.
+
 ### Github
 
-You can also still work in programmer's workflow with a repository
+Although there's the NetlifyCMS for providing eye-candy and easy UI for content management, one can still use the "regular" content management workflows developers have - using the repository on Github to add new content and change existing content :)
+
+#### Deploying changes
+
+Pushing changes to main branch (master by default) will trigger the Netlify service to run another build of the project:
+
+![Netlify build settings](./images/netlify-listening-repository-changes.png)
+
+This workflow is similar to Heroku or other PaaS solutions.
+
+#### Previewing changes
+
+When moderation workflows are enabled, creating a draft from NetlifyCMS administration pages means that the tool will create a new pull request to the main branch on your behalf. You can do the same just as you are used to do working with the repository directly - creating a new branch locally and pushing it to a branch for a pull request.
+
+[Netlify previews](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/) are a popular useful feature [used by GatsbyJS project](https://github.com/gatsbyjs/gatsby/blob/936c33a262eba0d3e053e67396079c34507f5cb8/docs/docs/deploy-gatsby.md) and many others.
 
 ### Conclusions
 
-Starting can't be easier and more examples and community support with time. No reason not to go for the JAM stack for your next CMS project :)
+I hope this short tutorial would be useful to those searching for an Admin UI for a static site generator, and most specifically GatsbyJS. The process has been greatly simplified which hopefully will further increase the adoption of the JAM stack.
+
+The Gatsby Starter is welcoming, easy to get a GatsbyJS site up and running, so why not use this opportunity?
