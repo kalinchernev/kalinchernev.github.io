@@ -74,7 +74,7 @@ This makes JAM stack applications:
 - cheaper - as expensive as it is to host static assets
 - a bit easier to develop
 
-As [mentioned before](https://kalinchernev.github.io/tags/jam-stack/) this stack differs from the traditional LAMP/MEAN stacks in the A, where APIs replace back-end logic on a server. As simple as it may sound, it is a powerful concept where the database/persistence layer of the stack is taken out of the equation and delegated to external services.
+As [mentioned before](/tags/jam-stack/) this stack differs from the traditional LAMP/MEAN stacks in the A, where APIs replace back-end logic on a server. As simple as it may sound, it is a powerful concept where the database/persistence layer of the stack is taken out of the equation and delegated to external services.
 
 A simple example would be making a contact form which normally needs a server to accept the request and process it with a mailing server. In a static site, this could be delegated to a [cloud function](http://docs.aws.amazon.com/ses/latest/DeveloperGuide/receiving-email-action-lambda.html) using [services](https://codehabitude.com/2016/04/05/forms-to-emails-using-aws-lambda-api-gateway/) behind an [API](https://github.com/eleven41/aws-lambda-send-ses-email) endpoint.
 
@@ -86,7 +86,7 @@ Another great example for an API-driven CMS which is highly focused on the princ
 
 Also, static site generators contribute to the JAM stack. The most popular static site generators are [Jekyll](https://jekyllrb.com/) and [Hugo](https://gohugo.io/). There are [plenty of options on the market](https://www.staticgen.com/). [Gatsby.js](https://www.gatsbyjs.org/) is the one which I currently study to be my number 1 :)
 
-One of my favorite pull requests recently was the one adding [documentation about the integration between Gatsby.js and NetlifyCMS](https://github.com/netlify/netlify-cms/pull/527). With this integration, you can easily provide a nice-looking [admin UI for your static site](https://kalinchernev.github.io/admin-ui-gatsby-static-site-generator/).
+One of my favorite pull requests recently was the one adding [documentation about the integration between Gatsby.js and NetlifyCMS](https://github.com/netlify/netlify-cms/pull/527). With this integration, you can easily provide a nice-looking [admin UI for your static site](/admin-ui-gatsby-static-site-generator).
 
 Some recommended videos:
 
@@ -100,7 +100,7 @@ And a more general one about the JAM stack:
 
 ![The logo of GraphQL](./images/graphql_logo.png)
 
-Together with the growth of the JAM stack, naturally the API part of the stack also grows with it. And that's where the [GraphQL](https://kalinchernev.github.io/graphql-guide-wish-found-before/) comes into play. GraphQL optimizes queries.
+Together with the growth of the JAM stack, naturally the API part of the stack also grows with it. And that's where the [GraphQL](/graphql-guide-wish-found-before) comes into play. GraphQL optimizes queries.
 
 In static sites the optimization comes from bundling and delivering static assets without rendering. GraphQL can further optimize the communication part when it's still needed.
 
@@ -190,7 +190,7 @@ The the process of building pages and components using data in Gatsby.js can be 
 
 ### Practice time: building a website about Belgian beers
 
-After going through the [official tutorial](https://www.gatsbyjs.org/tutorial/) I managed to make this project about [Belgian beers](https://kalinchernev.github.io/belgian-beers/). As you might see from its Github [repository](https://github.com/kalinchernev/belgian-beers) the code is very little.
+After going through the [official tutorial](https://www.gatsbyjs.org/tutorial/) I managed to make this project about [Belgian beers](/belgian-beers/). As you might see from its Github [repository](https://github.com/kalinchernev/belgian-beers) the code is very little.
 
 If you feel like following more visual tutorial before reading forward, I found some [video tutorials about Gatsby.js](https://www.youtube.com/playlist?list=PLLnpHn493BHHfoINKLELxDch3uJlSapxg) for you. At the moment of writing this article there aren't any other alternatives for video lessons.
 

@@ -8,13 +8,15 @@ tags:
 - GatsbyJS
 ---
 
+**There is a newer post about how to setup an Admin UI for GatsbyJS, and it's easier. Check it out [here](/cms-gatsbyjs).**
+
 ## Introduction
 
 Recently, I was looking into [Gatsby.js](https://www.gatsbyjs.org/) as a generator for a blog site. As many others, I one of the first steps into using the system as other popular CMS solutions, I started to look around for an online back-end UI for the content creation part. I found this list of [headless CMS options](https://headlesscms.org/) and since [forestry](forestry.io) (the service I use for my blog) does not support Gatsby, I decided to try [NetlifyCMS](https://www.netlifycms.org/). This tutorial will be about it :)
 
 I'm not going into details on the separate services and software packages, their advantages and super features. Rather, I will keep the tutorial concise on how to integrate the systems.
 
-If you like more background about the JAM stack, you can see previous mentions [here](https://kalinchernev.github.io/march-digest-2017/#jam-stack) and [here](https://kalinchernev.github.io/releasing-new-blog/) ;)
+If you like more background about the JAM stack, you can see previous mentions [here](/march-digest-2017/#jam-stack) and [here](/releasing-new-blog/) ;)
 
 ### Start
 
