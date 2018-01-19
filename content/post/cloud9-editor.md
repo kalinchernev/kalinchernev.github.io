@@ -61,7 +61,7 @@ These are some of the items I'm using quite often and sometimes get a WOW effect
 * [Find in tree][21] (and others)
 * [Search/Find][22] is handy working with namespaces
 
-I think normally people don't expect a full IDE experience in the browser, as I didn't too, and that's the reason I mentioned Docked previously for an eye-opener. Just by the way, PHP developers might be even more surprised with things like [xdebugger][23] being available in their development environments.
+I think normally people don't expect a full IDE experience in the browser, as I didn't too, and that's the reason I mentioned Docked previously for an eye-opener. Just by the way, PHP developers might be even more surprised with things like ~~xdebugger being available in their development environments~~ (xdebug seems not to be supported any more after the acquision at AWS).
 
 ### Setting up Drupal 8
 
