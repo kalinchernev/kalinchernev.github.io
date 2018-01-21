@@ -16,14 +16,19 @@ const Tag = ({ tag }) => (
 );
 
 const PostMeta = ({ post }) => (
-  <section className={styles[`post-meta`]}>
-    <time className={styles[`post-time`]} dateTime={post.frontmatter.date}>
-      {dateFormat(post.frontmatter.date, `fullDate`)}
-    </time>
-    <ul className={styles[`post-tags`]}>
-      {post.frontmatter.tags.map((tag, key) => <Tag key={key} tag={tag} />)}
-    </ul>
-  </section>
+  <div>
+    <section className={styles[`post-meta`]}>
+      <time className={styles[`post-time`]} dateTime={post.frontmatter.date}>
+        {dateFormat(post.frontmatter.date, `fullDate`)}
+      </time>
+      <ul className={styles[`post-tags`]}>
+        {post.frontmatter.tags.map((tag, key) => <Tag key={key} tag={tag} />)}
+      </ul>
+    </section>
+    <div className={styles[`post-timeToRead`]}>
+      Approximately {post.timeToRead} minutes to read ...
+    </div>
+  </div>
 );
 
 export default PostMeta;

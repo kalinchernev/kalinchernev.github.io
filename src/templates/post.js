@@ -38,6 +38,7 @@ export const query = graphql`
         date
         tags
       }
+      timeToRead
       html
     }
   }

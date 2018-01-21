@@ -36,6 +36,12 @@
   white-space: nowrap;
 }
 
+.post-timeToRead {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-bottom: 0.4rem;
+}
+
 .post-tags {
   display: flex;
   flex-wrap: wrap;
@@ -46,6 +52,7 @@
 .post-tag {
   color: #9eabb3;
   margin-right: 0.6rem;
+  margin-bottom: 0.2rem;
 }
 
 .post-tag a {
