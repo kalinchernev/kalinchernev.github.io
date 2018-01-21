@@ -76,29 +76,13 @@ Clicking on "Publish" will put the content in the main branch of the repository 
 
 If you rather have an additional moderation step before content lands into production, you use the [`publish_mode`](https://www.netlifycms.org/docs/configuration-options/#publish-mode). For this, you'll need to change the code of the repository (the starter) created under your github username.
 
-At the moment, the query for a blog post is the following:
-
-```js
-export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        path
-        date(formatString: "MMMM DD, YYYY")
-        title
-        description
-      }
-    }
-  }
-`;
-```
-
-It's quired that you provide a `path` starting with a slash, as otherwise the query will fail and the build will not pass through.
+In the UI of creating content, at the moment, it's required that you **fill in `path` with a leading slash**. I opened a [pull request](https://github.com/AustinGreen/gatsby-starter-netlify-cms/pull/34) for making it possible to fill in value without a leading slash as it seems more user-friendly.
 
 #### Other settings
 
 Content management features being quite straight-forward, by default the starter provides defaults which are common sense. For more advanced features and configurations options in the administration pages, you'll need to [use the `config.yml`](https://www.netlifycms.org/docs/configuration-options/) file in the repository as described in the docs.
+
+In terms of GatsbyJS, this file should always be placed in the `static/admin` folder in order to be accessible by `window.netlifyIdentity`. Documentation pages already describe [how static files are handled](https://www.gatsbyjs.org/docs/caching/#static-files).
 
 ### Github
 
