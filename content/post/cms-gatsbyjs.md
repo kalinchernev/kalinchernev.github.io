@@ -36,29 +36,17 @@ When you start the creation of a new project, the new identity service of Netlif
 
 ![Accept Netlify invite](./images/accept-netlify-invite.png)
 
-If email does not add `/admin` in confirmation URL, add it manually. Otherwise, you'll need to use step 4, which could confuse you.
+4) Set credentials
 
-4) Reset your password (might be unnecessary)
+![NetlifyCMS accepting the invite and setting personal credentials](./images/netlifycms-set-credentials.png)
 
-Because, obviously, it's not good if the credentials are done for you, ain't it?
-
-![Reset your credentials](./images/password-reset-netlifycms.gif)
-
-5) Set credentials (there might be a catch)
-
-You should get a short email with instructions and a link **which should lead to the `/admin` path of the NetlifyCMS!**. If they don't, you'll have to add `/admin/` to the path manually!
-
-For example, the path from the email message I got was `http://{site-name}.netlify.com/#invite_token={somehash}` whereas it should be `http://{site-name}.netlify.com/admin/#invite_token={somehash}`. If the landing does not lead you to `/admin`, then you'll have to add this part manually, at least for the time being.
-
-Another useful hint here is that you can use the Netlify identity console to manage users if the initial invite didn't go through or you want to change your email, invite others, etc.
+If you want to invite others to contribute to your new website, or you want to change your email, you can use Netlify Identity console to manage users.
 
 ![Netlify identity management console](./images/netlify-identity-management.png)
 
-**Bref**: make sure you always land at `/admin` or your correctly set path to NetlifyCMS and not the root of your site!
+5) Enjoy your CMS :)
 
-6) Log in
-
-Now that you have your credentials, authenticate to the panel and enjoy! :)
+You will be automatically redirected the administration pages of your new site! Enjoy! :)
 
 ![NetlifyCMS administration pages](./images/netlifycms-admin-pages.png)
 
