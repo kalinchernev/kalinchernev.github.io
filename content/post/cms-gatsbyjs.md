@@ -62,9 +62,7 @@ Clicking on "Publish" will put the content in the main branch of the repository 
 
 ![Netlify build settings](./images/netlify-build-settings.png)
 
-If you rather have an additional moderation step before content lands into production, you use the [`publish_mode`](https://www.netlifycms.org/docs/configuration-options/#publish-mode). For this, you'll need to change the code of the repository (the starter) created under your github username.
-
-In the UI of creating content, at the moment, it's required that you **fill in `path` with a leading slash**. I opened a [pull request](https://github.com/AustinGreen/gatsby-starter-netlify-cms/pull/34) for making it possible to fill in value without a leading slash as it seems more user-friendly.
+If you rather have an additional moderation step before content lands into production, you use the [`publish_mode`](https://www.netlifycms.org/docs/configuration-options/#publish-mode). For this, you'll need to change the code of the repository (the starter) created under your Github username.
 
 #### Other settings
 
