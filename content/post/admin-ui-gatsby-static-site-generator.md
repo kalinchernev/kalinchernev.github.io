@@ -12,7 +12,7 @@ tags:
 
 ## Introduction
 
-Recently, I was looking into [Gatsby.js](https://www.gatsbyjs.org/) as a generator for a blog site. As many others, I one of the first steps into using the system as other popular CMS solutions, I started to look around for an online back-end UI for the content creation part. I found this list of [headless CMS options](https://headlesscms.org/) and since [forestry](forestry.io) (the service I use for my blog) does not support Gatsby, I decided to try [NetlifyCMS](https://www.netlifycms.org/). This tutorial will be about it :)
+Recently, I was looking into [Gatsby.js](https://www.gatsbyjs.org/) as a generator for a blog site. As many others, I one of the first steps into using the system as other popular CMS solutions, I started to look around for an online back-end UI for the content creation part. I found this list of [headless CMS options](https://headlesscms.org/) and since [forestry](https://forestry.io/) (the service I use for my blog) does not support Gatsby, I decided to try [NetlifyCMS](https://www.netlifycms.org/). This tutorial will be about it :)
 
 I'm not going into details on the separate services and software packages, their advantages and super features. Rather, I will keep the tutorial concise on how to integrate the systems.
 
@@ -26,7 +26,7 @@ For the tutorial, assume I'm speaking about [gatsby advanced starterkit](https:/
 
 It's an open source decoupled back-end built on React, which [integrates with Github API](https://www.netlifycms.org/docs/intro/). I personally like this idea, because publishing work-flows actually translate to steps developers already take on code repositories.
 
-To use this admin UI application easily, you can [integrate it with the Netlify service](https://github.com/netlify/netlify-cms/blob/master/docs/quick-start.md) which will watch for changes in your github repository and do the necessary builds, previews and deploys.
+To use this admin UI application easily, you can integrate it with the Netlify service which will watch for changes in your github repository and do the necessary builds, previews and deploys.
 
 To make Gatsby work with this tutorial, you will need to:
 

@@ -17,7 +17,7 @@ Short retrospective on my second coding competition with JavaScript. Lessons lea
 
 Similarly to [the first coding battle][3], good news from [Max][4] came right from the beginning: the event was part of a hack league. For developers, this means that we can hope for continuity of the coding battles: more play, plus more opportunities to interact and share with others from the [JavaScript community in Belgium][5]. Few other cities have benefited from similar coding competitions: [Paris][6] and [London][7] recently, I am looking forward to see how the wave will grow even further :)
 
-After this intro, [Jean-Christophe Libbrecht][8] presented what Take Eat Easy is in simple words: delivery on time. [The technical challenge][9] was presented with focus on the same company values: optimal delivery management. I gotta say that I had a flashback to my university discipline of [operations research][10] for a minute, when thinking about routes and shortest distance. Luckily, the challenge was easier to understand than the academic subject!
+After this intro, Jean-Christophe Libbrecht presented what Take Eat Easy is in simple words: delivery on time. [The technical challenge][9] was presented with focus on the same company values: optimal delivery management. I gotta say that I had a flashback to my university discipline of [operations research][10] for a minute, when thinking about routes and shortest distance. Luckily, the challenge was easier to understand than the academic subject!
 
 The overall atmosphere was agréable et la majorité parlèrent en français. Positive support and guidance was coming all the time.
 
@@ -159,14 +159,13 @@ Lastly, consider inviting your colleagues to join you too. As you can imagine, t
 
 I'm really interested to hear feedback on my thoughts and ideas about the code and the highlights. Maybe you have a different point of view? Share it in the comments!
 
-[1]: http://www.takeeateasy.be/en/
+[1]: http://www.takeeateasy.fr/
 [2]: https://www.philos.io/
 [3]: https://medium.com/@kalin.chernev/the-first-coding-battle-in-belgium-d4f4285ffb32#.ses1gau0l
 [4]: https://twitter.com/maxczet
 [5]: https://twitter.com/jsl4b
 [6]: https://twitter.com/maxczet/status/725623059344986112
 [7]: https://twitter.com/maxczet/status/728555974672449536
-[8]: http://www.takeeateasy.be/en/about
 [9]: https://github.com/TakeEatEasy/hack-league
 [10]: https://en.wikipedia.org/wiki/Operations_research
 [11]: https://cdn-images-1.medium.com/max/800/1*zt3n7YspKUDLmP8Q4lN5qw.png

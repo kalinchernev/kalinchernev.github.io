@@ -16,11 +16,11 @@ On the other hand, [Cloud9 Editor][5] is an interesting project to my personal e
 
 ### Repository based development environment
 
-[Drupal Composer's drupal-project][9] seems like a really interesting repository which can enable me to start a Drupal 8 project and make an installation. Also it will provide me with a door of opportunities to manage all my project-global dependencies via composer.
+Drupal Composer's drupal-project seems like a really interesting repository which can enable me to start a Drupal 8 project and make an installation. Also it will provide me with a door of opportunities to manage all my project-global dependencies via composer.
 
 Here's what I can do to start a [Cloud9 workspace][10] linked my own fork repository of the drupal-project.
 
-* Forked the original repo to my own [drupal-project repo][11].
+* Forked the original repo to my profile.
 * Create a new workspace pointing to the my fork repo.
 * Selecting template "The popular stack in shiny cloud wrappings: Apache, PHP5 and MySQL pre-configured" seems ok for the moment.
 
@@ -170,9 +170,7 @@ Now it's up to you to use these tools to your best interest: teaching Drupal 8 i
 [6]: https://medium.com/@kalin.chernev/cloud9-ide-6e26940c6130#.nxqgf2ree
 [7]: https://medium.com/@kalin.chernev/debugging-node-js-in-cloud9-ide-59712c043fb2#.tknem3kcp
 [8]: https://dreditor.org/
-[9]: https://github.com/drupal-composer/drupal-project
 [10]: https://docs.c9.io/docs/getting-started
-[11]: https://github.com/kalinchernev/drupal-project
 [12]: https://cdn-images-1.medium.com/max/800/1*nbj-D9ufx-wlGZ-MdBj6Jw.png
 [13]: http://www.ubuntu.com/
 [14]: https://www.docker.com/

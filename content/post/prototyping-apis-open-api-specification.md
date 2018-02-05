@@ -14,7 +14,7 @@ A story about using Node.js community-built tools effectively in order to speed 
 
 In this article I’ll briefly demonstrate how you can to make use of few community-driven tools which I came across recently and I definitely recommend: [Typicode](https://medium.com/@typicode)’s [json-server](https://github.com/typicode/json-server) and [Rebilly](https://medium.com/@Rebilly)’s [Open API generator](https://github.com/Rebilly/generator-openapi-repo). By using a combination of them, you can quickly achieve a mock API server with really nice and useful documentation based in short deadlines.
 
-### The [Open API generator](http://generator-openapi-repo): specification is first
+### The Open API generator: specification is first
 
 I think it’s better to start with the specification as it answers many questions, even before making any real or fake data for the API.
 
@@ -38,7 +38,7 @@ Basically, there are many opportunities available for you when you have the spec
 
 ### The JSON server generator: fake it till you make it
 
-The [JSON server tool](https://github.com/typicode/json-server/blob/master/README.md) is not really a generator per se, however it’s easy to integrate it as such in your toolchain. What I mean is, the tool is based on [express.js](http://com) and its popular middleware. You won’t need the express generator as you focus on the server. The endpoints are automatically discovered out of JSON files and you do not need express’ sophisticated templates views, routes, etc.
+The [JSON server tool](https://github.com/typicode/json-server/blob/master/README.md) is not really a generator per se, however it’s easy to integrate it as such in your toolchain. What I mean is, the tool is based on [express.js](https://expressjs.com/) and its popular middleware. You won’t need the express generator as you focus on the server. The endpoints are automatically discovered out of JSON files and you do not need express’ sophisticated templates views, routes, etc.
 
 A simple [function](https://github.com/typicode/json-server/blob/master/README.md#generate-random-data) in a script run by a npm task can easily do for having a generator for the server part. Also, [faker](https://www.npmjs.com/package/faker) plays really well with this “generator” function. (no word play intended here) [Check an example](https://coligo.io/create-mock-rest-api-with-json-server/).
 

@@ -23,7 +23,7 @@ So far, I've found several key points/facts why I consider the editor to be trul
 
 ### Accessibility
 
-The tool is currently [free][5] and [open source][6]. Even if you're not a technical person you already have reason #1 to either make a [new registration][7] or use your existing code-oriented account to [log in][8] to the service. (No affiliation in the links) If you are non-technical, but very business person, you might know that [Amazon will probably grow Cloud9 in the future][9].
+The tool is currently [free][5] and [open source][6]. Even if you're not a technical person you already have reason #1 to either make a [new registration][7] or use your existing code-oriented account to [log in][8] to the service. (No affiliation in the links) If you are non-technical, but very business person, you might know that Amazon will probably grow Cloud9 in the future.
 
 On the other hand, if you are a technical person and you take a closer look, you'll see that it's a charming service of [ace][10] which directly accesses [docker][11] instances. The first time I showed a working [workspace][12] to a friend developer telling him to use the environment just as Ubuntu — the response was something like
 
@@ -61,7 +61,7 @@ These are some of the items I'm using quite often and sometimes get a WOW effect
 * [Find in tree][21] (and others)
 * [Search/Find][22] is handy working with namespaces
 
-I think normally people don't expect a full IDE experience in the browser, as I didn't too, and that's the reason I mentioned Docked previously for an eye-opener. Just by the way, PHP developers might be even more surprised with things like [xdebugger][23] being available in their development environments.
+I think normally people don't expect a full IDE experience in the browser, as I didn't too, and that's the reason I mentioned Docked previously for an eye-opener. Just by the way, PHP developers might be even more surprised with things like ~~xdebugger being available in their development environments~~ (xdebug seems not to be supported any more after the acquision at AWS).
 
 ### Setting up Drupal 8
 
@@ -83,7 +83,6 @@ Yet, do the following the sake of having your WOW moment yourself:
 [6]: https://github.com/c9
 [7]: https://c9.io/signup
 [8]: https://c9.io/login
-[9]: https://c9.io/blog/great-news/
 [10]: https://ace.c9.io/#nav=about
 [11]: https://www.docker.com/
 [12]: https://docs.c9.io/docs/create-a-workspace

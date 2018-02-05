@@ -31,7 +31,7 @@ At the moment, I’ve jotted just a few high-level milestones in the upcoming di
 As Medium evolves, as my interests into improving the ways of expressing my casual tech thoughts in writing. Researching on some of the nerdiest ways I can make a blog for myself — the JAM stack came into light. The [JAM stack](https://jamstack.org/) is an acronym of having JavaScript, APIs and Markup. It’s absolutely revolutionary — I mean — nobody ever though so far in history that the web could handle HTML, CSS and JavaScript in such ways. (That’s ironic) The stack is tightly related to the topic of [static sites generators](https://www.staticgen.com/).
 
 *   The **J** will maybe be in React. At this stage, I’ve found a decent [book to follow](https://www.packtpub.com/web-development/mastering-react) on the way. At any case, investing into learning React will pay much better for me rather than writing new articles on a platform which can change its business goals tomorrow and just go offline.
-*   The **A** will be the [github API](https://developer.github.com/v3/). With inspirations from [netlifycms](https://www.netlifycms.org/), a well-known [git flow translates to my upcoming publishing workflow](https://www.netlifycms.org/docs/editorial-workflow/).
+*   The **A** will be the [github API](https://developer.github.com/v3/). With inspirations from [netlifycms](https://www.netlifycms.org/), a well-known [git flow translates to my upcoming publishing workflow](https://www.netlifycms.org/docs/configuration-options/#publish-mode).
 *   The **M** part of the stack — I didn’t manage to decide upon this yet as the trends are moving too fast.
 
 So cool this is, google will show you a [kickstarter campaign for the jam stack](https://www.kickstarter.com/projects/846364129/jamstack-the-worlds-first-attachable-guitar-amplif?lang=fr) and there is a song to play while working:
@@ -63,8 +63,6 @@ The first competitive learning event (coding battle) from the Hack League team t
 ![An image from the hack event](https://cdn-images-1.medium.com/max/800/1*aqpQIY4DURgBoYGJTDyIQg.jpeg)
 
 It was my first event since a very long time, so I could see some new people and technologies during the event :)
-
-As organizers mentioned, the [problems of the competition](http://git.hackleague.io/root/cb-2017-03-20) are open after the event and you are encouraged to see them and get encouraged to join the next event :)
 
 I think (and I feel) that the problems are not the most complex thing you can see as a developer, but they definitely get closer to testing developers’ shape in solving problems fast and with confidence in the small steps.
 

@@ -131,7 +131,7 @@ Many thanks to the local Drupal community in Hungary! :)
 [36]: https://github.com/graphql/express-graphql
 [37]: https://github.com/Youshido/GraphQL
 [38]: https://github.com/graphql/swapi-graphql
-[39]: http://graphql-swapi.parseapp.com/
+[39]: http://graphql.org/swapi-graphql/
 [40]: http://slides.com/sebastiansiemssen/graphql-meets-drupal-dd#/3/7
 [41]: https://learngraphql.com/
 [42]: https://cdn-images-1.medium.com/max/800/1*tpPTqCyZnfPqhb1er6ECpw.jpeg

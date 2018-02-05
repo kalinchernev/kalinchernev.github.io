@@ -10,13 +10,13 @@ tags:
 
 ## Introduction
 
-As I have previously mentioned, [NetlifyCMS is one of the most flexible "CMS" applications](https://kalinchernev.github.io/admin-ui-gatsby-static-site-generator) on the market at the moment. In the past you had to tweak both GatsbyJS and Netlify service configurations, so that the output of first was useful for the second. I shared about these details in a [story about migrating from Hugo to GatsbyJS](https://www.gatsbyjs.org/blog/2017-11-06-migrate-hugo-gatsby/#admin-panel). Few weeks after these shared stories, Netlify released [NetlifyCMS 1.0](https://www.netlify.com/blog/2017/12/07/open-source-netlify-cms-hits-1.0-bringing-git-based-content-management-to-static-sites-everywhere/). I think this release is a big milestone for the project because it involved a lot of work on [design perspective](https://github.com/netlify/netlify-cms/issues?q=is%3Aissue+is%3Aopen+sort%3Acomments-desc+label%3A%22area%3A+design%22) but also on authentication and integration parts which make the product easier to adopt.
+As I have previously mentioned, [NetlifyCMS is one of the most flexible "CMS" applications](/admin-ui-gatsby-static-site-generator) on the market at the moment. In the past you had to tweak both GatsbyJS and Netlify service configurations, so that the output of first was useful for the second. I shared about these details in a [story about migrating from Hugo to GatsbyJS](https://www.gatsbyjs.org/blog/2017-11-06-migrate-hugo-gatsby/#admin-panel). Few weeks after these shared stories, Netlify released [NetlifyCMS 1.0](https://www.netlify.com/blog/2017/12/07/open-source-netlify-cms-hits-1.0-bringing-git-based-content-management-to-static-sites-everywhere/). I think this release is a big milestone for the project because it involved a lot of work on [design perspective](https://github.com/netlify/netlify-cms/issues?q=is%3Aissue+is%3Aopen+sort%3Acomments-desc+label%3A%22area%3A+design%22) but also on authentication and integration parts which make the product easier to adopt.
 
 A bit more than a month after this release, I have the feeling not many know about the improvements available. I blame the holiday season of December :)  And so in this blog post I'll share my personal impressions. I believe NetlifyCMS is still one of the best tools to have together with a static site generator, and it's also well-integrated with another great service - Netlify.
 
 ### Starting a project
 
-When I published my thoughts on using NetlifyCMS and GatsbyJS together to make a modern web site with an admin panel, I started to get questions on twitter how I made a given project and how I organised my a repository. My reply was always pointing to [the repository storing the github pages for my username](https://github.com/kalinchernev/kalinchernev.github.io). A friendly way to say RTFM - the blog posts were the documentation I thought - just fork the repo and tweak it!
+When I published my thoughts on using NetlifyCMS and GatsbyJS together to make a modern web site with an admin panel, I started to get questions on twitter how I made a given project and how I organised a repository. My reply was always pointing to [the repository storing the github pages for my username](https://github.com/kalinchernev/kalinchernev.github.io). A friendly way to say RTFM - the blog posts were the documentation I thought - just fork the repo and tweak it!
 
 Some people succeeded taking an example, others didn't. The ones who didn't, didn't because making websites can be the job of a site builders and not developers. Being a site builder with experience and good expectation management with the client is good. So, starting a project should be easy. A successful WCMS product sometimes means starting with a visually appealing base, and being able to involve developers, where and when necessary on a later stage. WordPress with wordpress.com is an example of that. Start small, build a prototype, demo it, get trust for more work on a project, succeed, that's what I mean :)
 
@@ -36,29 +36,17 @@ When you start the creation of a new project, the new identity service of Netlif
 
 ![Accept Netlify invite](./images/accept-netlify-invite.png)
 
-If email does not add `/admin` in confirmation URL, add it manually. Otherwise, you'll need to use step 4, which could confuse you.
+4) Set credentials
 
-4) Reset your password (might be unnecessary)
+![NetlifyCMS accepting the invite and setting personal credentials](./images/netlifycms-set-credentials.png)
 
-Because, obviously, it's not good if the credentials are done for you, ain't it?
-
-![Reset your credentials](./images/password-reset-netlifycms.gif)
-
-5) Set credentials (there might be a catch)
-
-You should get a short email with instructions and a link **which should lead to the `/admin` path of the NetlifyCMS!**. If they don't, you'll have to add `/admin/` to the path manually!
-
-For example, the path from the email message I got was `http://{site-name}.netlify.com/#invite_token={somehash}` whereas it should be `http://{site-name}.netlify.com/admin/#invite_token={somehash}`. If the landing does not lead you to `/admin`, then you'll have to add this part manually, at least for the time being.
-
-Another useful hint here is that you can use the Netlify identity console to manage users if the initial invite didn't go through or you want to change your email, invite others, etc.
+If you want to invite others to contribute to your new website, or you want to change your email, you can use Netlify Identity console to manage users.
 
 ![Netlify identity management console](./images/netlify-identity-management.png)
 
-**Bref**: make sure you always land at `/admin` or your correctly set path to NetlifyCMS and not the root of your site!
+5) Enjoy your CMS :)
 
-6) Log in
-
-Now that you have your credentials, authenticate to the panel and enjoy! :)
+You will be automatically redirected the administration pages of your new site! Enjoy! :)
 
 ![NetlifyCMS administration pages](./images/netlifycms-admin-pages.png)
 
@@ -74,31 +62,13 @@ Clicking on "Publish" will put the content in the main branch of the repository 
 
 ![Netlify build settings](./images/netlify-build-settings.png)
 
-If you rather have an additional moderation step before content lands into production, you use the [`publish_mode`](https://www.netlifycms.org/docs/configuration-options/#publish-mode). For this, you'll need to change the code of the repository (the starter) created under your github username.
-
-At the moment, the query for a blog post is the following:
-
-```js
-export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        path
-        date(formatString: "MMMM DD, YYYY")
-        title
-        description
-      }
-    }
-  }
-`;
-```
-
-It's quired that you provide a `path` starting with a slash, as otherwise the query will fail and the build will not pass through.
+If you rather have an additional moderation step before content lands into production, you use the [`publish_mode`](https://www.netlifycms.org/docs/configuration-options/#publish-mode). For this, you'll need to change the code of the repository (the starter) created under your Github username.
 
 #### Other settings
 
 Content management features being quite straight-forward, by default the starter provides defaults which are common sense. For more advanced features and configurations options in the administration pages, you'll need to [use the `config.yml`](https://www.netlifycms.org/docs/configuration-options/) file in the repository as described in the docs.
+
+In terms of GatsbyJS, this file should always be placed in the `static/admin` folder in order to be accessible by `window.netlifyIdentity`. Documentation pages already describe [how static files are handled](https://www.gatsbyjs.org/docs/caching/#static-files).
 
 ### Github
 
