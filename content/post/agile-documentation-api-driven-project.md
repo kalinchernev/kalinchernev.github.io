@@ -8,9 +8,10 @@ tags:
 - Open APIs
 - Swagger
 - nodejs
+- documentation
 ---
 
-*Based on [Open API standards](https://www.openapis.org/)*
+_Based on [Open API standards](https://www.openapis.org/)_
 
 > “Documentation is like sex; when it’s good, it’s very, very good, and when it’s bad, it’s better than nothing.” — Dick Brandon
 
@@ -24,12 +25,12 @@ With the [raise of popularity](https://www.google.com/trends/explore?q=swagger%
 
 In summary, the Swagger specification brings several clear advantages:
 
-- We can [write project specification](http://editor.swagger.io/#/) in `yaml` or 
-`json` formats. The `yaml` one is probably closer to humans, which is really nice.
-(Yes, there are UI programs for that as well ;)
-- We can [generate server and client code automatically](http://swagger.io/swagger-codegen/), because when the specification is solid, the tools are solid too.
-- We can also [generate live documentation](http://swagger.io/swagger-ui/) based on the same project specification. This is particularly useful and that’s why I’ll expand more on about this subject in this article.
-- We can program in many languages and the result of our work will stay alive longer, because it conforms to a server <-> client “contract”. Meaning, as long as you can make a swagger specification out of you work, you can move from one technology stack to another.
+* We can [write project specification](http://editor.swagger.io/#/) in `yaml` or
+  `json` formats. The `yaml` one is probably closer to humans, which is really nice.
+  (Yes, there are UI programs for that as well ;)
+* We can [generate server and client code automatically](http://swagger.io/swagger-codegen/), because when the specification is solid, the tools are solid too.
+* We can also [generate live documentation](http://swagger.io/swagger-ui/) based on the same project specification. This is particularly useful and that’s why I’ll expand more on about this subject in this article.
+* We can program in many languages and the result of our work will stay alive longer, because it conforms to a server <-> client “contract”. Meaning, as long as you can make a swagger specification out of you work, you can move from one technology stack to another.
 
 Node.js is a popular choice for building the server part of applications, but it’s not the only one. The knowledge you can get from this article is transferable to almost any programming language.
 
@@ -67,9 +68,9 @@ When you look at the [demo](http://petstore.swagger.io/#/) (or the editor), yo
 
 Each endpoint of the API that is documented contains:
 
-- Short description (the textual explanation we usually over-do)
-- Example samples of request bodies, options to change request types, etc.
-- Opportunity to try out the request <-> response operation
+* Short description (the textual explanation we usually over-do)
+* Example samples of request bodies, options to change request types, etc.
+* Opportunity to try out the request <-> response operation
 
 On top of that, swagger-ui documentation is auto-generated based on a simple `yaml` or
 `json` swagger specification file. That is super-nice, because the specification that a business person writes or configures through an UI can serve as both a contract AND live documentation!
@@ -78,7 +79,7 @@ On top of that, swagger-ui documentation is auto-generated based on a simple `y
 
 Yes! Even after following popular tools and tutorials, I felt there is room for improvement. Mainly — writing the documentation itself.
 
-See, the problem of writing a single specification file and then using tools to generate the documentation is easy until the maintenance comes into play. Imagine that the 
+See, the problem of writing a single specification file and then using tools to generate the documentation is easy until the maintenance comes into play. Imagine that the
 
 yaml spec is maintained by the same developer or development team that is responsible for the API endpoints of the app server. Surely, there will be back and forth between the specification file and the code files that contain the actual implementation. It takes extra time and efforts to stay focused while jumping between editors and making sure that both resources are well-matched.
 
@@ -116,7 +117,7 @@ app.post('/login', (req, res) => {
 });
 ```
 
-As you might have already guessed, this is a sample from [swagger-jsdoc](https://github.com/Surnet/swagger-jsdoc)which takes the contents of the text after 
+As you might have already guessed, this is a sample from [swagger-jsdoc](https://github.com/Surnet/swagger-jsdoc)which takes the contents of the text after
 `@swagger` and parses the contents of the [jsdoc](http://usejsdoc.org/) documentation into a [swagger specification](http://swagger.io/specification/). This specification can be then visualised, for example, like this:
 
 ![A nice picture of swagger](./images/nice-swagger-ui-image.png)

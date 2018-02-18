@@ -8,6 +8,7 @@ tags:
 - Open APIs
 - nodejs
 - Prototyping
+- documentation
 ---
 
 A story about using Node.js community-built tools effectively in order to speed up the prototyping phase of your API project. In the whole article, [Open API specification](https://github.com/OAI/OpenAPI-Specification) (which recently reached a RC on version 3) refers to version 2, also known as [Swagger specification](http://swagger.io/).
@@ -22,11 +23,11 @@ The [official documentation](https://github.com/Rebilly/generator-openapi-repo/b
 
 More importantly, you have to know why this generator is good and why I recommend it 😌
 
-*   It works with [**swagger editor**](http://swagger.io/swagger-editor/) out of the box, which feels like having a back-end for building your specification and documentation
-*   Your specification (aka swagger spec) can be split into several files, which makes the project more manageable and mainteanable
-*   Sleek documentation with [**ReDoc**](http://swagger.io/redoc-openapi-powered-documentation/) (though [swagger-ui](http://swagger.io/swagger-ui/) is also generated) I think ReDoc is excellent in following the API documentation trends.
-*   The results of your work can easily be deployed to [**github pages**](https://pages.github.com/). It’s possible to make requests from here to external API server like the one we’ll have with json-server, as it supports CORS out of the box. Basically, as long as the server can accept requests from your github pages, these server really effectively as living documentation.
-*   Continuous integration with **Travis** comes out of the box. Every time you push an update in the specification on the master branch, Travis checks for errors and deploys to github pages if everything is ok.
+* It works with [**swagger editor**](http://swagger.io/swagger-editor/) out of the box, which feels like having a back-end for building your specification and documentation
+* Your specification (aka swagger spec) can be split into several files, which makes the project more manageable and mainteanable
+* Sleek documentation with [**ReDoc**](http://swagger.io/redoc-openapi-powered-documentation/) (though [swagger-ui](http://swagger.io/swagger-ui/) is also generated) I think ReDoc is excellent in following the API documentation trends.
+* The results of your work can easily be deployed to [**github pages**](https://pages.github.com/). It’s possible to make requests from here to external API server like the one we’ll have with json-server, as it supports CORS out of the box. Basically, as long as the server can accept requests from your github pages, these server really effectively as living documentation.
+* Continuous integration with **Travis** comes out of the box. Every time you push an update in the specification on the master branch, Travis checks for errors and deploys to github pages if everything is ok.
 
 When you follow the steps correctly, you’ll end up with a simplified version of [RebillyAPI repository](https://github.com/Rebilly/RebillyAPI). That’s the final outcome that’ll motivate you to try the generator now, if you haven’t already done so 😊
 
@@ -44,8 +45,8 @@ A simple [function](https://github.com/typicode/json-server/blob/master/README.m
 
 The main ideas you should understand with JSON server:
 
-*   It’s an easy start out of an example or existing JSON files
-*   It’s easy to make a generator script to work with the tool
+* It’s an easy start out of an example or existing JSON files
+* It’s easy to make a generator script to work with the tool
 
 Also, another benefit is that the server can be easily deployed. For example, if you decide to deploy on heroku, you’ll only need to update your server to use `process.env.IP` and `process.env.PORT`. The documentation points to the [jsonplaceholder](http://jsonplaceholder.typicode.com/) example, but surely [hook.io](http://hook.io/) or a similar cloud service will work just fine. Just keep it simple and working — the main idea of using this tool is to move fast and effectively.
 
@@ -55,10 +56,10 @@ Another option for generating a server on top of an existing specification is th
 
 I personally separated both tools in 2 repositories for the following reasons:
 
-*   The mock API server can be managed and deployed independently
-*   Data from the mock server can be easily fetched from the github pages documentation, as JSON Server comes with CORS enabled by default
-*   This same mock API server can be just thrown away when the real server comes into place to work with the documentation and/or application
-*   It’s also good to have the documentation repository separate to make it easier to manage in a similar way as the server. Good example is how both swagger ui, swagger editor and ReDoc are integrated into a single project focusing on developing specification and documentation
+* The mock API server can be managed and deployed independently
+* Data from the mock server can be easily fetched from the github pages documentation, as JSON Server comes with CORS enabled by default
+* This same mock API server can be just thrown away when the real server comes into place to work with the documentation and/or application
+* It’s also good to have the documentation repository separate to make it easier to manage in a similar way as the server. Good example is how both swagger ui, swagger editor and ReDoc are integrated into a single project focusing on developing specification and documentation
 
 ### Further notes
 
