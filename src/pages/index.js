@@ -11,6 +11,10 @@ const Index = () => (
         name="viewport"
         content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
       />
+      <meta
+        name="google-site-verification"
+        content="M3xN17b8dlWWV8ecUcM0iE7INS1WSbBYbDADkVpFElM"
+      />
       <title>Kalin Chernev | Business Card</title>
     </Helmet>
     <div className={styles.highlight}>
