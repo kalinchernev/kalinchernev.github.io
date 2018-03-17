@@ -7,7 +7,9 @@ import BlogFooter from '../components/BlogFooter';
 
 const Post = ({ node }) => (
   <li>
-    <Link to={node.node.frontmatter.slug}>{node.node.frontmatter.title}</Link>
+    <Link to={`/` + node.node.frontmatter.slug}>
+      {node.node.frontmatter.title}
+    </Link>
   </li>
 );
 
