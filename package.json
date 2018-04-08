@@ -49,7 +49,7 @@
     "gatsby-plugin-manifest": "^1.0.8",
     "gatsby-plugin-nprogress": "^1.0.7",
     "gatsby-plugin-offline": "^1.0.10",
-    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-sharp": "^1.6.24",
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-remark-autolink-headers": "^1.4.11",
