@@ -9,6 +9,7 @@
     "clean": "rm -rf public .cache",
     "deploy": "gh-pages -d public -b master",
     "develop": "gatsby develop",
+    "generate-app-icons": "sh ./scripts/generate-app-icons.sh",
     "lint": "eslint .",
     "release": "run-s clean build deploy",
     "start": "yarn develop",
@@ -38,7 +39,8 @@
     "gatsby-cli": "^1.1.11",
     "gh-pages": "^1.0.0",
     "npm-run-all": "^4.0.2",
-    "prettier": "^1.7.4"
+    "prettier": "^1.7.4",
+    "sharp-cli": "^1.7.0"
   },
   "dependencies": {
     "dateformat": "^3.0.2",
@@ -50,7 +52,7 @@
     "gatsby-plugin-nprogress": "^1.0.7",
     "gatsby-plugin-offline": "^1.0.10",
     "gatsby-plugin-react-helmet": "^2.0.10",
-    "gatsby-plugin-sharp": "^1.6.24",
+    "gatsby-plugin-sharp": "^1.6.41",
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-remark-autolink-headers": "^1.4.11",
     "gatsby-remark-copy-linked-files": "^1.5.25",
@@ -59,7 +61,7 @@
     "gatsby-remark-responsive-iframe": "^1.4.13",
     "gatsby-source-filesystem": "^1.5.5",
     "gatsby-transformer-remark": "^1.7.17",
-    "gatsby-transformer-sharp": "^1.6.16",
+    "gatsby-transformer-sharp": "^1.6.22",
     "typography-theme-moraga": "^0.15.10"
   }
 }
