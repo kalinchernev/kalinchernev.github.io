@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import BlogHeader from '../components/BlogHeader';
 import BlogFooter from '../components/BlogFooter';
@@ -43,5 +44,9 @@ export const query = graphql`
     }
   }
 `;
+
+Post.propTypes = {
+  data: PropTypes.object,
+};
 
 export default Post;

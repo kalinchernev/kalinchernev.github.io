@@ -18,7 +18,7 @@ const Index = () => (
       <title>Kalin Chernev | Business Card</title>
     </Helmet>
     <div className={styles.highlight}>
-      <h1>Hi, I'm Kalin Chernev</h1>
+      <h1>Hi, my name is Kalin</h1>
       <div className={styles.handle}>@Brussels, Belgium</div>
       <div>
         <a href="https://github.com/kalinchernev">Web Developer</a>
@@ -27,9 +27,7 @@ const Index = () => (
         <Link to="/blog">Blogger</Link>
       </div>
       <p className={styles.intro}>
-        Design systems and style guides for modular and re-usable CSS<br />
         JavaScript tinkerer for cloud, `serverless`, apps and APIs<br />
-        Experienced with PHP, Drupal and CMS <br />
         Embracing the <a href="https://jamstack.org/">JAM stack</a>
         <br />
       </p>

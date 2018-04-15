@@ -21,16 +21,16 @@ They are [Apollo](https://github.com/apollographql), [Graphcool](https://github.
 
 My personal high-level impression is that tools are divided into the following categories:
 
-* Server-creation: anything which help you create GraphQL servers. Could be low-level implementation, express.js middleware, abstraction on top of it, etc.
-* Client-creation: answer for carrying out queries towards the server, i.e. tools that will fetch data. The question how you fetch and use data from the server can be as low-level of making an abstraction of post requests to esoteric (to my opinion) declarative ways around React components.
-* Caching tools: anything from saving repetitive queries to memory, to using stores of state managers and others. As resolver functions are [granular execution points](https://graphql.org/learn/execution/) of a query, it seems to me caching problem is a "sweet" problem to solve in the community.
-* Reporting/logging/monitoring tools: anything which will help you trace information on what's going on in the resolvers and other critical parts of the app. As GraphQL tools are mostly used for building API gateways, using monitoring SaaS is vital for serious production apps.
-* IDE: GraphQL's introspection and self-documentation features are huge wins. Naturally, graphiql is love at first sight for API experts. There are others worth trying as well - such as [graphql-playground](https://github.com/graphcool/graphql-playground).
-* Abstraction helpers around the GraphQL spec and other tools.
+* **Server**: anything which help you manage GraphQL servers. Could be low-level implementation, express.js middleware, abstraction on top of it, etc.
+* **Client**: answer for carrying out queries towards the server, i.e. tools that will fetch data. The question how you fetch and use data from the server can be as low-level of making an abstraction of post requests to esoteric (to my opinion) declarative ways around React components.
+* **Caching**: anything from saving repetitive queries to memory, to using stores of state managers and others. As resolver functions are [granular execution points](https://graphql.org/learn/execution/) of a query, it seems to me caching problem is a "sweet" problem to solve in the community.
+* **Reporting/logging/monitoring**: anything which will help you trace information on what's going on in the resolvers and other critical parts of the app. As GraphQL tools are mostly used for building API gateways, using monitoring SaaS is vital for serious production apps.
+* **IDE**: GraphQL's introspection and self-documentation features are huge wins. Naturally, graphiql is love at first sight for API experts. There are others worth trying as well - such as [graphql-playground](https://github.com/graphcool/graphql-playground).
+* Abstraction **helpers** around the GraphQL spec and other tools.
 
 ### Continuous learning
 
-[How to GraphQL](https://www.howtographql.com/) has been built since the writing of my last article. This is enough of a resource to know, just follow along the contributors around this project and you will be good to go :)
+[How to GraphQL](https://www.howtographql.com/) is enough of a resource to know, just follow along the contributors around this project and you will be good to go :)
 
 For lower-level, follow the [working group](https://github.com/graphql/graphql-wg) and specification updates.
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import slugify from '../utils/slugify';
@@ -72,6 +73,18 @@ const TagsPageIndex = ({ pathContext }) => {
       <BlogFooter />
     </div>
   );
+};
+
+Post.propTypes = {
+  node: PropTypes.object,
+};
+
+TagList.propTypes = {
+  list: PropTypes.array,
+};
+
+TagsPageIndex.propTypes = {
+  pathContext: PropTypes.object,
 };
 
 export default TagsPageIndex;

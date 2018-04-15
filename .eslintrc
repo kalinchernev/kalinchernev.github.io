@@ -22,3 +22,5 @@
   env:
     browser: true
     node: true
+  globals:
+    graphql: false
