@@ -9,7 +9,7 @@ tags:
 
 ## Introduction
 
-It's a bit more than an year since I've jotted [about GraphQL](https://kalinchernev.github.io/graphql-guide-wish-found-before). During this time, I haven't had the opportunity to use GraphQL in production. Rather, like with other tools on the market, I've only followed up reading articles and doing some (quite rare) queries while [working on my Gatsby blog](https://www.gatsbyjs.org/blog/2017-11-06-migrate-hugo-gatsby/).
+It's a bit more than an year since I've jotted [about GraphQL](/graphql-guide-wish-found-before). During this time, I haven't had the opportunity to use GraphQL in production. Rather, like with other tools on the market, I've only followed up reading articles and doing some (quite rare) queries while [working on my Gatsby blog](https://www.gatsbyjs.org/blog/2017-11-06-migrate-hugo-gatsby/).
 
 As I joined the [GraphQL day](https://www.graphqlday.org/) yesterday, I feel it's worth making another small article for people like me who are willing to be in the game with GraphQL, but don't play it full time yet.
 
