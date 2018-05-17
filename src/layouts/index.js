@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../../static/fonts/fa/css/font-awesome.css';
 import 'prismjs/themes/prism.css';
 
 const IndexLayout = ({ children }) => (

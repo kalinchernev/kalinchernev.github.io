@@ -1,25 +1,26 @@
 module.exports = {
   siteMetadata: {
-    title: `Kalin Chernev`,
+    title: 'Kalin Chernev',
   },
   plugins: [
+    // 'gatsby-plugin-eslint',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `src`,
+        name: 'src',
         path: `${__dirname}/src/`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `post`,
+        name: 'post',
         path: `${__dirname}/content/post`,
       },
     },
     // Mpre on images https://medium.com/@kyle.robert.gill/ridiculously-easy-image-optimization-with-gatsby-js-59d48e15db6e
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -40,15 +41,15 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        pathToConfigModule: 'src/utils/typography',
       },
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-catch-links`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-catch-links',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Kalin Chernev Blog',
         short_name: 'KalinChernev',
@@ -59,15 +60,15 @@ module.exports = {
         icon: './src/assets/images/favicon.png',
       },
     },
-    `gatsby-plugin-offline`,
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
-        color: `#185D8B`,
+        color: '#185D8B',
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-97001925-1',
         // Setting this parameter is optional

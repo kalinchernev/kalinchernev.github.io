@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import BlogHeader from '../components/BlogHeader';
-import BlogFooter from '../components/BlogFooter';
 import PostMeta from '../components/PostMeta';
 import './css/styles.css';
 
@@ -26,7 +25,6 @@ const Post = ({ data }) => {
           __html: post.html,
         }}
       />
-      <BlogFooter />
     </div>
   );
 };

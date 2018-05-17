@@ -6,7 +6,6 @@ import slugify from '../utils/slugify';
 import tagsSorter from '../utils/tagsSorter';
 import styles from '../components/css/styles.module.css';
 import BlogHeader from '../components/BlogHeader';
-import BlogFooter from '../components/BlogFooter';
 
 const Post = ({ node }) => (
   <li>
@@ -52,7 +51,6 @@ const TagsPageIndex = ({ pathContext }) => {
           {post.map((tagItem, key) => <Post key={key} node={tagItem} />)}
         </ul>
         <Link to="/tags">All tags</Link>
-        <BlogFooter />
       </div>
     );
   }
@@ -70,7 +68,6 @@ const TagsPageIndex = ({ pathContext }) => {
       <BlogHeader />
       <h1>Tags</h1>
       <TagList list={posts || []} />
-      <BlogFooter />
     </div>
   );
 };

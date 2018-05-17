@@ -4,7 +4,6 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import styles from '../components/css/styles.module.css';
 import BlogHeader from '../components/BlogHeader';
-import BlogFooter from '../components/BlogFooter';
 
 const Post = ({ node }) => (
   <li>
@@ -62,7 +61,6 @@ const BlogPagedIndex = ({ pathContext }) => {
           </Link>
         )}
       </div>
-      <BlogFooter />
     </div>
   );
 };
