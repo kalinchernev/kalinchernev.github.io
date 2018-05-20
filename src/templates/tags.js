@@ -4,8 +4,7 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import slugify from '../utils/slugify';
 import tagsSorter from '../utils/tagsSorter';
-import styles from '../components/css/styles.module.css';
-import BlogHeader from '../components/BlogHeader';
+import styles from './css/styles.module.css';
 
 const Post = ({ node }) => (
   <li>
@@ -45,7 +44,6 @@ const TagsPageIndex = ({ pathContext }) => {
           />
           <title>{tag} | Kalin Chernev</title>
         </Helmet>
-        <BlogHeader />
         <h1>{tag}</h1>
         <ul className={styles['list-reset']}>
           {post.map((tagItem, key) => <Post key={key} node={tagItem} />)}
@@ -65,7 +63,7 @@ const TagsPageIndex = ({ pathContext }) => {
         />
         <title>Blog tags | Kalin Chernev</title>
       </Helmet>
-      <BlogHeader />
+      <Header />
       <h1>Tags</h1>
       <TagList list={posts || []} />
     </div>

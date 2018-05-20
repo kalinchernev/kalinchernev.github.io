@@ -1,0 +1,32 @@
+/* This is overriding gatsby image inline styles to center image over
+the generated thumbnail that will show when image is not loaded yet */
+.gatsby-resp-image-image {
+  right: 0;
+  left: 50% !important;
+}
+
+/* postList */
+.arrow {
+  padding: 5px 20px;
+  border: 1px solid #419eda;
+}
+
+/* Lists */
+.list {
+  display: flex;
+  list-style: none;
+  margin: 3rem 0;
+}
+
+.list-wrap {
+  flex-wrap: wrap;
+}
+
+.list li {
+  margin-right: 1rem;
+}
+
+.list-reset {
+  list-style: none;
+  margin-left: 0;
+}

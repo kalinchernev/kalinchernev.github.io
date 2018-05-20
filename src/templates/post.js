@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import BlogHeader from '../components/BlogHeader';
 import PostMeta from '../components/PostMeta';
-import './css/styles.css';
 
 const Post = ({ data }) => {
   const post = data.markdownRemark;
@@ -17,7 +15,6 @@ const Post = ({ data }) => {
         />
         <title>{post.frontmatter.title} | Kalin Chernev</title>
       </Helmet>
-      <BlogHeader />
       <PostMeta post={post} />
       <h1>{post.frontmatter.title}</h1>
       <div

@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
-import styles from '../components/css/styles.module.css';
-import BlogHeader from '../components/BlogHeader';
+import styles from './css/styles.module.css';
 
 const Post = ({ node }) => (
   <li>
@@ -25,7 +24,6 @@ const BlogPagedIndex = ({ pathContext }) => {
         />
         <title>Kalin Chernev | Blog</title>
       </Helmet>
-      <BlogHeader />
       <ul className={styles['list-reset']}>
         {group.map((node, key) => <Post key={key} node={node} />)}
       </ul>
