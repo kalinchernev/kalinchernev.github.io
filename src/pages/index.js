@@ -33,6 +33,7 @@ export default ({ data }) => {
           );
         })}
       </ul>
+      <Link to={'/history/2'}>Older posts</Link>
     </div>
   );
 };

@@ -1,8 +1,8 @@
-const path = require(`path`);
+const path = require('path');
 const slugify = require(`../src/utils/slugify`);
 
 module.exports = (createPage, nodes) => {
-  const template = path.resolve(`src/templates/tags.js`);
+  const template = path.resolve('src/templates/tags.js');
   const posts = {};
 
   nodes.forEach(({ node }) => {
@@ -17,7 +17,7 @@ module.exports = (createPage, nodes) => {
   });
 
   createPage({
-    path: `/tags`,
+    path: '/tags',
     component: template,
     context: {
       posts,
@@ -27,7 +27,7 @@ module.exports = (createPage, nodes) => {
   Object.keys(posts).forEach(tagName => {
     const post = posts[tagName];
     createPage({
-      path: `/tags/` + slugify(tagName),
+      path: `/tags/${slugify(tagName)}`,
       component: template,
       context: {
         posts,

@@ -4,13 +4,19 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import styles from './css/styles.module.css';
 
-const Post = ({ node }) => (
-  <li>
-    <Link to={`/` + node.node.frontmatter.slug}>
-      {node.node.frontmatter.title}
-    </Link>
-  </li>
-);
+const Post = ({ node }) => {
+  const { excerpt } = node.node;
+  const { title, slug } = node.node.frontmatter;
+
+  return (
+    <li>
+      <Link to={`/${slug}`}>
+        <h3>{title}</h3>
+        <p>{excerpt}</p>
+      </Link>
+    </li>
+  );
+};
 
 const BlogPagedIndex = ({ pathContext }) => {
   const { group, index, first, last } = pathContext;
@@ -24,7 +30,7 @@ const BlogPagedIndex = ({ pathContext }) => {
         />
         <title>Kalin Chernev | Blog</title>
       </Helmet>
-      <ul className={styles['list-reset']}>
+      <ul className={styles.listing}>
         {group.map((node, key) => <Post key={key} node={node} />)}
       </ul>
 
@@ -36,28 +42,9 @@ const BlogPagedIndex = ({ pathContext }) => {
         }}
       >
         {!first && (
-          <Link
-            className={styles[`arrow`]}
-            to={`/blog/${index > 2 ? index - 1 : ''}`}
-          >
-            <i
-              style={{ position: `relative`, top: `2px`, right: `8px` }}
-              className="fa fa-chevron-left"
-              aria-hidden="true"
-            />{' '}
-            Newer posts
-          </Link>
+          <Link to={`/history/${index > 2 ? index - 1 : ''}`}>Newer posts</Link>
         )}
-        {!last && (
-          <Link className={styles[`arrow`]} to={`/blog/${index + 1}`}>
-            Older posts{' '}
-            <i
-              style={{ position: `relative`, top: `2px`, left: `8px` }}
-              className="fa fa-chevron-right"
-              aria-hidden="true"
-            />
-          </Link>
-        )}
+        {!last && <Link to={`/history/${index + 1}`}>Older posts</Link>}
       </div>
     </div>
   );

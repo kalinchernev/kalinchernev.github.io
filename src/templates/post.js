@@ -7,7 +7,7 @@ const Post = ({ data }) => {
   const post = data.markdownRemark;
   return (
     <div>
-      <Helmet htmlAttributes={{ lang: `en` }}>
+      <Helmet htmlAttributes={{ lang: 'en' }}>
         <meta charSet="utf-8" />
         <meta
           name="viewport"

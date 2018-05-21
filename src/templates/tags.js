@@ -63,7 +63,6 @@ const TagsPageIndex = ({ pathContext }) => {
         />
         <title>Blog tags | Kalin Chernev</title>
       </Helmet>
-      <Header />
       <h1>Tags</h1>
       <TagList list={posts || []} />
     </div>
