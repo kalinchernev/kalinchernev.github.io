@@ -19,8 +19,7 @@ module.exports = {
         path: `${__dirname}/content/post`,
       },
     },
-    // Mpre on images https://medium.com/@kyle.robert.gill/ridiculously-easy-image-optimization-with-gatsby-js-59d48e15db6e
-    'gatsby-transformer-sharp',
+    // More on images https://medium.com/@kyle.robert.gill/ridiculously-easy-image-optimization-with-gatsby-js-59d48e15db6e
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
@@ -29,6 +28,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
+              backgroundColor: 'transparent',
               maxWidth: 960,
             },
           },

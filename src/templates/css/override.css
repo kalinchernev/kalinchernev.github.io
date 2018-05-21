@@ -1,0 +1,6 @@
+/* This is overriding gatsby image inline styles to center image over
+the generated thumbnail that will show when image is not loaded yet */
+.gatsby-resp-image-image {
+  right: 0;
+  left: 50% !important;
+}

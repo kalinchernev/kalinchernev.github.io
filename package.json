@@ -50,7 +50,6 @@
     "gatsby-remark-responsive-iframe": "^1.4.13",
     "gatsby-source-filesystem": "^1.5.36",
     "gatsby-transformer-remark": "^1.7.41",
-    "gatsby-transformer-sharp": "^1.6.24",
     "prismjs": "^1.14.0",
     "prop-types": "^15.6.1",
     "react-helmet": "^5.2.0",
