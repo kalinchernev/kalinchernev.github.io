@@ -1,0 +1,2 @@
+webpackJsonp([60335399758886],{107:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Kalin Chernev",slogan:"Writing crystallizes thought and thought produces action"}}},layoutContext:{}}}});
+//# sourceMappingURL=path----67206d53b627ad09240a.js.map
