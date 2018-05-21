@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Kalin Chernev',
+    slogan: 'Writing crystallizes thought and thought produces action',
   },
   plugins: [
     // 'gatsby-plugin-eslint',

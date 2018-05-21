@@ -16,7 +16,10 @@ const IndexLayout = ({ children, data }) => (
         { name: 'keywords', content: '' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header
+      siteTitle={data.site.siteMetadata.title}
+      slogan={data.site.siteMetadata.slogan}
+    />
     <div className={styles.main}>{children()}</div>
     <Footer />
   </div>
@@ -34,6 +37,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        slogan
       }
     }
   }

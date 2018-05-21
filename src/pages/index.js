@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
+import styles from './css/styles.module.css';
 
 export default ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
@@ -19,13 +20,13 @@ export default ({ data }) => {
         />
         <title>Kalin Chernev Personal Website</title>
       </Helmet>
-      <ul styles={{ listStyle: 'none' }}>
+      <ul className={styles.listing}>
         {posts.map(({ node }) => {
           const post = node.frontmatter;
           return (
             <li>
               <Link to={post.slug}>
-                <h2>{post.title}</h2>
+                <h3>{post.title}</h3>
                 <p>{node.excerpt}</p>
               </Link>
             </li>

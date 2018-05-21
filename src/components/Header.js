@@ -4,14 +4,17 @@ import styles from './css/styles.module.css';
 
 import SocialNetworks from './SocialNetworks';
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, slogan }) => (
   <div className={styles.header}>
     <div className={styles['header-layout']}>
-      <h1 className={styles['header-heading']}>
-        <Link to="/" className={styles.logo}>
-          {siteTitle}
-        </Link>
-      </h1>
+      <div>
+        <h1 className={styles['header-heading']}>
+          <Link to="/" className={styles.logo}>
+            {siteTitle}
+          </Link>
+        </h1>
+        {slogan}
+      </div>
       <SocialNetworks />
     </div>
   </div>

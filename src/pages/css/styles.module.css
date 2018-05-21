@@ -1,0 +1,16 @@
+.listing {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.listing a {
+  text-decoration: none;
+}
+
+.listing a h3:hover {
+  text-decoration: underline;
+}
+
+.listing a p {
+  color: #000;
+}
