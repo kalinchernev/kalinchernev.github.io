@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = (createPage, nodes) => {
-  const template = path.resolve('src/templates/post.js');
+  const template = path.resolve('src/templates/post.jsx');
 
   nodes.map(({ node }) => {
     if (node.frontmatter.slug) {

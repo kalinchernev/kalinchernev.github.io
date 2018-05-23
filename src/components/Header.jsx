@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import styles from './css/styles.module.css';
 
@@ -13,11 +14,20 @@ const Header = ({ siteTitle, slogan }) => (
             {siteTitle}
           </Link>
         </h1>
-        {slogan}
+        {slogan || ''}
       </div>
       <SocialNetworks />
     </div>
   </div>
 );
+
+Header.propTypes = {
+  siteTitle: PropTypes.string.isRequired,
+  slogan: PropTypes.string,
+};
+
+Header.defaultProps = {
+  slogan: '',
+};
 
 export default Header;

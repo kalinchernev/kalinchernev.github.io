@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import styles from './css/styles.module.css';
 
-export default ({ data }) => {
+const Home = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
 
   return (
@@ -33,10 +34,24 @@ export default ({ data }) => {
           );
         })}
       </ul>
-      <Link to={'/history/2'}>Older posts</Link>
+      <Link to="/history/2">Older posts</Link>
     </div>
   );
 };
+
+Home.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.shape({
+        slug: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        excerpt: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
+};
+
+export default Home;
 
 export const query = graphql`
   query IndexQuery {

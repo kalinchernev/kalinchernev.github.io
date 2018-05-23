@@ -54,6 +54,7 @@
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-helmet": "^5.2.0",
+    "typography": "^0.16.17",
     "typography-theme-moraga": "^0.15.10"
   },
   "devDependencies": {

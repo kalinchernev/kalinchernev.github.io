@@ -2,9 +2,9 @@ export default list => {
   const listArray = [];
 
   // Turn the input into an array.
-  for (const item in list) {
+  Object.keys(list).forEach(item => {
     listArray.push([item, list[item]]);
-  }
+  });
 
   // Transform the information to have the count we need.
   const listMapped = listArray.map(tagRecord => {
@@ -14,9 +14,7 @@ export default list => {
   });
 
   // Sort
-  const sorted = listMapped.sort(function(a, b) {
-    return b[1] - a[1];
-  });
+  const sorted = listMapped.sort((a, b) => b[1] - a[1]);
 
   return sorted;
 };

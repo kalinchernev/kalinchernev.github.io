@@ -8,23 +8,19 @@ import styles from './css/styles.module.css';
 
 const Post = ({ node }) => (
   <li>
-    <Link to={`/` + node.frontmatter.slug}>{node.frontmatter.title}</Link>
+    <Link to={`/${node.frontmatter.slug}`}>{node.frontmatter.title}</Link>
   </li>
 );
 
 const TagList = ({ list }) => {
   const sorted = tagsSorter(list);
   return (
-    <ul className={styles[`list`] + ` ` + styles['list-wrap']}>
-      {sorted.map((tag, key) => {
-        return (
-          <li key={key}>
-            <Link to={`/tags/` + slugify(tag[0])}>
-              {tag[0] + ` (${tag[1]})`}
-            </Link>
-          </li>
-        );
-      })}
+    <ul className={`${styles.list} ${styles['list-wrap']}`}>
+      {sorted.map((tag, key) => (
+        <li key={key}>
+          <Link to={`/tags/${slugify(tag[0])}`}>{`${tag[0]} (${tag[1]})`}</Link>
+        </li>
+      ))}
     </ul>
   );
 };

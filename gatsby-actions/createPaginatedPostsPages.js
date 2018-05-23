@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = (createPage, nodes) => {
-  const template = path.resolve('src/templates/postList.js');
+  const template = path.resolve('src/templates/postList.jsx');
   const paginateSize = 10;
 
   // Split posts into arrays of length equal to number posts on each page/paginateSize

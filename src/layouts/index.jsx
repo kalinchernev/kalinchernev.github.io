@@ -1,11 +1,11 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Helmet from 'react-helmet';
+import 'prismjs/themes/prism.css';
 
 import styles from './css/styles.module.css';
-import 'prismjs/themes/prism.css';
+
+import Header from '../components/Header';
 
 const IndexLayout = ({ children, data }) => (
   <div>
@@ -21,13 +21,19 @@ const IndexLayout = ({ children, data }) => (
       slogan={data.site.siteMetadata.slogan}
     />
     <div className={styles.main}>{children()}</div>
-    <Footer />
   </div>
 );
 
 IndexLayout.propTypes = {
-  children: PropTypes.any,
-  data: PropTypes.object,
+  children: PropTypes.func.isRequired,
+  data: PropTypes.shape({
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        slogan: PropTypes.string,
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default IndexLayout;

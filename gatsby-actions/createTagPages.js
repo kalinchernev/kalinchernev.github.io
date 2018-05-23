@@ -1,8 +1,9 @@
 const path = require('path');
+
 const slugify = require(`../src/utils/slugify`);
 
 module.exports = (createPage, nodes) => {
-  const template = path.resolve('src/templates/tags.js');
+  const template = path.resolve('src/templates/tags.jsx');
   const posts = {};
 
   nodes.forEach(({ node }) => {
