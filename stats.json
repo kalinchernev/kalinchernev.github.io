@@ -17,8 +17,8 @@
       "path---tags-programming-36104816036be172a9b3.js.map"
     ],
     "path---escaping-macbook-pro-touchbar": [
-      "path---escaping-macbook-pro-touchbar-25c25f3db9b8a8b98755.js",
-      "path---escaping-macbook-pro-touchbar-25c25f3db9b8a8b98755.js.map"
+      "path---escaping-macbook-pro-touchbar-470965e0a208d6e94766.js",
+      "path---escaping-macbook-pro-touchbar-470965e0a208d6e94766.js.map"
     ],
     "path---tags-problem-solving": [
       "path---tags-problem-solving-0819fa490fbb568c1ade.js",
@@ -77,8 +77,8 @@
       "path---history-2028f49feb49d9395ee7.js.map"
     ],
     "path---coding-battle-microsoft-innovation-center": [
-      "path---coding-battle-microsoft-innovation-center-a774747c2d52d0d9f576.js",
-      "path---coding-battle-microsoft-innovation-center-a774747c2d52d0d9f576.js.map"
+      "path---coding-battle-microsoft-innovation-center-78551bbe046e0342f732.js",
+      "path---coding-battle-microsoft-innovation-center-78551bbe046e0342f732.js.map"
     ],
     "path---tags-graphql": [
       "path---tags-graphql-d72e1c2dc2b76aa2589e.js",
@@ -109,8 +109,8 @@
       "path----67206d53b627ad09240a.js.map"
     ],
     "path---agile-documentation-api-driven-project": [
-      "path---agile-documentation-api-driven-project-1bf82b99cd30306f9c51.js",
-      "path---agile-documentation-api-driven-project-1bf82b99cd30306f9c51.js.map"
+      "path---agile-documentation-api-driven-project-be3e09ebf226615e0d77.js",
+      "path---agile-documentation-api-driven-project-be3e09ebf226615e0d77.js.map"
     ],
     "path---tags-javascript": [
       "path---tags-javascript-109dfee8e43fcb826bc9.js",
@@ -169,24 +169,24 @@
       "path---february-digest-2017-25f923a83e64bcd46c80.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-e39ee8333c85803fdd96.js",
-      "component---src-layouts-index-js-e39ee8333c85803fdd96.js.map"
+      "component---src-layouts-index-js-ce0a5501b5dcf581686f.js",
+      "component---src-layouts-index-js-ce0a5501b5dcf581686f.js.map"
     ],
     "path---personal-computers-personal-assistants": [
-      "path---personal-computers-personal-assistants-f3b5948540a64abf5a9d.js",
-      "path---personal-computers-personal-assistants-f3b5948540a64abf5a9d.js.map"
+      "path---personal-computers-personal-assistants-c8df1ecf1eced30c0d47.js",
+      "path---personal-computers-personal-assistants-c8df1ecf1eced30c0d47.js.map"
     ],
     "path---tags-jam-stack": [
       "path---tags-jam-stack-289df00295fca841dd57.js",
       "path---tags-jam-stack-289df00295fca841dd57.js.map"
     ],
     "path---cloud-9-editor": [
-      "path---cloud-9-editor-d7cca53ac6cbe5f6d634.js",
-      "path---cloud-9-editor-d7cca53ac6cbe5f6d634.js.map"
+      "path---cloud-9-editor-8a7649a17d6529062e98.js",
+      "path---cloud-9-editor-8a7649a17d6529062e98.js.map"
     ],
     "path---coding-battle-molengeek": [
-      "path---coding-battle-molengeek-8cddcf95641726b15b7e.js",
-      "path---coding-battle-molengeek-8cddcf95641726b15b7e.js.map"
+      "path---coding-battle-molengeek-646d53e1901554052198.js",
+      "path---coding-battle-molengeek-646d53e1901554052198.js.map"
     ],
     "path---tags-community": [
       "path---tags-community-6a8a921b31a166e6df8e.js",
@@ -209,8 +209,8 @@
       "path---think-about-apps-not-websites-b3f9a038d712c6eb03a9.js.map"
     ],
     "path---index": [
-      "path---index-6e121fc650243dcac5a1.js",
-      "path---index-6e121fc650243dcac5a1.js.map"
+      "path---index-78fc561afb70bca99ca7.js",
+      "path---index-78fc561afb70bca99ca7.js.map"
     ],
     "path---tags-keyboard": [
       "path---tags-keyboard-0f1dcaf17e2404f09f0e.js",
@@ -225,8 +225,8 @@
       "path---tags-medium-155f9bf55baba2281a13.js.map"
     ],
     "path---cms-gatsbyjs": [
-      "path---cms-gatsbyjs-27bf0f3454fd797ba799.js",
-      "path---cms-gatsbyjs-27bf0f3454fd797ba799.js.map"
+      "path---cms-gatsbyjs-4aee80ca816d011678db.js",
+      "path---cms-gatsbyjs-4aee80ca816d011678db.js.map"
     ],
     "path---reflecting-nodejs-design-patterns": [
       "path---reflecting-nodejs-design-patterns-c72556871a7ecbf1432c.js",
@@ -255,8 +255,8 @@
       "build-js-styles.css.map"
     ],
     "path---admin-ui-gatsby-static-site-generator": [
-      "path---admin-ui-gatsby-static-site-generator-3a41b1ee2da52cf360f2.js",
-      "path---admin-ui-gatsby-static-site-generator-3a41b1ee2da52cf360f2.js.map"
+      "path---admin-ui-gatsby-static-site-generator-b7ed29bd8d1de3aef2b3.js",
+      "path---admin-ui-gatsby-static-site-generator-b7ed29bd8d1de3aef2b3.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -303,16 +303,16 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---learn-gatsbyjs": [
-      "path---learn-gatsbyjs-e6e243ec412a38855f06.js",
-      "path---learn-gatsbyjs-e6e243ec412a38855f06.js.map"
+      "path---learn-gatsbyjs-55c69642348300b34424.js",
+      "path---learn-gatsbyjs-55c69642348300b34424.js.map"
     ],
     "path---tags-cloud-9": [
       "path---tags-cloud-9-d25347504f899adc3a87.js",
       "path---tags-cloud-9-d25347504f899adc3a87.js.map"
     ],
     "path---focus-community-good-services": [
-      "path---focus-community-good-services-13352190dba526f18872.js",
-      "path---focus-community-good-services-13352190dba526f18872.js.map"
+      "path---focus-community-good-services-2199e1aa4c7bb6d1bec4.js",
+      "path---focus-community-good-services-2199e1aa4c7bb6d1bec4.js.map"
     ],
     "path---tags-prototyping": [
       "path---tags-prototyping-b20541085940543c9bdb.js",
@@ -327,13 +327,13 @@
       "path---tags-progressive-web-apps-b426f177149e4985e50c.js.map"
     ],
     "path---first-coding-battle-belgium": [
-      "path---first-coding-battle-belgium-0fa268b2eca4ca32f907.js",
-      "path---first-coding-battle-belgium-0fa268b2eca4ca32f907.js.map"
+      "path---first-coding-battle-belgium-8ba83359cdc69c982440.js",
+      "path---first-coding-battle-belgium-8ba83359cdc69c982440.js.map"
     ],
     "app": [
-      "app-66dd3a0c3d3423b6a9e2.js",
+      "app-bd17e40a35e6235daeeb.js",
       "build-js-styles.css",
-      "app-66dd3a0c3d3423b6a9e2.js.map",
+      "app-bd17e40a35e6235daeeb.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-misc": [
