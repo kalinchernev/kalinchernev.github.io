@@ -52,6 +52,7 @@
     "gatsby-transformer-remark": "^1.7.41",
     "prismjs": "^1.14.0",
     "prop-types": "^15.6.1",
+    "react": "^16.3.2",
     "react-helmet": "^5.2.0",
     "typography-theme-moraga": "^0.15.10"
   },

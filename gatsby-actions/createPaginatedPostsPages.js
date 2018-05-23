@@ -7,9 +7,11 @@ module.exports = (createPage, nodes) => {
   // Split posts into arrays of length equal to number posts on each page/paginateSize
   const groupedPages = nodes
     .map((node, index) => {
-      return index % paginateSize === 0
-        ? nodes.slice(index, index + paginateSize)
-        : null;
+      const isIndexModulus = index % paginateSize === 0;
+      if (isIndexModulus) {
+        return nodes.slice(index, index + paginateSize);
+      }
+      return null;
     })
     .filter(item => item);
 
@@ -18,9 +20,9 @@ module.exports = (createPage, nodes) => {
     const pageIndex = index === 0 ? '' : index + 1;
     const paginationRoute = `/history/${pageIndex}`;
     // Avoid showing `Previous` link on first page - passed to context
-    const first = index === 0 ? true : false;
+    const first = index === 0;
     // Avoid showing `Next` link if this is the last page - passed to context
-    const last = index === groups.length - 1 ? true : false;
+    const last = index === groups.length - 1;
 
     return createPage({
       path: paginationRoute,
