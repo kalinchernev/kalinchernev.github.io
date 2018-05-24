@@ -4,7 +4,7 @@ slug: drupal8-cloud9-ide
 date: 2016-09-15T00:00:00+02:00
 tags:
 - php
-- web development
+- WebDev
 - Drupal
 ---
 
@@ -84,7 +84,7 @@ For more ideas around this installation step, check [this tutorial][28] which al
 
 Shooting some ideas of a quick-start yml file for the [`chain][29]`.
 
-```yaml    
+```yaml
 commands:
 # Install Drupal
   - command: site:install
@@ -133,7 +133,7 @@ Note that the runner properties can be edited:
 
 Runners are editable.
 
-```   
+```
 // This file overrides the built-in Apache httpd (PHP, HTML) runner
 // For more information see http://docs.c9.io:8080/#!/api/run-method-run
 {

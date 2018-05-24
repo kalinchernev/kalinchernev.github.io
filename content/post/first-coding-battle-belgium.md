@@ -4,7 +4,7 @@ slug: first-coding-battle-belgium
 date: 2016-04-14T00:00:00+02:00
 tags:
 - JavaScript
-- web development
+- WebDev
 - Coding
 - hack events
 ---

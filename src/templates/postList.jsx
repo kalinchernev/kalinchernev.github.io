@@ -3,20 +3,9 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import styles from './css/styles.module.css';
+import getRandomKey from '../utils/getRandomKey';
 
-const Post = ({ node }) => {
-  const { excerpt } = node.node;
-  const { title, slug } = node.node.frontmatter;
-
-  return (
-    <li>
-      <Link to={`/${slug}`}>
-        <h3>{title}</h3>
-        <p>{excerpt}</p>
-      </Link>
-    </li>
-  );
-};
+import ListItemToPostTeaser from '../components/ListItemToPostTeaser';
 
 const BlogPagedIndex = ({ pathContext }) => {
   const { group, index, first, last } = pathContext;
@@ -31,7 +20,9 @@ const BlogPagedIndex = ({ pathContext }) => {
         <title>Kalin Chernev | Blog</title>
       </Helmet>
       <ul className={styles.listing}>
-        {group.map((node, key) => <Post key={key} node={node} />)}
+        {group.map(node => (
+          <ListItemToPostTeaser key={getRandomKey()} node={node} />
+        ))}
       </ul>
 
       <div
@@ -50,12 +41,13 @@ const BlogPagedIndex = ({ pathContext }) => {
   );
 };
 
-Post.propTypes = {
-  node: PropTypes.object,
-};
-
 BlogPagedIndex.propTypes = {
-  pathContext: PropTypes.object,
+  pathContext: PropTypes.shape({
+    group: PropTypes.array.isRequired,
+    index: PropTypes.number.isRequired,
+    first: PropTypes.bool.isRequired,
+    last: PropTypes.bool.isRequired,
+  }).isRequired,
 };
 
 export default BlogPagedIndex;

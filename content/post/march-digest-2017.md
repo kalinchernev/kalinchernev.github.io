@@ -3,9 +3,9 @@ title: March digest 2017
 slug: march-digest-2017
 date: 2017-03-31T00:00:00+02:00
 tags:
-- Web Development
+- WebDev
 - JavaScript
-- JAM stack
+- JAMstack
 - Medium
 ---
 
@@ -19,10 +19,10 @@ Being a small fish without financial interests in blogging (at least here and no
 
 Medium is aiming to solve problems at large scale for businesses and important individuals in the mission of un-breaking the internet and the publishing again. As a technical blogger, I’m interested in achieving smaller goals:
 
-*   **I want to share about my wider “deep” thinking working with various technologies and tools**. I am not vendor-interested in this communication channel. I’m more into experimenting with many tools and using only a few, later sharing my findings from hands-on work. For this, I can place my thoughts anywhere I decide to — I lately admire [dev.to](https://dev.to/) which feels like “the right place to be” — but the editor is not as easy as in Medium. So yeah, I can just do the markdowns in a static site generator and re-post wherever …
-*   **I want to be part of a community somehow.** Here at Medium, things tend to happen naturally. For example, I post [a story about GraphQL](https://medium.com/@kalin.chernev/the-guide-to-learn-graphql-i-wish-i-found-few-months-go-97f9d9ca6f12) which reaches 1.5k visitors, 7 of which come [dev-blog.apollodata.com](http://dev-blog.apollodata.com/ "dev-blog.apollodata.com"). I mean, that’s amazing — If I hadn’t shared my short notes on Medium, no-one using or reading about Apollo would have ever have visited my blog post. For this, I plan on [disqus](https://disqus.com/) integration which seems straight-forward and covering this “business requirement”.
-*   **I want my code to look really good, and I want it to be more interactive.** This comes simply from the fact that I write mostly about code, so I want it to look nice. Medium allows effective snippets placement and github gists, yet there are many nice-looking styling options for code parsed out of markdown. Having control over the parsed version of your writing is an advantage in some aspects.
-*   **I want to have statistics.** Medium provides stats on each story and it’s really useful to have a global idea what’s going on. For the same GraphQL article I mentioned above, over 1k of the visits come from flipboard.com. That’s all I know as my application request to have a publication with Google Analytics required a payment I got informed a month after making the application. No Google Analytics on Medium unless you are having business goals. I think I’ll manage to integrate Google Analytics in my new stack without 70 dollars for the infrastructure.
+* **I want to share about my wider “deep” thinking working with various technologies and tools**. I am not vendor-interested in this communication channel. I’m more into experimenting with many tools and using only a few, later sharing my findings from hands-on work. For this, I can place my thoughts anywhere I decide to — I lately admire [dev.to](https://dev.to/) which feels like “the right place to be” — but the editor is not as easy as in Medium. So yeah, I can just do the markdowns in a static site generator and re-post wherever …
+* **I want to be part of a community somehow.** Here at Medium, things tend to happen naturally. For example, I post [a story about GraphQL](https://medium.com/@kalin.chernev/the-guide-to-learn-graphql-i-wish-i-found-few-months-go-97f9d9ca6f12) which reaches 1.5k visitors, 7 of which come [dev-blog.apollodata.com](http://dev-blog.apollodata.com/ 'dev-blog.apollodata.com'). I mean, that’s amazing — If I hadn’t shared my short notes on Medium, no-one using or reading about Apollo would have ever have visited my blog post. For this, I plan on [disqus](https://disqus.com/) integration which seems straight-forward and covering this “business requirement”.
+* **I want my code to look really good, and I want it to be more interactive.** This comes simply from the fact that I write mostly about code, so I want it to look nice. Medium allows effective snippets placement and github gists, yet there are many nice-looking styling options for code parsed out of markdown. Having control over the parsed version of your writing is an advantage in some aspects.
+* **I want to have statistics.** Medium provides stats on each story and it’s really useful to have a global idea what’s going on. For the same GraphQL article I mentioned above, over 1k of the visits come from flipboard.com. That’s all I know as my application request to have a publication with Google Analytics required a payment I got informed a month after making the application. No Google Analytics on Medium unless you are having business goals. I think I’ll manage to integrate Google Analytics in my new stack without 70 dollars for the infrastructure.
 
 At the moment, I’ve jotted just a few high-level milestones in the upcoming digital transformation …
 
@@ -30,9 +30,9 @@ At the moment, I’ve jotted just a few high-level milestones in the upcoming di
 
 As Medium evolves, as my interests into improving the ways of expressing my casual tech thoughts in writing. Researching on some of the nerdiest ways I can make a blog for myself — the JAM stack came into light. The [JAM stack](https://jamstack.org/) is an acronym of having JavaScript, APIs and Markup. It’s absolutely revolutionary — I mean — nobody ever though so far in history that the web could handle HTML, CSS and JavaScript in such ways. (That’s ironic) The stack is tightly related to the topic of [static sites generators](https://www.staticgen.com/).
 
-*   The **J** will maybe be in React. At this stage, I’ve found a decent [book to follow](https://www.packtpub.com/web-development/mastering-react) on the way. At any case, investing into learning React will pay much better for me rather than writing new articles on a platform which can change its business goals tomorrow and just go offline.
-*   The **A** will be the [github API](https://developer.github.com/v3/). With inspirations from [netlifycms](https://www.netlifycms.org/), a well-known [git flow translates to my upcoming publishing workflow](https://www.netlifycms.org/docs/configuration-options/#publish-mode).
-*   The **M** part of the stack — I didn’t manage to decide upon this yet as the trends are moving too fast.
+* The **J** will maybe be in React. At this stage, I’ve found a decent [book to follow](https://www.packtpub.com/web-development/mastering-react) on the way. At any case, investing into learning React will pay much better for me rather than writing new articles on a platform which can change its business goals tomorrow and just go offline.
+* The **A** will be the [github API](https://developer.github.com/v3/). With inspirations from [netlifycms](https://www.netlifycms.org/), a well-known [git flow translates to my upcoming publishing workflow](https://www.netlifycms.org/docs/configuration-options/#publish-mode).
+* The **M** part of the stack — I didn’t manage to decide upon this yet as the trends are moving too fast.
 
 So cool this is, google will show you a [kickstarter campaign for the jam stack](https://www.kickstarter.com/projects/846364129/jamstack-the-worlds-first-attachable-guitar-amplif?lang=fr) and there is a song to play while working:
 
@@ -46,9 +46,9 @@ I’m personally impressed by the community progress made around v3 of the lates
 
 I think there are mainly few links to follow the fast progress:
 
-*   [OpenAPI toolbox](http://openapi.toolbox.apievangelist.com/)
-*   [Unofficial awesome list](https://github.com/mermade/awesome-openapi3)
-*   [The github repository](https://github.com/OAI/OpenAPI-Specification)
+* [OpenAPI toolbox](http://openapi.toolbox.apievangelist.com/)
+* [Unofficial awesome list](https://github.com/mermade/awesome-openapi3)
+* [The github repository](https://github.com/OAI/OpenAPI-Specification)
 
 In the awesome list, there are few tools I hadn’t seen before. They seem to be made in quite a different way than the swagger-ui and swagger-editor, etc. that still keep popular positions in the toolbox.
 

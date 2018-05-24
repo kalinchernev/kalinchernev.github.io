@@ -2,22 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
-import slugify from '../utils/slugify';
-import tagsSorter from '../utils/tagsSorter';
+
 import styles from './css/styles.module.css';
 
-const Post = ({ node }) => (
-  <li>
-    <Link to={`/${node.frontmatter.slug}`}>{node.frontmatter.title}</Link>
-  </li>
-);
+import getRandomKey from '../utils/getRandomKey';
+import tagsSorter from '../utils/tagsSorter';
+import slugify from '../utils/slugify';
+
+import ListItemToPost from '../components/ListItemToPost';
 
 const TagList = ({ list }) => {
   const sorted = tagsSorter(list);
   return (
     <ul className={`${styles.list} ${styles['list-wrap']}`}>
-      {sorted.map((tag, key) => (
-        <li key={key}>
+      {sorted.map(tag => (
+        <li key={getRandomKey()}>
           <Link to={`/tags/${slugify(tag[0])}`}>{`${tag[0]} (${tag[1]})`}</Link>
         </li>
       ))}
@@ -25,7 +24,7 @@ const TagList = ({ list }) => {
   );
 };
 
-const TagsPageIndex = ({ pathContext }) => {
+const TagsPageIndexTemplate = ({ pathContext }) => {
   const { posts, post, tag } = pathContext;
 
   if (tag) {
@@ -42,7 +41,9 @@ const TagsPageIndex = ({ pathContext }) => {
         </Helmet>
         <h1>{tag}</h1>
         <ul className={styles['list-reset']}>
-          {post.map((tagItem, key) => <Post key={key} node={tagItem} />)}
+          {post.map((tagItem, key) => (
+            <ListItemToPost key={getRandomKey(key)} tagItem={tagItem} />
+          ))}
         </ul>
         <Link to="/tags">All tags</Link>
       </div>
@@ -65,16 +66,16 @@ const TagsPageIndex = ({ pathContext }) => {
   );
 };
 
-Post.propTypes = {
-  node: PropTypes.object,
-};
-
 TagList.propTypes = {
-  list: PropTypes.array,
+  list: PropTypes.shape({}).isRequired,
 };
 
-TagsPageIndex.propTypes = {
-  pathContext: PropTypes.object,
+TagsPageIndexTemplate.propTypes = {
+  pathContext: PropTypes.shape({
+    posts: PropTypes.array,
+    post: PropTypes.array,
+    tag: PropTypes.string,
+  }).isRequired,
 };
 
-export default TagsPageIndex;
+export default TagsPageIndexTemplate;

@@ -4,7 +4,7 @@ slug: getting-better-with-graphql
 date: 2018-04-15T00:00:00+02:00
 tags:
 - GraphQL
-- web development
+- WebDev
 ---
 
 ## Introduction

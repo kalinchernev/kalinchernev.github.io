@@ -4,7 +4,7 @@ date: 2017-11-02T12:00:00.113Z
 slug: migrate-hugo-gatsby
 tags:
   - JavaScript
-  - JAM Stack
+  - JAMStack
   - GatsbyJS
 ---
 
@@ -13,10 +13,11 @@ tags:
 After the recent [migration from Medium to Hugo](/releasing-new-blog) I continued digging into the [JAM stack](/tags/jam-stack) and [GatsbyJS](/tags/gatsbyjs), as having a statically generated site for my blog is working well so far.
 
 I could have taken a ready template to mimic design and keep content and make another quick release. Though, for this migration, I decided to spent time taking concrete steps I consider reusable:
-- Content migration with minimum efforts
-- Programatic content creation workflow in GatsbyJS
-- Make pagination, pages with and for tags, etc.
-- Add admin panel with [NetlifyCMS](https://www.netlifycms.org/)
+
+* Content migration with minimum efforts
+* Programatic content creation workflow in GatsbyJS
+* Make pagination, pages with and for tags, etc.
+* Add admin panel with [NetlifyCMS](https://www.netlifycms.org/)
 
 This article will highlight lessons learned about these steps with the aim to provide high-level guidelines about patterns which can be re-used in migrations with other generators to GatsbyJS.
 
@@ -67,6 +68,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   });
 };
 ```
+
 As you see, getting the list of posts can be done in a single query.
 
 The result of this query can later be handled by a "creator" function, which I prefer to keep in a separate module. For example, creating posts works like following:
@@ -90,6 +92,7 @@ module.exports = (createPage, nodes) => {
   });
 };
 ```
+
 I re-use the `slug` field of the frontmatter of my existing structure. I don't have to generate or calculate slugs based on information of other fields, i.e. my scenario is easier than the tutorial on the official docs.
 
 This is an example of "unfair" easy - I don't have to do literally anything to keep my previous URLs of existing content the same in the new system.

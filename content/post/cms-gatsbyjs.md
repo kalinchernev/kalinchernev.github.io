@@ -3,7 +3,7 @@ title: Having a CMS for GatsbyJS - easier than ever!
 slug: cms-gatsbyjs
 date: 2018-01-19T00:00:00+00:00
 tags:
-- JAM stack
+- JAMstack
 - JavaScript
 - GatsbyJS
 ---
@@ -12,7 +12,7 @@ tags:
 
 As I have previously mentioned, [NetlifyCMS is one of the most flexible "CMS" applications](/admin-ui-gatsby-static-site-generator) on the market at the moment. In the past you had to tweak both GatsbyJS and Netlify service configurations, so that the output of first was useful for the second. I shared about these details in a [story about migrating from Hugo to GatsbyJS](https://www.gatsbyjs.org/blog/2017-11-06-migrate-hugo-gatsby/#admin-panel). Few weeks after these shared stories, Netlify released [NetlifyCMS 1.0](https://www.netlify.com/blog/2017/12/07/open-source-netlify-cms-hits-1.0-bringing-git-based-content-management-to-static-sites-everywhere/). I think this release is a big milestone for the project because it involved a lot of work on [design perspective](https://github.com/netlify/netlify-cms/issues?q=is%3Aissue+is%3Aopen+sort%3Acomments-desc+label%3A%22area%3A+design%22) but also on authentication and integration parts which make the product easier to adopt.
 
-A bit more than a month after this release, I have the feeling not many know about the improvements available. I blame the holiday season of December :)  And so in this blog post I'll share my personal impressions. I believe NetlifyCMS is still one of the best tools to have together with a static site generator, and it's also well-integrated with another great service - Netlify.
+A bit more than a month after this release, I have the feeling not many know about the improvements available. I blame the holiday season of December :) And so in this blog post I'll share my personal impressions. I believe NetlifyCMS is still one of the best tools to have together with a static site generator, and it's also well-integrated with another great service - Netlify.
 
 ### Starting a project
 
@@ -22,21 +22,21 @@ Some people succeeded taking an example, others didn't. The ones who didn't, did
 
 And there's the first good news - starting with GatsbyJS and adding an administration panel hasn't been easier!
 
-1) Go and [select the right starter](https://www.netlifycms.org/docs/start-with-a-template/):
+1.  Go and [select the right starter](https://www.netlifycms.org/docs/start-with-a-template/):
 
 ![Select the GatsbyJS starter](./images/netlifycms-gatsbyjs-starter.png)
 
-2) Give your project a name
+2.  Give your project a name
 
 ![Naming your project](./images/gatsbyjs-starter-progress.gif)
 
-3) Accept invitation
+3.  Accept invitation
 
 When you start the creation of a new project, the new identity service of Netlify will create your user 1, and will send you an invite for it, just accept it :)
 
 ![Accept Netlify invite](./images/accept-netlify-invite.png)
 
-4) Set credentials
+4.  Set credentials
 
 ![NetlifyCMS accepting the invite and setting personal credentials](./images/netlifycms-set-credentials.png)
 
@@ -44,7 +44,7 @@ If you want to invite others to contribute to your new website, or you want to c
 
 ![Netlify identity management console](./images/netlify-identity-management.png)
 
-5) Enjoy your CMS :)
+5.  Enjoy your CMS :)
 
 You will be automatically redirected the administration pages of your new site! Enjoy! :)
 

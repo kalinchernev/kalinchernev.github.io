@@ -42,7 +42,14 @@ export const query = graphql`
 `;
 
 Post.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+      }),
+      html: PropTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default Post;

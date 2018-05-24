@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 import dateFormat from 'dateformat';
 import styles from './css/styles.module.css';
 
+import getRandomKey from '../utils/getRandomKey';
+
 import Tag from './Tag';
 
 const PostMeta = ({ post }) => {
-  const { date, tags, timeToRead } = post.frontmatter;
+  const { timeToRead } = post;
+  const { date, tags } = post.frontmatter;
 
   return (
     <div>
@@ -15,11 +18,7 @@ const PostMeta = ({ post }) => {
           {dateFormat(date, `fullDate`)}
         </time>
         <ul className={styles[`post-tags`]}>
-          {tags.map((tag, key) => {
-            // Just a random number with max of the array key
-            const id = Math.floor(Math.random() * Math.floor(key));
-            return <Tag key={id} tag={tag} />;
-          })}
+          {tags.map(tag => <Tag key={getRandomKey()} tag={tag} />)}
         </ul>
       </section>
       <div className={styles[`post-timeToRead`]}>

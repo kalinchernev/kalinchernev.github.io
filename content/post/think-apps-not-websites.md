@@ -3,7 +3,7 @@ title: Think about apps, not websites
 slug: think-about-apps-not-websites
 date: 2016-12-13T00:00:00+02:00
 tags:
-- web development
+- WebDev
 - mobile
 - JavaScript
 - Progressive Web Apps
@@ -32,14 +32,15 @@ Another example higher user expectation: being able to work with mobile applicat
 In similar conditions, building a website to just share information is not something special any more, because users expect a whole different, more engaging digital experience — think about SMS notifications. They were standard some years ago, but not anymore. Today, push notifications are everywhere. And there is no way that trend goes down, as the future connected world will involve even higher amount of notifications.
 
 ### Web apps
+
 “Web apps” is probably something you already know. Web apps are consisted of HTML, CSS and JavaScript. Difference between them and regular websites, is that the same technologies are used with “spices”: new methods to achieve better results. Meet the Progressive Web Apps, aka [PWA](https://developers.google.com/web/).
 
 The term has been around for awhile, so starter tutorials are accessible:
 
-- [Your first PWA](https://developers.google.com/web/fundamentals/getting-started/codelabs/your-first-pwapp/)
-- [Progressive Web AMPs](https://www.smashingmagazine.com/2016/12/progressive-web-amps/)
-- [A beginners guide to PWA](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/)
-- [The Building Blocks Of Progressive Web Apps](https://www.smashingmagazine.com/2016/09/the-building-blocks-of-progressive-web-apps/)
+* [Your first PWA](https://developers.google.com/web/fundamentals/getting-started/codelabs/your-first-pwapp/)
+* [Progressive Web AMPs](https://www.smashingmagazine.com/2016/12/progressive-web-amps/)
+* [A beginners guide to PWA](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/)
+* [The Building Blocks Of Progressive Web Apps](https://www.smashingmagazine.com/2016/09/the-building-blocks-of-progressive-web-apps/)
 
 In summary, there are many benefits of adding an some extra efforts into your existing (or new) web pages to make them available in bad network conditions (when offline), and provide functionalities that are normally expected by users in mobile, but in the browser. And browsers are something you have almost everywhere.
 
@@ -57,8 +58,8 @@ I’ll be going through the most popular and basic features of PWA which could c
 
 So, what we want to achieve is:
 
-- User can save our application to his phone for quick access
-- User can open the application without access to the Internet, and still see meaningful contents that help him continue working with the application
+* User can save our application to his phone for quick access
+* User can open the application without access to the Internet, and still see meaningful contents that help him continue working with the application
 
 ### DevTools
 
@@ -141,9 +142,9 @@ For me, personally, it was fun to play a bit with the service worker file, not h
 
 By the end of the exercise, I have this branch for [the basics of caching the application shell][31]. What I really like as a side-effect of stealing the gulp file of the demo above is that now I have a basic build system. That helps me in generating a comparatively sophisticated service-worker handling the offline behavior of my web app. Also, it gives me a nicely working [gh-pages website][32] that can be accessed by anyone over HTTPS on <https: kalinchernev.github.io="" pwa=""> This makes me really happy, because of several reasons:
 
-1. I already have a self-hosted, manageable (easy to update and deploy), modern web app, that looks like a mobile app. It can be viewed and installed on a mobile device, and later opened in a "shell", i.e. not showing broken pages offline mode.
-2. Having a task runner like [gulp][33] opens a door of opportunities to make my development life even easier than before: I can integrate live reload, include any preprocessing of LESS/SASS, can include babel to turn my ES6 code in ES5 for older browsers, etc.
-3. Using the `sw-precache` even as simple as it is right now, provides me with benefits of easier asset management, as I don't have to go too much into the details of the Cache API if I don't want to, and the mechanism of implementing the worker is easier to update in the future, as I believe the project will be well maintained. So, my task for future maintenance will be to re-generate the worker which is already included on the page.
+1.  I already have a self-hosted, manageable (easy to update and deploy), modern web app, that looks like a mobile app. It can be viewed and installed on a mobile device, and later opened in a "shell", i.e. not showing broken pages offline mode.
+2.  Having a task runner like [gulp][33] opens a door of opportunities to make my development life even easier than before: I can integrate live reload, include any preprocessing of LESS/SASS, can include babel to turn my ES6 code in ES5 for older browsers, etc.
+3.  Using the `sw-precache` even as simple as it is right now, provides me with benefits of easier asset management, as I don't have to go too much into the details of the Cache API if I don't want to, and the mechanism of implementing the worker is easier to update in the future, as I believe the project will be well maintained. So, my task for future maintenance will be to re-generate the worker which is already included on the page.
 
 I hope that you already see more opportunities than before. In particular, next time you want to publish information that is important and useful for your users when, say, they travel, consider these options. Imagine you want to provide accessible guides and documentation — just follow the same steps and provide enhanced experience, I'm sure it'll pay off.
 
@@ -157,11 +158,11 @@ For a start, you can start with [Adding Push Notifications to a Web App][34]. It
 
 Apart from being bright, it will be filled with advancements and further variety in the developers' toolbox. Having in mind that browsers have always been an inconsistent environment, it will be vital to keep the following resources at hand and get fresh information every now and then.
 
-- [MDN App Center](https://developer.mozilla.org/en-US/Apps/Progressive)
-- [Google Web Updates](https://developers.google.com/web/updates/)
-- [Chrome](https://developer.chrome.com/home), [Microsoft Edge](https://blogs.windows.com/msedgedev/#aJK7cy6m0YfVUByl.97), etc. of interest
-- [HTML5Rocks](https://www.html5rocks.com/en/)
-- [The standards](https://www.w3.org/TR/)
+* [MDN App Center](https://developer.mozilla.org/en-US/Apps/Progressive)
+* [Google Web Updates](https://developers.google.com/web/updates/)
+* [Chrome](https://developer.chrome.com/home), [Microsoft Edge](https://blogs.windows.com/msedgedev/#aJK7cy6m0YfVUByl.97), etc. of interest
+* [HTML5Rocks](https://www.html5rocks.com/en/)
+* [The standards](https://www.w3.org/TR/)
 
 It's important to underline, that [Progressive Web Apps isn't a Google-only thing][38] although many of the references in this article are going to resources authored by community contributions to Google documentation. This is mainly because the dedication and organization of knowledge seems to the best at the moment. [Microsoft are also supporters of PWA][39]. In fact, [manifoldjs][40] is an interesting project you will probably meet should you decide to make PWA that works as a nice app in Windows.
 

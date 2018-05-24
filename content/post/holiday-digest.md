@@ -4,10 +4,10 @@ slug: holiday-digest-2016
 date: 2017-01-07T00:00:00+02:00
 tags:
 - JavaScript
-- web development
+- WebDev
 ---
 
-[Source](https://medium.com/digital-beer/holidays-digest-68ecc2b115a8 "Permalink to Holidays digest – Digital Beer – Medium")
+[Source](https://medium.com/digital-beer/holidays-digest-68ecc2b115a8 'Permalink to Holidays digest – Digital Beer – Medium')
 
 I decided to try a new format of writing a story — a "digest" one. In this format, I'll be able to mix subjects and share about things I find interesting. Although I don't plan to follow a strict structure, topics will be divided into sections to make it easy to jump between without having to read it all.
 
