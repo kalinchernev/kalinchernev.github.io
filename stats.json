@@ -1,100 +1,92 @@
 {
   "assetsByChunkName": {
     "path---tags-open-apis": [
-      "path---tags-open-apis-25feb3bb6001c4b7fb40.js",
-      "path---tags-open-apis-25feb3bb6001c4b7fb40.js.map"
+      "path---tags-open-apis-c14dffce06d5c0b72ed1.js",
+      "path---tags-open-apis-c14dffce06d5c0b72ed1.js.map"
     ],
     "path---tags-documentationjs": [
-      "path---tags-documentationjs-fb2369106638b37ffef2.js",
-      "path---tags-documentationjs-fb2369106638b37ffef2.js.map"
+      "path---tags-documentationjs-ea425c5c0e1f8078555f.js",
+      "path---tags-documentationjs-ea425c5c0e1f8078555f.js.map"
     ],
     "path---tags-documentation": [
-      "path---tags-documentation-4cb2c7507cb977d3664b.js",
-      "path---tags-documentation-4cb2c7507cb977d3664b.js.map"
+      "path---tags-documentation-9fb6fa03d30a8e16cce1.js",
+      "path---tags-documentation-9fb6fa03d30a8e16cce1.js.map"
     ],
     "path---tags-programming": [
-      "path---tags-programming-36104816036be172a9b3.js",
-      "path---tags-programming-36104816036be172a9b3.js.map"
+      "path---tags-programming-1ac9e6e6ff2ce0285e5b.js",
+      "path---tags-programming-1ac9e6e6ff2ce0285e5b.js.map"
     ],
     "path---escaping-macbook-pro-touchbar": [
       "path---escaping-macbook-pro-touchbar-470965e0a208d6e94766.js",
       "path---escaping-macbook-pro-touchbar-470965e0a208d6e94766.js.map"
     ],
     "path---tags-problem-solving": [
-      "path---tags-problem-solving-0819fa490fbb568c1ade.js",
-      "path---tags-problem-solving-0819fa490fbb568c1ade.js.map"
+      "path---tags-problem-solving-46abc58517505a2e3315.js",
+      "path---tags-problem-solving-46abc58517505a2e3315.js.map"
     ],
     "path---getting-better-with-graphql": [
-      "path---getting-better-with-graphql-0374cdb919c4f9cf0b63.js",
-      "path---getting-better-with-graphql-0374cdb919c4f9cf0b63.js.map"
+      "path---getting-better-with-graphql-98159e6f22926903e98d.js",
+      "path---getting-better-with-graphql-98159e6f22926903e98d.js.map"
     ],
     "path---tags-serverless": [
-      "path---tags-serverless-761781cbab915e729fce.js",
-      "path---tags-serverless-761781cbab915e729fce.js.map"
+      "path---tags-serverless-4c1f06d480f72c7b117b.js",
+      "path---tags-serverless-4c1f06d480f72c7b117b.js.map"
     ],
     "path---tags-aws": [
-      "path---tags-aws-e7583f78e60fccd91167.js",
-      "path---tags-aws-e7583f78e60fccd91167.js.map"
+      "path---tags-aws-a7697a6f9e89563da223.js",
+      "path---tags-aws-a7697a6f9e89563da223.js.map"
     ],
     "path---holiday-digest-2016": [
-      "path---holiday-digest-2016-ed02be3e23a0e36fd4ca.js",
-      "path---holiday-digest-2016-ed02be3e23a0e36fd4ca.js.map"
+      "path---holiday-digest-2016-9b896ede529961b62689.js",
+      "path---holiday-digest-2016-9b896ede529961b62689.js.map"
     ],
     "path---tags-open-data": [
-      "path---tags-open-data-7a3044eae67ece453400.js",
-      "path---tags-open-data-7a3044eae67ece453400.js.map"
+      "path---tags-open-data-000c35bf0753cff79faf.js",
+      "path---tags-open-data-000c35bf0753cff79faf.js.map"
     ],
     "path---tags-productivity": [
-      "path---tags-productivity-1ba6997e1eb298cd7868.js",
-      "path---tags-productivity-1ba6997e1eb298cd7868.js.map"
-    ],
-    "component---src-pages-index-js": [
-      "component---src-pages-index-js-02232741c50485d5daed.js",
-      "component---src-pages-index-js-02232741c50485d5daed.js.map"
+      "path---tags-productivity-02857fd30065b6493887.js",
+      "path---tags-productivity-02857fd30065b6493887.js.map"
     ],
     "path---tags-coding": [
-      "path---tags-coding-a92c2e4316f12aa8e872.js",
-      "path---tags-coding-a92c2e4316f12aa8e872.js.map"
+      "path---tags-coding-82103b4c818ade8acfb2.js",
+      "path---tags-coding-82103b4c818ade8acfb2.js.map"
     ],
     "path---tags-design-patterns": [
-      "path---tags-design-patterns-8750ae220b73801fd6f1.js",
-      "path---tags-design-patterns-8750ae220b73801fd6f1.js.map"
+      "path---tags-design-patterns-a3ccfdb52036f359f475.js",
+      "path---tags-design-patterns-a3ccfdb52036f359f475.js.map"
     ],
     "path---tags-macos": [
-      "path---tags-macos-7874c5246d458163121f.js",
-      "path---tags-macos-7874c5246d458163121f.js.map"
+      "path---tags-macos-66bfad80e68629180d7a.js",
+      "path---tags-macos-66bfad80e68629180d7a.js.map"
     ],
     "path---graphql-guide-wish-found-before": [
       "path---graphql-guide-wish-found-before-51248a6423b0b2689351.js",
       "path---graphql-guide-wish-found-before-51248a6423b0b2689351.js.map"
     ],
     "path---tags-nodejs": [
-      "path---tags-nodejs-3e6361f5a4afba9743b8.js",
-      "path---tags-nodejs-3e6361f5a4afba9743b8.js.map"
+      "path---tags-nodejs-975258f20c29cfb896d5.js",
+      "path---tags-nodejs-975258f20c29cfb896d5.js.map"
     ],
     "path---history": [
-      "path---history-2028f49feb49d9395ee7.js",
-      "path---history-2028f49feb49d9395ee7.js.map"
+      "path---history-ac9a2b2ccbd6f20e8d15.js",
+      "path---history-ac9a2b2ccbd6f20e8d15.js.map"
     ],
     "path---coding-battle-microsoft-innovation-center": [
       "path---coding-battle-microsoft-innovation-center-78551bbe046e0342f732.js",
       "path---coding-battle-microsoft-innovation-center-78551bbe046e0342f732.js.map"
     ],
     "path---tags-graphql": [
-      "path---tags-graphql-d72e1c2dc2b76aa2589e.js",
-      "path---tags-graphql-d72e1c2dc2b76aa2589e.js.map"
-    ],
-    "component---src-templates-tags-js": [
-      "component---src-templates-tags-js-002c0a0bb18e2517c4b7.js",
-      "component---src-templates-tags-js-002c0a0bb18e2517c4b7.js.map"
+      "path---tags-graphql-39eda4f580b73f18b640.js",
+      "path---tags-graphql-39eda4f580b73f18b640.js.map"
     ],
     "path---tags-open-source": [
-      "path---tags-open-source-a0455166fd34339e3825.js",
-      "path---tags-open-source-a0455166fd34339e3825.js.map"
+      "path---tags-open-source-150e0d0365d0098e065f.js",
+      "path---tags-open-source-150e0d0365d0098e065f.js.map"
     ],
     "path---tags": [
-      "path---tags-4f1ff85efa762c3bc659.js",
-      "path---tags-4f1ff85efa762c3bc659.js.map"
+      "path---tags-e25ba46aeb65f3eea4ce.js",
+      "path---tags-e25ba46aeb65f3eea4ce.js.map"
     ],
     "path---tdd-serverless-jest": [
       "path---tdd-serverless-jest-a9b5f167924c6e7d9baf.js",
@@ -109,48 +101,52 @@
       "path----67206d53b627ad09240a.js.map"
     ],
     "path---agile-documentation-api-driven-project": [
-      "path---agile-documentation-api-driven-project-be3e09ebf226615e0d77.js",
-      "path---agile-documentation-api-driven-project-be3e09ebf226615e0d77.js.map"
+      "path---agile-documentation-api-driven-project-6ebf43270b1422ea2ac8.js",
+      "path---agile-documentation-api-driven-project-6ebf43270b1422ea2ac8.js.map"
     ],
     "path---tags-javascript": [
-      "path---tags-javascript-109dfee8e43fcb826bc9.js",
-      "path---tags-javascript-109dfee8e43fcb826bc9.js.map"
+      "path---tags-javascript-4f51e1358e3fa0d7bfd3.js",
+      "path---tags-javascript-4f51e1358e3fa0d7bfd3.js.map"
     ],
     "path---tags-bots": [
-      "path---tags-bots-20109a728e1e2c532804.js",
-      "path---tags-bots-20109a728e1e2c532804.js.map"
+      "path---tags-bots-86c313a122ffc4ea4e2c.js",
+      "path---tags-bots-86c313a122ffc4ea4e2c.js.map"
     ],
     "path---prototyping-apis-open-api-specification": [
       "path---prototyping-apis-open-api-specification-2feb9e96286b2448970d.js",
       "path---prototyping-apis-open-api-specification-2feb9e96286b2448970d.js.map"
     ],
-    "component---src-templates-post-list-js": [
-      "component---src-templates-post-list-js-6d5e903c81d317be095d.js",
-      "component---src-templates-post-list-js-6d5e903c81d317be095d.js.map"
+    "component---src-layouts-index-jsx": [
+      "component---src-layouts-index-jsx-239cdbc481eaa8f683a7.js",
+      "component---src-layouts-index-jsx-239cdbc481eaa8f683a7.js.map"
     ],
     "path---tags-cloud": [
-      "path---tags-cloud-ca76cd287d1e169b0396.js",
-      "path---tags-cloud-ca76cd287d1e169b0396.js.map"
+      "path---tags-cloud-1365059f8a972459177e.js",
+      "path---tags-cloud-1365059f8a972459177e.js.map"
     ],
     "path---history-4": [
-      "path---history-4-dcdeb6752816f146f252.js",
-      "path---history-4-dcdeb6752816f146f252.js.map"
+      "path---history-4-9937fcc42cce2878a211.js",
+      "path---history-4-9937fcc42cce2878a211.js.map"
     ],
     "path---tags-blogging": [
-      "path---tags-blogging-4470d3e12cf674cc949b.js",
-      "path---tags-blogging-4470d3e12cf674cc949b.js.map"
+      "path---tags-blogging-75260cc57ee9328a8599.js",
+      "path---tags-blogging-75260cc57ee9328a8599.js.map"
     ],
     "path---tags-debugging": [
-      "path---tags-debugging-097cb0b5ba4214699ccf.js",
-      "path---tags-debugging-097cb0b5ba4214699ccf.js.map"
+      "path---tags-debugging-d1da208c65a4aeaea7b9.js",
+      "path---tags-debugging-d1da208c65a4aeaea7b9.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
+    "component---src-templates-tags-jsx": [
+      "component---src-templates-tags-jsx-113196bd386d04b3ea22.js",
+      "component---src-templates-tags-jsx-113196bd386d04b3ea22.js.map"
+    ],
     "path---tags-mobile": [
-      "path---tags-mobile-118200f8f5d1d9653558.js",
-      "path---tags-mobile-118200f8f5d1d9653558.js.map"
+      "path---tags-mobile-ae6709481dc3fac0c802.js",
+      "path---tags-mobile-ae6709481dc3fac0c802.js.map"
     ],
     "path---stream-adventure-triage": [
       "path---stream-adventure-triage-00e55fcd6b65f2ae9a84.js",
@@ -161,72 +157,64 @@
       "path---january-digest-2017-d4365d57698e267a1b6f.js.map"
     ],
     "path---tags-gatsbyjs": [
-      "path---tags-gatsbyjs-9aa7e25cbc016a6d7726.js",
-      "path---tags-gatsbyjs-9aa7e25cbc016a6d7726.js.map"
+      "path---tags-gatsbyjs-fbb92fd5b949e77c1b01.js",
+      "path---tags-gatsbyjs-fbb92fd5b949e77c1b01.js.map"
     ],
     "path---february-digest-2017": [
       "path---february-digest-2017-25f923a83e64bcd46c80.js",
       "path---february-digest-2017-25f923a83e64bcd46c80.js.map"
     ],
-    "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-ce0a5501b5dcf581686f.js",
-      "component---src-layouts-index-js-ce0a5501b5dcf581686f.js.map"
-    ],
     "path---personal-computers-personal-assistants": [
       "path---personal-computers-personal-assistants-c8df1ecf1eced30c0d47.js",
       "path---personal-computers-personal-assistants-c8df1ecf1eced30c0d47.js.map"
-    ],
-    "path---tags-jam-stack": [
-      "path---tags-jam-stack-289df00295fca841dd57.js",
-      "path---tags-jam-stack-289df00295fca841dd57.js.map"
     ],
     "path---cloud-9-editor": [
       "path---cloud-9-editor-8a7649a17d6529062e98.js",
       "path---cloud-9-editor-8a7649a17d6529062e98.js.map"
     ],
     "path---coding-battle-molengeek": [
-      "path---coding-battle-molengeek-646d53e1901554052198.js",
-      "path---coding-battle-molengeek-646d53e1901554052198.js.map"
+      "path---coding-battle-molengeek-ced48ed74e341b69ac5c.js",
+      "path---coding-battle-molengeek-ced48ed74e341b69ac5c.js.map"
     ],
     "path---tags-community": [
-      "path---tags-community-6a8a921b31a166e6df8e.js",
-      "path---tags-community-6a8a921b31a166e6df8e.js.map"
+      "path---tags-community-cbef550235ff9cf58e3d.js",
+      "path---tags-community-cbef550235ff9cf58e3d.js.map"
     ],
     "path---tags-php": [
-      "path---tags-php-971677585901d82a7018.js",
-      "path---tags-php-971677585901d82a7018.js.map"
+      "path---tags-php-6a9d10b7fd3de3c1b5d5.js",
+      "path---tags-php-6a9d10b7fd3de3c1b5d5.js.map"
     ],
     "path---tags-coding-competitions": [
-      "path---tags-coding-competitions-0ab4c8959f4309b5d23f.js",
-      "path---tags-coding-competitions-0ab4c8959f4309b5d23f.js.map"
+      "path---tags-coding-competitions-79ed4a65d7e04fc7b22b.js",
+      "path---tags-coding-competitions-79ed4a65d7e04fc7b22b.js.map"
     ],
     "path---debugging-nodejs-in-cloud-9-ide": [
       "path---debugging-nodejs-in-cloud-9-ide-e555d5b2158dfab9767d.js",
       "path---debugging-nodejs-in-cloud-9-ide-e555d5b2158dfab9767d.js.map"
     ],
     "path---think-about-apps-not-websites": [
-      "path---think-about-apps-not-websites-b3f9a038d712c6eb03a9.js",
-      "path---think-about-apps-not-websites-b3f9a038d712c6eb03a9.js.map"
+      "path---think-about-apps-not-websites-867f73e3a0406d295d57.js",
+      "path---think-about-apps-not-websites-867f73e3a0406d295d57.js.map"
     ],
     "path---index": [
-      "path---index-78fc561afb70bca99ca7.js",
-      "path---index-78fc561afb70bca99ca7.js.map"
+      "path---index-6e121fc650243dcac5a1.js",
+      "path---index-6e121fc650243dcac5a1.js.map"
     ],
     "path---tags-keyboard": [
-      "path---tags-keyboard-0f1dcaf17e2404f09f0e.js",
-      "path---tags-keyboard-0f1dcaf17e2404f09f0e.js.map"
+      "path---tags-keyboard-912a58b7f069edcb4d4d.js",
+      "path---tags-keyboard-912a58b7f069edcb4d4d.js.map"
     ],
     "path---coding-battle-take-eat-easy": [
       "path---coding-battle-take-eat-easy-fb253a240814d6b54d50.js",
       "path---coding-battle-take-eat-easy-fb253a240814d6b54d50.js.map"
     ],
     "path---tags-medium": [
-      "path---tags-medium-155f9bf55baba2281a13.js",
-      "path---tags-medium-155f9bf55baba2281a13.js.map"
+      "path---tags-medium-90b8b4902fb0adf1151b.js",
+      "path---tags-medium-90b8b4902fb0adf1151b.js.map"
     ],
     "path---cms-gatsbyjs": [
-      "path---cms-gatsbyjs-4aee80ca816d011678db.js",
-      "path---cms-gatsbyjs-4aee80ca816d011678db.js.map"
+      "path---cms-gatsbyjs-5d2113679e6bd1cf474e.js",
+      "path---cms-gatsbyjs-5d2113679e6bd1cf474e.js.map"
     ],
     "path---reflecting-nodejs-design-patterns": [
       "path---reflecting-nodejs-design-patterns-c72556871a7ecbf1432c.js",
@@ -236,157 +224,169 @@
       "path---fixing-mobile-phone-3044ee72dab23cd82cb3.js",
       "path---fixing-mobile-phone-3044ee72dab23cd82cb3.js.map"
     ],
-    "component---src-pages-404-js": [
-      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
-      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
-    ],
     "path---history-2": [
-      "path---history-2-628a35cf98c503c33e8b.js",
-      "path---history-2-628a35cf98c503c33e8b.js.map"
+      "path---history-2-fdca7b35d904f1d33124.js",
+      "path---history-2-fdca7b35d904f1d33124.js.map"
+    ],
+    "component---src-templates-post-list-jsx": [
+      "component---src-templates-post-list-jsx-d14a095945701373ec2e.js",
+      "component---src-templates-post-list-jsx-d14a095945701373ec2e.js.map"
     ],
     "path---tags-vim": [
-      "path---tags-vim-ae8ca858f9c31108f6ed.js",
-      "path---tags-vim-ae8ca858f9c31108f6ed.js.map"
+      "path---tags-vim-3ee10d2aa0c844ae6f3d.js",
+      "path---tags-vim-3ee10d2aa0c844ae6f3d.js.map"
     ],
     "commons": [
-      "commons-035be24b4251bcda5a4a.js",
+      "commons-290d69381b39a25fcb4d.js",
       "build-js-styles.css",
-      "commons-035be24b4251bcda5a4a.js.map",
+      "commons-290d69381b39a25fcb4d.js.map",
       "build-js-styles.css.map"
     ],
     "path---admin-ui-gatsby-static-site-generator": [
-      "path---admin-ui-gatsby-static-site-generator-b7ed29bd8d1de3aef2b3.js",
-      "path---admin-ui-gatsby-static-site-generator-b7ed29bd8d1de3aef2b3.js.map"
+      "path---admin-ui-gatsby-static-site-generator-4e4c376822d4d92819f6.js",
+      "path---admin-ui-gatsby-static-site-generator-4e4c376822d4d92819f6.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---tags-tools": [
-      "path---tags-tools-ad416215a474a42d2a9e.js",
-      "path---tags-tools-ad416215a474a42d2a9e.js.map"
+      "path---tags-tools-854af62b5c1cd5e4c8d6.js",
+      "path---tags-tools-854af62b5c1cd5e4c8d6.js.map"
+    ],
+    "component---src-pages-404-jsx": [
+      "component---src-pages-404-jsx-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-jsx-4503918ea3a16cfcdb75.js.map"
     ],
     "path---tags-tdd": [
-      "path---tags-tdd-ddbbbab6fd6efb425de8.js",
-      "path---tags-tdd-ddbbbab6fd6efb425de8.js.map"
+      "path---tags-tdd-59bc619547412f7edcb2.js",
+      "path---tags-tdd-59bc619547412f7edcb2.js.map"
     ],
     "path---releasing-new-blog": [
-      "path---releasing-new-blog-aeed756fdffcdc9ec63d.js",
-      "path---releasing-new-blog-aeed756fdffcdc9ec63d.js.map"
+      "path---releasing-new-blog-783a80d136fedf58ed2a.js",
+      "path---releasing-new-blog-783a80d136fedf58ed2a.js.map"
     ],
     "path---theming-documentationjs": [
       "path---theming-documentationjs-a74a09df53de87320a31.js",
       "path---theming-documentationjs-a74a09df53de87320a31.js.map"
     ],
     "path---tags-assistants": [
-      "path---tags-assistants-677ce7f98336f3544ebd.js",
-      "path---tags-assistants-677ce7f98336f3544ebd.js.map"
-    ],
-    "component---src-templates-post-js": [
-      "component---src-templates-post-js-c43faf6b3b64000e51d0.js",
-      "component---src-templates-post-js-c43faf6b3b64000e51d0.js.map"
+      "path---tags-assistants-95c4a04e7536b9b789ff.js",
+      "path---tags-assistants-95c4a04e7536b9b789ff.js.map"
     ],
     "path---serverless-github-bot-aws-lambda-api-gateway-nodejs": [
       "path---serverless-github-bot-aws-lambda-api-gateway-nodejs-f0621d28974448baff76.js",
       "path---serverless-github-bot-aws-lambda-api-gateway-nodejs-f0621d28974448baff76.js.map"
     ],
     "path---tags-meta-articles": [
-      "path---tags-meta-articles-51ef2b176209ecccc9c2.js",
-      "path---tags-meta-articles-51ef2b176209ecccc9c2.js.map"
+      "path---tags-meta-articles-ec8c90668b1f0cd72f68.js",
+      "path---tags-meta-articles-ec8c90668b1f0cd72f68.js.map"
     ],
     "path---tags-apis": [
-      "path---tags-apis-ad301ac3d4ef2efbe5be.js",
-      "path---tags-apis-ad301ac3d4ef2efbe5be.js.map"
+      "path---tags-apis-5cfaae0f8af66fb0a38f.js",
+      "path---tags-apis-5cfaae0f8af66fb0a38f.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---learn-gatsbyjs": [
-      "path---learn-gatsbyjs-55c69642348300b34424.js",
-      "path---learn-gatsbyjs-55c69642348300b34424.js.map"
+      "path---learn-gatsbyjs-bbaa13245f7050930a82.js",
+      "path---learn-gatsbyjs-bbaa13245f7050930a82.js.map"
+    ],
+    "component---src-templates-post-jsx": [
+      "component---src-templates-post-jsx-03c2578b4447572f077c.js",
+      "component---src-templates-post-jsx-03c2578b4447572f077c.js.map"
     ],
     "path---tags-cloud-9": [
-      "path---tags-cloud-9-d25347504f899adc3a87.js",
-      "path---tags-cloud-9-d25347504f899adc3a87.js.map"
+      "path---tags-cloud-9-1783d2d1c186d353e7bc.js",
+      "path---tags-cloud-9-1783d2d1c186d353e7bc.js.map"
+    ],
+    "component---src-pages-index-jsx": [
+      "component---src-pages-index-jsx-7ec3d44ceac747fd8be7.js",
+      "component---src-pages-index-jsx-7ec3d44ceac747fd8be7.js.map"
     ],
     "path---focus-community-good-services": [
       "path---focus-community-good-services-2199e1aa4c7bb6d1bec4.js",
       "path---focus-community-good-services-2199e1aa4c7bb6d1bec4.js.map"
     ],
     "path---tags-prototyping": [
-      "path---tags-prototyping-b20541085940543c9bdb.js",
-      "path---tags-prototyping-b20541085940543c9bdb.js.map"
+      "path---tags-prototyping-d132b5b9e64f14c9cf7a.js",
+      "path---tags-prototyping-d132b5b9e64f14c9cf7a.js.map"
     ],
     "path---drupalaton-2016": [
       "path---drupalaton-2016-4009d0da824266058a56.js",
       "path---drupalaton-2016-4009d0da824266058a56.js.map"
     ],
     "path---tags-progressive-web-apps": [
-      "path---tags-progressive-web-apps-b426f177149e4985e50c.js",
-      "path---tags-progressive-web-apps-b426f177149e4985e50c.js.map"
+      "path---tags-progressive-web-apps-bf41abe2ac74c312ce4c.js",
+      "path---tags-progressive-web-apps-bf41abe2ac74c312ce4c.js.map"
     ],
     "path---first-coding-battle-belgium": [
-      "path---first-coding-battle-belgium-8ba83359cdc69c982440.js",
-      "path---first-coding-battle-belgium-8ba83359cdc69c982440.js.map"
+      "path---first-coding-battle-belgium-da8d8682ee6bb8baad43.js",
+      "path---first-coding-battle-belgium-da8d8682ee6bb8baad43.js.map"
+    ],
+    "path---tags-jamstack": [
+      "path---tags-jamstack-0042234f309d6845c424.js",
+      "path---tags-jamstack-0042234f309d6845c424.js.map"
     ],
     "app": [
-      "app-bd17e40a35e6235daeeb.js",
+      "app-a323b9ae9e0b85434ca6.js",
       "build-js-styles.css",
-      "app-bd17e40a35e6235daeeb.js.map",
+      "app-a323b9ae9e0b85434ca6.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-misc": [
-      "path---tags-misc-1b3db39ce511fde27f0b.js",
-      "path---tags-misc-1b3db39ce511fde27f0b.js.map"
+      "path---tags-misc-19f5f862f443059419a6.js",
+      "path---tags-misc-19f5f862f443059419a6.js.map"
     ],
     "path---drupal-8-cloud-9-ide": [
-      "path---drupal-8-cloud-9-ide-55f9555d3545892b6910.js",
-      "path---drupal-8-cloud-9-ide-55f9555d3545892b6910.js.map"
+      "path---drupal-8-cloud-9-ide-5bedc793743af3f25e08.js",
+      "path---drupal-8-cloud-9-ide-5bedc793743af3f25e08.js.map"
     ],
     "path---migrate-hugo-gatsby": [
-      "path---migrate-hugo-gatsby-8ad35eac69628068695b.js",
-      "path---migrate-hugo-gatsby-8ad35eac69628068695b.js.map"
+      "path---migrate-hugo-gatsby-5a078e8d37540c8c22df.js",
+      "path---migrate-hugo-gatsby-5a078e8d37540c8c22df.js.map"
     ],
     "path---march-digest-2017": [
-      "path---march-digest-2017-dbec604e471a8d7d0fae.js",
-      "path---march-digest-2017-dbec604e471a8d7d0fae.js.map"
+      "path---march-digest-2017-3a5b262448642df4868c.js",
+      "path---march-digest-2017-3a5b262448642df4868c.js.map"
     ],
     "path---tags-hack-events": [
-      "path---tags-hack-events-79d74cc0b721e49e699b.js",
-      "path---tags-hack-events-79d74cc0b721e49e699b.js.map"
+      "path---tags-hack-events-68e87bd8db732f15a65f.js",
+      "path---tags-hack-events-68e87bd8db732f15a65f.js.map"
     ],
     "path---tags-apps": [
-      "path---tags-apps-de50b718b2961f19c8a5.js",
-      "path---tags-apps-de50b718b2961f19c8a5.js.map"
-    ],
-    "path---tags-web-development": [
-      "path---tags-web-development-1496a3f7dbe10edeab37.js",
-      "path---tags-web-development-1496a3f7dbe10edeab37.js.map"
+      "path---tags-apps-14cb4a0b3ed2458431e9.js",
+      "path---tags-apps-14cb4a0b3ed2458431e9.js.map"
     ],
     "path---tags-drupal": [
-      "path---tags-drupal-0d06a059df02d538e188.js",
-      "path---tags-drupal-0d06a059df02d538e188.js.map"
+      "path---tags-drupal-c3c058f0810dbc4f658b.js",
+      "path---tags-drupal-c3c058f0810dbc4f658b.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---history-3": [
-      "path---history-3-84e9d3c66da3cc6e19c1.js",
-      "path---history-3-84e9d3c66da3cc6e19c1.js.map"
+      "path---history-3-080d3f8e82c0e76e9306.js",
+      "path---history-3-080d3f8e82c0e76e9306.js.map"
     ],
     "path---tags-swagger": [
-      "path---tags-swagger-5c23c61fe8b1672ba5b0.js",
-      "path---tags-swagger-5c23c61fe8b1672ba5b0.js.map"
+      "path---tags-swagger-123064af2d5d024b4d40.js",
+      "path---tags-swagger-123064af2d5d024b4d40.js.map"
+    ],
+    "path---tags-webdev": [
+      "path---tags-webdev-881be9158282ec74dbf6.js",
+      "path---tags-webdev-881be9158282ec74dbf6.js.map"
     ],
     "path---problem-first-problem-solving": [
       "path---problem-first-problem-solving-f244c03febc7d3075ceb.js",
       "path---problem-first-problem-solving-f244c03febc7d3075ceb.js.map"
     ],
     "path---tags-macbook": [
-      "path---tags-macbook-5d834d3e00b1e27414e9.js",
-      "path---tags-macbook-5d834d3e00b1e27414e9.js.map"
+      "path---tags-macbook-1aaf577bb6cb15017685.js",
+      "path---tags-macbook-1aaf577bb6cb15017685.js.map"
     ]
   }
 }
