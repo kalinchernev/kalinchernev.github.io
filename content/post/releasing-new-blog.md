@@ -4,7 +4,7 @@ slug: releasing-new-blog
 date: 2017-04-19T11:04:38+02:00
 tags:
 - blogging
-- JAMstack
+- JAMStack
 ---
 
 It's a fact - I moved my blog from [Medium](https://medium.com/@kalin.chernev)

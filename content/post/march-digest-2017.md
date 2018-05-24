@@ -5,7 +5,7 @@ date: 2017-03-31T00:00:00+02:00
 tags:
 - WebDev
 - JavaScript
-- JAMstack
+- JAMStack
 - Medium
 ---
 

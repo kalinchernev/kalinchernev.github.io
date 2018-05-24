@@ -13,6 +13,7 @@ import ListItemToPost from '../components/ListItemToPost';
 
 const TagList = ({ list }) => {
   const sorted = tagsSorter(list);
+  console.log(sorted);
   return (
     <ul className={`${styles.list} ${styles['list-wrap']}`}>
       {sorted.map(tag => (

@@ -3,7 +3,7 @@ title: Learn Gatsby.js
 slug: learn-gatsbyjs
 date: 2017-10-03T23:33:31+00:00
 tags:
-- JAM stack
+- JAMStack
 - JavaScript
 - GatsbyJS
 ---
@@ -30,12 +30,11 @@ Damn, that was only 10 years ago! Probably one of the first occasions when peopl
 
 In fact, recent history of mobile phones resemble the history of web stacks. Nokia - imagine the LAMP stack - was slowly getting replaced or less favored by users for iPhone and smart phones - imagine MEAN stack. Still both stacks are good for certain people and certain scenarios.
 
-The [MEAN stack](https://en.wikipedia.org/wiki/MEAN_(software_bundle)) term was coined in 2013. It's a result of new emerging tools such as Node.js, Express.js, Angular.js and MongoDB. People started building more RESTful APIs and use JavaScript everywhere.
+The [MEAN stack](<https://en.wikipedia.org/wiki/MEAN_(software_bundle)>) term was coined in 2013. It's a result of new emerging tools such as Node.js, Express.js, Angular.js and MongoDB. People started building more RESTful APIs and use JavaScript everywhere.
 
 The MEAN stack became the new best practice because of the better user experience, like building better and more responsive UI, but also with a new promise - having 1 language in the front-end and the back-end.
 
 Though, the MEAN stack still shares a lot of concepts and practices with the LAMP stack. For instance, having a clear separation between front-end (view) layer and a db (model) layer, which is managed by a back-end programming language. When you think about it, you will realize that we speak about same things LAMP and MEAN, with some major improvements in the view layer and the programming language: JavaScript.
-
 
 ### The rise of React.js
 
@@ -69,10 +68,10 @@ When the fear or the craziness for selecting a tool pass, developers will hopefu
 
 This makes JAM stack applications:
 
-- faster - no server rendering
-- more secure - security best practices delegated to APIs
-- cheaper - as expensive as it is to host static assets
-- a bit easier to develop
+* faster - no server rendering
+* more secure - security best practices delegated to APIs
+* cheaper - as expensive as it is to host static assets
+* a bit easier to develop
 
 As [mentioned before](/tags/jam-stack/) this stack differs from the traditional LAMP/MEAN stacks in the A, where APIs replace back-end logic on a server. As simple as it may sound, it is a powerful concept where the database/persistence layer of the stack is taken out of the equation and delegated to external services.
 
@@ -106,11 +105,11 @@ In static sites the optimization comes from bundling and delivering static asset
 
 With GraphQL:
 
-- you query for information
-- you get exactly the information in the way you requested it
-- you make 1 request and you get 1 response which optimizes the request <-> response
-- you get a self-documenting API
-- you get awesome tools around it
+* you query for information
+* you get exactly the information in the way you requested it
+* you make 1 request and you get 1 response which optimizes the request <-> response
+* you get a self-documenting API
+* you get awesome tools around it
 
 Long story short, it [fits very well in the JAM stack](https://thenewstack.io/emerging-graphql-serverless-stack-building-static-web-sites/) for a reason.
 
@@ -122,9 +121,9 @@ And with the continuous optimizations on the API, the "Serverless" concept and p
 
 I think the [AWS Lambda](http://docs.aws.amazon.com/lambda/latest/dg/welcome.html) in combination with [Amazon API Gateway](http://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) was the first mainstream toolset of building APIs in new ways:
 
-- no servers or containers to manage
-- pay only for the resources being used
-- pay much less than any other type of computing service
+* no servers or containers to manage
+* pay only for the resources being used
+* pay much less than any other type of computing service
 
 Good for developers, nowadays, the API part of a static site can also be developed locally with tools such as the [serverless framework](https://serverless.com/), each specific task being handled in a separate micro-service without too much of provisioning work - [user services for authentication and authorization, mailing](https://github.com/serverless/site/tree/master/backend), etc.
 
@@ -140,14 +139,14 @@ The server-side rendering in runtime got slowly out of the equation being replac
 
 Understanding these trends deeply is not a matter of following a movement of cool development practices. These trends come as a result of the following facts:
 
-- Users will use your app with all sorts of devices with access to Web and Internet.
-- Your application will have to work with multiple data sources.
-- Users will expect faster and smoother interactions
-- Your application will have to be working offline.
-- Your client expects his application to withstand peaked traffic from Hacker News home page.
-- Your stack will have to continuously reduce costs.
-- Your stack will have to continuously perform faster.
-- Your stack will have to stay (or at least try to) easily maintainable.
+* Users will use your app with all sorts of devices with access to Web and Internet.
+* Your application will have to work with multiple data sources.
+* Users will expect faster and smoother interactions
+* Your application will have to be working offline.
+* Your client expects his application to withstand peaked traffic from Hacker News home page.
+* Your stack will have to continuously reduce costs.
+* Your stack will have to continuously perform faster.
+* Your stack will have to stay (or at least try to) easily maintainable.
 
 **The stack of today, and the stack of tomorrow will always focus on better performance, multiple data sources, best possible tooling and, of course, lowest possible costs of development and maintenance.**
 
@@ -155,7 +154,7 @@ Understanding these trends deeply is not a matter of following a movement of coo
 
 ![Gatsby.js](./images/gatsby.jpg)
 
-Gatsby.js consists of React.js, GraphQL, Webpack and other modern technologies. It follows the "no build configurations" principle, This means that if you are a PHP developer who wants to learn React.js or GraphQL you can go for it and do it without losing your time and motivation into learning build tools. You can install the project and continue building prototypes and products. To an extend, Gatsby.js is similar to [create-react-app](https://github.com/facebookincubator/create-react-app) and  [Meteor.js](https://www.meteor.com/).
+Gatsby.js consists of React.js, GraphQL, Webpack and other modern technologies. It follows the "no build configurations" principle, This means that if you are a PHP developer who wants to learn React.js or GraphQL you can go for it and do it without losing your time and motivation into learning build tools. You can install the project and continue building prototypes and products. To an extend, Gatsby.js is similar to [create-react-app](https://github.com/facebookincubator/create-react-app) and [Meteor.js](https://www.meteor.com/).
 
 What separates Gatsby.js from the others is the way it handles data. In Gatsby.js data could come from several types of files in the project - markdown, CSV, JSON, or it could come from external services like NetlifyCMS, Medium, or even CMS like Drupal and Wordpress.
 
@@ -165,16 +164,16 @@ What separates Gatsby.js from the others is the way it handles data. In Gatsby.j
 
 Here's a short list of benefits I personally see to why to spend the time learning Gatsby.js:
 
-- Learn modern front-end technologies gradually.
-- Learn React in an easy way - no Webpack configurations necessary for starters.
-- Learn how to query GraphQL API servers.
-- Easy to extend.
-- Data: I love the idea of multiple unified data sources.
-- Prototyping: works well with typography.js.
-- Good DX.
-- Can have literally any Admin UI.
-- PWA on the fingertips. (plugins)
-- JavaScript everywhere - transferable skill.
+* Learn modern front-end technologies gradually.
+* Learn React in an easy way - no Webpack configurations necessary for starters.
+* Learn how to query GraphQL API servers.
+* Easy to extend.
+* Data: I love the idea of multiple unified data sources.
+* Prototyping: works well with typography.js.
+* Good DX.
+* Can have literally any Admin UI.
+* PWA on the fingertips. (plugins)
+* JavaScript everywhere - transferable skill.
 
 #### Why data and GraphQL is such a big deal?
 
@@ -182,11 +181,11 @@ Because a lot of the [heavy-weight lifting](https://github.com/gatsbyjs/gatsby/i
 
 The the process of building pages and components using data in Gatsby.js can be summarized in the following few steps:
 
-- Define data source
-- Prepare/transform the data
-- Querying the data with GraphQL
-- Place the result of the query within a React component
-- Display the information
+* Define data source
+* Prepare/transform the data
+* Querying the data with GraphQL
+* Place the result of the query within a React component
+* Display the information
 
 ### Practice time: building a website about Belgian beers
 
@@ -198,18 +197,18 @@ The official documentation is good and the [examples](https://github.com/gatsbyj
 
 The approach for building the website:
 
-- I take information about Belgian Beers from [open data](http://data.visitflanders.org/datatank/dataset/435/download).
-- I use some plugins to read files and transform CSV and Markdown files in to a GraphQL API.
-- I take information from the build-time GraphQL endpoint and make some pages.
-- Build and deploy the result as a static site working as a SPA.
+* I take information about Belgian Beers from [open data](http://data.visitflanders.org/datatank/dataset/435/download).
+* I use some plugins to read files and transform CSV and Markdown files in to a GraphQL API.
+* I take information from the build-time GraphQL endpoint and make some pages.
+* Build and deploy the result as a static site working as a SPA.
 
 **1) Initiate your project**
 
 This includes:
 
-- setup dependencies
-- select and configure linters
-- make at least 1 working page
+* setup dependencies
+* select and configure linters
+* make at least 1 working page
 
 Here, for example, I [start off with 3 data sources](https://github.com/kalinchernev/belgian-beers/commit/800934df6b1bb8fdffa7758793dc6a26d2d88a5e).
 
@@ -249,13 +248,13 @@ Although we speak React here, the concept of templates is still there and it's p
 
 Tools are just tools. They come and go, and the way you can really benefit from a tool or a framework regardless of the time you spend with it is asking yourself:
 
-- Why does this tool exist in the first place?
-- What are the problems it's solving?
-- What are the skills I can learn with it?
-- Which concepts are transferable to other tools?
-- Is this tool really optimizing my work?
-- Is it optimizing costs for hosting and maintenance?
-- Do you enjoy working with the tool?
+* Why does this tool exist in the first place?
+* What are the problems it's solving?
+* What are the skills I can learn with it?
+* Which concepts are transferable to other tools?
+* Is this tool really optimizing my work?
+* Is it optimizing costs for hosting and maintenance?
+* Do you enjoy working with the tool?
 
 In short, when working with a new tool, framework or a library, think about the new concepts and approaches to solve problems you are going to learn and how you can reuse them in your career.
 
