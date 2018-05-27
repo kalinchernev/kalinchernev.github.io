@@ -1,9 +1,14 @@
 const puppeteer = require('puppeteer');
+const { port } = require('../jest-puppeteer.config').server;
+const siteRoot = `http://localhost:${port}`;
 
 describe('Homepage', () => {
-  test('Site title is visible', async () => {
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
+  let browser = '';
+  let page = '';
+
+  beforeAll(async () => {
+    browser = await puppeteer.launch();
+    page = await browser.newPage();
 
     page.emulate({
       viewport: {
@@ -13,12 +18,24 @@ describe('Homepage', () => {
       userAgent: '',
     });
 
-    await page.goto('http://localhost:9000/');
+    await page.goto(`${siteRoot}/`);
+  });
+
+  afterAll(async () => {
+    browser.close();
+  });
+
+  test('Site title is visible', async () => {
     await page.waitForSelector('h1');
 
     const html = await page.$eval('h1 a', e => e.innerHTML);
     expect(html).toBe('Kalin Chernev');
+  });
 
-    browser.close();
+  test('Older blog posts are accessible', async () => {
+    await page.waitForSelector('#___gatsby');
+
+    const html = await page.$eval('#___gatsby', e => e.innerHTML);
+    expect(html).toContain('Older posts');
   });
 });
