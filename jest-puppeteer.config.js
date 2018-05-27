@@ -1,10 +1,6 @@
 module.exports = {
   server: {
-    command: 'gatsby serve',
+    command: './node_modules/.bin/gatsby serve',
     port: 9000,
-  },
-  launch: {
-    dumpio: true,
-    headless: true,
   },
 };

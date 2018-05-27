@@ -2,9 +2,7 @@ const puppeteer = require('puppeteer');
 
 describe('Homepage', () => {
   test('Site title is visible', async () => {
-    const browser = await puppeteer.launch({
-      headless: false,
-    });
+    const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
     page.emulate({

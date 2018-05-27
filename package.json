@@ -19,7 +19,7 @@
     "test-write": "jest --watch",
     "test": "run-p test:* -cn",
     "test:lint": "npm run lint",
-    "test:e2e": "jest"
+    "test:integration": "jest"
   },
   "keywords": ["gatsby"],
   "repository": {
