@@ -27,4 +27,8 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+      - run: npx gatsby build
+
+      - run: npx gatsby serve
+
       - run: yarn test
