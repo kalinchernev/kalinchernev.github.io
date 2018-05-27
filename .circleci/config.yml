@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  build_and_test:
     docker:
       - image: circleci/node:carbon-browsers
     working_directory: ~/repo
@@ -22,30 +22,10 @@ jobs:
 
       - run: yarn install
 
-      - run: yarn build
-
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-     
-  test:
-    docker:
-      - image: circleci/node:carbon-browsers
-    working_directory: ~/repo
 
-    steps:
-      - checkout:
-          post:
-          - git checkout blog
-
-      - run: yarn test          
-
-workflows:
-  version: 2
-  build_and_test:
-    jobs:
-      - build
-      - test:
-          requires:
-            - build
+      - run: yarn build
+      - run: yarn test        
