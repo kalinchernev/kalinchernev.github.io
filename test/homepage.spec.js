@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer');
 const { port } = require('../jest-puppeteer.config').server;
+
 const siteRoot = `http://localhost:${port}`;
 
 describe('Homepage', () => {
