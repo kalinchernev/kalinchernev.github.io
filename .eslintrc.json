@@ -1,6 +1,10 @@
 {
   "root": true,
-  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "plugin:jest/recommended"
+  ],
   "settings": {
     "import/core-modules": ["gatsby"]
   },
