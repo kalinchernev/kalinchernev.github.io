@@ -57,7 +57,17 @@ With the higher quality of your codebase, you will be a happier person who confi
 
 #### Prettier
 
-....
+[Prettier](https://prettier.io/) is a tool which helps you format your code. Here's a [useful tutorial](https://swizec.com/blog/love-letter-prettier/swizec/7909) which describes well the benefits apart from the official documentation.
+
+Setting up this tool is easy:
+
+```sh
+$ yarn add -D -E prettier
+```
+
+Then, add an [extension in your editor](https://prettier.io/docs/en/editors.html). This is not a required step, but will give you the benefits of the code formatting without hussle.
+
+Lastly, you can add a [precommit hook](https://prettier.io/docs/en/precommit.html) or other means of CLI formatting code automatically.
 
 #### ESlint
 
