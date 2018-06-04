@@ -1,6 +1,6 @@
 module.exports = {
   server: {
     command: './node_modules/.bin/gatsby serve',
-    port: 8000,
+    port: 5000,
   },
 };
