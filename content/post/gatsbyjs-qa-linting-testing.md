@@ -3,10 +3,10 @@ title: Qaulity assurance in GatsbyJS projects - linting and testing
 slug: gatsbyjs-qa-linting-testing  
 date: 2018-05-27T00:00:00+00:00  
 tags:
-* JAMStack
-* JavaScript
-* GatsbyJS
-* TDD
+- JAMStack
+- JavaScript
+- GatsbyJS
+- TDD
 ---
 
 ## Introduction
@@ -57,10 +57,10 @@ At any case, a starting point of missing QA fundamentals is opening the door of 
 
 Fortunately for us, JavaScript developers, there are plenty of good and best practices and tools enforcing quality. Let's discuss few of them:
 
-* Add default settings for your editor with [EditorConfig](https://editorconfig.org/).
-* Automatic code formatting with [Prettier](https://prettier.io/).
-* Static code analysis /linting/ with [ESlint](https://eslint.org/).
-* Automated tests with Jest, unit and integration.
+- Add default settings for your editor with [EditorConfig](https://editorconfig.org/).
+- Automatic code formatting with [Prettier](https://prettier.io/).
+- Static code analysis /linting/ with [ESlint](https://eslint.org/).
+- Automated tests with Jest, unit and integration.
 
 Implementing some basic quality standards in your project will make your code base more maintainable and more accessible for others to join and help you when the project grows. Also you will save time and energy from no-always-necessary discussions about code and will be able to focus on what's important.
 
@@ -144,14 +144,14 @@ To configure ESlint, create a file **.eslintrc.json** in the root folder of your
 
 These settings:
 
-* Communicate that the configuration is located in the root folder of the project.
-* Take recommended configurations for [airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) and [
+- Communicate that the configuration is located in the root folder of the project.
+- Take recommended configurations for [airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) and [
   ](https://github.com/prettier/eslint-config-prettier) presets, which saves time for a start.
-* Communicate that `gatsby` is a core module which could be imported without raising error flags unnecessarily.
-* Communicate that `graphql` is a global, because GatsbyJS makes it so.
-* Include an example rule for the accessibility of the Link component.
+- Communicate that `gatsby` is a core module which could be imported without raising error flags unnecessarily.
+- Communicate that `graphql` is a global, because GatsbyJS makes it so.
+- Include an example rule for the accessibility of the Link component.
 
-At this stage, you can already run `npx eslint` to get feedback from the linter, or better, add a script tag for this in your `package.json`: `"lint:js": "eslint \"**/*.{js,jsx}\""`.
+At this stage, you can already run `npx eslint` to get feedback from the linter.
 
 Do not forget to add an `.eslintignore` file with the following contents:
 
@@ -162,13 +162,15 @@ public
 
 Where `node_modules` you already know and `public` is a folder created by GatsbyJS which contains generated code which doesn't need linting.
 
+Possible fine-touch would be to also install and use the `gatsby-plugin-eslint` plugin which will give you feedback about linting issues while development.
+
 #### Understanding ESlint
 
 If you are interested into tweaking the recommended configurations from the previous point, knowing the following fundamentals will help you google your way through the right tweaks:
 
-* [Configuration files specify rules, environments and globals](https://eslint.org/docs/user-guide/configuring).
-* [Plugins implement specifications about these rules, environments and globals](https://eslint.org/docs/3.0.0/developer-guide/working-with-plugins).
-* Both configurations and plugins are shareable pieces of code which you can find on npm.
+- [Configuration files specify rules, environments and globals](https://eslint.org/docs/user-guide/configuring).
+- [Plugins implement specifications about these rules, environments and globals](https://eslint.org/docs/3.0.0/developer-guide/working-with-plugins).
+- Both configurations and plugins are shareable pieces of code which you can find on npm.
 
 In overall, plugins are collections of rules distributed as npm packages. Configs are presets of rules (either default or plugin based). Plugins can include shareable configs, however configs can’t include plugin rules. Plugins contain definitions for custom rules, and configs explain whether those rules should be enabled or disabled and how they should be configured.
 
@@ -180,9 +182,9 @@ In this section, I will focus on functional tests for GatsbyJS websites using [J
 
 Puppeteer is a tool which will enable you to click around your website in automated way and validate a given set of functionalities work well as if you were clicking yourself manually.
 
-* Installation jest, pupeteer, linting rules
-* Update ESlint rules in order for linter to "understand" new syntax of tests in the repo
-* the globals (keywords page, test, etc.) solved by recommended set of rules (eslint-plugin-jest)
+- Installation jest, pupeteer, linting rules
+- Update ESlint rules in order for linter to "understand" new syntax of tests in the repo
+- the globals (keywords page, test, etc.) solved by recommended set of rules (eslint-plugin-jest)
 
 #### Installing dependencies
 
@@ -192,11 +194,11 @@ $ yarn add -D -E jest jest-config puppeteer jest-puppeteer eslint-plugin-jest
 
 Briefly:
 
-* jest - core Jest
-* jest-config - contains defaults we reuse in our project-specific configurations
-* puppeteer - headless Chrome browser to do the clicking for you
-* jest-puppeteer - integrates the puppeteer lower level APIs with Jest so that you can include puppeteer in your tests
-* eslint-plugin-jest - sets new [ESlint rules](https://www.npmjs.com/package/eslint-plugin-jest#rules) for your project
+- jest - core Jest
+- jest-config - contains defaults we reuse in our project-specific configurations
+- puppeteer - headless Chrome browser to do the clicking for you
+- jest-puppeteer - integrates the puppeteer lower level APIs with Jest so that you can include puppeteer in your tests
+- eslint-plugin-jest - sets new [ESlint rules](https://www.npmjs.com/package/eslint-plugin-jest#rules) for your project
 
 #### Configuration
 
@@ -285,9 +287,9 @@ There are many free solutions for open source project, as well as premium such f
 
 Here's what you can do with [CircleCI](https://circleci.com/) for example:
 
-* Create a new folder `.circleci` .
-* Create a new file `setup_puppeteer.sh`
-* Create also config.yml
+- Create a new folder `.circleci` .
+- Create a new file `setup_puppeteer.sh`
+- Create also config.yml
 
 Both files are obviously in the folder `.circleci`.
 
@@ -341,3 +343,58 @@ jobs:
 ```
 
 The interesting parts which are not necessarily obvious from the documentation are that `carbon-browsers` image is used and the script we created in the previous step is meant to be a temporary workaround.
+
+### Revising `package.json`
+
+To have a feeling of completeness, let's make a quick revision on the updates which happened in `package.json`.
+
+Script tags:
+
+```json
+"scripts": {
+  ...
+  "lint:js": "eslint \"**/*.{js,jsx}\"",
+  "lint": "run-p lint:*",
+  "precommit": "lint-staged",
+  "test-write": "jest --watch",
+  "test": "run-p test:* -cn",
+  "test:lint": "npm run lint",
+  "test:integration": "jest"
+  ...
+},
+```
+
+All dependencies we need are in `dev`:
+
+```json
+{
+  "devDependencies": {
+    ...
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.15.2",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.8.2",
+    "gatsby-plugin-eslint": "^1.0.3",
+    "jest": "^23.0.0",
+    "jest-config": "^23.0.0",
+    "jest-puppeteer": "^3.0.1",
+    "lint-staged": "^7.1.0",
+    "prettier": "^1.12.1",
+    "puppeteer": "^1.4.0",
+    ...
+  }
+}
+```
+
+And last, but not least:
+
+```json
+"lint-staged": {
+  "*.{js,json,css,md}": ["prettier --write", "git add"]
+}
+```
