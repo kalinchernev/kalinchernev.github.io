@@ -1,7 +1,7 @@
 ---
-title: Qaulity assurance in GatsbyJS projects - linting and testing  
+title: Quality assurance in GatsbyJS projects - linting and testing  
 slug: gatsbyjs-qa-linting-testing  
-date: 2018-05-27T00:00:00+00:00  
+date: 2018-06-04T00:00:00+00:00  
 tags:
 - JAMStack
 - JavaScript
