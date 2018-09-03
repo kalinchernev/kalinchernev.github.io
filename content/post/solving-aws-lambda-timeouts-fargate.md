@@ -16,7 +16,9 @@ The next ideas will be demonstrated with Node.js, though any other runtime would
 
 ## Reflections
 
-For me, the main point of reading the article about the long-running processes was to see details about solving the 5 minutes limitation in AWS Lambda, similar to this [older one](https://serifandsemaphore.io/aws-lambda-going-beyond-5-minutes-34e381e71231). Instead, it was focused on the ECS setup and there wasn't much about the integration reasoning. Also, the examples of [runTask](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html) was a useful start, though it's not immediately obvious how the environment variables can act as dynamic parameters. Last, but not least, reading around the topic of integrating AWS Lambda with ECS Fargate, I was surprised [getFunction](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Lambda.html#getFunction-property) wasn't used in any of the implementations. (At least I didn't find one) This function returns an address to a signed URL holding a zip archive to a given lambda handler. This handler is the code which could be executed in the container. In my opinion, that information and resource would enable a far thinner implementation approach in the container.
+For me, the main point of reading the article about the long-running processes was to see details about solving the 5 minutes limitation in AWS Lambda, similar to this [older one](https://serifandsemaphore.io/aws-lambda-going-beyond-5-minutes-34e381e71231). Instead, it was focused on the ECS setup and there wasn't much about the integration reasoning. Also, the example of [runTask](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html) was a useful start, though it's not immediately obvious how the environment variables can act as dynamic parameters.
+
+Also, reading around the topic of integrating AWS Lambda with ECS Fargate, I was surprised [getFunction](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Lambda.html#getFunction-property) wasn't used in any of the implementations. (At least I didn't find one) This function returns an address to a signed URL holding a zip archive to a given lambda handler. This handler is the code which could be executed in the container. In my opinion, that information and resource would enable a far thinner implementation approach in the container.
 
 Keep in mind that with [serverless-webpack](https://github.com/serverless-heaven/serverless-webpack) you can package your handlers, libraries and others into a single file containing all dependencies.
 
@@ -117,7 +119,7 @@ functions:
       Resource: '*'
 ```
 
-Details are available in [the article which inspired me](https://serverless.com/blog/serverless-application-for-long-running-process-fargate-lambda/#iam-roles). Keep in mind that once you [override defaults](https://serverless.com/framework/docs/providers/aws/guide/iam/) you might need to specifiy additional permissions which are not related only to the task at hand here.
+Details are available in [the article which inspired me](https://serverless.com/blog/serverless-application-for-long-running-process-fargate-lambda/#iam-roles). Keep in mind that once you [override defaults](https://serverless.com/framework/docs/providers/aws/guide/iam/) you might need to specify additional permissions which are not related only to the task at hand here.
 
 ### Create the secondary handler
 
