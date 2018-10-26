@@ -18,7 +18,7 @@ During the same period of me focusing on the timeout limitations issue, [AWS rai
 
 Here's a short overview of the most important improvements I've made between draft implementation and current one:
 
-- [unzip](https://www.npmjs.com/package/unzip) has been swapped to [unzipper](https://www.npmjs.com/package/unzipper) for a [good reason](https://github.com/EvanOxfeld/node-unzip/issues/120). API is same and solves for the part where a readable stream needs to be resolved as a promise.
+- [unzip](https://www.npmjs.com/package/unzip) has been swapped to [unzipper](https://www.npmjs.com/package/unzipper) for a [good reason](https://github.com/EvanOxfeld/node-unzip/issues/120). API is same.
 - Logic gluing primary and secondary lambda handlers has been changed. Instead of using naming conventions which are an easy to mistake constraint, I've put in place a mapping "cheatsheet".
 - [serverless-plugin-lambda-dead-letter](https://github.com/gmetzker/serverless-plugin-lambda-dead-letter) dependency, which looked promising, was removed in favour of native functionalities of CloudFormation. Main reason: [issues with intrinsic functions](https://github.com/gmetzker/serverless-plugin-lambda-dead-letter/issues/37).
 - `event` and `context` from primary handler have been moved to environment variables passed through [ContainerOverride](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerOverride.html) API because information from original JSON objects was getting dropped during the process of executing [runTask](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RunTask.html). This is also an improvement in terms of consistency of managing environment variables.
