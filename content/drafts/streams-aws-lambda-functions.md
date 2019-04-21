@@ -48,21 +48,21 @@ This could be achieved by this example:
 
 ```js
 const converter = () => {
-  const file = "open-beer-database";
+  const file = 'open-beer-database';
   const read = fs.createReadStream(path.resolve(`./${file}.csv`));
   const write = fs.createWriteStream(path.resolve(`./${file}.ndjson`));
 
   read
-    .on("error", error => {
+    .on('error', error => {
       console.error(`There was an error while reading ${file}.`);
     })
-    .on("end", () => console.log(`${file} has been converted successfully`))
+    .on('end', () => console.log(`${file} has been converted successfully`))
     .pipe(parser)
-    .on("error", error => {
+    .on('error', error => {
       console.error(`Parsing error: ${error.message}`);
     })
     .pipe(transformer)
-    .on("error", error => {
+    .on('error', error => {
       console.error(`Transform error: ${error.message}`);
     })
     .pipe(write);
@@ -74,15 +74,15 @@ converter();
 The parser would be:
 
 ```js
-const parse = require("csv-parse");
+const parse = require('csv-parse');
 
-const parser = parse({ columns: true, delimiter: ";" });
+const parser = parse({ columns: true, delimiter: ';' });
 ```
 
 And the tranformer:
 
 ```js
-const transform = require("stream-transform")
+const transform = require('stream-transform');
 
 const transformer = transform(
   (record, callback) => {
@@ -94,7 +94,7 @@ const transformer = transform(
     }
   },
   {
-    parallel: 5
+    parallel: 5,
   }
 );
 ```
@@ -108,7 +108,7 @@ const formatter = record => {
     id,
     Description: description,
     Style: style,
-    Category: category
+    Category: category,
   } = record;
   return { id, beer, description, style, category };
 };
@@ -269,10 +269,10 @@ So far we have the AWS resources created and glued together in order for our ser
 Next, let's take the logic from `converter.js` and convert it to a lambda function:
 
 ```js
-const AWS = require("aws-sdk");
-const parse = require("csv-parse");
-const stream = require("stream");
-const transform = require("stream-transform");
+const AWS = require('aws-sdk');
+const parse = require('csv-parse');
+const stream = require('stream');
+const transform = require('stream-transform');
 
 exports.handler = (event, context, callback) => {
   // Extract useful information from AWS Lambda's event.
@@ -283,7 +283,7 @@ exports.handler = (event, context, callback) => {
 
   const s3client = new AWS.S3();
 
-  const parser = parse({ columns: true, delimiter: ";" });
+  const parser = parse({ columns: true, delimiter: ';' });
 
   const formatter = record => {
     const {
@@ -291,7 +291,7 @@ exports.handler = (event, context, callback) => {
       id,
       Description: description,
       Style: style,
-      Category: category
+      Category: category,
     } = record;
     return { id, beer, description, style, category };
   };
@@ -306,7 +306,7 @@ exports.handler = (event, context, callback) => {
       }
     },
     {
-      parallel: 5
+      parallel: 5,
     }
   );
 
@@ -321,7 +321,7 @@ exports.handler = (event, context, callback) => {
       Bucket: bucket,
       Key: `${file}.ndjson`,
       Body: pass,
-      ContentType: "application/x-ndjson"
+      ContentType: 'application/x-ndjson',
     };
 
     s3client.upload(params, err => {
@@ -332,23 +332,23 @@ exports.handler = (event, context, callback) => {
   };
 
   read
-    .on("error", error => {
+    .on('error', error => {
       callback(`Read error for ${file}: ${error.message}`);
     })
     .pipe(parser)
-    .on("error", error => {
+    .on('error', error => {
       callback(`Parsing error: ${error.message}`);
     })
     .pipe(transformer)
-    .on("error", error => {
+    .on('error', error => {
       callback(`Transform error: ${error.message}`);
     })
     .pipe(write())
-    .on("error", error => {
+    .on('error', error => {
       callback(`Write error: ${error.message}`);
     })
-    .on("end", () => {
-      callback(null, "File has been converted successfully.");
+    .on('end', () => {
+      callback(null, 'File has been converted successfully.');
     });
 };
 ```
@@ -361,10 +361,12 @@ The read stream has changed from
 const read = fs.createReadStream(path.resolve(`./${file}.csv`));
 ```
 
-to 
+to
 
 ```js
-const read = s3client.getObject({ Bucket: bucket, Key: file }).createReadStream();
+const read = s3client
+  .getObject({ Bucket: bucket, Key: file })
+  .createReadStream();
 ```
 
 Also the write stream has changed from:
@@ -373,25 +375,25 @@ Also the write stream has changed from:
 const write = fs.createWriteStream(path.resolve(`./${file}.ndjson`));
 ```
 
-to 
+to
 
 ```js
-  const write = () => {
-    const pass = new stream.PassThrough();
+const write = () => {
+  const pass = new stream.PassThrough();
 
-    const params = {
-      Bucket: bucket,
-      Key: `${file}.ndjson`,
-      Body: pass,
-      ContentType: "application/x-ndjson"
-    };
-
-    s3client.upload(params, err => {
-      if (err) callback(err);
-    });
-
-    return pass;
+  const params = {
+    Bucket: bucket,
+    Key: `${file}.ndjson`,
+    Body: pass,
+    ContentType: 'application/x-ndjson',
   };
+
+  s3client.upload(params, err => {
+    if (err) callback(err);
+  });
+
+  return pass;
+};
 ```
 
 And lastly, results are communicated via callback functions:
@@ -402,7 +404,7 @@ For errors, from;
 .on("error", error => console.error(`Parsing error: ${error.message}`))
 ```
 
-to 
+to
 
 ```js
 .on("error", error => callback(`Parsing error: ${error.message}`))
