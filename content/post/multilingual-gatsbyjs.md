@@ -43,7 +43,7 @@ The first one [angeloocana/gatsby-plugin-i18n](https://github.com/angeloocana/ga
 
 The second one [ikhudo/gatsby-i18n-plugin](https://github.com/ikhudo/gatsby-i18n-plugin) also uses `i18next`. Has an unofficial? mirror at [hupe1980/gatsby-i18n](https://github.com/hupe1980/gatsby-i18n). Looking at code of `gatsby-i18n` and `gatsby-plugin-i18next` packages we see that documentation is scarce and both haven't been updated very frequently.
 
-That's confusing: `gatsby-plugin-18` vs `gatsby-18n-plugin`, first being a "no-no" and second one being "can't start the starters".
+That's confusing: `gatsby-plugin-18` vs `gatsby-18n-plugin`, first being a "no-no" and second one being "can't start the starters". 🤔
 
 The third plugin in the list is [`wiziple/gatsby-plugin-intl`](https://github.com/wiziple/gatsby-plugin-intl) uses `react-intl`. Shares approach and issues mentioned in `angeloocana/gatsby-plugin-i18n`: we can't afford per-language page.
 
@@ -62,3 +62,91 @@ Looking at the [example of using i18n](https://github.com/gatsbyjs/gatsby/tree/m
 > Example site that demonstrates how to build Gatsby sites with multiple languages (Internationalization / i18n) without any third-party plugins or packages. Per language a dedicated page is built (so no client-side translations) which is among other things important for SEO.
 
 Having these and the awareness about the state of i18n plugins, it's natural to start on a new path of thinking: **HOW** to solve the problem without plugins?
+
+## createPage() and pageContext
+
+From the previous section we reached a point where we know that we can achieve i18n with functions from Gatsby.js's core. Let's make a short analysis of the [reference example](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-i18n).
+
+Starting from `gatsby-node.js`, the file where we can use [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/), we see [usage of `createPage()`](https://github.com/gatsbyjs/gatsby/blob/master/examples/using-i18n/gatsby-node.js#L17-L39):
+
+```javascript
+Object.keys(locales).map(lang => {
+  // Use the values defined in "locales" to construct the path
+  const localizedPath = locales[lang].default
+    ? page.path
+    : `${locales[lang].path}${page.path}`;
+
+  return createPage({
+    // Pass on everything from the original page
+    ...page,
+    // Since page.path returns with a trailing slash (e.g. "/de/")
+    // We want to remove that
+    path: removeTrailingSlash(localizedPath),
+    // Pass in the locale as context to every page
+    // This context also gets passed to the src/components/layout file
+    // This should ensure that the locale is available on every page
+    context: {
+      ...page.context,
+      locale: lang,
+    },
+  });
+});
+```
+
+This is already solving our issue with scalability, because we can define a list of 24 languages and loop through them, having a separate page for each language without creating physical files.
+
+The part about `context` and `locale` is an example of how to [pass a variable to GraphQL queries in Gatsby.js](https://www.gatsbyjs.org/docs/gatsby-internals-terminology/#pagecontext), which can be seen in [code here](https://github.com/gatsbyjs/gatsby/blob/master/examples/using-i18n/src/pages/index.js#L35).
+
+At the same time, passing data to `context` is related to how [Gatsby.js creates pages](https://www.gatsbyjs.org/docs/write-pages/). For example, the `public/page-data/de/page-data.json` of the example will contain:
+
+```json
+{
+  "componentChunkName": "component---src-pages-index-js",
+  "path": "/de",
+  "webpackCompilationHash": "ed7057ec19fc05f78011",
+  "result": {
+    "data": {},
+    "pageContext": {
+      "isCreatedByStatefulCreatePages": true,
+      "locale": "de",
+      "dateFormat": "DD.MM.YYYY"
+    }
+  }
+}
+```
+
+I've skipped `result.data` to focus on `result.pageContext.locale` 😉.
+
+The example implementation is already clearly stating:
+
+> Usage of a custom hook with GraphQL to access translations. That part can be replaced with a i18n library
+
+This means that the [`useTranslations()`](https://github.com/gatsbyjs/gatsby/blob/master/examples/using-i18n/src/components/useTranslations.js)
+
+having the following implementation might need reconsideration:
+
+```javascript
+const query = graphql`
+  query useTranslations {
+    rawData: allFile(filter: { sourceInstanceName: { eq: "translations" } }) {
+      edges {
+        node {
+          name
+          translations: childTranslationsJson {
+            hello
+            subline
+            backToHome
+          }
+        }
+      }
+    }
+  }
+```
+
+And you might already see a few potential drawbacks of this approach:
+
+- Each field to be used needs to be query-ied. Could be ok for a few fields, but what happens with a page of 30+ strings?
+- What about nested structures?
+- Data is [sourced](https://www.gatsbyjs.org/docs/sourcing-from-the-filesystem/) which is ok for a use case of having a few files, but what happens on multiplication by 24?
+
+Using sourcing and GraphQL for pulling data into components demonstrates a good pattern of enabling usage of data on SSR, though it might not be the most scalabale approach for the long term.
