@@ -150,3 +150,32 @@ And you might already see a few potential drawbacks of this approach:
 - Data is [sourced](https://www.gatsbyjs.org/docs/sourcing-from-the-filesystem/) which is ok for a use case of having a few files, but what happens on multiplication by 24?
 
 Using sourcing and GraphQL for pulling data into components demonstrates a good pattern of enabling usage of data on SSR, though it might not be the most scalabale approach for the long term.
+
+## i18n library
+
+Let's try to implement an i18n library in the example. For the demonstration we'll select i18next.
+
+Following the [quick start](https://react.i18next.com/guides/quick-start), the example would have a basic implementation [like this](https://github.com/kalinchernev/using-i18n/commit/84702c14343b12ed83e81624df7c3d6dacb3d116)
+
+NB: `gatsby-plugin-layout` is used for convenience and simplification, not directly related to integration of i18next.
+
+At this stage, a component can use `useTranslation` in the following way:
+
+```javascript
+import React, { useContext } from 'react';
+import { useTranslation } from 'react-i18next';
+import { LocaleContext } from '../layouts';
+
+const Welcome = () => {
+  const { locale } = useContext(LocaleContext);
+  const { t, i18n } = useTranslation();
+
+  i18n.changeLanguage(locale);
+
+  return <div>{t('Using i18next')}</div>;
+};
+
+export default Welcome;
+```
+
+Yes, the `changeLanguage()` will be taken out to be more generic, as well as `LocaleContext` does not need stay in the `layout` any more, but we have a working example with 2 ways of translating content.
