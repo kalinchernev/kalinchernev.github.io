@@ -179,3 +179,56 @@ export default Welcome;
 ```
 
 Yes, the `changeLanguage()` will be taken out to be more generic, as well as `LocaleContext` does not need stay in the `layout` any more, but we have a working example with 2 ways of translating content.
+
+## Refactoring
+
+As a first step of refactoring the current implementation, we can do the following:
+
+- Take out `resources` from the configuration file. (as suggested in i18next quick start)
+- Use [`I18nextProvider`](https://react.i18next.com/latest/i18nextprovider) to pass `i18n` instance down to children, rather than relying on `use(initReactI18next)`
+- Change locale/language context from the layout component
+
+```javascript
+useEffect(
+  () => {
+    i18n.changeLanguage(locale);
+  },
+  [locale]
+);
+```
+
+- The surface of implementation in components now boils down to
+
+```javascript
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
+const Welcome = () => {
+  const { t } = useTranslation();
+
+  return <div>{t('Using i18next')}</div>;
+};
+
+export default Welcome;
+```
+
+We still make use of the [Context API](https://reactjs.org/docs/context.html) and we are able to access both `location` and `i18n` from components' props, regardless of their location in the hierarchy. No props drillin'.
+
+However, we end up with:
+
+![i18n client-side](./images/i18n-client-side.png)
+
+Which is not great, because although we see translations in the browser on language switching, the resulting HTML pages are not having the translations in their corresponding languages, but in defaults. Translation happens client-side.
+
+## Loading data for server-side rendering (SSR)
+
+Reference https://github.com/kalinchernev/using-i18n/commit/27d4791b37e0f2bd9df49cdfd74fc35c88676fa4
+
+Highlights:
+
+- using `context` once again
+- see data in page-data.json
+- refactor to use a HOC, place providers there
+- it is close to what plugins do, but without mixing state and props
+- adding react: { useSuspense: false } for a reason https://github.com/gatsbyjs/gatsby/issues/15985
+- SSR translations
