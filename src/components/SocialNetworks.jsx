@@ -1,8 +1,7 @@
 import React from 'react';
-import styles from './css/styles.module.css';
 
 export default () => (
-  <ul className={styles['social-media']}>
+  <ul className="social-media">
     <li>
       <a
         title="Link to a LinkedIn profile"

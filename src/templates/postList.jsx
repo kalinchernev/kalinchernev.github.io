@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
-import styles from './css/styles.module.css';
 import getRandomKey from '../utils/getRandomKey';
 
 import ListItemToPostTeaser from '../components/ListItemToPostTeaser';
@@ -19,7 +18,7 @@ const BlogPagedIndex = ({ pathContext }) => {
         />
         <title>Kalin Chernev | Blog</title>
       </Helmet>
-      <ul className={styles.listing}>
+      <ul className="listing">
         {group.map(node => (
           <ListItemToPostTeaser key={getRandomKey()} node={node} />
         ))}

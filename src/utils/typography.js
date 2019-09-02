@@ -1,5 +1,5 @@
-import Typography from 'typography';
-import theme from 'typography-theme-moraga';
+const Typography = require('typography');
+const theme = require('typography-theme-moraga');
 
 theme.overrideThemeStyles = () => ({
   // Color contrast correction https://dequeuniversity.com/rules/axe/2.2/color-contrast

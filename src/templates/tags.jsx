@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 
-import styles from './css/styles.module.css';
-
 import getRandomKey from '../utils/getRandomKey';
 import tagsSorter from '../utils/tagsSorter';
 import slugify from '../utils/slugify';
@@ -13,8 +11,9 @@ import ListItemToPost from '../components/ListItemToPost';
 
 const TagList = ({ list }) => {
   const sorted = tagsSorter(list);
+
   return (
-    <ul className={`${styles.list} ${styles['list-wrap']}`}>
+    <ul className="list list-wrap">
       {sorted.map(tag => (
         <li key={getRandomKey()}>
           <Link to={`/tags/${slugify(tag[0])}`}>{`${tag[0]} (${tag[1]})`}</Link>
@@ -40,7 +39,7 @@ const TagsPageIndexTemplate = ({ pathContext }) => {
           <title>{tag} | Kalin Chernev</title>
         </Helmet>
         <h1>{tag}</h1>
-        <ul className={styles['list-reset']}>
+        <ul className="list-reset">
           {post.map((tagItem, key) => (
             <ListItemToPost key={getRandomKey(key)} tagItem={tagItem} />
           ))}

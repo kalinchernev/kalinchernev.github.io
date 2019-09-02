@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
 import Link from 'gatsby-link';
-import styles from './css/styles.module.css';
 
 const Home = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
@@ -21,7 +21,7 @@ const Home = ({ data }) => {
         />
         <title>Kalin Chernev Personal Website</title>
       </Helmet>
-      <ul className={styles.listing}>
+      <ul className="listing">
         {posts.map(({ node }) => {
           const post = node.frontmatter;
           return (

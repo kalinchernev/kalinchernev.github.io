@@ -22,6 +22,7 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
   `);
 
   const posts = results.data.allMarkdownRemark.edges;
+
   createPostPages(createPage, posts);
   createPaginatedPostsPages(createPage, posts);
   createTagPages(createPage, posts);

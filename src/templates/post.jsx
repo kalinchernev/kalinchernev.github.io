@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
+
 import PostMeta from '../components/PostMeta';
-import './css/override.css';
 
 const Post = ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <div>
+    <>
       <Helmet htmlAttributes={{ lang: 'en' }}>
         <meta charSet="utf-8" />
         <meta
@@ -23,7 +24,7 @@ const Post = ({ data }) => {
           __html: post.html,
         }}
       />
-    </div>
+    </>
   );
 };
 

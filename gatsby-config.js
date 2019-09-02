@@ -4,7 +4,7 @@ module.exports = {
     slogan: 'Writing crystallizes thought and thought produces action',
   },
   plugins: [
-    'gatsby-plugin-eslint',
+    'gatsby-plugin-layout',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

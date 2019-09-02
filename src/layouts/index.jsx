@@ -1,28 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import 'prismjs/themes/prism.css';
+import { graphql, useStaticQuery } from 'gatsby';
 
-import styles from './css/styles.module.css';
+import 'prismjs/themes/prism.css';
+import '../assets/styles.css';
 
 import Header from '../components/Header';
 
-const IndexLayout = ({ children, data }) => (
-  <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: '' },
-        { name: 'keywords', content: '' },
-      ]}
-    />
-    <Header
-      siteTitle={data.site.siteMetadata.title}
-      slogan={data.site.siteMetadata.slogan}
-    />
-    <div className={styles.main}>{children()}</div>
-  </div>
-);
+const IndexLayout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query LayoutQuery {
+      site {
+        siteMetadata {
+          title
+          slogan
+        }
+      }
+    }
+  `);
+
+  return (
+    <>
+      <Helmet
+        title={data.site.siteMetadata.title}
+        meta={[
+          { name: 'description', content: '' },
+          { name: 'keywords', content: '' },
+        ]}
+      />
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        slogan={data.site.siteMetadata.slogan}
+      />
+      <div className="main">{children}</div>
+    </>
+  );
+};
 
 IndexLayout.propTypes = {
   children: PropTypes.func.isRequired,
@@ -37,14 +51,3 @@ IndexLayout.propTypes = {
 };
 
 export default IndexLayout;
-
-export const query = graphql`
-  query LayoutQuery {
-    site {
-      siteMetadata {
-        title
-        slogan
-      }
-    }
-  }
-`;
