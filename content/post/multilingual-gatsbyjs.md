@@ -1,7 +1,7 @@
 ---
 title: Multilingual Gatsby.js 
 slug: multilingual-gatsbyjs
-date: 2019-09-01T00:00:00+02:00
+date: 2019-09-02T00:00:00+02:00
 tags:
 - i18n
 - l10n
@@ -182,11 +182,11 @@ Yes, the `changeLanguage()` will be taken out to be more generic, as well as `Lo
 
 ## Refactoring
 
-As a first step of refactoring the current implementation, we can do the following:
+As a [first step of refactoring](https://github.com/kalinchernev/using-i18n/commit/1600a7bb28bff0ddb3d888d7ca00a3d765e8df7e) the current implementation, we can do the following:
 
-- Take out `resources` from the configuration file. (as suggested in i18next quick start)
-- Use [`I18nextProvider`](https://react.i18next.com/latest/i18nextprovider) to pass `i18n` instance down to children, rather than relying on `use(initReactI18next)`
-- Change locale/language context from the layout component
+- Take out `resources` from the configuration file, as suggested in i18next quick start.
+- Use [`I18nextProvider`](https://react.i18next.com/latest/i18nextprovider) to pass `i18n` instance down to children, rather than relying on `use(initReactI18next)` middleware.
+- Change locale/language context from the layout component.
 
 ```javascript
 useEffect(
@@ -197,7 +197,7 @@ useEffect(
 );
 ```
 
-- The surface of implementation in components now boils down to
+- The surface of implementation in components now works as following:
 
 ```javascript
 import React from 'react';
@@ -212,23 +212,47 @@ const Welcome = () => {
 export default Welcome;
 ```
 
-We still make use of the [Context API](https://reactjs.org/docs/context.html) and we are able to access both `location` and `i18n` from components' props, regardless of their location in the hierarchy. No props drillin'.
+We still make use of the [Context API](https://reactjs.org/docs/context.html) and we are able to access both `location` and `i18n` from components', regardless of their location in the hierarchy. No props drillin'.
 
-However, we end up with:
+However, after moving `resources` to an external file and `import`-ing it, we end up with:
 
 ![i18n client-side](./images/i18n-client-side.png)
 
-Which is not great, because although we see translations in the browser on language switching, the resulting HTML pages are not having the translations in their corresponding languages, but in defaults. Translation happens client-side.
+Which is not ideal, because although we see translations in the browser on language switching, the resulting HTML pages are not having the translations in their corresponding languages, but in defaults. Translation happens client-side.
 
-## Loading data for server-side rendering (SSR)
+## Loading translations resources for server-side rendering (SSR)
 
-Reference https://github.com/kalinchernev/using-i18n/commit/27d4791b37e0f2bd9df49cdfd74fc35c88676fa4
+After [second refactoring](https://github.com/kalinchernev/using-i18n/commit/27d4791b37e0f2bd9df49cdfd74fc35c88676fa4):
 
-Highlights:
+- The `localeContext` is taken out from the layout component and moved to a separate file in order to avoid circular dependencies.
+- [`resources` are `require`-ed](https://github.com/kalinchernev/using-i18n/commit/27d4791b37e0f2bd9df49cdfd74fc35c88676fa4#diff-fda05457e393bada716f508859bfc604R9) in `gatsby-node.js` and information is passed through `context` again. Example: `public/page-data/de/page-data.json`
 
-- using `context` once again
-- see data in page-data.json
-- refactor to use a HOC, place providers there
-- it is close to what plugins do, but without mixing state and props
-- adding react: { useSuspense: false } for a reason https://github.com/gatsbyjs/gatsby/issues/15985
-- SSR translations
+```javascript
+{
+  "componentChunkName": "component---src-pages-index-js",
+  "path": "/de",
+  "webpackCompilationHash": "723c1b4c311ddaa3bf91",
+  "result": {
+    "data": {},
+    "pageContext": {
+      "isCreatedByStatefulCreatePages": true,
+      "locale": "de",
+      "localeResources": {
+        "translation": { "Using i18next": "Using i18next (DE)" }
+      },
+      "dateFormat": "DD.MM.YYYY"
+    }
+  }
+}
+```
+
+- [i18next's initialization](https://github.com/kalinchernev/using-i18n/commit/27d4791b37e0f2bd9df49cdfd74fc35c88676fa4#diff-8be0da79bbc6e745de5b15ad04fefb43) moved to a separate file.
+- A [HOC](https://reactjs.org/docs/higher-order-components.html) added, takes providers from layout component and passes `i18n` instance and `locale` to children. It's inspired by [this](https://github.com/ikhudo/gatsby-i18n-plugin/blob/master/packages/gatsby-plugin-i18next/src/withI18next.js)).
+
+## Summary
+
+The multilingual setup we end up with uses core functionalities without plugins: i18next, React patterns (HOC), Context API, hooks, and Gatsby's `createPage()`, which facilitate the data management.
+
+Plugins do have their role into solving problems when they are in a specific scope or when they provide enough flexibility in terms of implementation. I think the reason the i18n plugins won't be the best fit for all types of multilingual sites is that they make assumptions which impose constraints on scalability of the project using them.
+
+I hope this was a useful read for getting the way of thinking rather than the framework specifics.
