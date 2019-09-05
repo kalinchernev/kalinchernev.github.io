@@ -4,11 +4,16 @@
   margin-bottom: 1.45rem;
 }
 
+.footer {
+  padding-top: 1.45rem;
+  background: #36648b;
+}
+
 .header-heading {
   margin: 0;
 }
 
-.header-layout {
+.partial-layout {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -69,6 +74,8 @@
 .social-media {
   display: flex;
   list-style: none;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
 }
 
 .social-media li {

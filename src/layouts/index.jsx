@@ -7,6 +7,7 @@ import 'prismjs/themes/prism.css';
 import '../assets/styles.css';
 
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const IndexLayout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -34,6 +35,7 @@ const IndexLayout = ({ children }) => {
         slogan={data.site.siteMetadata.slogan}
       />
       <div className="main">{children}</div>
+      <Footer />
     </>
   );
 };

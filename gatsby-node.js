@@ -2,8 +2,8 @@ const createPostPages = require(`./gatsby-actions/createPostPages`);
 const createPaginatedPostsPages = require(`./gatsby-actions/createPaginatedPostsPages`);
 const createTagPages = require(`./gatsby-actions/createTagPages`);
 
-exports.createPages = async ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions;
   const results = await graphql(`
     query getAllContent {
       allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
