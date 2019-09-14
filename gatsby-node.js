@@ -1,29 +1,4 @@
-const createPostPages = require(`./gatsby-actions/createPostPages`);
-const createPaginatedPostsPages = require(`./gatsby-actions/createPaginatedPostsPages`);
-const createTagPages = require(`./gatsby-actions/createTagPages`);
+'use strict';
 
-exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
-  const results = await graphql(`
-    query getAllContent {
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-        edges {
-          node {
-            excerpt(pruneLength: 400)
-            frontmatter {
-              title
-              slug
-              tags
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const posts = results.data.allMarkdownRemark.edges;
-
-  createPostPages(createPage, posts);
-  createPaginatedPostsPages(createPage, posts);
-  createTagPages(createPage, posts);
-};
+exports.createPages = require('./gatsby/create-pages');
+exports.onCreateNode = require('./gatsby/on-create-node');

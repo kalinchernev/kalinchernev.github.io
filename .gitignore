@@ -1,8 +1,7 @@
-.env
-.cache
-backup
-public/*
-.DS_Store
-node_modules
+node_modules/
+.cache/
+public/
 npm-debug.log
-yarn-error.log
+.eslintcache
+.gatsby-context.js
+.idea
