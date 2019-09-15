@@ -38,7 +38,7 @@ For the rest, like variables, functions, and other language features and constru
 
 By the end of this section, you would have a similar setup working:
 
-![NLTK hello world](./images/python-setup-ready.png)
+![NLTK hello world](/media/python-setup-ready.png)
 
 ### SAM and SAM local
 
