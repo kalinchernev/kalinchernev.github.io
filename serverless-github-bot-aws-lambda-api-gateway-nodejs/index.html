@@ -50,15 +50,56 @@
 
         gtag('config', 'UA-97001925-1', {"send_page_view":false});
       }
-      </script><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#F7A046"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=1640874044fd8989d66db2eedfb9bae2"/><title data-react-helmet="true">Serverless github bot with AWS Lambda and API Gateway  - Blog by Kalin Chernev</title><meta data-react-helmet="true" name="description" content="Writing crystallizes thought and thought produces action."/><meta data-react-helmet="true" property="og:site_name" content="Serverless github bot with AWS Lambda and API Gateway  - Blog by Kalin Chernev"/><meta data-react-helmet="true" property="og:image" content="https://kalinchernev.github.io//photo.jpg"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="Serverless github bot with AWS Lambda and API Gateway  - Blog by Kalin Chernev"/><meta data-react-helmet="true" name="twitter:description" content="Writing crystallizes thought and thought produces action."/><meta data-react-helmet="true" name="twitter:image" content="https://kalinchernev.github.io//photo.jpg"/><link as="script" rel="preload" href="/app-290b088b546c9474e211.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-js-a15476b023965ee68555.js"/><link as="script" rel="preload" href="/styles-72fb06faa699179fa5bb.js"/><link as="script" rel="preload" href="/commons-c7f1247dd4545877d281.js"/><link as="script" rel="preload" href="/webpack-runtime-89862aebc2b4148574c6.js"/><link as="fetch" rel="preload" href="/page-data/serverless-github-bot-aws-lambda-api-gateway-nodejs/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div class="Layout-module--layout--3Pyz6"><div><a class="Post-module--post__home-button--16Kl0" href="/">All Articles</a><div><div class="Content-module--content--3p512"><h1 class="Content-module--content__title--2BDW9">Serverless github bot with AWS Lambda and API Gateway </h1><div class="Content-module--content__body--2TrQ-"><p>This tutorial will show you how to build a small github bot app which is “listening” for pull requests’ events on “open” and “reopen” by <a href="https://greenkeeper.io/" target="_blank" rel="nofollow noopener noreferrer">greenkeeper.io</a>. When the author is the greenkeeper bot, our bot will in turn, correct the title and the tags of the pull request to match conventions.</p>
-<p><img src="/uploads/2017/07/12/github_bot_correcting_greenkeeper-1.png" alt="Github bot correcting the greenkeeper bot"></p>
+      </script><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#F7A046"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=1640874044fd8989d66db2eedfb9bae2"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=1640874044fd8989d66db2eedfb9bae2"/><title data-react-helmet="true">Serverless github bot with AWS Lambda and API Gateway - Blog by Kalin Chernev</title><meta data-react-helmet="true" name="description" content="Writing crystallizes thought and thought produces action."/><meta data-react-helmet="true" property="og:site_name" content="Serverless github bot with AWS Lambda and API Gateway - Blog by Kalin Chernev"/><meta data-react-helmet="true" property="og:image" content="https://kalinchernev.github.io//photo.jpg"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="Serverless github bot with AWS Lambda and API Gateway - Blog by Kalin Chernev"/><meta data-react-helmet="true" name="twitter:description" content="Writing crystallizes thought and thought produces action."/><meta data-react-helmet="true" name="twitter:image" content="https://kalinchernev.github.io//photo.jpg"/><link as="script" rel="preload" href="/app-67e23ecea6a836e810fb.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-js-b40bbc36117ea3cf98d6.js"/><link as="script" rel="preload" href="/styles-c14368419a04a845580c.js"/><link as="script" rel="preload" href="/commons-c7f1247dd4545877d281.js"/><link as="script" rel="preload" href="/webpack-runtime-5d111c596da428871b70.js"/><link as="fetch" rel="preload" href="/page-data/serverless-github-bot-aws-lambda-api-gateway-nodejs/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div class="Layout-module--layout--3Pyz6"><div><a class="Post-module--post__home-button--16Kl0" href="/">All Articles</a><div><div class="Content-module--content--3p512"><h1 class="Content-module--content__title--2BDW9">Serverless github bot with AWS Lambda and API Gateway</h1><div class="Content-module--content__body--2TrQ-"><p>This tutorial will show you how to build a small github bot app which is “listening” for pull requests’ events on “open” and “reopen” by <a href="https://greenkeeper.io/" target="_blank" rel="nofollow noopener noreferrer">greenkeeper.io</a>. When the author is the greenkeeper bot, our bot will in turn, correct the title and the tags of the pull request to match conventions.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4b37ce8f3027fdb5d0a952872e597b66/ff64a/github_bot_correcting_greenkeeper-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 89.3491124260355%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsSAAALEgHS3X78AAACuElEQVQ4y21U227TQBTMJ4IotND0QmlR4YHfQnwEj0gI8YyQEC0kceL4Etu7vq4vw5x14uImKx053nhnZ2bn7OTZ8SmePn+Js9c3uH73ARfX73Hx5haX17c4u3qL04s3Q51f3eDoZIonRydcwzqeYsp1J9NLi/Hi1TkmlakhlZcVAlXBVyV0VqDUEapMo+B8WZmh4kQj3MTQaYZEab4r+41glKxJ27Zou44TBn4YYLPZIAgCeGsXvu8hCDeciwjCZxRD6RR106Djmg5AXTcWTDAaYk3kDxleHuDzny9YrVx4fmAB/CBEQDZhlMDfJEjJvCGYjN06QyJ1XQ9zA6BuCsyVj4KLREJRlMhZIrNpO7JqYbjQkI2wEjay1phytMkA6BqNH9pFHAijGG6oyJDyKVe8EllpltuyXsaJ3VSG2DYA/k+fRmA2X9C7AJHKrfFKa+R5jscj5EaxUpZp/Zjh4AclCSMBioQBpR8a8nVnCGLa/mULtgcoXkRRZMvzfYRhaNlKFYV4K572m3xb/cKn+6/4uPyOu9TfCnwkWU5sTsnzRV8Lx7EWzOycg+VqxdwlMARdqhA/Qwe/CaZMcdhDAVwyNo6ztID+Nj6Sw4ARinhYklMBreRAugcPJJV7gCI5odECvLPiUMlQSlsLdlIfGG4Tv2Mo3iVsp5QHk2WZjcQeICtjfFZrHxG/HQPaEzP2I0lTVpJlWqCqCpnCrjXbdlf9BjkbQPpYp6mdHwMKdXrTsUrXRbGtau2h8jw0PG0mGcwSOj4bqpg5f3mJZKM2fIhNH3fUPBA5gJgXQMxAh4yP7RS+a0o09LigmpZ59Zdzyk1GXbJ3KC0Xe3f38GZzbBiTiDFR6zUy3j5SJTfQZGz4my00YnewUxpKj3mFpZRYs1PuwwXuWBVvm4ZeMd19Uar43vUoI8n/ACOQUkg0rOc4AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/4b37ce8f3027fdb5d0a952872e597b66/01472/github_bot_correcting_greenkeeper-1.webp 240w,
+/static/4b37ce8f3027fdb5d0a952872e597b66/222bd/github_bot_correcting_greenkeeper-1.webp 480w,
+/static/4b37ce8f3027fdb5d0a952872e597b66/620b9/github_bot_correcting_greenkeeper-1.webp 960w,
+/static/4b37ce8f3027fdb5d0a952872e597b66/f9c1e/github_bot_correcting_greenkeeper-1.webp 1352w"
+          sizes="(max-width: 960px) 100vw, 960px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/4b37ce8f3027fdb5d0a952872e597b66/0783d/github_bot_correcting_greenkeeper-1.png 240w,
+/static/4b37ce8f3027fdb5d0a952872e597b66/782f4/github_bot_correcting_greenkeeper-1.png 480w,
+/static/4b37ce8f3027fdb5d0a952872e597b66/f570d/github_bot_correcting_greenkeeper-1.png 960w,
+/static/4b37ce8f3027fdb5d0a952872e597b66/ff64a/github_bot_correcting_greenkeeper-1.png 1352w"
+          sizes="(max-width: 960px) 100vw, 960px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/4b37ce8f3027fdb5d0a952872e597b66/f570d/github_bot_correcting_greenkeeper-1.png"
+          alt="Github bot correcting the greenkeeper bot"
+          title="Github bot correcting the greenkeeper bot"
+          loading="lazy"
+        />
+      </picture>
+  </a>
+    </span></p>
 <p>If you’ve come to this article because you already have knowledge about the technical topics, but you are more interested in the concrete steps, you can skip the following introductory parts and go directly to the technical specifics below. To go to the technical details scroll down to the <strong>“10 steps to make it happen”</strong> section ;)</p>
 <p>The script will actually be pretty small and simple, though there are quite some interesting ideas you might get on the way.</p>
 <h2 id="serverless"><a href="#serverless" aria-label="serverless permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Serverless</h2>
 <p><a href="https://en.wikipedia.org/wiki/Serverless_computing" target="_blank" rel="nofollow noopener noreferrer">Serverless computing</a> is a relatively new trend which is getting greater popularity after Amazon released their <a href="https://aws.amazon.com/lambda/" target="_blank" rel="nofollow noopener noreferrer">AWS Lambda</a> service in the end of 2014. I published about this topic in a bit <a href="/january-digest-2017/#cloud">more details earlier this year</a>. In one sentence, serverless architectures (aka cloud functions) are getting traction in cases where high-level architecture control is sufficient for developers who delegate the details about the infrastructure management to a hidden underlying layer managed by a cloud provider.</p>
 <p>In addition to the low maintenance efforts, pricing per resource is also a lucrative opportunity for app developers - at the moment 1 million requests to AWS Lambda are <a href="https://aws.amazon.com/free/" target="_blank" rel="nofollow noopener noreferrer">free</a> - this is generous! Later, <a href="https://aws.amazon.com/lambda/pricing/" target="_blank" rel="nofollow noopener noreferrer">pricing</a> continues to be calculated based on actual usage. This means that applications cost money when they actually compute. That’s good for both up-scaling and down-scaling.</p>
 <p>Here’s a graphic from <a href="https://acloud.guru/" target="_blank" rel="nofollow noopener noreferrer">acloud.guru</a> which explains this evolution step in simple terms, I think:</p>
-<p><img src="/uploads/2017/07/11/brief-history-of-cloud-acloud-guru.png" alt="Where is the serverless in the history of the cloud"></p>
+<p><img src="/media/brief-history-of-cloud-acloud-guru.png" alt="Where is the serverless in the history of the cloud"></p>
 <p>Lastly, cloud functions such as AWS Lambda come well into play in event-oriented designs. Here’s a simplified list of some <a href="http://docs.aws.amazon.com/lambda/latest/dg/use-cases.html" target="_blank" rel="nofollow noopener noreferrer">official use cases</a>:</p>
 <ul>
 <li>event-driven services where the cloud function is run in response to other events - usually triggered by AWS S3, SNS, DynamoDB, etc.</li>
@@ -103,31 +144,273 @@
 <h2 id="10-steps-to-make-it-happen"><a href="#10-steps-to-make-it-happen" aria-label="10 steps to make it happen permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>10 steps to make it happen</h2>
 <p>Ok, enough introductory talks, that’s the more visual part of the article containing the main milestones making the things actually work.</p>
 <p><strong>1. Create a user that can work with AWS Lambda and API Gateway services.</strong></p>
-<p><img src="/uploads/2017/07/12/create_aws_user_lambda.gif" alt="Creating an AWS user you can operate with"></p>
+<p><img src="/934e5302bf85045d67ae84ab24726609/create_aws_user_lambda.gif" alt="Creating an AWS user you can operate with"></p>
 <p>For simplicity, I’m adding the user to the group of admins. Then I’m downloading the tokens for later use with the serverless framework.</p>
 <p><strong>2. Go to your github profile settings page and <a href="https://github.com/settings/tokens/new" target="_blank" rel="nofollow noopener noreferrer">generate a user token</a> by which the bot will act on your behalf.</strong></p>
 <p>You can make a cool bot separate from your account, of course.</p>
-<p><img src="/uploads/2017/07/12/new_user_token_github.png" alt="Creating a new user token on github.com"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/40dd106a60a23e9da287667c09b27df9/ff64a/new_user_token_github.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 96.59763313609467%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsSAAALEgHS3X78AAACJklEQVQ4y42UW46cMBBFe/8ryQKyk3wlys9IM3TzMgaDwc+bqgKPmFZ6BJIlG5vDrarruuWcwY/zAU0/wswLzSPGcULbdehoNG0LNWh67+HpnA8BgYantXMO6WAw64bjCSnDulyWmKYdqLWGGheoaUWvF3Ta0tpiXVdYu2LdNpSvBLgrzPT3hHbySCnJ5kCgj+ohqiL9LMSESKPsnx9mlHErIfuQ0IyeVEZZ971CXTeiwFqLzQVYn7FsERv9HCdIPodcFqxAL5SXuCtYCKKUkhwxsOsH6GkmWBDF+QqQFQYBZkl+3TSkzAm07XrJ6//CfAl8V05CkqoTRA2DzDcKm6uuacyLlTxeAGZUQ8BdB6l4oGI0pHBdN4FrPWIyhuwSrynkCrI9BrIHf8Qee9Q1ZvalqNVik2fQS6AnyFttxG8Md87j/ngIkEPmqvP8MjCSol4bjJMhYBRVPVV5vw0exsyw667+DEovFboN79UdnRrFc2aeMVCYpSgD5TAelrqkMKVIJnbsV9ngu8q3hSvKQKUGso2R9wJ5An+5y+XFeb6R4qbvjvC92IbN7sXYF2zzvIlA97lSSCHK9WNjL1TlxSWs/hsg34rzi5T3PP3Sf/Dj70+8jQ0oG1QQ+9kYvs/hU6j5aEaVrQn6G9otp3Sc05OP8bXrnIqSxCrcdTgkVoWjU/FeqTDbxFLYG53jriNn04sc8oe8Kf2P5uEp+eUc75dzpfOUvX8LNNSQHm3iXgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/40dd106a60a23e9da287667c09b27df9/01472/new_user_token_github.webp 240w,
+/static/40dd106a60a23e9da287667c09b27df9/222bd/new_user_token_github.webp 480w,
+/static/40dd106a60a23e9da287667c09b27df9/620b9/new_user_token_github.webp 960w,
+/static/40dd106a60a23e9da287667c09b27df9/f9c1e/new_user_token_github.webp 1352w"
+          sizes="(max-width: 960px) 100vw, 960px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/40dd106a60a23e9da287667c09b27df9/0783d/new_user_token_github.png 240w,
+/static/40dd106a60a23e9da287667c09b27df9/782f4/new_user_token_github.png 480w,
+/static/40dd106a60a23e9da287667c09b27df9/f570d/new_user_token_github.png 960w,
+/static/40dd106a60a23e9da287667c09b27df9/ff64a/new_user_token_github.png 1352w"
+          sizes="(max-width: 960px) 100vw, 960px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/40dd106a60a23e9da287667c09b27df9/f570d/new_user_token_github.png"
+          alt="Creating a new user token on github.com"
+          title="Creating a new user token on github.com"
+          loading="lazy"
+        />
+      </picture>
+  </a>
+    </span></p>
 <p>When you save this form, you will see the token, which you have to save somewhere with the same attention you would have to your password:</p>
 <p><strong>3. <a href="https://developer.github.com/webhooks/securing" target="_blank" rel="nofollow noopener noreferrer">Generate a webhook secret</a></strong></p>
-<p><img src="/uploads/2017/07/12/generate_webhook_secret-1.png" alt="Generating a webhook on github.com"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 728px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/33b7d1adb3dc7c766b1b4dbff2243e93/a6906/generate_webhook_secret-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 10.439560439560438%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsSAAALEgHS3X78AAAAgklEQVQI102ISw6CMAAFOVhLm0AiRbA/bKugRuMFqhtFdl5becYmJi5e3sxkfHi+qBuRh2lmmwmJ/QjqH+DhDu3PkN0Ryp0gZI/G7LFoAsraQax6VO0WS7VDaw+JM+Zub2IuIPY6UxNBdAS1ycG7iFoOKIVDUa3BSo28UOn/922//gEeSk425aF8hwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/33b7d1adb3dc7c766b1b4dbff2243e93/01472/generate_webhook_secret-1.webp 240w,
+/static/33b7d1adb3dc7c766b1b4dbff2243e93/222bd/generate_webhook_secret-1.webp 480w,
+/static/33b7d1adb3dc7c766b1b4dbff2243e93/8de3b/generate_webhook_secret-1.webp 728w"
+          sizes="(max-width: 728px) 100vw, 728px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/33b7d1adb3dc7c766b1b4dbff2243e93/0783d/generate_webhook_secret-1.png 240w,
+/static/33b7d1adb3dc7c766b1b4dbff2243e93/782f4/generate_webhook_secret-1.png 480w,
+/static/33b7d1adb3dc7c766b1b4dbff2243e93/a6906/generate_webhook_secret-1.png 728w"
+          sizes="(max-width: 728px) 100vw, 728px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/33b7d1adb3dc7c766b1b4dbff2243e93/a6906/generate_webhook_secret-1.png"
+          alt="Generating a webhook on github.com"
+          title="Generating a webhook on github.com"
+          loading="lazy"
+        />
+      </picture>
+  </a>
+    </span></p>
 <p><strong>4. Input the user token and the webhook secret in the serverless config file</strong></p>
-<p><img src="/uploads/2017/07/12/save_config.png" alt="Saving configurations in the serverless framework config file"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 893px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/fc96927951ac08f88f2c6e3ca67d540d/7bd40/save_config.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.326987681970884%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABnUlEQVQoz41SUZKcIBT0JslkVgVREQUU0ZnZncpPcv/zdBp2zFQlu6l8dDU+sLvfg0INM7ox4Fz3+HKWqJSD7Dwsa/P6isGtaM2Muh1xFi2+1R1OJbn6GEUpNJy/QHQ2C76IAar3cHqBHjy6aYZ2Czo7oyc32qFWE0T7RH2A9aJpOsR1Z7KRgoKCmgkd9jHC24BaW9Q0q5oJlZwy139CPbmQUmNdbxiXa45cyoFuDqtZ8YO1C82sC9BMrZhOGY92JMwTanhn2VsKMs0S7xjZds2U2a216Clwtzvu04boI5YQYeMKf9swv+6Z/ZVr8sh6z5GkcRQnpjqLHl9fmjzDUho0FJuHAG8COhq2vUNDrtSjvQcEjZN5WldHy0ko4VQqssxF2c8ITPYzvCEuF8R4hV82TPsNJmwwS2TbgbOe89mERr9zkYQOJOGqMflSJJ3DuGLgQWH4zXZSorzHS0rrj/CXYGo5/VRynor83V2w7TtThd9P5l/4RNDnzYaOkSkD2+t5i+ktHrP774TpHYrHoBOni6gejzYN/tj7TPgXUQpTZVzHnvEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/fc96927951ac08f88f2c6e3ca67d540d/01472/save_config.webp 240w,
+/static/fc96927951ac08f88f2c6e3ca67d540d/222bd/save_config.webp 480w,
+/static/fc96927951ac08f88f2c6e3ca67d540d/b9856/save_config.webp 893w"
+          sizes="(max-width: 893px) 100vw, 893px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/fc96927951ac08f88f2c6e3ca67d540d/0783d/save_config.png 240w,
+/static/fc96927951ac08f88f2c6e3ca67d540d/782f4/save_config.png 480w,
+/static/fc96927951ac08f88f2c6e3ca67d540d/7bd40/save_config.png 893w"
+          sizes="(max-width: 893px) 100vw, 893px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/fc96927951ac08f88f2c6e3ca67d540d/7bd40/save_config.png"
+          alt="Saving configurations in the serverless framework config file"
+          title="Saving configurations in the serverless framework config file"
+          loading="lazy"
+        />
+      </picture>
+  </a>
+    </span></p>
 <p><strong>5. Put function code in the <code class="language-text">handler.js</code> file</strong></p>
-<p><img src="/uploads/2017/07/12/handler.png" alt="Editing the cloud function"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e43fff2bd4a84460a8f18a80e7b34fbe/95139/handler.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.22254758418741%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAABb0lEQVQoz32S626jMBBGeZPe0uD7+DJjGzCGtFJ/VNr3f52dhK6U7EorHSFhOP7gGw84fZrymZZLKivgqsPssTnsef+V21davnjxrJERhiL1QN1TL8vH9nEZLBRl09PJSEt5XoGasFlaHHUUhgUcGZ0O3lX8QQZh4pBS5cyTcNLmJfWSN7d+Y9s15EO+QXyV103pjjw4oEDL62ilIYybx83QBVIDX4Q9BBSOJGPxbjt+RMObAI59edd8o+OkfXV+VqmbOFmoEJuDbMJk46KB7mWh0/B8Uszr2UiXA/aQGid73Plt8BNAMZbAZevyg3nInMlcZZtL7Fvuddpa71NbAlb+nNGk8Vab/L+Moe/YVmo0b37uEKtyRbpq+M//Mv+RKYTGbWPpYd55mCHVUBaLS0z1sfxHmeHxAsw+dZvXgCVyrC8KSDlSPqtr23Sb2cEfmWNPAvgMcDc8OemiBJQepUvac0g6y3BFh7M6iAyfot/Kj3t4mFrV4QAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/e43fff2bd4a84460a8f18a80e7b34fbe/01472/handler.webp 240w,
+/static/e43fff2bd4a84460a8f18a80e7b34fbe/222bd/handler.webp 480w,
+/static/e43fff2bd4a84460a8f18a80e7b34fbe/620b9/handler.webp 960w,
+/static/e43fff2bd4a84460a8f18a80e7b34fbe/b38df/handler.webp 1366w"
+          sizes="(max-width: 960px) 100vw, 960px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/e43fff2bd4a84460a8f18a80e7b34fbe/0783d/handler.png 240w,
+/static/e43fff2bd4a84460a8f18a80e7b34fbe/782f4/handler.png 480w,
+/static/e43fff2bd4a84460a8f18a80e7b34fbe/f570d/handler.png 960w,
+/static/e43fff2bd4a84460a8f18a80e7b34fbe/95139/handler.png 1366w"
+          sizes="(max-width: 960px) 100vw, 960px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/e43fff2bd4a84460a8f18a80e7b34fbe/f570d/handler.png"
+          alt="Editing the cloud function"
+          title="Editing the cloud function"
+          loading="lazy"
+        />
+      </picture>
+  </a>
+    </span></p>
 <p><strong>6. You can try to deploy the function:</strong></p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ serverless deploy</code></pre></div>
 <p>Watch it fail ;)</p>
-<p><img src="/uploads/2017/07/12/enter_credentials_serverless.png" alt="Failing deployment in the serverless framework"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/27ff112770a89fe3384a30ce0adcf169/95139/enter_credentials_serverless.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 26.281112737920935%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsSAAALEgHS3X78AAAAwklEQVQY04XOS47CMBAE0FyMYBIcx+74G/NRAM3s5v4nqGn3sBkhxOKpLNvq6k7FH/TLN3rasKM7RnfG0Z5EP8an9M9ueL3rxyzZWR+x+AJLCcZlaFvYKiaqnG34GZqLJro8z3/ZSjXnYU5QJorOUOBhAYOpoHRjG2y48ucqxrniMK1vFEmls9hr3nCyHrMjKH5I9YF8+kJYH3Bxk40Gs2J/zB8UKNbOnXEeIVq4haBnDxcuvFVrz0Jxq9LlgyzZBv4C+Ie6CgWGfS4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/27ff112770a89fe3384a30ce0adcf169/01472/enter_credentials_serverless.webp 240w,
+/static/27ff112770a89fe3384a30ce0adcf169/222bd/enter_credentials_serverless.webp 480w,
+/static/27ff112770a89fe3384a30ce0adcf169/620b9/enter_credentials_serverless.webp 960w,
+/static/27ff112770a89fe3384a30ce0adcf169/b38df/enter_credentials_serverless.webp 1366w"
+          sizes="(max-width: 960px) 100vw, 960px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/27ff112770a89fe3384a30ce0adcf169/0783d/enter_credentials_serverless.png 240w,
+/static/27ff112770a89fe3384a30ce0adcf169/782f4/enter_credentials_serverless.png 480w,
+/static/27ff112770a89fe3384a30ce0adcf169/f570d/enter_credentials_serverless.png 960w,
+/static/27ff112770a89fe3384a30ce0adcf169/95139/enter_credentials_serverless.png 1366w"
+          sizes="(max-width: 960px) 100vw, 960px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/27ff112770a89fe3384a30ce0adcf169/f570d/enter_credentials_serverless.png"
+          alt="Failing deployment in the serverless framework"
+          title="Failing deployment in the serverless framework"
+          loading="lazy"
+        />
+      </picture>
+  </a>
+    </span></p>
 <p><strong>7. Export your keys (which you downloaded in the <code class="language-text">credentials.csv</code> files earlier as:</strong></p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ export AWS_ACCESS_KEY_ID=
 $ export AWS_SECRET_ACCESS_KEY=
 # AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY are now available for serverless to use
 serverless deploy</code></pre></div>
 <p><strong>8. Run <code class="language-text">serverless deploy</code> again and watch it succeeding</strong></p>
-<p><img src="/uploads/2017/07/12/serverless_deploy_success.gif" alt="Showing a successful deployment of a function on AWS"></p>
+<p><img src="/a34c23dca6bc1247da4c9ebb80f273b3/serverless_deploy_success.gif" alt="Showing a successful deployment of a function on AWS"></p>
 <p><strong>9. Take the provided URL and add it to the webhooks of your repository where you want the bot to take effect</strong></p>
-<p><img src="/uploads/2017/07/12/adding_webhook_github.png" alt="Adding a new webhook on github.com"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ebff158e97bc550b254453756e85b571/89b07/adding_webhook_github.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 169.41176470588235%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAiCAYAAABfqvm9AAAACXBIWXMAAAsSAAALEgHS3X78AAADk0lEQVRIx5VWu5LUMBD0//8GMQEhBEQEpERUQRUUdbUPvyX5KdvyMD22vFqv9w58N7drWWr19PTIF6m6p4uylGpLWTXQOE40rGGHcfsuYS2Nw0BpVlDCUTctpXlBVd1QVihqu56irrekq5YUR2kaGVTaUNP28h2TMQeLy+RMJrtSWSpSppYNG57T20Hm4j5qOh7sR5pnR9M0kXOOqqqmotR0jVM6XWIGbXnyRJ0dJbAQ98J6cmsGo2QXmc5RrCcap5lBZ8JV6opeLqkAXuOEMk6rYFYFp5UXpdynWc7f+T4vKeXPU6Kpbi1FmhenZc0wCyBC1x2ds4pTHcgx65F3B/tp/Y6wrKcPpNz0eOYoUsrQS8yaNCP1gxOGSDlOEjLGiHYNBz5r1rNaw2cTXhiLGjtTXnNFGX1i/TCIBafzlbSpFjC+b1ZgH87NG0gYEf4sD28agmGaZtRzdWURb4RiHV0PgPuHAljXAtqxFRCtZX2eMHpI+WhC23aSZt00GzhkMCzBwMYON+/Ys3WSSgx9f2MYAgLMW0VzYaCl5oVK65sM61ypPlwgTnDHgLACugWe63jXEOBo/l3KRxN6BgEzMCwVs7I3VmDk5+3legD0lUZFFQMlXGmAjgzi52AcmtqdloeASyy6YCHSvbMLuoilSNP8fwAXhvDh6XyhLFsWTytLbIQiof2ONI32HgxTltTWfvWAGIMD0C04XQD8VMPQCgVXGIv2LNquI1NV4lW/Waj/YVEQSDlms6LKy9FVSrUbNnsnh+mw6RiuO0wZARCzaoXu8JohZekYGR+3A+XQh3cMuRgItTIEK1w561cqJWDwa8cSeCc8AgZVzotCumWvIdh5H1o+WP/dNswOGsKLYAJGYhvu58s1Fm1RNPQ2wN+0zaLbJJ+i1dpyAMRmOIn8qeRb073WetAJCwDYBQzxChXDs5Y4PFD9YS2Ye85wliLgLGzadntBiYbsQfQ4WhDFCs/HV4viq4tTB0w9Wz+OVAGODZ/aJuwUAHntwmvpZbP6c3yjlwOGSAuBSnp2cpqjGN1y/6ZtwqJAcGgIhkNw2kA76WUGhc6hqZ/bhv/PUUbzvyR66wbfegADS7Db9/FjleWXfyzv2m/zacLR79zG0jthf/yD7R0gmOH6ln+ndz8/0Ps/n+j35ReZc0KK9byxoqcv/R3gkvYP/Zs+nr7Q58tXSgy/byvuBi4MnoKZmw/CLQz/AvlZZuD48S5uAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/ebff158e97bc550b254453756e85b571/01472/adding_webhook_github.webp 240w,
+/static/ebff158e97bc550b254453756e85b571/222bd/adding_webhook_github.webp 480w,
+/static/ebff158e97bc550b254453756e85b571/620b9/adding_webhook_github.webp 960w,
+/static/ebff158e97bc550b254453756e85b571/18e42/adding_webhook_github.webp 1020w"
+          sizes="(max-width: 960px) 100vw, 960px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/ebff158e97bc550b254453756e85b571/0783d/adding_webhook_github.png 240w,
+/static/ebff158e97bc550b254453756e85b571/782f4/adding_webhook_github.png 480w,
+/static/ebff158e97bc550b254453756e85b571/f570d/adding_webhook_github.png 960w,
+/static/ebff158e97bc550b254453756e85b571/89b07/adding_webhook_github.png 1020w"
+          sizes="(max-width: 960px) 100vw, 960px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/ebff158e97bc550b254453756e85b571/f570d/adding_webhook_github.png"
+          alt="Adding a new webhook on github.com"
+          title="Adding a new webhook on github.com"
+          loading="lazy"
+        />
+      </picture>
+  </a>
+    </span></p>
 <p>Few notes:</p>
 <ul>
 <li>This is the secret you previously generated via the command line</li>
@@ -136,4 +419,4 @@ serverless deploy</code></pre></div>
 <p><strong>10. Trigger the webhook either by github or by closing and re-opening an existing pull request which has been opened by greenkeeper bot.</strong></p>
 <p>That’s an <a href="https://gist.github.com/kalinchernev/d1e79a7f883a4d37f50519d9b05df0c5.js" target="_blank" rel="nofollow noopener noreferrer">example script</a> you can use.</p>
 <h2 id="extras"><a href="#extras" aria-label="extras permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Extras</h2>
-<p>When you have this automated corrections on pull request titles and tags, you might also need to <a href="https://github.com/greenkeeperio/greenkeeper-lockfile" target="_blank" rel="nofollow noopener noreferrer">update the lock files</a> of the pull request to make all ready for merging.</p></div></div></div><div class="Post-module--post__footer--3WzWU"><div><p class="Meta-module--meta__date--29eD7">Published <!-- -->12 Jul 2017</p></div><div class="Tags-module--tags--1L_ct"><ul class="Tags-module--tags__list--91FqN"><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/bots/">Bots</a></li><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/nodejs/">nodejs</a></li><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/java-script/">JavaScript</a></li><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/serverless/">Serverless</a></li><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/aws/">AWS</a></li></ul></div><div class="Author-module--author--2Yefr"><p>Writing crystallizes thought and thought produces action.<a class="Author-module--author__bio-twitter--n-O9n" href="https://www.twitter.com/kalinchernev" rel="noopener noreferrer" target="_blank"><strong>Kalin Chernev</strong> on Twitter</a></p></div></div><div class="Post-module--post__comments--25y6I"><div><div id="disqus_thread"></div></div></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/serverless-github-bot-aws-lambda-api-gateway-nodejs";window.webpackCompilationHash="4fbca69165134aa19fa3";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-290b088b546c9474e211.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-95fef99b45344eec0108.js"],"component---src-templates-not-found-template-js":["/component---src-templates-not-found-template-js-69fffa33e278020a74e6.js"],"component---src-templates-tags-list-template-js":["/component---src-templates-tags-list-template-js-3bd26d05c210fb3a66c3.js"],"component---src-templates-categories-list-template-js":["/component---src-templates-categories-list-template-js-c56ea1e805a17596dcf2.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js-a15476b023965ee68555.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-653b0c291f93af7a9d47.js"],"component---src-templates-tag-template-js":["/component---src-templates-tag-template-js-976b5f3088b792f9cefb.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-24949f9005dd6c87e5b2.js"],"component---src-templates-index-template-js":["/component---src-templates-index-template-js-d0796645d178fdc11c5f.js"]};/*]]>*/</script><script src="/webpack-runtime-89862aebc2b4148574c6.js" async=""></script><script src="/commons-c7f1247dd4545877d281.js" async=""></script><script src="/styles-72fb06faa699179fa5bb.js" async=""></script><script src="/component---src-templates-post-template-js-a15476b023965ee68555.js" async=""></script><script src="/app-290b088b546c9474e211.js" async=""></script></body></html>
+<p>When you have this automated corrections on pull request titles and tags, you might also need to <a href="https://github.com/greenkeeperio/greenkeeper-lockfile" target="_blank" rel="nofollow noopener noreferrer">update the lock files</a> of the pull request to make all ready for merging.</p></div></div></div><div class="Post-module--post__footer--3WzWU"><div><p class="Meta-module--meta__date--29eD7">Published <!-- -->12 Jul 2017</p></div><div class="Tags-module--tags--1L_ct"><ul class="Tags-module--tags__list--91FqN"><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/bots/">Bots</a></li><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/nodejs/">nodejs</a></li><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/java-script/">JavaScript</a></li><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/serverless/">Serverless</a></li><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/aws/">AWS</a></li></ul></div><div class="Author-module--author--2Yefr"><p>Writing crystallizes thought and thought produces action.<a class="Author-module--author__bio-twitter--n-O9n" href="https://www.twitter.com/kalinchernev" rel="noopener noreferrer" target="_blank"><strong>Kalin Chernev</strong> on Twitter</a></p></div></div><div class="Post-module--post__comments--25y6I"><div><div id="disqus_thread"></div></div></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/serverless-github-bot-aws-lambda-api-gateway-nodejs";window.webpackCompilationHash="0dbc1e07081b2fda90ea";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-67e23ecea6a836e810fb.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-95fef99b45344eec0108.js"],"component---src-templates-not-found-template-js":["/component---src-templates-not-found-template-js-69fffa33e278020a74e6.js"],"component---src-templates-tags-list-template-js":["/component---src-templates-tags-list-template-js-3bd26d05c210fb3a66c3.js"],"component---src-templates-categories-list-template-js":["/component---src-templates-categories-list-template-js-c56ea1e805a17596dcf2.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-8b640c6423c3eb25dc54.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js-b40bbc36117ea3cf98d6.js"],"component---src-templates-tag-template-js":["/component---src-templates-tag-template-js-976b5f3088b792f9cefb.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-24949f9005dd6c87e5b2.js"],"component---src-templates-index-template-js":["/component---src-templates-index-template-js-d0796645d178fdc11c5f.js"]};/*]]>*/</script><script src="/webpack-runtime-5d111c596da428871b70.js" async=""></script><script src="/commons-c7f1247dd4545877d281.js" async=""></script><script src="/styles-c14368419a04a845580c.js" async=""></script><script src="/component---src-templates-post-template-js-b40bbc36117ea3cf98d6.js" async=""></script><script src="/app-67e23ecea6a836e810fb.js" async=""></script></body></html>
