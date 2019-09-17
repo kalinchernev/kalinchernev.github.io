@@ -1,5 +1,5 @@
 ---
-title: 'Serverless github bot with AWS Lambda and API Gateway '
+title: 'Serverless github bot with AWS Lambda and API Gateway'
 slug: serverless-github-bot-aws-lambda-api-gateway-nodejs
 date: 2017-07-11T22:40:00+00:00
 draft: false
@@ -14,7 +14,7 @@ tags:
 
 This tutorial will show you how to build a small github bot app which is "listening" for pull requests' events on "open" and "reopen" by [greenkeeper.io](https://greenkeeper.io/). When the author is the greenkeeper bot, our bot will in turn, correct the title and the tags of the pull request to match conventions.
 
-![Github bot correcting the greenkeeper bot](/uploads/2017/07/12/github_bot_correcting_greenkeeper-1.png)
+![Github bot correcting the greenkeeper bot](/media/github_bot_correcting_greenkeeper-1.png)
 
 If you've come to this article because you already have knowledge about the technical topics, but you are more interested in the concrete steps, you can skip the following introductory parts and go directly to the technical specifics below. To go to the technical details scroll down to the **"10 steps to make it happen"** section ;)
 
@@ -28,7 +28,7 @@ In addition to the low maintenance efforts, pricing per resource is also a lucra
 
 Here's a graphic from [acloud.guru](https://acloud.guru/) which explains this evolution step in simple terms, I think:
 
-![Where is the serverless in the history of the cloud](/uploads/2017/07/11/brief-history-of-cloud-acloud-guru.png)
+![Where is the serverless in the history of the cloud](/media/brief-history-of-cloud-acloud-guru.png)
 
 Lastly, cloud functions such as AWS Lambda come well into play in event-oriented designs. Here's a simplified list of some [official use cases](http://docs.aws.amazon.com/lambda/latest/dg/use-cases.html):
 
@@ -102,7 +102,7 @@ Ok, enough introductory talks, that's the more visual part of the article contai
 
 **1. Create a user that can work with AWS Lambda and API Gateway services.**
 
-![Creating an AWS user you can operate with](/uploads/2017/07/12/create_aws_user_lambda.gif)
+![Creating an AWS user you can operate with](/media/create_aws_user_lambda.gif)
 
 For simplicity, I'm adding the user to the group of admins. Then I'm downloading the tokens for later use with the serverless framework.
 
@@ -110,21 +110,21 @@ For simplicity, I'm adding the user to the group of admins. Then I'm downloading
 
 You can make a cool bot separate from your account, of course.
 
-![Creating a new user token on github.com](/uploads/2017/07/12/new_user_token_github.png)
+![Creating a new user token on github.com](/media/new_user_token_github.png)
 
 When you save this form, you will see the token, which you have to save somewhere with the same attention you would have to your password:
 
 **3. [Generate a webhook secret](https://developer.github.com/webhooks/securing)**
 
-![Generating a webhook on github.com](/uploads/2017/07/12/generate_webhook_secret-1.png)
+![Generating a webhook on github.com](/media/generate_webhook_secret-1.png)
 
 **4. Input the user token and the webhook secret in the serverless config file**
 
-![Saving configurations in the serverless framework config file](/uploads/2017/07/12/save_config.png)
+![Saving configurations in the serverless framework config file](/media/save_config.png)
 
 **5. Put function code in the `handler.js` file**
 
-![Editing the cloud function](/uploads/2017/07/12/handler.png)
+![Editing the cloud function](/media/handler.png)
 
 **6. You can try to deploy the function:**
 
@@ -135,7 +135,7 @@ $ serverless deploy
 
 Watch it fail ;)
 
-![Failing deployment in the serverless framework](/uploads/2017/07/12/enter_credentials_serverless.png)
+![Failing deployment in the serverless framework](/media/enter_credentials_serverless.png)
 
 **7. Export your keys (which you downloaded in the `credentials.csv` files earlier as:**
 
@@ -149,11 +149,11 @@ serverless deploy
 
 **8. Run `serverless deploy` again and watch it succeeding**
 
-![Showing a successful deployment of a function on AWS](/uploads/2017/07/12/serverless_deploy_success.gif)
+![Showing a successful deployment of a function on AWS](/media/serverless_deploy_success.gif)
 
 **9. Take the provided URL and add it to the webhooks of your repository where you want the bot to take effect**
 
-![Adding a new webhook on github.com](/uploads/2017/07/12/adding_webhook_github.png)
+![Adding a new webhook on github.com](/media/adding_webhook_github.png)
 
 Few notes:
 
