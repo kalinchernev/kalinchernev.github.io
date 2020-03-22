@@ -5,6 +5,8 @@ const result1 = [];
 const result2 = [];
 const userSelectedImages = selected.Images;
 
+// console.log('nodes', nodes.length);
+
 const getImageOriginalName = image => {
   const {
     image: { src },
