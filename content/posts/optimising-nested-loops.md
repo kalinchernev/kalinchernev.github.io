@@ -157,4 +157,4 @@ There are better ways to measure performance and there are many time-consuming o
 
 The two approaches demonstrate how 1 full iteration with a map creation yields O(1) access to image details which saves considerable amount of time compared to `Array.find` O(N).
 
-Sample code can be found [here](https://github.com/kalinchernev/kalinchernev.github.io/blob/samples/optimise-iterations)
+Sample code can be found [here](https://github.com/kalinchernev/kalinchernev.github.io/tree/blog/samples/optimise-iterations)
