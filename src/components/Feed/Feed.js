@@ -33,7 +33,7 @@ const Feed = ({ edges }: Props) => (
         <h2 className={styles['feed__item-title']}>
           <Link
             className={styles['feed__item-title-link']}
-            to={edge.node.fields.slug}
+            to={`/${edge.node.fields.slug}`}
           >
             {edge.node.frontmatter.title}
           </Link>
