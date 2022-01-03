@@ -37,12 +37,14 @@ const TagTemplate = ({ data, pageContext }: Props) => {
       <Sidebar />
       <Page title={tag}>
         <Feed edges={edges} />
-        <Pagination
-          prevPagePath={prevPagePath}
-          nextPagePath={nextPagePath}
-          hasPrevPage={hasPrevPage}
-          hasNextPage={hasNextPage}
-        />
+        {(hasNextPage || hasPrevPage) && (
+          <Pagination
+            prevPagePath={prevPagePath}
+            nextPagePath={nextPagePath}
+            hasPrevPage={hasPrevPage}
+            hasNextPage={hasNextPage}
+          />
+        )}
       </Page>
     </Layout>
   );
