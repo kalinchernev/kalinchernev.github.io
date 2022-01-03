@@ -45,7 +45,7 @@ const Feed = ({ edges }: Props) => (
           className={styles['feed__item-readmore']}
           to={`/${edge.node.fields.slug}`}
         >
-          Read
+          Read more
         </Link>
       </div>
     ))}
