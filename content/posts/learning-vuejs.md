@@ -87,8 +87,8 @@ Elements in HTML have attributes; these are additional values that configure the
 
 - Dynamic attributes are marked with `v-bind` or simply `:`. Most frequently used fo [class and style attributes](https://vuejs.org/v2/guide/class-and-style.html).
 - [Event handlers](https://vuejs.org/v2/guide/events.html) are marked with `v-on` or simply `@`.
-- `is` is attribute used in [dynamic components](https://vuejs.org/v2/guide/components-dynamic-async.html). This feature is quite unique and handy! 🪄
-- Forms benefit from [`v-model`](https://vuejs.org/v2/guide/#Handling-User-Input) data binding.
+- `is` is an attribute used in [dynamic components](https://vuejs.org/v2/guide/components-dynamic-async.html). This feature is quite unique and handy! 🪄
+- use [`v-model`](https://vuejs.org/v2/guide/#Handling-User-Input) for data binding. Pay attention to [emitting `input` events](https://vuejs.org/v2/guide/components-custom-events.html#Customizing-Component-v-model).
 
 🧩 Slots [[documentation](https://vuejs.org/v2/guide/components-slots.html)]
 
@@ -108,7 +108,7 @@ The last important piece of advice I'd share for this topic is about [how to saf
 
 ### Props
 
-When it comes to defining components' properties and their validations, I sometimes miss the features and possible strictness of React solutions.
+When it comes to defining components' properties and their validations, I sometimes miss the features and possible strictness which React provides.
 
 [`PropTypes`](https://reactjs.org/docs/typechecking-with-proptypes.html) and sometimes TypeScript on top allow for defining shapes and validations in details whereas Vue's [props](https://vuejs.org/v2/guide/components-props.html) validations are [less strict](https://vuejs.org/v2/guide/components-props.html#Prop-Validation).
 
@@ -116,28 +116,50 @@ Important note coming to mind here is that it's impossible to use [`props's`](ht
 
 ### State management
 
-The concent of state is not so prominent in Vue as in React.
+The concept of state is not as prominent in Vue as it is in React. For a refresher, React provides [`setState()`](https://reactjs.org/docs/faq-state.html#what-does-setstate-do) function which does exactly what it is named after. Each change in state triggers re-rendering.
 
-https://vuejs.org/v2/guide/state-management.html
+Vue provides [`data()`](https://vuejs.org/v2/api/#data) function which returns **reactive** variables. [Reactivity](https://vuejs.org/v2/guide/reactivity.html) was the highest point in my learning curve so far. Nested objects remain reactive and keep track of changes when passed around with default assignment operations. This is the best and worst feature of Vue in my personal opinion.
 
-https://reactjs.org/docs/state-and-lifecycle.html#adding-local-state-to-a-class
+Therefore, my first recommendation to anyone experiencing issues with reactivity in nested objects: [justjavascript.com](https://justjavascript.com/). It's a great resource for deeply understanding objects in JavaScript. In increased complexity of nested components and data structures in Vue, the knowledge on how to "break reference" to avoid unintentional state changes is vital.
 
-https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live
+And when discussing complexity, here's my second recommendation: consider carefully [state management in Vue](https://vuejs.org/v2/guide/state-management.html) and [Vuex](https://vuex.vuejs.org/). It's not adding extra complexity and it's also inspired by Flux similarly to Redux.
 
-https://vuejs.org/v2/guide/components-props.html#One-Way-Data-Flow
+![Vuex flow](/media/vuex.png)
 
-setState vs emit
+Vuex is more accessible than Redux though and I'd start with it in any new greenfield project because it's way easier to scale up a Vue project with clearly managed state following battle-tested patterns.
 
-the struggle with reactivity in objects and arrays
+Last notes, recently I came across [Pinia](https://pinia.vuejs.org/), but I haven't tried or used it. Vue 3 uses proxies which is a [different approach to reactivity](https://v3.vuejs.org/guide/reactivity.html) compared to Vue 2.
 
-mention computed properties next to data() https://vuejs.org/v2/guide/computed.html
+### Computed properties
+
+[Computed properties](https://vuejs.org/v2/guide/computed.html) are a unique feature of Vue.js. They facilitate caching of reactive variables. I've deliberately kept them for the end, because they are an optimisation technique which comes easily after `data()` and methods concepts are mastered properly.
 
 ### Ecosystem
 
-Router, Vuex, etc.
+Vue provides excellent ecosystem of ready solutions:
 
-## Resources
+- [Vue CLI](https://cli.vuejs.org/) or [Vite](https://vitejs.dev/)
+- [Vue Router](https://router.vuejs.org/)
+- [Vuex for flux-inspired state management](https://vuex.vuejs.org/)
+- [Server-side rendering](https://ssr.vuejs.org/)
+- [Nuxt](https://nuxtjs.org/) or [Vue Next](https://github.com/vuejs/vue-next) as alternatives to Next.js
 
-vuemastery and some repositories with patterns and ready to use solutions
+These are enough to be truly competitive to alternatives such as React and Angular. The tools listed above are tightly integrated and made accessible for easy onboarding and adoption.
+
+## Learning resources
+
+Although every single developer has a unique approach in learning new technologies, the [Vue Mastery](https://www.vuemastery.com/) platform is what I'd recommend as a first step in anyone's learning journey.
+
+Solid team of experienced JavaScript professionals with excellent teaching approach similar to CodeSchool. Additional motivational factor, at least for me, is that the platform contributes back to the Vue project financially.
+
+Of course, there are also a few other very useful resources out there:
+
+- 😎 [Awesome Vue](https://github.com/vuejs/awesome-vue)
+- 🤓 [Vue Patterns](https://github.com/learn-vuejs/vue-patterns)
+- 📚 [Vue Style Guide](https://github.com/pablohpsilva/vuejs-component-style-guide)
 
 ## Conclusions
+
+I hope this article is useful for anyone interested in learning Vue.js from scratch. Previous knowledge of React.js is helpful because I make several comparisons and associations. However, the key points to takeaway would be still the same even if I'd discard all of the comparison.
+
+Vue.js is a delightful library and its community and ecosystem of supporting tools make it really eaasy to adopt the technology whenever necessary.
