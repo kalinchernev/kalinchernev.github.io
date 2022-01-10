@@ -31,7 +31,7 @@ I like them both now, but I did struggle for in the first few months to be as ef
 
 ### Tooling
 
-JavaScript tooling is like Web3. It's wild 😜. It's been a never-ending evolution in various aspects.
+JavaScript tooling is wild. 🤪 It's been a never-ending evolution in various aspects.
 
 All popular libraries and frameworks such as React, Vue, Angular, Svelte and others have involving communities of bright and hard-working open-source developers who contribute massively. That's why there has been continous evolution in tooling through time regardless of your pick between the popular choices.
 
@@ -45,17 +45,25 @@ Another easy option is the [Laravel Mix](https://laravel.com/docs/8.x/mix#vue). 
 
 Laravel Mix plays well with projects bootstrapped with the Vue CLI, as long as babel/eslint/jest configurations are maintained properly. [Laravel](https://laravel.com/) combined with Laravel Mix is an effective toolchain for PHP developers and that's why frequently Vue developers will in PHP (LAMP) stack rather than JavaScript (MEAN-ish) stacks.
 
+![The logo of Vite](/media/vite.svg)
+
 For experts, it's worth mentioning that [Vite](https://vitejs.dev/) has been a trending project in the last couple of months. It's not included on the main Vue site and is not as tightly integrated and focused on Vue-only. It is future-proof, [keeping up with the non-JavaScript tooling trend](https://leerob.io/blog/rust) for a [good reason](https://vitejs.dev/guide/why.html).
 
-### IDEs and browser devtools
+### IDE and browser devtools
 
-Editors are not so good at undertanding Vue code as React code. Recommended VS code extensions.
+VS code is not as good at undertanding Vue code as React code out of the box. Autocomplete suggestions and references between code definitions and usage are not always helpful, but it's not a big problem.
 
-A few words on browser extensions for devtools: React devtools is cluttered compared to Vue devtools.
+The extension I recommend is [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) which covers for almost all necessary features. The only other Vue-related additional extension I use is [Sarah Drasner's Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets).
+
+When it comes to browser integration, all you need to install is [Vue Devtools](https://devtools.vuejs.org/). It's great: components' tree view is clean and without clutter (React's case 🫣), there are out-of-the-box integrations for Vuex and Vue Router.
+
+![Vue devtools](/media/vue-devtools.jpg)
 
 ### Templates
 
 This section is dedicated to the topic of code writing style and syntax in Vue. These will depend on choices from [the bundlers' section](#bundling) and their configurations. For the following paragraphs I'll assume the adoption of the most frequently recommended [single file component](https://vuejs.org/v2/guide/single-file-components.html) approach.
+
+![Vue devtools](/media/vue-component.png)
 
 #### History
 
@@ -65,13 +73,13 @@ React introduced [JSX](https://reactjs.org/docs/introducing-jsx.html). It's been
 
 When it comes to Vue, web developers with experience in PHP and jQuery appreciate [Vue syntax](https://vuejs.org/v2/guide/syntax.html), because Vue templates are more about HTML rather than JavaScript. So, yeah, when you work with developers who are used to make dynamic HTML templates with inline variables, control statements and loops, Vue is more appealing and understandable.
 
-An interesting fact from the history is that Vue's default syntax is inspired by Angular 1, not PHP templating. Angular 1 is old, but not deprecated 😎. (Did I just write that?) It played a key role in making the [MEAN stack](<https://en.wikipedia.org/wiki/MEAN_(solution_stack)>) a viable alternative to the [LAMP stack](<https://en.wikipedia.org/wiki/LAMP_(software_bundle)>).
+An interesting fact from the history is that Vue's default syntax is inspired by Angular 1, not PHP templating. [Angular 1 just entered EOL (End of Life phase)](https://docs.angularjs.org/misc/version-support-status) but it played a key role in making the [MEAN stack](<https://en.wikipedia.org/wiki/MEAN_(solution_stack)>) a viable alternative to the [LAMP stack](<https://en.wikipedia.org/wiki/LAMP_(software_bundle)>).
 
 > Google Creative Labs was where Evan first started his work on Vue. As the project grew, the team started to use Angular 1. it had too many features that they didn't need. Evan also didn't like some of the design decisions that Angular 1 had. So, Evan started to work on a templating library just for his personal use. After six months, in February 2014, he officially released it as Vue.js. ([source](https://egghead.io/podcasts/evan-you-creator-of-vue-js))
 
 Knowing a bit of history is nice, but what are the key concepts to grasp in order smoothen the learning curve when it comes to Vue templates?
 
-#### Concepts
+#### Key features and concepts
 
 🔧 Attributes [[documentation](https://vuejs.org/v2/guide/syntax.html#Attributes)]
 
@@ -80,6 +88,7 @@ Elements in HTML have attributes; these are additional values that configure the
 - Dynamic attributes are marked with `v-bind` or simply `:`. Most frequently used fo [class and style attributes](https://vuejs.org/v2/guide/class-and-style.html).
 - [Event handlers](https://vuejs.org/v2/guide/events.html) are marked with `v-on` or simply `@`.
 - `is` is attribute used in [dynamic components](https://vuejs.org/v2/guide/components-dynamic-async.html). This feature is quite unique and handy! 🪄
+- Forms benefit from [`v-model`](https://vuejs.org/v2/guide/#Handling-User-Input) data binding.
 
 🧩 Slots [[documentation](https://vuejs.org/v2/guide/components-slots.html)]
 
@@ -91,15 +100,19 @@ Slots are a must-read and must-understand feature which provides code flexibilit
 
 These are similar to other [refs](https://reactjs.org/docs/refs-and-the-dom.html), yes. They should be used carefully because it's easy to introduce fishy code through lack of understanding of boundaries between the DOM and Vue.
 
-Refs in Vue are always a DOM node AND a Vue component and the methods on resulting objects are a mixture of different APIs. There are no limitations with regards to breaking the boundaries I just mentioned, so sometimes it happends that a contributor uses refs to get a DOM node and invoke Vue methods causing unintented (and hard to debug) changes in data.
+Refs in Vue return an object of DOM elements and component instances. This means that there is a combination of different APIs methods. There are no limitations with regards to breaking the boundaries I just mentioned, so it could happend that Vue methods are invoked (instead of DOM such) causing unintentional and hard to debug changes in data.
 
 **Refs should be used for [focus management](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_refs_focus_management), not state management.**
 
 The last important piece of advice I'd share for this topic is about [how to safely access Vue refs without getting undefined](https://jefrydco.id/en/blog/safe-access-vue-refs-undefined/).
 
-### Props validation
+### Props
 
-`PropTypes` and TypeScript vs Vue's [props](https://vuejs.org/v2/guide/components-props.html) which are [less strict](https://vuejs.org/v2/guide/components-props.html#Prop-Validation).
+When it comes to defining components' properties and their validations, I sometimes miss the features and possible strictness of React solutions.
+
+[`PropTypes`](https://reactjs.org/docs/typechecking-with-proptypes.html) and sometimes TypeScript on top allow for defining shapes and validations in details whereas Vue's [props](https://vuejs.org/v2/guide/components-props.html) validations are [less strict](https://vuejs.org/v2/guide/components-props.html#Prop-Validation).
+
+Important note coming to mind here is that it's impossible to use [`props's`](https://vuejs.org/v2/api/#props) values in Vue component file wihout defining the `props` object property.
 
 ### State management
 
@@ -116,6 +129,8 @@ https://vuejs.org/v2/guide/components-props.html#One-Way-Data-Flow
 setState vs emit
 
 the struggle with reactivity in objects and arrays
+
+mention computed properties next to data() https://vuejs.org/v2/guide/computed.html
 
 ### Ecosystem
 
