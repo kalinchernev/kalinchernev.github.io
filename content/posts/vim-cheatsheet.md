@@ -33,7 +33,7 @@ Here is the longer version of the above: how exactly are these useful?
 
 Useful when a callback parameter should be refactored to a new prettier config for later typescript type annotation:
 
-![Go to and wrap in brackets](/media/goto_wrap_brackets.gif)
+![Go to and wrap in brackets](/media/vim_goto_wrap_brackets.gif)
 
 The steps:
 
@@ -44,3 +44,17 @@ The steps:
 - Type `(` which should autoclose, depending on VS Code configurations
 - Press escape when having `()`
 - Press `p` to put back the previously yanked word
+
+### Refactor return value
+
+Useful in case a return value of `.map()`, `.filter()` or similar could be placed inline.
+
+![Go to and wrap in brackets](/media/vim_map_return.gif)
+
+The steps:
+
+- Search `/` a given word, i.e.`kebab`
+- Press enter to save the pattern
+- Yank the string value `da` + backtick
+- Select all the previous contents `vaB`
+- Paste string value over it
