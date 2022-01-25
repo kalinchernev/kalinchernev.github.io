@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Kalin Chernev]]></title><description><![CDATA[Writing crystallizes thought and thought produces action.]]></description><link>https://kalinchernev.github.io/</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 19 Jan 2022 16:01:22 GMT</lastBuildDate><item><title><![CDATA[VIM commands cheatsheet]]></title><description><![CDATA[Sharing the most useful VIM commands and combinations I use daily.]]></description><link>https://kalinchernev.github.io/vim-cheatsheet</link><guid isPermaLink="false">https://kalinchernev.github.io/vim-cheatsheet</guid><pubDate>Wed, 19 Jan 2022 22:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Kalin Chernev]]></title><description><![CDATA[Writing crystallizes thought and thought produces action.]]></description><link>https://kalinchernev.github.io/</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 25 Jan 2022 16:29:07 GMT</lastBuildDate><item><title><![CDATA[VIM commands cheatsheet]]></title><description><![CDATA[Sharing the most useful VIM commands and combinations I use daily.]]></description><link>https://kalinchernev.github.io/vim-cheatsheet</link><guid isPermaLink="false">https://kalinchernev.github.io/vim-cheatsheet</guid><pubDate>Wed, 19 Jan 2022 22:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 256px; &quot;
     &gt;
@@ -47,7 +47,7 @@
 &lt;p&gt;Here is the longer version of the above: how exactly are these useful?&lt;/p&gt;
 &lt;h3 id=&quot;go-to-a-specific-variable-and-wrap-it-in-brackets&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#go-to-a-specific-variable-and-wrap-it-in-brackets&quot; aria-label=&quot;go to a specific variable and wrap it in brackets permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Go to a specific variable and wrap it in brackets&lt;/h3&gt;
 &lt;p&gt;Useful when a callback parameter should be refactored to a new prettier config for later typescript type annotation:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/a5e3b512b824c40577181a26b4ca4c48/goto_wrap_brackets.gif&quot; alt=&quot;Go to and wrap in brackets&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/a5e3b512b824c40577181a26b4ca4c48/vim_goto_wrap_brackets.gif&quot; alt=&quot;Go to and wrap in brackets&quot;&gt;&lt;/p&gt;
 &lt;p&gt;The steps:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Search &lt;code class=&quot;language-text&quot;&gt;/&lt;/code&gt; a given word, i.e.&lt;code class=&quot;language-text&quot;&gt;edge&lt;/code&gt;&lt;/li&gt;
@@ -57,6 +57,17 @@
 &lt;li&gt;Type &lt;code class=&quot;language-text&quot;&gt;(&lt;/code&gt; which should autoclose, depending on VS Code configurations&lt;/li&gt;
 &lt;li&gt;Press escape when having &lt;code class=&quot;language-text&quot;&gt;()&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Press &lt;code class=&quot;language-text&quot;&gt;p&lt;/code&gt; to put back the previously yanked word&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;refactor-return-value&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#refactor-return-value&quot; aria-label=&quot;refactor return value permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Refactor return value&lt;/h3&gt;
+&lt;p&gt;Useful in case a return value of &lt;code class=&quot;language-text&quot;&gt;.map()&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;.filter()&lt;/code&gt; or similar could be placed inline.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/9b04c264f58f721e7374b46b94bfeaa9/vim_map_return.gif&quot; alt=&quot;Go to and wrap in brackets&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Search &lt;code class=&quot;language-text&quot;&gt;/&lt;/code&gt; a given word, i.e.&lt;code class=&quot;language-text&quot;&gt;kebab&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Press enter to save the pattern&lt;/li&gt;
+&lt;li&gt;Yank the string value &lt;code class=&quot;language-text&quot;&gt;da&lt;/code&gt; + backtick&lt;/li&gt;
+&lt;li&gt;Select all the previous contents &lt;code class=&quot;language-text&quot;&gt;vaB&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Paste string value over it&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[One year of experience with Vue.js]]></title><description><![CDATA[After using Vue.js for production level applications in 2021, I decided to share my main takeaways from the point of view of someone who already knows React.js.]]></description><link>https://kalinchernev.github.io/one-year-using-vuejs</link><guid isPermaLink="false">https://kalinchernev.github.io/one-year-using-vuejs</guid><pubDate>Mon, 10 Jan 2022 22:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 400px; &quot;
