@@ -24,7 +24,20 @@
     "contacts": {
       "twitter": "kalinchernev",
       "github": "kalinchernev",
-      "linkedin": "kalinchernev"
+      "linkedin": "kalinchernev",
+      "rss": "",
+      "email": "",
+      "facebook": "#",
+      "telegram": "#",
+      "instagram": "#",
+      "mastodon": "#",
+      "line": "",
+      "weibo": "",
+      "gitlab": "",
+      "medium": "",
+      "youtube": "",
+      "codepen": "",
+      "soundcloud": ""
     }
   }
 }
