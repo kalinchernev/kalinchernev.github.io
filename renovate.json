@@ -1,6 +1,17 @@
 {
-  "extends": ["config:base"],
+  "extends": [
+    "config:base",
+    ":automergePatch",
+    ":automergeBranch",
+    ":automergeLinters",
+    ":automergeTesters",
+    ":automergeTypes"
+  ],
   "packageRules": [
+    {
+      "packagePatterns": ["^stylelint"],
+      "groupName": "stylelint"
+    },
     {
       "packagePatterns": ["^eslint"],
       "groupName": "eslint"
@@ -10,14 +21,18 @@
       "groupName": "gatsby"
     },
     {
-      "packageNames": ["react", "react-dom"],
+      "packageNames": ["react", "react-dom", "react-test-renderer"],
       "groupName": "react"
+    },
+    {
+      "groupName": "node",
+      "matchPackageNames": ["node"],
+      "enabled": false
     }
   ],
   "labels": ["renovate"],
   "prHourlyLimit": 4,
   "prConcurrentLimit": 16,
   "rangeStrategy": "bump",
-  "bumpVersion": null,
-  "semanticCommits": true
+  "semanticCommits": "enabled"
 }
