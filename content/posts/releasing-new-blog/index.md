@@ -1,6 +1,6 @@
 ---
 title: Releasing new blog
-slug: releasing-new-blog
+slug: "/releasing-new-blog"
 date: 2017-04-19T11:04:38+02:00
 draft: false
 template: post

@@ -1,6 +1,6 @@
 ---
 title: Learning VIM
-slug: learning-vim
+slug: "/learning-vim"
 date: "2019-04-21T12:10:11+02:00"
 template: "post"
 draft: false

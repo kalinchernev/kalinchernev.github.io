@@ -1,6 +1,6 @@
 ---
 title: "Serverless github bot with AWS Lambda and API Gateway"
-slug: serverless-github-bot-aws-lambda-api-gateway-nodejs
+slug: "/serverless-github-bot-aws-lambda-api-gateway-nodejs"
 date: 2017-07-11T22:40:00+00:00
 draft: false
 template: post

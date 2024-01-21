@@ -3,7 +3,7 @@ title: swagger-jsdoc v6
 date: "2020-12-23T00:00:00+02:00"
 template: "post"
 draft: false
-slug: swagger-jsdoc-6
+slug: "/swagger-jsdoc-6"
 category: "Code"
 tags:
   - JavaScript

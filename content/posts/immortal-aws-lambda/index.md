@@ -1,6 +1,6 @@
 ---
 title: Solve AWS Lambda timeout limitations
-slug: solve-aws-lambda-timeout-limitations
+slug: "/solve-aws-lambda-timeout-limitations"
 date: "2018-10-26T00:00:00+02:00"
 template: "post"
 category: "Code"

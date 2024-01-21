@@ -1,6 +1,6 @@
 ---
 title: Getting better with GraphQL
-slug: getting-better-with-graphql
+slug: "/getting-better-with-graphql"
 date: "2018-04-15T00:00:00+02:00"
 category: "Code"
 template: "post"

@@ -1,6 +1,6 @@
 ---
 title: Learn Gatsby.js
-slug: learn-gatsbyjs
+slug: "/learn-gatsbyjs"
 date: "2017-10-03T23:33:31+00:00"
 category: "Code"
 template: "post"

@@ -3,7 +3,7 @@ title: Cloud9 IDE
 date: "2016-08-29T00:00:00+02:00"
 template: "post"
 draft: false
-slug: cloud9-editor
+slug: "/cloud9-editor"
 category: "Code"
 tags:
   - Cloud

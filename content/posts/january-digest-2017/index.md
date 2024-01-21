@@ -1,6 +1,6 @@
 ---
 title: January Digest 2017
-slug: january-digest-2017
+slug: "/january-digest-2017"
 template: "post"
 draft: false
 category: "Misc"

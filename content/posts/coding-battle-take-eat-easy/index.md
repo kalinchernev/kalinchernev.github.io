@@ -1,6 +1,6 @@
 ---
 title: Coding battle at Take Eat Easy
-slug: coding-battle-take-eat-easy
+slug: "/coding-battle-take-eat-easy"
 date: "2016-06-09T00:00:00+02:00"
 category: "Code"
 template: "post"

@@ -1,6 +1,6 @@
 ---
 title: Streams in AWS Lambda Functions
-slug: streams-aws-lambda-functions
+slug: "/streams-aws-lambda-functions"
 date: "2019-01-18T00:00:00+00:00"
 category: "Code"
 draft: true

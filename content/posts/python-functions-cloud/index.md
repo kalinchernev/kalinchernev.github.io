@@ -1,6 +1,6 @@
 ---
 title: Python functions in the cloud
-slug: python-functions-cloud
+slug: "/python-functions-cloud"
 date: "2018-03-18T00:00:00+00:00"
 category: "Code"
 draft: true

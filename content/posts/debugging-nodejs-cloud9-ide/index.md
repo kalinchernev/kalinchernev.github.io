@@ -1,6 +1,6 @@
 ---
 title: Debugging node.js in Cloud9 IDE
-slug: debugging-nodejs-in-cloud9-ide
+slug: "/debugging-nodejs-in-cloud9-ide"
 date: "2016-09-04T00:00:00+02:00"
 category: "Code"
 template: "post"

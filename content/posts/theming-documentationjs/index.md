@@ -1,6 +1,6 @@
 ---
 title: Theming documentation.js
-slug: theming-documentationjs
+slug: "/theming-documentationjs"
 date: 2018-02-18T00:00:00+00:00
 draft: false
 template: post

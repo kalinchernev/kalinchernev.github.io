@@ -1,6 +1,6 @@
 ---
 title: Think about apps, not websites
-slug: think-about-apps-not-websites
+slug: "/think-about-apps-not-websites"
 date: 2016-12-13T00:00:00+02:00
 draft: false
 template: post

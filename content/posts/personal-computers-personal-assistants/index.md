@@ -1,6 +1,6 @@
 ---
 title: From personal computers to personal assistants
-slug: personal-computers-personal-assistants
+slug: "/personal-computers-personal-assistants"
 date: "2017-05-09T00:00:00+02:00"
 draft: false
 template: post

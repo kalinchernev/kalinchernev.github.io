@@ -1,7 +1,7 @@
 ---
 title: Escape button in Macbook Pro without using toucbar
 date: "2018-01-11T23:00:00+01:00"
-slug: escaping-macbook-pro-touchbar
+slug: "/escaping-macbook-pro-touchbar"
 category: "Operating systems"
 template: "post"
 draft: false

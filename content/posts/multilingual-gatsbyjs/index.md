@@ -1,6 +1,6 @@
 ---
 title: Multilingual Gatsby.js
-slug: multilingual-gatsbyjs
+slug: "/multilingual-gatsbyjs"
 date: "2019-09-02T00:00:00+02:00"
 category: "Code"
 template: "post"

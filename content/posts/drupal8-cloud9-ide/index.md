@@ -1,6 +1,6 @@
 ---
 title: Drupal 8 on Cloud9 IDE
-slug: drupal8-cloud9-ide
+slug: "/drupal8-cloud9-ide"
 date: "2016-09-15T00:00:00+02:00"
 category: "Code"
 draft: false

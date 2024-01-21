@@ -3,7 +3,7 @@ title: VIM commands cheatsheet
 date: "2022-01-20T00:00:00+02:00"
 template: "post"
 draft: true
-slug: vim-cheatsheet
+slug: "/vim-cheatsheet"
 category: "Tools"
 tags:
   - VIM

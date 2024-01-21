@@ -3,7 +3,7 @@ title: One year of experience with Vue.js
 date: "2022-01-11T00:00:00+02:00"
 template: "post"
 draft: false
-slug: one-year-using-vuejs
+slug: "/one-year-using-vuejs"
 category: "Code"
 tags:
   - JavaScript

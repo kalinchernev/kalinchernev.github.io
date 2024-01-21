@@ -1,6 +1,6 @@
 ---
 title: Holidays digest 2016
-slug: holiday-digest-2016
+slug: "/holiday-digest-2016"
 date: "2017-01-07T00:00:00+02:00"
 category: "Misc"
 template: "post"

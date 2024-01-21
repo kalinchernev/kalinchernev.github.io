@@ -1,6 +1,6 @@
 ---
 title: The guide to learn GraphQL I wish I found few months go
-slug: graphql-guide-wish-found-before
+slug: "/graphql-guide-wish-found-before"
 date: "2017-02-16T00:00:00+02:00"
 category: "Code"
 template: "post"

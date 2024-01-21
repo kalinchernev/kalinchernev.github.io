@@ -1,6 +1,6 @@
 ---
 title: The first coding battle in Belgium
-slug: first-coding-battle-belgium
+slug: "/first-coding-battle-belgium"
 date: "2016-04-14T00:00:00+02:00"
 category: "Code"
 template: "post"

@@ -1,6 +1,6 @@
 ---
 title: Quality assurance in GatsbyJS projects - linting and testing
-slug: gatsbyjs-qa-linting-testing
+slug: "/gatsbyjs-qa-linting-testing"
 date: "2018-06-04T00:00:00+00:00"
 category: "Code"
 template: "post"

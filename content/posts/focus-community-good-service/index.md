@@ -1,6 +1,6 @@
 ---
 title: Focus on community and good services
-slug: focus-community-good-services
+slug: "/focus-community-good-services"
 date: "2016-01-11T00:00:00+00:00"
 category: "Misc"
 template: "post"

@@ -1,6 +1,6 @@
 ---
 title: Coding battle at Microsoft Innovation Center Brussels
-slug: coding-battle-microsoft-innovation-center
+slug: "/coding-battle-microsoft-innovation-center"
 date: "2016-06-23T00:00:00+02:00"
 template: "post"
 draft: false

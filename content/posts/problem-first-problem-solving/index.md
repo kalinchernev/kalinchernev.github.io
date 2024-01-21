@@ -1,6 +1,6 @@
 ---
 title: Problem-first problem-solving
-slug: problem-first-problem-solving
+slug: "/problem-first-problem-solving"
 date: 2017-01-11T00:00:00+02:00
 draft: false
 template: post

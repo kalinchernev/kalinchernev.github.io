@@ -1,6 +1,6 @@
 ---
 title: Triage stream-adventure issue queue
-slug: stream-adventure-triage
+slug: "/stream-adventure-triage"
 date: 2016-11-06T00:00:00+02:00
 draft: false
 template: post
