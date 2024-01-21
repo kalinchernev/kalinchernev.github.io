@@ -1,7 +1,9 @@
-@import '../../../assets/scss/variables';
-@import '../../../assets/scss/mixins';
+@use "sass:color";
+
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/mixins";
 
 .copyright {
-  color: lighten($color-gray, 18%);
+  color: $color-gray;
   font-size: $typographic-small-font-size;
 }

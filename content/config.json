@@ -1,0 +1,43 @@
+{
+  "title": "Blog by Kalin Chernev",
+  "url": "https://kalinchernev.github.io/",
+  "subtitle": "Writing crystallizes thought and thought produces action.",
+  "copyright": "© All rights reserved.",
+  "googleAnalyticsId": "UA-97001925-1",
+  "disqusShortname": "kalinchernev-github-io",
+  "postsLimit": 4,
+  "pathPrefix": "/",
+  "menu": [
+    {
+      "label": "Articles",
+      "path": "/"
+    },
+    {
+      "label": "About me",
+      "path": "/pages/about"
+    }
+  ],
+  "author": {
+    "name": "Kalin Chernev",
+    "photo": "/photo.jpg",
+    "bio": "Writing crystallizes thought and thought produces action.",
+    "contacts": {
+      "twitter": "kalinchernev",
+      "github": "kalinchernev",
+      "linkedin": "kalinchernev",
+      "rss": "",
+      "email": "",
+      "facebook": "#",
+      "telegram": "#",
+      "instagram": "#",
+      "mastodon": "#",
+      "line": "",
+      "weibo": "",
+      "gitlab": "",
+      "medium": "",
+      "youtube": "",
+      "codepen": "",
+      "soundcloud": ""
+    }
+  }
+}
