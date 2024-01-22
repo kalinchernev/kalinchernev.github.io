@@ -17,7 +17,7 @@ const Contacts: React.FC<Props> = ({ contacts }: Props) => (
   <div className={styles.contacts}>
     <ul className={styles.list}>
       {(Object.keys(contacts) as Array<keyof typeof ICONS>).map((name) =>
-        contacts[name] ? (
+        contacts[name] && contacts[name] !== "" && contacts[name] !== "#" ? (
           <li className={styles.item} key={name}>
             {name === "email" ? (
               <span
