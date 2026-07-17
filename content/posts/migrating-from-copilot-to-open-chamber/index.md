@@ -20,7 +20,7 @@ Copilot got me hooked on AI pair-programming, but I kept running into the same w
 
 Here's why I switched, what I like, what's still rough around the edges, and how to get set up yourself.
 
-![screenshot of Open Chamber's chat panel next to a code diff in VS Code](/media/open-chamber-screenshot.png)
+![screenshot of Open Chamber's chat panel next to a code diff in VS Code](/media//open-chamber-screenshot.png)
 
 ## Why Opencode? Best for Local LLM
 
