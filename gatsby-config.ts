@@ -1,7 +1,7 @@
 import path from "path";
 
 import config from "./content/config.json";
-import * as types from "./internal/gatsby/types";
+import { type Edge } from "./src/types/edge";
 
 export default {
   pathPrefix: config.pathPrefix,
@@ -10,9 +10,9 @@ export default {
     menu: config.menu,
     title: config.title,
     author: config.author,
-    subtitle: config.subtitle,
+    description: config.description,
     copyright: config.copyright,
-    postsLimit: config.postsLimit,
+    feedLimit: config.feedLimit,
     disqusShortname: config.disqusShortname,
   },
   plugins: [
@@ -47,7 +47,7 @@ export default {
                   };
                 };
                 allMarkdownRemark: {
-                  edges: Array<types.Edge>;
+                  edges: Array<Edge>;
                 };
               };
             }) =>
@@ -67,7 +67,7 @@ export default {
               {
                 allMarkdownRemark(
                   limit: 1000,
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                  sort: { frontmatter: { date: DESC } },
                   filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }
                 ) {
                   edges {
@@ -163,41 +163,22 @@ export default {
       },
     },
     {
-      resolve: "gatsby-plugin-offline",
-      options: {
-        workboxConfig: {
-          runtimeCaching: [
-            {
-              urlPattern: /(\.js$|\.css$|[^:]static\/)/,
-              handler: "CacheFirst",
-            },
-            {
-              urlPattern: /^https?:.*\/page-data\/.*\.json/,
-              handler: "StaleWhileRevalidate",
-            },
-            {
-              urlPattern:
-                /^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
-              handler: "StaleWhileRevalidate",
-            },
-            {
-              urlPattern: /^https?:\/\/fonts\.googleapis\.com\/css/,
-              handler: "StaleWhileRevalidate",
-            },
-          ],
-        },
-      },
-    },
-    {
       resolve: "@sentry/gatsby",
       options: {
-        dsn: process.env.SENTRY_DSN,
-        tracesSampleRate: 1,
+        enableClientWebpackPlugin: false,
       },
     },
     "gatsby-plugin-image",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-optimize-svgs",
-    "gatsby-plugin-sass",
+    "gatsby-plugin-remove-serviceworker",
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        sassOptions: {
+          api: "modern-compiler",
+        },
+      },
+    },
   ],
 };

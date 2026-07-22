@@ -1,7 +1,7 @@
 import path from "path";
 
-import { CreateWebpackConfigArgs } from "gatsby";
-import { CompilerOptions } from "typescript";
+import { type CompilerOptions } from "typescript";
+import { type CreateWebpackConfigArgs } from "gatsby";
 
 import { compilerOptions } from "../../tsconfig.json";
 
@@ -13,7 +13,7 @@ const onCreateWebpackConfig = (
         alias: Object.entries(options.paths || []).reduce(
           (aliases, [name, [target]]) => ({
             ...aliases,
-            [name]: path.resolve(target),
+            [name.replace("/*", "")]: path.resolve(target.replace("/*", "")),
           }),
           {},
         ),

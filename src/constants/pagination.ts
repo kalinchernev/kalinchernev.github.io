@@ -1,6 +1,6 @@
-const PAGINATION = {
-  PREV_PAGE: "← PREV",
-  NEXT_PAGE: "→ NEXT",
+const pagination = {
+  prevPage: "← PREV",
+  nextPage: "→ NEXT",
 };
 
-export default PAGINATION;
+export { pagination };

@@ -23,4 +23,4 @@ const getContactHref = (name: string, contact: string) => {
   return hrefs[name] ?? contact;
 };
 
-export default getContactHref;
+export { getContactHref };

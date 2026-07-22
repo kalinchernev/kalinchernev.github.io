@@ -1,0 +1,51 @@
+@use "../../assets/scss/mixins";
+
+.sidebar {
+  width: 100%;
+  grid-column: span 12;
+
+  .inner {
+    position: relative;
+    @include mixins.padding(1, 0.75, 0);
+
+    &:after {
+      background: var(--color-sidebar-border);
+      background: linear-gradient(
+          to bottom,
+          var(--color-sidebar-border) 0%,
+          var(--color-sidebar-border) 48%,
+          var(--color-sidebar-border-fade) 100%
+      );
+    }
+  }
+}
+
+@include mixins.breakpoint-sm {
+  .sidebar {
+    grid-column: span 5;
+
+    .inner {
+      @include mixins.padding(1.25, 0.75, 0);
+
+      &:after {
+        bottom: 0;
+        content: "";
+        height: 540px;
+        position: absolute;
+        right: -10px;
+        top: 30px;
+        width: 1px;
+      }
+    }
+  }
+}
+
+@include mixins.breakpoint-md {
+  .sidebar {
+    grid-column: span 4;
+
+    .inner {
+      @include mixins.padding-equal(1.5);
+    }
+  }
+}

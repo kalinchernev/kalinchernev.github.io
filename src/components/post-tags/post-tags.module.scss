@@ -1,0 +1,11 @@
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixins";
+
+.postTags {
+  @include mixins.margin-bottom(0.5);
+
+  & > * {
+    display: inline-block;
+    @include mixins.margin(0.25, 0);
+  }
+}

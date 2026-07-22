@@ -17,7 +17,7 @@ const useTagsList = () => {
           frontmatter: { template: { eq: "post" }, draft: { ne: true } }
         }
       ) {
-        group(field: frontmatter___tags) {
+        group(field: { frontmatter: { tags: SELECT } }) {
           fieldValue
           totalCount
         }
@@ -28,4 +28,4 @@ const useTagsList = () => {
   return allMarkdownRemark.group || [];
 };
 
-export default useTagsList;
+export { useTagsList };

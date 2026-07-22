@@ -4,4 +4,4 @@ const toKebabCase = (str: string = ""): string =>
     ?.map((word) => word.toLowerCase())
     .join("-") || "";
 
-export default toKebabCase;
+export { toKebabCase };

@@ -1,0 +1,9 @@
+@use "sass:color";
+
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixins";
+
+.sidebar-copyright {
+  color: variables.$color-gray;
+  font-size: variables.$typographic-small-font-size;
+}

@@ -1,0 +1,30 @@
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixins";
+
+.post-author {
+  border-top: 1px solid var(--color-page-border);
+  max-width: variables.$layout-post-width;
+  @include mixins.padding-top(1);
+  @include mixins.line-height(1);
+  @include mixins.margin-top(1);
+  @include mixins.margin-bottom(2);
+
+  .description {
+    .x {
+      display: block;
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        color: var(--color-typographic-link-s-font);
+      }
+    }
+  }
+}
+
+@include mixins.breakpoint-sm {
+  .post-author {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,2 +1,2 @@
-export { default as ICONS } from "./icons";
-export { default as PAGINATION } from "./pagination";
+export { icons as ICONS } from "./icons";
+export { pagination as PAGINATION } from "./pagination";

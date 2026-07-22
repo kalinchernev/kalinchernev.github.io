@@ -1,0 +1,8 @@
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixins";
+
+.post-footer {
+  .date {
+    font-style: italic;
+  }
+}

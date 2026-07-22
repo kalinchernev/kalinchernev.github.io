@@ -16,9 +16,9 @@ const categoriesQuery = async (graphql: CreatePagesArgs["graphql"]) => {
         filter: {
           frontmatter: { template: { eq: "post" }, draft: { ne: true } }
         }
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { frontmatter: { date: DESC } }
       ) {
-        group(field: frontmatter___category) {
+        group(field: { frontmatter: { category: SELECT } }) {
           fieldValue
           totalCount
         }

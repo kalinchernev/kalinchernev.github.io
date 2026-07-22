@@ -1,0 +1,48 @@
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixins";
+
+.sidebar-contacts {
+  @include mixins.margin-bottom(1);
+
+  .list {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 0;
+    flex-shrink: 0;
+    list-style: none;
+    max-width: 165px;
+    @include mixins.padding-equal(0);
+    @include mixins.margin(0.5, 0);
+
+    .item {
+      align-content: center;
+      align-items: center;
+      border: 1px solid var(--color-contacts-border);
+      border-radius: 50%;
+      display: flex;
+      height: variables.$button-height;
+      justify-content: center;
+      line-height: variables.$button-height;
+      text-align: center;
+      width: variables.$button-height;
+      @include mixins.padding-equal(0);
+      @include mixins.margin-equal(0.25);
+
+      &:nth-child(3n + 1) {
+        @include mixins.margin-left(0);
+      }
+
+      .link {
+        border: 0;
+        color: var(--color-typographic-base-font);
+        cursor: pointer;
+        display: flex;
+
+        &:hover,
+        &:focus {
+          color: var(--color-typographic-link-p-font);
+        }
+      }
+    }
+  }
+}

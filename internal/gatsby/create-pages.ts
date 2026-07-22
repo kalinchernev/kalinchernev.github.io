@@ -86,7 +86,7 @@ const createPages: GatsbyNode["createPages"] = async ({ graphql, actions }) => {
 
   const categories = await queries.categoriesQuery(graphql);
   const metadata = await queries.metadataQuery(graphql);
-  const postsLimit = metadata?.postsLimit ?? 1;
+  const postsLimit = metadata?.feedLimit ?? 1;
 
   categories.forEach((category) => {
     const total = Math.ceil(category.totalCount / postsLimit);

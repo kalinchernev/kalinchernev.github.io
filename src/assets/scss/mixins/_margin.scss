@@ -1,44 +1,44 @@
-@import "../variables";
+@use "../variables";
 
 @mixin margin-auto($number: 0) {
-  margin: #{$number * $typographic-leading + "px"} auto;
+  margin: #{$number * variables.$typographic-leading + "px"} auto;
 }
 
 @mixin margin-left($number) {
-  margin-left: #{$number * $typographic-leading + "px"};
+  margin-left: #{$number * variables.$typographic-leading + "px"};
 }
 
 @mixin margin-right($number) {
-  margin-right: #{$number * $typographic-leading + "px"};
+  margin-right: #{$number * variables.$typographic-leading + "px"};
 }
 
 @mixin margin-top($number) {
-  margin-top: #{$number * $typographic-leading + "px"};
+  margin-top: #{$number * variables.$typographic-leading + "px"};
 }
 
 @mixin margin-bottom($number) {
-  margin-bottom: #{$number * $typographic-leading + "px"};
+  margin-bottom: #{$number * variables.$typographic-leading + "px"};
 }
 
 @mixin margin-equal($number) {
-  margin: #{$number * $typographic-leading + "px"};
+  margin: #{$number * variables.$typographic-leading + "px"};
 }
 
 @mixin margin($top, $right, $bottom: null, $left: null) {
   @if not $left and not $bottom {
     margin:
-      #{$top * $typographic-leading + "px"}
-      #{$right * $typographic-leading + "px"};
+      #{$top * variables.$typographic-leading + "px"}
+      #{$right * variables.$typographic-leading + "px"};
   } @else if not $left or $left == $right {
     margin:
-      #{$top * $typographic-leading + "px"}
-      #{$right * $typographic-leading + "px"}
-      #{$bottom * $typographic-leading + "px"};
+      #{$top * variables.$typographic-leading + "px"}
+      #{$right * variables.$typographic-leading + "px"}
+      #{$bottom * variables.$typographic-leading + "px"};
   } @else {
     margin:
-      #{$top * $typographic-leading + "px"}
-      #{$right * $typographic-leading + "px"}
-      #{$bottom * $typographic-leading + "px"}
-      #{$left * $typographic-leading + "px"};
+      #{$top * variables.$typographic-leading + "px"}
+      #{$right * variables.$typographic-leading + "px"}
+      #{$bottom * variables.$typographic-leading + "px"}
+      #{$left * variables.$typographic-leading + "px"};
   }
 }

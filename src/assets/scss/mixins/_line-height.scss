@@ -1,5 +1,5 @@
-@import "../variables";
+@use "../variables";
 
 @mixin line-height($number) {
-  line-height: #{$number * $typographic-leading + "px"};
+  line-height: #{$number * variables.$typographic-leading + "px"};
 }

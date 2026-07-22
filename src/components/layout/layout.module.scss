@@ -1,0 +1,9 @@
+@use "../../assets/scss/variables";
+
+.layout {
+  display: grid;
+  margin: 0 auto;
+  gap: variables.$layout-gap;
+  max-width: variables.$layout-width;
+  grid-template-columns: repeat(12, 1fr);
+}

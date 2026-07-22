@@ -7,7 +7,7 @@ interface Theme {
   mode: "dark" | "light";
 }
 
-export const themeAtomKey = "diesel:theme-atom";
+const themeAtomKey = "diesel:theme-atom";
 
 const themeAtom = atom<Theme>({
   key: "themeAtom",
@@ -24,4 +24,4 @@ const useTheme = (): readonly [Theme, () => void] => {
   return [theme, toggle];
 };
 
-export default useTheme;
+export { useTheme, themeAtomKey };

@@ -1,0 +1,46 @@
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixins";
+
+.sidebar-author {
+  .photo {
+    background-clip: padding-box;
+    border-radius: 50%;
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    @include mixins.margin-bottom(0);
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .title {
+    font-size: variables.$typographic-base-font-size * 1.125;
+    font-weight: 600;
+    margin: 0;
+    @include mixins.line-height(1.125);
+
+    .link {
+      color: var(--color-typographic-base-font);
+
+      &:hover,
+      &:focus {
+        color: var(--color-typographic-base-font);
+      }
+    }
+  }
+
+  .description {
+    color: variables.$color-gray;
+    @include mixins.line-height(1);
+    @include mixins.margin-bottom(1);
+  }
+
+  .titleContainer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    @include mixins.margin(0.5, 0, 0.5, 0);
+  }
+}
