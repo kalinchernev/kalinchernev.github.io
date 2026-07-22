@@ -13,7 +13,7 @@
     "url": "https://github.com/kalinchernev/kalinchernev.github.io"
   },
   "license": "MIT",
-  "author": "Kalin Chernev <kalin.chernev@gmail.com>",
+  "author": "Kalin Chernev",
   "scripts": {
     "build": "yarn run clean && gatsby build",
     "clean": "rimraf .cache public",
@@ -27,6 +27,8 @@
     "lint:ts": "eslint \"src\" --ext .tsx,.ts && prettier --check .",
     "prepare": "husky install",
     "semantic-release": "semantic-release",
+    "deploy": "gh-pages -d public -b master",
+    "release": "run-s build deploy",
     "serve": "gatsby serve",
     "start": "yarn run clean && gatsby develop",
     "test": "jest --config ./internal/testing/jest-config.ts",
@@ -114,6 +116,8 @@
     "sass": "1.75.0",
     "semantic-release": "^24.2.9",
     "source-map-support": "^0.5.21",
+    "gh-pages": "^6.3.0",
+    "npm-run-all": "^4.1.5",
     "typescript": "^5.7.3"
   },
   "engines": {
